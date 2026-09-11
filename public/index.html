@@ -1,89 +1,266 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Deutschify – Deutsche Kollokationen & Grammatik lernen</title>
+  
+  <!-- PWA & SEO Meta Tags -->
+  <meta name="description" content="Lerne deutsche Kollokationen, Nomen-Verb-Verbindungen, Präpositionen und Redewendungen mit interaktiven Lückentext-Übungen.">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Deutschify">
+  
+  <!-- Icons & Manifest -->
+  <link rel="icon" type="image/svg+xml" href="/icons/icon.svg">
+  <link rel="apple-touch-icon" href="/icons/icon.svg">
+  <link rel="manifest" href="/manifest.json">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.19.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.19.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.19.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.19.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.19.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.19.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.19.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.19.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.19.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.19.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Ambient Background Glow -->
+  <div class="ambient-glow"></div>
+  <canvas id="confetti-canvas"></canvas>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="logo-area" id="btn-logo-home" title="Zur Startseite">
+        <div class="logo-icon-wrap">
+          <svg class="logo-icon-svg" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+        </div>
+        <div class="logo-text">Deutschify</div>
+      </div>
+
+      <div class="header-controls">
+        <!-- Streak Counter -->
+        <div class="streak-pill" id="header-streak-pill" title="Aktuelle Lerne-Serie">
+          <span>🔥</span>
+          <span id="streak-counter-val">0</span>
+        </div>
+
+        <!-- Audio Toggle -->
+        <button class="icon-btn" id="btn-toggle-sound" title="Ton ein-/ausschalten" aria-label="Ton umschalten">
+          <span id="sound-icon">🔊</span>
+        </button>
+
+        <!-- Statistics Modal Trigger -->
+        <button class="icon-btn" id="btn-open-stats" title="Statistiken anzeigen" aria-label="Statistiken">
+          <span>📊</span>
+        </button>
+
+        <!-- Dark/Light Theme Toggle -->
+        <button class="icon-btn" id="btn-toggle-theme" title="Farbschema wechseln" aria-label="Theme wechseln">
+          <span id="theme-icon">🌙</span>
+        </button>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </header>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  <!-- Main Content Container -->
+  <main class="app-main">
+    
+    <!-- VIEW 1: THEMEN-ÜBERSICHT (HOME) -->
+    <section id="view-topics" class="view-section active">
+      <div class="hero-banner">
+        <div class="hero-tag">🇩🇪 Deutsch A2 – C1</div>
+        <h1 class="hero-title">Kollokationen & Grammatik <span>meistern</span></h1>
+        <p class="hero-subtitle">
+          Vertiefe feste Nomen-Verb-Verbindungen, Präpositionen und Redewendungen mit interaktiven Lückentexten.
+        </p>
+      </div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+      <!-- Eingabe-Modus Umschalter -->
+      <div class="mode-toggle-bar">
+        <div class="segmented-control" role="group" aria-label="Übungsmodus">
+          <button type="button" id="mode-btn-chips" class="active">Auswahlkarten</button>
+          <button type="button" id="mode-btn-typing">Tippmodus</button>
+        </div>
+      </div>
+
+      <!-- Grid der Lernthemen -->
+      <div class="topics-grid" id="topics-container">
+        <!-- Dynamisch erzeugt aus js/data/topics.js -->
+      </div>
+    </section>
+
+    <!-- VIEW 2: LÜCKENTEXT-ÜBUNG -->
+    <section id="view-exercise" class="view-section">
+      <div class="exercise-wrapper">
+        <!-- Top Navigation -->
+        <div class="exercise-topbar">
+          <button class="back-btn" id="btn-exit-exercise">
+            <span>←</span> Themen
+          </button>
+          
+          <div class="exercise-progress-stats">
+            <div class="round-bar">
+              <div class="round-fill" id="exercise-round-progress" style="width: 0%"></div>
+            </div>
+            <span class="round-counter" id="exercise-round-counter">1 / 10</span>
+          </div>
+        </div>
+
+        <!-- Exercise Card -->
+        <div class="exercise-card">
+          <div class="exercise-topic-badge" id="exercise-topic-title">Thema</div>
+          
+          <!-- Lückentext Satzanzeige -->
+          <div class="sentence-container" id="sentence-display">
+            <!-- Dynamisch formatiert mit Lücke -->
+          </div>
+
+          <!-- Vorlesen Schaltfläche -->
+          <button class="sentence-audio-btn" id="btn-read-sentence" title="Diesen Satz auf Deutsch vorlesen">
+            <span>🗣️</span> Satz vorlesen
+          </button>
+
+          <!-- Modus A: Multiple-Choice Antwortchips -->
+          <div class="options-grid" id="options-chips-container">
+            <!-- 4 klickbare Antwortkarten -->
+          </div>
+
+          <!-- Modus B: Freitext-Tippfeld mit Umlaut-Tasten -->
+          <div class="typing-box" id="typing-input-container" style="display: none;">
+            <div class="input-row">
+              <input type="text" id="text-gap-input" class="text-gap-input" placeholder="Fehlendes Wort eingeben..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            </div>
+            <!-- Deutsche Umlaut-Schnelltasten -->
+            <div class="umlaut-bar">
+              <span class="umlaut-label">Umlaute:</span>
+              <button type="button" class="umlaut-btn" data-char="ä">ä</button>
+              <button type="button" class="umlaut-btn" data-char="ö">ö</button>
+              <button type="button" class="umlaut-btn" data-char="ü">ü</button>
+              <button type="button" class="umlaut-btn" data-char="ß">ß</button>
+              <button type="button" class="umlaut-btn" data-char="Ä">Ä</button>
+              <button type="button" class="umlaut-btn" data-char="Ö">Ö</button>
+              <button type="button" class="umlaut-btn" data-char="Ü">Ü</button>
+            </div>
+          </div>
+
+          <!-- Aktionsleiste -->
+          <div class="action-bar">
+            <button type="button" class="hint-btn" id="btn-show-hint">
+              <span>💡</span> Tipp
+            </button>
+            <button type="button" class="submit-btn" id="btn-check-answer" disabled>
+              Überprüfen <span>↵</span>
+            </button>
+          </div>
+
+          <!-- Feedback-Ausklappbereich -->
+          <div class="feedback-drawer" id="feedback-drawer">
+            <div class="feedback-header">
+              <span id="feedback-icon">🎉</span>
+              <span id="feedback-title">Richtig gelöst!</span>
+            </div>
+            <div class="feedback-details">
+              <div class="detail-row">
+                <span class="detail-label">Kollokation / Verbindung:</span>
+                <span class="detail-value highlight-collocation" id="feedback-collocation">-</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Bedeutung:</span>
+                <span class="detail-value" id="feedback-meaning">-</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Beispielsatz:</span>
+                <span class="detail-value" id="feedback-example">-</span>
+              </div>
+            </div>
+            <button type="button" class="continue-btn" id="btn-next-exercise">
+              Nächste Übung <span>→</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 3: RUNDEN-ABSCHLUSS (SUMMARY) -->
+    <section id="view-summary" class="view-section">
+      <div class="summary-card">
+        <div class="summary-emoji" id="summary-emoji">🏆</div>
+        <h2 class="summary-title" id="summary-title">Runde abgeschlossen!</h2>
+        <p class="summary-subtitle" id="summary-subtitle">Du hast diese Lerneinheit erfolgreich gemeistert.</p>
+
+        <div class="summary-stats-grid">
+          <div class="summary-stat-box">
+            <div class="summary-stat-val" id="summary-correct-val">0 / 0</div>
+            <div class="summary-stat-lbl">Richtig</div>
+          </div>
+          <div class="summary-stat-box">
+            <div class="summary-stat-val" id="summary-accuracy-val">0%</div>
+            <div class="summary-stat-lbl">Trefferquote</div>
+          </div>
+          <div class="summary-stat-box">
+            <div class="summary-stat-val" id="summary-streak-val">0</div>
+            <div class="summary-stat-lbl">Aktuelle Serie</div>
+          </div>
+        </div>
+
+        <div class="summary-actions">
+          <button type="button" class="btn-primary" id="btn-restart-round">Noch einmal üben</button>
+          <button type="button" class="btn-secondary" id="btn-summary-home">Zur Themenübersicht</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL: STATISTIKEN & GESAMTFORTSCHRITT -->
+  <div class="modal-overlay" id="modal-stats" role="dialog" aria-modal="true" aria-labelledby="modal-stats-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-stats-title">Dein Lernfortschritt</h3>
+        <button class="modal-close-btn" id="btn-close-stats" aria-label="Schließen">&times;</button>
+      </div>
+      
+      <div class="stats-tiles">
+        <div class="stat-tile">
+          <div class="stat-tile-val" id="stats-total-answered">0</div>
+          <div class="stat-tile-lbl">Gelöste Aufgaben</div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-tile-val" id="stats-accuracy">0%</div>
+          <div class="stat-tile-lbl">Trefferquote</div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-tile-val" id="stats-current-streak">0</div>
+          <div class="stat-tile-lbl">Aktuelle Serie</div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-tile-val" id="stats-best-streak">0</div>
+          <div class="stat-tile-lbl">Beste Serie</div>
+        </div>
+      </div>
+
+      <div style="text-align: right; margin-top: 16px;">
+        <button type="button" class="btn-secondary" id="btn-reset-stats" style="font-size: 0.85rem; color: #f43f5e; border-color: rgba(244, 63, 94, 0.3);">
+          Fortschritt zurücksetzen
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PWA INSTALL BANNER -->
+  <aside class="pwa-banner" id="pwa-banner" role="alert">
+    <div class="pwa-text">
+      📱 Deutschify als App auf deinem Smartphone installieren?
+    </div>
+    <div style="display: flex; gap: 8px; align-items: center;">
+      <button class="pwa-install-btn" id="pwa-install-action">Installieren</button>
+      <button class="pwa-close-btn" id="pwa-dismiss-action" aria-label="Schließen">&times;</button>
+    </div>
+  </aside>
+
+  <!-- Main ES Module Script -->
+  <script type="module" src="/js/app.js"></script>
+</body>
 </html>

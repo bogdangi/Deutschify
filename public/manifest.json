@@ -1,0 +1,20 @@
+{
+  "name": "Deutschify – Deutsch lernen",
+  "short_name": "Deutschify",
+  "description": "Lerne deutsche Kollokationen, feste Nomen-Verb-Verbindungen, Präpositionen und Redewendungen mit interaktiven Lückentext-Übungen.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "lang": "de",
+  "categories": ["education", "books"],
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "192x192 512x512 any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
