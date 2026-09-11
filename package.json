@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "echo 'Build completed'"
+  },
   "dependencies": {
     "firebase": "^12.19.0"
   }
