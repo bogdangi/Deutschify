@@ -84,6 +84,18 @@
         </div>
       </div>
 
+      <!-- Tägliches Smart-Training (10 Sätze aus allen Themen) -->
+      <div class="smart-training-card" id="smart-training-card" style="display: none;">
+        <div class="smart-card-info">
+          <div class="smart-card-badge">⚡ FSRS Spaced Repetition</div>
+          <h3 class="smart-card-title">Tägliches Smart-Training</h3>
+          <p class="smart-card-desc" id="smart-card-desc">10 priorisierte Sätze: Fällige Wiederholungen & neue Beispiele.</p>
+        </div>
+        <button type="button" class="btn-smart-start" id="btn-smart-start">
+          10 Sätze starten <span>→</span>
+        </button>
+      </div>
+
       <!-- Grid der Lernthemen -->
       <div class="topics-grid" id="topics-container">
         <!-- Dynamisch erzeugt aus js/data/topics.js -->
@@ -173,6 +185,10 @@
                 <span class="detail-label">Beispielsatz:</span>
                 <span class="detail-value" id="feedback-example">-</span>
               </div>
+              <div class="detail-row feedback-interval-row" id="feedback-interval-row" style="display: none;">
+                <span class="detail-label">Wiederholung:</span>
+                <span class="detail-value" id="feedback-interval-val">in 3 Tagen</span>
+              </div>
             </div>
             <button type="button" class="continue-btn" id="btn-next-exercise">
               Nächste Übung <span>→</span>
@@ -238,6 +254,38 @@
         <div class="stat-tile">
           <div class="stat-tile-val" id="stats-best-streak">0</div>
           <div class="stat-tile-lbl">Beste Serie</div>
+        </div>
+      </div>
+
+      <!-- FSRS / ANKI-STYLE REPETITION ANALYTICS -->
+      <div class="anki-analytics-section">
+        <div class="anki-section-header">
+          <h4 class="anki-section-title">🧠 Gedächtnis-Status (FSRS)</h4>
+          <span class="anki-retention-badge" id="anki-retention-badge">Behaltequote: 100%</span>
+        </div>
+
+        <!-- Segmented Memory Bar -->
+        <div class="memory-bar-wrapper">
+          <div class="memory-progress-bar" id="memory-progress-bar">
+            <div class="memory-bar-segment seg-due" id="seg-due" style="width: 0%" title="Fällig"></div>
+            <div class="memory-bar-segment seg-learning" id="seg-learning" style="width: 0%" title="Lernen"></div>
+            <div class="memory-bar-segment seg-review" id="seg-review" style="width: 0%" title="Gefestigt"></div>
+            <div class="memory-bar-segment seg-new" id="seg-new" style="width: 100%" title="Neu"></div>
+          </div>
+          <div class="memory-legend">
+            <div class="legend-item"><span class="legend-dot dot-due"></span> Fällig: <strong id="anki-count-due">0</strong></div>
+            <div class="legend-item"><span class="legend-dot dot-learning"></span> Im Lernprozess: <strong id="anki-count-learning">0</strong></div>
+            <div class="legend-item"><span class="legend-dot dot-review"></span> Gefestigt: <strong id="anki-count-review">0</strong></div>
+            <div class="legend-item"><span class="legend-dot dot-new"></span> Neu: <strong id="anki-count-new">0</strong></div>
+          </div>
+        </div>
+
+        <!-- 7-Tage-Wiederholungsprognose (Forecast) -->
+        <div class="forecast-section">
+          <h5 class="forecast-title">📅 7-Tage-Wiederholungsprognose</h5>
+          <div class="forecast-chart" id="forecast-chart">
+            <!-- Dynamisch über JS erzeugt -->
+          </div>
         </div>
       </div>
 

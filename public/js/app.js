@@ -1,9 +1,11 @@
 // Deutschify - Haupt-Anwendungslogik (Controller)
-// Vollständige deutsche Interaktion, Lückentext-Prüfung, Audio & PWA-Integration
+// Vollständige deutsche Interaktion, Lückentext-Prüfung, Audio, PWA & FSRS-Spaced-Repetition
 
 import { TOPICS } from './data/topics.js';
 import { storage } from './storage.js';
 import { sounds, speech } from './audio.js';
+import { FSRSEngine } from './fsrs.js';
+import { SessionScheduler } from './scheduler.js';
 
 class DeutschifyApp {
   constructor() {
@@ -12,6 +14,7 @@ class DeutschifyApp {
     this.currentIndex = 0;
     this.selectedAnswer = '';
     this.isAnswerChecked = false;
+    this.hintUsedForCurrent = false;
     this.roundCorrect = 0;
     this.roundTotal = 0;
     this.inputMode = storage.getPreferences().inputMode || 'chips';
@@ -41,7 +44,10 @@ class DeutschifyApp {
     this.themeIcon = document.getElementById('theme-icon');
     this.btnOpenStats = document.getElementById('btn-open-stats');
 
-    // Home / Topics
+    // Home / Topics & Smart Training
+    this.smartTrainingCard = document.getElementById('smart-training-card');
+    this.smartCardDesc = document.getElementById('smart-card-desc');
+    this.btnSmartStart = document.getElementById('btn-smart-start');
     this.topicsContainer = document.getElementById('topics-container');
     this.modeBtnChips = document.getElementById('mode-btn-chips');
     this.modeBtnTyping = document.getElementById('mode-btn-typing');
@@ -71,6 +77,8 @@ class DeutschifyApp {
     this.feedbackCollocation = document.getElementById('feedback-collocation');
     this.feedbackMeaning = document.getElementById('feedback-meaning');
     this.feedbackExample = document.getElementById('feedback-example');
+    this.feedbackIntervalRow = document.getElementById('feedback-interval-row');
+    this.feedbackIntervalVal = document.getElementById('feedback-interval-val');
     this.btnNextExercise = document.getElementById('btn-next-exercise');
 
     // Summary View
@@ -91,6 +99,18 @@ class DeutschifyApp {
     this.statsCurrentStreak = document.getElementById('stats-current-streak');
     this.statsBestStreak = document.getElementById('stats-best-streak');
     this.btnResetStats = document.getElementById('btn-reset-stats');
+
+    // Anki Repetition Analytics Elements
+    this.ankiRetentionBadge = document.getElementById('anki-retention-badge');
+    this.segDue = document.getElementById('seg-due');
+    this.segLearning = document.getElementById('seg-learning');
+    this.segReview = document.getElementById('seg-review');
+    this.segNew = document.getElementById('seg-new');
+    this.ankiCountDue = document.getElementById('anki-count-due');
+    this.ankiCountLearning = document.getElementById('anki-count-learning');
+    this.ankiCountReview = document.getElementById('anki-count-review');
+    this.ankiCountNew = document.getElementById('anki-count-new');
+    this.forecastChart = document.getElementById('forecast-chart');
 
     // PWA Banner
     this.pwaBanner = document.getElementById('pwa-banner');
@@ -122,8 +142,19 @@ class DeutschifyApp {
     this.btnExitExercise.addEventListener('click', () => this.showView('topics'));
     this.btnSummaryHome.addEventListener('click', () => this.showView('topics'));
     this.btnRestartRound.addEventListener('click', () => {
-      if (this.currentTopic) this.startTopic(this.currentTopic.id);
+      if (this.currentTopic) {
+        if (this.currentTopic.id === 'smart-mix') {
+          this.startSmartSession();
+        } else {
+          this.startTopic(this.currentTopic.id);
+        }
+      }
     });
+
+    // Smart Daily Training Start
+    if (this.btnSmartStart) {
+      this.btnSmartStart.addEventListener('click', () => this.startSmartSession());
+    }
 
     // Sound & Theme Toggle
     this.btnToggleSound.addEventListener('click', () => {
@@ -149,7 +180,7 @@ class DeutschifyApp {
       if (e.target === this.modalStats) this.closeStatsModal();
     });
     this.btnResetStats.addEventListener('click', () => {
-      if (confirm('Möchtest du deinen gesamten Lernfortschritt wirklich zurücksetzen?')) {
+      if (confirm('Möchtest du deinen gesamten Lernfortschritt und Zeitplan wirklich zurücksetzen?')) {
         storage.resetAll();
         this.updateGlobalHeader();
         this.renderTopics();
@@ -261,6 +292,16 @@ class DeutschifyApp {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
+  updateGlobalHeader() {
+    const stats = storage.getGlobalStats();
+    this.streakCounterVal.textContent = stats.currentStreak;
+    if (stats.currentStreak > 0) {
+      this.headerStreakPill.style.display = 'inline-flex';
+    } else {
+      this.headerStreakPill.style.display = 'none';
+    }
+  }
+
   setInputMode(mode) {
     this.inputMode = mode;
     storage.setPreference('inputMode', mode);
@@ -274,43 +315,44 @@ class DeutschifyApp {
       this.modeBtnChips.classList.remove('active');
       this.modeBtnTyping.classList.add('active');
       this.optionsChipsContainer.style.display = 'none';
-      this.typingInputContainer.style.display = 'flex';
-      if (this.viewExercise.classList.contains('active') && !this.isAnswerChecked) {
-        setTimeout(() => this.textGapInput.focus(), 150);
-      }
-    }
-  }
-
-  updateGlobalHeader() {
-    const stats = storage.getGlobalStats();
-    this.streakCounterVal.textContent = stats.currentStreak;
-    if (stats.currentStreak > 0) {
-      this.headerStreakPill.classList.add('pulse');
-      setTimeout(() => this.headerStreakPill.classList.remove('pulse'), 600);
+      this.typingInputContainer.style.display = 'block';
     }
   }
 
   renderTopics() {
     this.topicsContainer.innerHTML = '';
+    const scheduleStore = storage.getAllSchedule();
+
+    let totalDueCount = 0;
 
     TOPICS.forEach((topic) => {
       const progress = storage.getTopicProgress(topic.id, topic.exercises.length);
+      const dueCount = SessionScheduler.getTopicDueCount(topic.exercises, scheduleStore);
+      totalDueCount += dueCount;
+
       const card = document.createElement('div');
       card.className = 'topic-card';
       card.style.setProperty('--topic-color', topic.color);
+
+      const dueBadgeHTML = dueCount > 0
+        ? `<span class="topic-due-badge" title="${dueCount} Sätze fällig zur Wiederholung">⚡ ${dueCount} fällig</span>`
+        : '';
 
       card.innerHTML = `
         <div>
           <div class="topic-header">
             <div class="topic-icon">${topic.icon}</div>
-            <span class="level-badge">${topic.level}</span>
+            <div style="display: flex; gap: 6px; align-items: center;">
+              ${dueBadgeHTML}
+              <span class="level-badge">${topic.level}</span>
+            </div>
           </div>
           <h2 class="topic-title">${topic.title}</h2>
           <p class="topic-desc">${topic.shortDescription}</p>
         </div>
         <div class="topic-footer">
           <div class="topic-progress-info">
-            <span>Fortschritt</span>
+            <span>Fortschritt (10 Sätze / Runde)</span>
             <span><strong>${progress.completed}</strong> / ${progress.total} (${progress.percent}%)</span>
           </div>
           <div class="progress-track">
@@ -322,6 +364,18 @@ class DeutschifyApp {
       card.addEventListener('click', () => this.startTopic(topic.id));
       this.topicsContainer.appendChild(card);
     });
+
+    // Smart-Training Card konfigurieren
+    if (this.smartTrainingCard) {
+      this.smartTrainingCard.style.display = 'flex';
+      if (totalDueCount > 0) {
+        this.smartCardDesc.textContent = `${totalDueCount} fällige Wiederholungen vor dem Vergessen bewahren.`;
+        this.btnSmartStart.innerHTML = `Jetzt 10 Sätze wiederholen <span>→</span>`;
+      } else {
+        this.smartCardDesc.textContent = `10 ausgewählte Sätze: Neue Kollokationen & Grammatik festigen.`;
+        this.btnSmartStart.innerHTML = `10 Sätze starten <span>→</span>`;
+      }
+    }
   }
 
   startTopic(topicId) {
@@ -329,8 +383,32 @@ class DeutschifyApp {
     if (!topic) return;
 
     this.currentTopic = topic;
-    // Übungen kopieren und zufällig mischen für ein abwechslungsreiches Lernerlebnis
-    this.exerciseQueue = [...topic.exercises].sort(() => Math.random() - 0.5);
+    const scheduleStore = storage.getAllSchedule();
+
+    // 10 Sätze nach Fälligkeit (FSRS) und Relevanz zusammenstellen
+    this.exerciseQueue = SessionScheduler.buildSession(topic.exercises, scheduleStore, 10);
+    this.currentIndex = 0;
+    this.roundCorrect = 0;
+    this.roundTotal = this.exerciseQueue.length;
+
+    this.showView('exercise');
+    this.loadExercise();
+  }
+
+  startSmartSession() {
+    const allExercises = [];
+    TOPICS.forEach((t) => {
+      if (t.exercises) allExercises.push(...t.exercises);
+    });
+
+    this.currentTopic = {
+      id: 'smart-mix',
+      title: 'Tägliches Smart-Training',
+      icon: '⚡'
+    };
+
+    const scheduleStore = storage.getAllSchedule();
+    this.exerciseQueue = SessionScheduler.buildSession(allExercises, scheduleStore, 10);
     this.currentIndex = 0;
     this.roundCorrect = 0;
     this.roundTotal = this.exerciseQueue.length;
@@ -341,9 +419,13 @@ class DeutschifyApp {
 
   loadExercise() {
     this.isAnswerChecked = false;
+    this.hintUsedForCurrent = false;
     this.selectedAnswer = '';
     this.btnCheckAnswer.disabled = true;
     this.feedbackDrawer.classList.remove('active', 'is-correct', 'is-incorrect');
+    if (this.feedbackIntervalRow) {
+      this.feedbackIntervalRow.style.display = 'none';
+    }
 
     const currentEx = this.exerciseQueue[this.currentIndex];
     const currentNum = this.currentIndex + 1;
@@ -363,7 +445,6 @@ class DeutschifyApp {
 
     // Multiple Choice Chips rendern
     this.optionsChipsContainer.innerHTML = '';
-    // Shuffle options for varied learning
     const shuffledOptions = [...currentEx.options].sort(() => Math.random() - 0.5);
 
     shuffledOptions.forEach((optionText, index) => {
@@ -432,6 +513,7 @@ class DeutschifyApp {
   }
 
   showHint() {
+    this.hintUsedForCurrent = true;
     const ex = this.exerciseQueue[this.currentIndex];
     alert(`💡 Grammatik-Tipp:\n\n${ex.tip}`);
   }
@@ -447,8 +529,11 @@ class DeutschifyApp {
       (ans) => ans.trim().toLowerCase() === normalizedInput
     );
 
-    // Fortschritt registrieren
-    const statsUpdate = storage.recordAnswer(this.currentTopic.id, ex.id, isCorrect);
+    // FSRS-Fortschritt registrieren
+    const statsUpdate = storage.recordAnswer(this.currentTopic.id, ex.id, isCorrect, {
+      hintUsed: this.hintUsedForCurrent,
+      inputMode: this.inputMode
+    });
     this.updateGlobalHeader();
 
     const gapSpan = document.getElementById('gap-span');
@@ -494,6 +579,13 @@ class DeutschifyApp {
     this.feedbackMeaning.textContent = ex.meaning;
     this.feedbackExample.textContent = `„${ex.example}“`;
 
+    // FSRS Wiederholungsintervall anzeigen
+    if (this.feedbackIntervalRow && statsUpdate.card) {
+      this.feedbackIntervalRow.style.display = 'flex';
+      const formattedInterval = FSRSEngine.formatInterval(statsUpdate.card.intervalDays);
+      this.feedbackIntervalVal.textContent = formattedInterval;
+    }
+
     // Satz automatisch aussprechen zur akustischen Festigung
     setTimeout(() => {
       speech.speak(`${ex.prefix} ${ex.correctAnswer} ${ex.suffix}`);
@@ -521,15 +613,15 @@ class DeutschifyApp {
     if (accuracy >= 80) {
       this.summaryEmoji.textContent = '🏆';
       this.summaryTitle.textContent = 'Fantastische Leistung!';
-      this.summarySubtitle.textContent = `Du hast ${accuracy}% der Aufgaben dieses Themas richtig gelöst.`;
+      this.summarySubtitle.textContent = `Du hast ${accuracy}% der 10 Aufgaben dieser Einheit erfolgreich gemeistert.`;
     } else if (accuracy >= 50) {
       this.summaryEmoji.textContent = '👏';
       this.summaryTitle.textContent = 'Gut gemacht!';
-      this.summarySubtitle.textContent = 'Eine solide Runde! Mit etwas Wiederholung sitzt jede Formulierung perfekt.';
+      this.summarySubtitle.textContent = 'Solide Runde! Durch die zeitgesteuerten Wiederholungen sitzt jede Kollokation bald felsenfest.';
     } else {
       this.summaryEmoji.textContent = '💪';
       this.summaryTitle.textContent = 'Dranbleiben!';
-      this.summarySubtitle.textContent = 'Deutsche Kollokationen brauchen Übung. Wiederhole die Runde direkt noch einmal!';
+      this.summarySubtitle.textContent = 'FSRS bringt diese Sätze automatisch bald wieder zur Festigung.';
     }
 
     this.showView('summary');
@@ -541,6 +633,48 @@ class DeutschifyApp {
     this.statsAccuracy.textContent = `${stats.accuracy}%`;
     this.statsCurrentStreak.textContent = stats.currentStreak;
     this.statsBestStreak.textContent = stats.bestStreak;
+
+    // Anki-Style FSRS Repetition Analytics berechnen
+    const scheduleStore = storage.getAllSchedule();
+    const libraryStats = SessionScheduler.getLibraryStats(TOPICS, scheduleStore);
+
+    if (this.ankiRetentionBadge) {
+      this.ankiRetentionBadge.textContent = `Behaltequote: ${libraryStats.averageRetention}%`;
+    }
+
+    // Zähler aktualisieren
+    if (this.ankiCountDue) this.ankiCountDue.textContent = libraryStats.due;
+    if (this.ankiCountLearning) this.ankiCountLearning.textContent = libraryStats.learning;
+    if (this.ankiCountReview) this.ankiCountReview.textContent = libraryStats.review;
+    if (this.ankiCountNew) this.ankiCountNew.textContent = libraryStats.newCards;
+
+    // Segmentierter Speicherbalken
+    const total = libraryStats.total || 1;
+    if (this.segDue) this.segDue.style.width = `${(libraryStats.due / total) * 100}%`;
+    if (this.segLearning) this.segLearning.style.width = `${(libraryStats.learning / total) * 100}%`;
+    if (this.segReview) this.segReview.style.width = `${(libraryStats.review / total) * 100}%`;
+    if (this.segNew) this.segNew.style.width = `${(libraryStats.newCards / total) * 100}%`;
+
+    // 7-Tage-Forecast Balkendiagramm rendern
+    if (this.forecastChart && libraryStats.forecast) {
+      const maxCount = Math.max(1, ...libraryStats.forecast.map((f) => f.count));
+      this.forecastChart.innerHTML = libraryStats.forecast
+        .map((f, idx) => {
+          const heightPercent = f.count > 0 ? Math.max(15, Math.round((f.count / maxCount) * 100)) : 4;
+          const isToday = idx === 0 ? 'is-today' : '';
+          return `
+            <div class="forecast-col ${isToday}">
+              <span class="forecast-val">${f.count}</span>
+              <div class="forecast-bar-track">
+                <div class="forecast-bar-fill" style="height: ${heightPercent}%"></div>
+              </div>
+              <span class="forecast-lbl">${f.label}</span>
+            </div>
+          `;
+        })
+        .join('');
+    }
+
     this.modalStats.classList.add('active');
   }
 
@@ -614,7 +748,7 @@ class DeutschifyApp {
   }
 }
 
-// Initialisiere die App nach dem Laden des DOMs
-document.addEventListener('DOMContentLoaded', () => {
-  window.deutschifyApp = new DeutschifyApp();
+// Initialisierung bei DOMContentLoaded
+window.addEventListener('DOMContentLoaded', () => {
+  window.app = new DeutschifyApp();
 });

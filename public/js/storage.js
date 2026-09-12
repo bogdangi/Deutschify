@@ -1,4 +1,7 @@
 // Deutschify - Speicher- und Fortschritts-Verwaltung (LocalStorage)
+// Inklusive FSRS-Spaced-Repetition-Zeitplan und -Historie
+
+import { fsrs, FSRS_RATING } from './fsrs.js';
 
 const STORAGE_KEY = 'deutschify_state_v1';
 
@@ -18,12 +21,18 @@ const defaultState = {
   },
   topicProgress: {
     // topicId: { completedIds: [], accuracy: 0, attempts: 0 }
+  },
+  schedule: {
+    // exerciseId: { difficulty, stability, reps, lapses, state, lastReview, due, intervalDays }
   }
 };
 
 class StorageManager {
   constructor() {
     this.state = this._load();
+    if (!this.state.schedule) {
+      this.state.schedule = {};
+    }
     this._checkStreakContinuity();
   }
 
@@ -31,7 +40,15 @@ class StorageManager {
     try {
       const data = localStorage.getItem(STORAGE_KEY);
       if (data) {
-        return { ...defaultState, ...JSON.parse(data) };
+        const parsed = JSON.parse(data);
+        return {
+          ...defaultState,
+          ...parsed,
+          preferences: { ...defaultState.preferences, ...(parsed.preferences || {}) },
+          stats: { ...defaultState.stats, ...(parsed.stats || {}) },
+          topicProgress: parsed.topicProgress || {},
+          schedule: parsed.schedule || {}
+        };
       }
     } catch (e) {
       console.error('Fehler beim Laden von LocalStorage:', e);
@@ -64,7 +81,14 @@ class StorageManager {
     }
   }
 
-  recordAnswer(topicId, exerciseId, isCorrect) {
+  /**
+   * Speichert das Ergebnis einer Übung und aktualisiert den FSRS-Zeitplan
+   * @param {String} topicId
+   * @param {String} exerciseId
+   * @param {Boolean} isCorrect
+   * @param {Object} options - { hintUsed: boolean, inputMode: 'chips'|'typing' }
+   */
+  recordAnswer(topicId, exerciseId, isCorrect, options = {}) {
     const today = new Date().toISOString().split('T')[0];
     this.state.stats.lastPracticedDate = today;
     this.state.stats.totalExercisesAnswered++;
@@ -99,11 +123,36 @@ class StorageManager {
       }
     }
 
+    // FSRS-Rating bestimmen
+    let rating = FSRS_RATING.GOOD;
+    if (!isCorrect) {
+      rating = FSRS_RATING.AGAIN;
+    } else if (options.hintUsed) {
+      rating = FSRS_RATING.HARD;
+    } else if (options.inputMode === 'typing') {
+      rating = FSRS_RATING.EASY;
+    }
+
+    // FSRS Memory State berechnen und speichern
+    const prevCard = this.state.schedule[exerciseId] || null;
+    const updatedCard = fsrs.rate(prevCard, rating, Date.now());
+    this.state.schedule[exerciseId] = updatedCard;
+
     this.save();
     return {
       currentStreak: this.state.stats.currentStreak,
-      bestStreak: this.state.stats.bestStreak
+      bestStreak: this.state.stats.bestStreak,
+      card: updatedCard,
+      rating
     };
+  }
+
+  getSchedule(exerciseId) {
+    return this.state.schedule[exerciseId] || null;
+  }
+
+  getAllSchedule() {
+    return this.state.schedule || {};
   }
 
   getTopicProgress(topicId, totalExercisesInTopic) {

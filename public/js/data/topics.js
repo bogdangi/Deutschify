@@ -165,6 +165,58 @@ export const TOPICS = [
         meaning: "offiziell etwas beantragen (z. B. Beihilfe, Visum, Bürgergeld)",
         example: "Wir haben den Antrag auf Baugenehmigung rechtzeitig gestellt.",
         tip: "Verbindung mit dem Verb 'stellen'."
+      },
+      {
+        id: "kol-13",
+        prefix: "Bei dieser wichtigen Verhandlung wird Geld nur eine untergeordnete",
+        gapPlaceholder: "Nomen",
+        suffix: "spielen.",
+        correctAnswer: "Rolle",
+        acceptableAnswers: ["Rolle", "rolle"],
+        options: ["Rolle", "Sache", "Bedeutung", "Wirkung"],
+        collocation: "eine Rolle spielen",
+        meaning: "von Bedeutung oder Wichtigkeit sein",
+        example: "Erfahrung spielt bei der Stellenbesetzung eine entscheidende Rolle.",
+        tip: "Feminines Nomen (die Rolle) mit dem Verb 'spielen'."
+      },
+      {
+        id: "kol-14",
+        prefix: "Wir sollten alle vorgeschlagenen Optionen sorgfältig in Betracht",
+        gapPlaceholder: "Verb",
+        suffix: ", bevor wir eine Wahl treffen.",
+        correctAnswer: "ziehen",
+        acceptableAnswers: ["ziehen"],
+        options: ["ziehen", "nehmen", "stellen", "legen"],
+        collocation: "in Betracht ziehen",
+        meaning: "etwas erwägen oder als Möglichkeit berücksichtigen",
+        example: "Haben Sie alle Alternativen in Betracht gezogen?",
+        tip: "Kollokation mit dem Infinitiv 'ziehen'."
+      },
+      {
+        id: "kol-15",
+        prefix: "Der avantgardistische Entwurf des Architekten wird international großes Aufsehen",
+        gapPlaceholder: "Verb",
+        suffix: ".",
+        correctAnswer: "erregen",
+        acceptableAnswers: ["erregen"],
+        options: ["erregen", "machen", "wecken", "bringen"],
+        collocation: "Aufsehen erregen",
+        meaning: "starke öffentliche Aufmerksamkeit oder Bewunderung hervorrufen",
+        example: "Die wissenschaftliche Entdeckung erregte weltweit großes Aufsehen.",
+        tip: "Feste gehobene Verbindung mit dem Verb 'erregen'."
+      },
+      {
+        id: "kol-16",
+        prefix: "Die beiden Partner konnten nach zähen Verhandlungen eine faire",
+        gapPlaceholder: "Nomen",
+        suffix: "treffen.",
+        correctAnswer: "Vereinbarung",
+        acceptableAnswers: ["Vereinbarung", "vereinbarung"],
+        options: ["Vereinbarung", "Erlaubnis", "Diskussion", "Gewohnheit"],
+        collocation: "eine Vereinbarung treffen",
+        meaning: "sich vertraglich oder mündlich auf etwas einigen",
+        example: "Die Minister trafen eine zukunftsweisende Vereinbarung zum Klimaschutz.",
+        tip: "Kollokation mit 'treffen' + feminines Substantiv (die Vereinbarung)."
       }
     ]
   },
@@ -305,6 +357,71 @@ export const TOPICS = [
         meaning: "sich mit einer neuen Situation vertraut machen",
         example: "Man gewöhnt sich schnell an die Ruhe auf dem Land.",
         tip: "Reflexiv: 'sich gewöhnen' + 'an' + Akkusativ."
+      },
+      {
+        id: "prep-11",
+        prefix: "Gesundheitsbewusste Menschen verzichten im Alltag oft ganz bewusst",
+        gapPlaceholder: "Präposition",
+        suffix: "übermäßigen Zuckerkonsum.",
+        correctAnswer: "auf",
+        acceptableAnswers: ["auf"],
+        options: ["auf", "an", "von", "über"],
+        collocation: "verzichten auf (+ Akkusativ)",
+        meaning: "freiwillig nicht von etwas Gebrauch machen",
+        example: "Für den Umweltschutz verzichtet die Familie weitgehend auf Flugreisen.",
+        tip: "Feste Verbindung: 'verzichten' + 'auf' + Akkusativ."
+      },
+      {
+        id: "prep-12",
+        prefix: "Regelmäßige Bewegung und gesunder Schlaf können maßgeblich",
+        gapPlaceholder: "Präposition",
+        suffix: "einer höheren Lebensqualität beitragen.",
+        correctAnswer: "zu",
+        acceptableAnswers: ["zu"],
+        options: ["zu", "an", "für", "bei"],
+        collocation: "beitragen zu (+ Dativ)",
+        meaning: "einen fördernden Anteil an einem Resultat haben",
+        example: "Jeder Mitarbeiter trug zum Erfolg des Projekts bei.",
+        tip: "Feste Verbindung: 'beitragen' + 'zu' + Dativ."
+      },
+      {
+        id: "prep-13",
+        prefix: "Die traditionelle Schwarzwälder Kirschtorte besteht im Wesentlichen",
+        gapPlaceholder: "Präposition",
+        suffix: "Biskuitboden, Sauerkirschen und frischer Schlagsahne.",
+        correctAnswer: "aus",
+        acceptableAnswers: ["aus"],
+        options: ["aus", "von", "in", "mit"],
+        collocation: "bestehen aus (+ Dativ)",
+        meaning: "aus bestimmten Materialien oder Teilen zusammengesetzt sein",
+        example: "Das Prüfungskomitee besteht aus drei erfahrenen Professoren.",
+        tip: "Zusammensetzung: 'bestehen aus' + Dativ (im Unterschied zu 'bestehen auf' = beharren)."
+      },
+      {
+        id: "prep-14",
+        prefix: "Die neue Forschungsgruppe befasst sich seit Monaten intensiv",
+        gapPlaceholder: "Präposition",
+        suffix: "den wirtschaftlichen Folgen der Digitalisierung.",
+        correctAnswer: "mit",
+        acceptableAnswers: ["mit"],
+        options: ["mit", "über", "um", "an"],
+        collocation: "sich befassen mit (+ Dativ)",
+        meaning: "sich eingehend und forschend mit einer Materie beschäftigen",
+        example: "Wir müssen uns dringend mit diesem Problem befassen.",
+        tip: "Reflexives Verb mit Präposition: 'sich befassen' + 'mit' + Dativ."
+      },
+      {
+        id: "prep-15",
+        prefix: "Viele Menschen in verkehrsreichen Innenstädten leiden zunehmend",
+        gapPlaceholder: "Präposition",
+        suffix: "dem ständigen Lärmpegel.",
+        correctAnswer: "unter",
+        acceptableAnswers: ["unter"],
+        options: ["unter", "an", "von", "durch"],
+        collocation: "leiden unter (+ Dativ)",
+        meaning: "durch äußere Umstände oder Belastungen seelisch/körperlich beeinträchtigt sein",
+        example: "Die Landwirtschaft leidet unter der anhaltenden Trockenheit.",
+        tip: "Merke: 'leiden unter' bei äußeren Umständen/Lärm, aber 'leiden an' bei Krankheiten."
       }
     ]
   },
@@ -419,6 +536,58 @@ export const TOPICS = [
         meaning: "sich gründlich irren oder eine falsche Schlussfolgerung ziehen",
         example: "Wer glaubt, Deutsch lerne sich von allein, ist auf dem Holzweg.",
         tip: "Zusammengesetztes Nomen: das Holz + der Weg = der Holzweg."
+      },
+      {
+        id: "red-9",
+        prefix: "Mit deiner treffenden Bemerkung hast du den Nagel genau auf den",
+        gapPlaceholder: "Nomen",
+        suffix: "getroffen.",
+        correctAnswer: "Kopf",
+        acceptableAnswers: ["Kopf", "kopf"],
+        options: ["Kopf", "Punkt", "Boden", "Tisch"],
+        collocation: "den Nagel auf den Kopf treffen",
+        meaning: "etwas ganz genau und treffend benennen oder beschreiben",
+        example: "Ihre Erklärung traf den Nagel auf den Kopf.",
+        tip: "Maskulines Substantiv: der Kopf (Akkusativ: auf den Kopf)."
+      },
+      {
+        id: "red-10",
+        prefix: "Nur weil die erste Bewerbung abgelehnt wurde, solltest du nicht gleich die Flinte ins",
+        gapPlaceholder: "Nomen",
+        suffix: "werfen.",
+        correctAnswer: "Korn",
+        acceptableAnswers: ["Korn", "korn"],
+        options: ["Korn", "Gras", "Feld", "Wasser"],
+        collocation: "die Flinte ins Korn werfen",
+        meaning: "vorzeitig den Mut verlieren oder entmutigt aufgeben",
+        example: "Gib noch nicht auf und wirf nicht gleich die Flinte ins Korn!",
+        tip: "Historische Redewendung: ins Korn (das Getreidefeld) werfen."
+      },
+      {
+        id: "red-11",
+        prefix: "Weil es sein allererstes Versehen war, wollte der Prüfer noch einmal ein Auge",
+        gapPlaceholder: "Verb",
+        suffix: ".",
+        correctAnswer: "zudrücken",
+        acceptableAnswers: ["zudrücken", "zudruecken"],
+        options: ["zudrücken", "schließen", "zumachen", "öffnen"],
+        collocation: "ein Auge zudrücken",
+        meaning: "einen kleineren Fehler wohlwollend nachsehen oder ignorieren",
+        example: "Die Lehrerin drückte bei der Verspätung noch ein Auge zu.",
+        tip: "Zusammengesetztes trennbares Verb: 'zudrücken'."
+      },
+      {
+        id: "red-12",
+        prefix: "Als die Mitarbeiter von der plötzlichen Werksschließung erfuhren, fielen sie aus allen",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Wolken",
+        acceptableAnswers: ["Wolken", "wolken"],
+        options: ["Wolken", "Himmeln", "Träumen", "Sternen"],
+        collocation: "aus allen Wolken fallen",
+        meaning: "völlig überrascht und schockiert über eine Nachricht sein",
+        example: "Bei der Bekanntgabe des Ergebnisses fiel ich aus allen Wolken.",
+        tip: "Pluralform von 'die Wolke': aus allen Wolken."
       }
     ]
   },
@@ -507,6 +676,84 @@ export const TOPICS = [
         meaning: "Dankbarkeit für eine Handlung oder Sache empfinden",
         example: "Ich bin dir für deinen wertvollen Rat sehr dankbar.",
         tip: "'dankbar sein' verlangt 'für' + Akkusativ für die Sache."
+      },
+      {
+        id: "adj-7",
+        prefix: "Das gesamte Publikum war nach dem Konzert restlos begeistert",
+        gapPlaceholder: "Präposition",
+        suffix: "der mitreißenden Darbietung des Orchesters.",
+        correctAnswer: "von",
+        acceptableAnswers: ["von"],
+        options: ["von", "über", "an", "für"],
+        collocation: "begeistert sein von (+ Dativ)",
+        meaning: "volle Begeisterung und Faszination für etwas empfinden",
+        example: "Alle waren von der neuen Produktidee begeistert.",
+        tip: "Feste Verbindung: 'begeistert sein' + 'von' + Dativ."
+      },
+      {
+        id: "adj-8",
+        prefix: "Frau Schmidt ist ab diesem Monat hauptverantwortlich und zuständig",
+        gapPlaceholder: "Präposition",
+        suffix: "die Betreuung der internationalen Austauschstudenten.",
+        correctAnswer: "für",
+        acceptableAnswers: ["für", "fuer"],
+        options: ["für", "an", "zu", "über"],
+        collocation: "zuständig sein für (+ Akkusativ)",
+        meaning: "die behördliche oder fachliche Verantwortung für etwas tragen",
+        example: "Wer ist in dieser Abteilung für die IT-Sicherheit zuständig?",
+        tip: "Verbindet sich stets mit 'für' + Akkusativ."
+      },
+      {
+        id: "adj-9",
+        prefix: "Mit ausreichend Konzentration und Ausdauer ist der Mensch fähig",
+        gapPlaceholder: "Präposition",
+        suffix: "außergewöhnlichen Höchstleistungen.",
+        correctAnswer: "zu",
+        acceptableAnswers: ["zu"],
+        options: ["zu", "für", "an", "nach"],
+        collocation: "fähig sein zu (+ Dativ)",
+        meaning: "die geistige oder physische Kraft besitzen, etwas zu vollbringen",
+        example: "Sie ist zu großen Leistungen fähig.",
+        tip: "Adjektiv 'fähig' verlangt die Präposition 'zu' + Dativ."
+      },
+      {
+        id: "adj-10",
+        prefix: "Die Einheimischen waren sehr überrascht",
+        gapPlaceholder: "Präposition",
+        suffix: "den ungewöhnlich frühen Wintereinbruch im Oktober.",
+        correctAnswer: "über",
+        acceptableAnswers: ["über", "ueber"],
+        options: ["über", "von", "an", "auf"],
+        collocation: "überrascht sein über (+ Akkusativ)",
+        meaning: "durch ein unerwartetes Ereignis in Erstaunen versetzt werden",
+        example: "Wir waren über das hervorragende Wahlergebnis überrascht.",
+        tip: "'überrascht sein' steht mit 'über' + Akkusativ (oder seltener mit 'von' + Dativ)."
+      },
+      {
+        id: "adj-11",
+        prefix: "Er war nach der ungerechtfertigten Kritik verständlicherweise wütend",
+        gapPlaceholder: "Präposition",
+        suffix: "seinen Vorgesetzten.",
+        correctAnswer: "auf",
+        acceptableAnswers: ["auf"],
+        options: ["auf", "über", "an", "gegen"],
+        collocation: "wütend sein auf (+ Akkusativ)",
+        meaning: "großen Zorn gegenüber einer Person verspüren",
+        example: "Sei bitte nicht wütend auf mich, es war keine Absicht.",
+        tip: "Merke: 'wütend sein AUF' eine Person (Akk), aber 'wütend sein ÜBER' eine Sache (Akk)."
+      },
+      {
+        id: "adj-12",
+        prefix: "Die Grundschüler sind inzwischen vollkommen",
+        gapPlaceholder: "Präposition",
+        suffix: "den Umgang mit digitalen Medien gewöhnt.",
+        correctAnswer: "an",
+        acceptableAnswers: ["an"],
+        options: ["an", "zu", "auf", "mit"],
+        collocation: "gewöhnt sein an (+ Akkusativ)",
+        meaning: "an eine Gegebenheit oder Situation angepasst sein",
+        example: "Wir sind an das raue norddeutsche Klima gewöhnt.",
+        tip: "Adjektivische Fügung: 'gewöhnt sein' + 'an' + Akkusativ."
       }
     ]
   }

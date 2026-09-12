@@ -1222,3 +1222,266 @@ body {
   pointer-events: none;
   z-index: 99;
 }
+
+/* ==========================================================================
+   FSRS & ANKI SPARK REPETITION STYLES
+   ========================================================================== */
+
+/* Smart Training Quick Card */
+.smart-training-card {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(59, 130, 246, 0.1));
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 18px 22px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.smart-card-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--emerald-400);
+  background: rgba(16, 185, 129, 0.15);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 6px;
+}
+
+.smart-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.smart-card-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.btn-smart-start {
+  background: var(--emerald-500);
+  color: #ffffff;
+  border: none;
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 12px 22px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+}
+
+.btn-smart-start:hover {
+  background: var(--emerald-400);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.45);
+}
+
+/* Topic Card Due Badges */
+.topic-due-badge {
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  background: rgba(244, 63, 94, 0.18);
+  color: #f43f5e;
+  border: 1px solid rgba(244, 63, 94, 0.35);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Next Review Interval in Feedback Drawer */
+.feedback-interval-row {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--border-subtle);
+}
+
+.feedback-interval-row .detail-value {
+  color: var(--emerald-400);
+  font-weight: 700;
+}
+
+/* Anki Analytics Section in Modal */
+.anki-analytics-section {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.anki-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.anki-section-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.anki-retention-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--emerald-400);
+  background: rgba(16, 185, 129, 0.15);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* Segmented Memory Progress Bar */
+.memory-bar-wrapper {
+  margin-bottom: 22px;
+}
+
+.memory-progress-bar {
+  display: flex;
+  height: 12px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 12px;
+}
+
+.memory-bar-segment {
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+.seg-due { background: #f43f5e; }
+.seg-learning { background: #f59e0b; }
+.seg-review { background: #10b981; }
+.seg-new { background: #3b82f6; opacity: 0.5; }
+
+.memory-legend {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 14px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-item strong {
+  color: var(--text-main);
+  margin-left: auto;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.dot-due { background: #f43f5e; }
+.dot-learning { background: #f59e0b; }
+.dot-review { background: #10b981; }
+.dot-new { background: #3b82f6; }
+
+/* 7-Day Review Forecast Bar Chart */
+.forecast-section {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px;
+}
+
+.forecast-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.forecast-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+  height: 110px;
+  padding-top: 20px;
+}
+
+.forecast-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.forecast-bar-track {
+  width: 100%;
+  max-width: 28px;
+  height: 70px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.forecast-bar-fill {
+  width: 100%;
+  background: var(--emerald-500);
+  border-radius: 4px 4px 0 0;
+  min-height: 4px;
+  transition: height 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+}
+
+.forecast-col.is-today .forecast-bar-fill {
+  background: #f43f5e;
+}
+
+.forecast-val {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-main);
+  font-family: var(--font-mono);
+}
+
+.forecast-lbl {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .smart-training-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .btn-smart-start {
+    width: 100%;
+    justify-content: center;
+  }
+  .memory-legend {
+    grid-template-columns: 1fr;
+  }
+}
