@@ -217,6 +217,1264 @@ export const TOPICS = [
         meaning: "sich vertraglich oder mündlich auf etwas einigen",
         example: "Die Minister trafen eine zukunftsweisende Vereinbarung zum Klimaschutz.",
         tip: "Kollokation mit 'treffen' + feminines Substantiv (die Vereinbarung)."
+      },
+      {
+        id: "kol-17",
+        prefix: "Vor komplizierten Verträgen sollte man sich in",
+        gapPlaceholder: "Nomen",
+        suffix: "nehmen.",
+        correctAnswer: "Acht",
+        acceptableAnswers: ["Acht", "acht"],
+        options: ["Acht", "Anspruch", "Angriff", "Auswahl"],
+        collocation: "sich in Acht nehmen vor",
+        meaning: "aufpassen, vorsichtig sein",
+        example:
+          "Vor unbekannten Angeboten sollte man sich in Acht nehmen.",
+        tip: "Feste Verbindung: sich in Acht nehmen vor + Dativ."
+      },
+
+      {
+        id: "kol-18",
+        prefix: "Es ist wichtig, auch der Konkurrenz",
+        gapPlaceholder: "Nomen",
+        suffix: "entgegenzubringen.",
+        correctAnswer: "Achtung",
+        acceptableAnswers: ["Achtung", "achtung"],
+        options: ["Achtung", "Angst", "Kritik", "Hoffnung"],
+        collocation: "jdm. Achtung entgegenbringen",
+        meaning: "jemanden achten und respektieren",
+        example:
+          "Auch gegenüber seinen Konkurrenten sollte man Achtung entgegenbringen.",
+        tip: "Feste Verbindung: jemandem Achtung entgegenbringen + Dativ."
+      },
+
+      {
+        id: "kol-19",
+        prefix: "Ich habe die",
+        gapPlaceholder: "Nomen",
+        suffix: ", Karriere zu machen.",
+        correctAnswer: "Absicht",
+        acceptableAnswers: ["Absicht", "absicht"],
+        options: ["Absicht", "Auffassung", "Auswahl", "Anforderung"],
+        collocation: "die Absicht haben, etwas zu tun",
+        meaning: "etwas beabsichtigen",
+        example:
+          "Sie hat die Absicht, nach Berlin umzuziehen.",
+        tip: "Typische Struktur: die Absicht haben, etwas zu tun."
+      },
+
+      {
+        id: "kol-20",
+        prefix: "Alle Mitarbeitenden können jederzeit eine",
+        gapPlaceholder: "Nomen",
+        suffix: "an ihrem Passwort vornehmen.",
+        correctAnswer: "Änderung",
+        acceptableAnswers: ["Änderung", "änderung"],
+        options: ["Änderung", "Anforderung", "Anfrage", "Auswahl"],
+        collocation: "eine Änderung vornehmen",
+        meaning: "etwas ändern",
+        example:
+          "Sie können jederzeit eine Änderung Ihrer persönlichen Daten vornehmen.",
+        tip: "Feste Verbindung: eine Änderung vornehmen."
+      },
+
+      {
+        id: "kol-21",
+        prefix: "Die Leistungen des Konzerns finden weltweit",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Anerkennung",
+        acceptableAnswers: ["Anerkennung", "anerkennung"],
+        options: ["Anerkennung", "Anwendung", "Aufmerksamkeit", "Auswahl"],
+        collocation: "Anerkennung finden",
+        meaning: "anerkannt oder positiv bewertet werden",
+        example:
+          "Seine wissenschaftlichen Leistungen finden international Anerkennung.",
+        tip: "Feste Verbindung: Anerkennung finden."
+      },
+
+      {
+        id: "kol-22",
+        prefix: "Sarina erfüllt alle",
+        gapPlaceholder: "Nomen",
+        suffix: "in der Stellenausschreibung.",
+        correctAnswer: "Anforderungen",
+        acceptableAnswers: ["Anforderungen", "anforderungen"],
+        options: ["Anforderungen", "Angelegenheiten", "Angebote", "Auswirkungen"],
+        collocation: "eine Anforderung erfüllen",
+        meaning: "einer geforderten Bedingung entsprechen; genügen",
+        example:
+          "Der Bewerber erfüllt alle Anforderungen der ausgeschriebenen Stelle.",
+        tip: "Plural: die Anforderungen. Man erfüllt Anforderungen."
+      },
+
+      {
+        id: "kol-23",
+        prefix: "Für die Renovierungsarbeiten haben wir bereits eine",
+        gapPlaceholder: "Nomen",
+        suffix: "an einen Handwerksbetrieb gestellt.",
+        correctAnswer: "Anfrage",
+        acceptableAnswers: ["Anfrage", "anfrage"],
+        options: ["Anfrage", "Anforderung", "Absicht", "Änderung"],
+        collocation: "eine Anfrage stellen an",
+        meaning: "jemanden nach Informationen oder einem Angebot fragen",
+        example:
+          "Wir haben eine Anfrage an mehrere Handwerksbetriebe gestellt.",
+        tip: "Feste Verbindung: eine Anfrage stellen an + Akkusativ."
+      },
+
+      {
+        id: "kol-24",
+        prefix: "Die Firma hat mir ein tolles",
+        gapPlaceholder: "Nomen",
+        suffix: "gemacht.",
+        correctAnswer: "Angebot",
+        acceptableAnswers: ["Angebot", "angebot"],
+        options: ["Angebot", "Anliegen", "Antrag", "Auftrag"],
+        collocation: "ein Angebot machen / unterbreiten",
+        meaning: "etwas anbieten",
+        example:
+          "Die Firma hat mir ein attraktives Angebot unterbreitet.",
+        tip: "Beide Formen sind üblich: ein Angebot machen / ein Angebot unterbreiten."
+      },
+
+      {
+        id: "kol-25",
+        prefix: "Ich werde die Bestellung des Kunden gleich in",
+        gapPlaceholder: "Nomen",
+        suffix: "nehmen.",
+        correctAnswer: "Angriff",
+        acceptableAnswers: ["Angriff", "angriff"],
+        options: ["Angriff", "Anspruch", "Anwendung", "Ausdruck"],
+        collocation: "etwas in Angriff nehmen",
+        meaning: "mit etwas beginnen und sich darum kümmern",
+        example:
+          "Nach der Pause werden wir die nächsten Aufgaben in Angriff nehmen.",
+        tip: "Feste Verbindung: etwas in Angriff nehmen."
+      },
+
+      {
+        id: "kol-26",
+        prefix: "Der Gedanke an meinen ersten Arbeitstag macht mir",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Angst",
+        acceptableAnswers: ["Angst", "angst"],
+        options: ["Angst", "Achtung", "Hoffnung", "Freude"],
+        collocation: "Angst machen",
+        meaning: "jemanden ängstigen oder jemanden beunruhigen",
+        example:
+          "Die unsichere finanzielle Situation macht vielen Menschen Angst.",
+        tip: "Typische Struktur: etwas macht jemandem Angst."
+      },
+
+      {
+        id: "kol-27",
+        prefix: "Es ist mir ein großes",
+        gapPlaceholder: "Nomen",
+        suffix: ", dass die Sache schnell geklärt wird.",
+        correctAnswer: "Anliegen",
+        acceptableAnswers: ["Anliegen", "anliegen"],
+        options: ["Anliegen", "Angebot", "Antrag", "Auftrag"],
+        collocation: "ein Anliegen sein",
+        meaning: "wichtig sein; einem wichtig sein",
+        example:
+          "Es ist mir ein großes Anliegen, Ihnen persönlich zu helfen.",
+        tip: "Typische Struktur: Es ist mir ein Anliegen, dass ..."
+      },
+
+      {
+        id: "kol-28",
+        prefix: "Sie haben",
+        gapPlaceholder: "Nomen",
+        suffix: "auf mindestens 20 Tage Urlaub pro Jahr.",
+        correctAnswer: "Anspruch",
+        acceptableAnswers: ["Anspruch", "anspruch"],
+        options: ["Anspruch", "Antrag", "Anteil", "Auftrag"],
+        collocation: "einen Anspruch haben auf",
+        meaning: "das Recht auf etwas haben",
+        example:
+          "Arbeitnehmer haben Anspruch auf bezahlten Urlaub.",
+        tip: "Anspruch auf + Akkusativ."
+      },
+
+      {
+        id: "kol-29",
+        prefix: "Wir sollten die Fördermöglichkeiten durch den Staat stärker in",
+        gapPlaceholder: "Nomen",
+        suffix: "nehmen.",
+        correctAnswer: "Anspruch",
+        acceptableAnswers: ["Anspruch", "anspruch"],
+        options: ["Anspruch", "Angriff", "Anwendung", "Ausdruck"],
+        collocation: "etwas in Anspruch nehmen",
+        meaning: "etwas benutzen oder beanspruchen",
+        example:
+          "Viele Familien nehmen staatliche Unterstützung in Anspruch.",
+        tip: "Nicht mit 'Anspruch haben auf' verwechseln: etwas in Anspruch nehmen = etwas nutzen."
+      },
+
+      {
+        id: "kol-30",
+        prefix: "Martina hat einen",
+        gapPlaceholder: "Nomen",
+        suffix: "auf einen Gründungszuschuss gestellt.",
+        correctAnswer: "Antrag",
+        acceptableAnswers: ["Antrag", "antrag"],
+        options: ["Antrag", "Anspruch", "Auftrag", "Angebot"],
+        collocation: "einen Antrag stellen auf",
+        meaning: "etwas offiziell beantragen",
+        example:
+          "Er hat einen Antrag auf finanzielle Unterstützung gestellt.",
+        tip: "Antrag auf + Akkusativ."
+      },
+
+      {
+        id: "kol-31",
+        prefix: "Die Ergebnisse aus den Besprechungen kommen oft nicht zur",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Anwendung",
+        acceptableAnswers: ["Anwendung", "anwendung"],
+        options: ["Anwendung", "Anerkennung", "Auswahl", "Auffassung"],
+        collocation: "zur Anwendung kommen",
+        meaning: "angewendet werden",
+        example:
+          "Diese Regel kommt in der Praxis nur selten zur Anwendung.",
+        tip: "Feste Verbindung: zur Anwendung kommen = angewendet werden."
+      },
+
+      {
+        id: "kol-32",
+        prefix: "Die Adressliste wartet auf mich, ich muss wieder an die",
+        gapPlaceholder: "Nomen",
+        suffix: "gehen.",
+        correctAnswer: "Arbeit",
+        acceptableAnswers: ["Arbeit", "arbeit"],
+        options: ["Arbeit", "Anwendung", "Auswahl", "Anfrage"],
+        collocation: "an die Arbeit gehen",
+        meaning: "anfangen zu arbeiten",
+        example:
+          "Die Pause ist vorbei, jetzt müssen wir wieder an die Arbeit gehen.",
+        tip: "Feste Verbindung: an die Arbeit gehen."
+      },
+
+      {
+        id: "kol-33",
+        prefix: "Wir haben einen neuen großen Kunden gewonnen. Ihr habt sehr gute",
+        gapPlaceholder: "Nomen",
+        suffix: "geleistet.",
+        correctAnswer: "Arbeit",
+        acceptableAnswers: ["Arbeit", "arbeit"],
+        options: ["Arbeit", "Anwendung", "Anerkennung", "Aufmerksamkeit"],
+        collocation: "gute Arbeit leisten",
+        meaning: "etwas gut machen",
+        example:
+          "Das Team hat bei diesem Projekt hervorragende Arbeit geleistet.",
+        tip: "Typische Verbindung: gute / hervorragende Arbeit leisten."
+      },
+
+      {
+        id: "kol-34",
+        prefix: "Die Pflege unserer Kunden macht viel",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Arbeit",
+        acceptableAnswers: ["Arbeit", "arbeit"],
+        options: ["Arbeit", "Angst", "Aufmerksamkeit", "Anerkennung"],
+        collocation: "Arbeit machen",
+        meaning: "mühsam oder aufwendig sein",
+        example:
+          "Die Pflege eines großen Gartens macht viel Arbeit.",
+        tip: "Etwas macht Arbeit = etwas ist mühsam oder aufwendig."
+      },
+
+      {
+        id: "kol-35",
+        prefix: "Komm, die Pause ist vorbei! Machen wir uns wieder an die",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Arbeit",
+        acceptableAnswers: ["Arbeit", "arbeit"],
+        options: ["Arbeit", "Anwendung", "Auswahl", "Aufmerksamkeit"],
+        collocation: "sich an die Arbeit machen",
+        meaning: "mit der Arbeit beginnen",
+        example:
+          "Nach dem Frühstück machte ich mich sofort an die Arbeit.",
+        tip: "Reflexive Verbindung: sich an die Arbeit machen."
+      },
+
+      {
+        id: "kol-36",
+        prefix: "Wo ist das Angebot für die Firma Klaxon? – Das ist in",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Arbeit",
+        acceptableAnswers: ["Arbeit", "arbeit"],
+        options: ["Arbeit", "Anspruch", "Anwendung", "Auswahl"],
+        collocation: "in Arbeit sein",
+        meaning: "im Moment bearbeitet werden",
+        example:
+          "Der neue Vertrag ist bereits in Arbeit.",
+        tip: "in Arbeit sein = gerade bearbeitet oder erstellt werden."
+      },
+
+      {
+        id: "kol-37",
+        prefix: "Ich bin zu der",
+        gapPlaceholder: "Nomen",
+        suffix: "gelangt, dass wir der Kundin eine Entschädigung anbieten sollten.",
+        correctAnswer: "Auffassung",
+        acceptableAnswers: ["Auffassung", "auffassung"],
+        options: ["Auffassung", "Anforderung", "Anerkennung", "Anwendung"],
+        collocation: "zu der Auffassung gelangen",
+        meaning: "zu einer bestimmten Erkenntnis oder Meinung kommen",
+        example:
+          "Nach langer Diskussion gelangten wir zu der Auffassung, dass eine Änderung notwendig ist.",
+        tip: "Auffassung = Meinung oder Ansicht. Typisch: zu der Auffassung gelangen."
+      },
+
+      {
+        id: "kol-38",
+        prefix: "Mit einer kleinen Anekdote gewinnen Sie leicht die",
+        gapPlaceholder: "Nomen",
+        suffix: "Ihrer Zuhörer.",
+        correctAnswer: "Aufmerksamkeit",
+        acceptableAnswers: ["Aufmerksamkeit", "aufmerksamkeit"],
+        options: ["Aufmerksamkeit", "Anerkennung", "Achtung", "Anwendung"],
+        collocation: "die Aufmerksamkeit gewinnen",
+        meaning: "jemanden aufmerksam machen",
+        example:
+          "Mit einer interessanten Frage kann man schnell die Aufmerksamkeit des Publikums gewinnen.",
+        tip: "die Aufmerksamkeit von jemandem gewinnen."
+      },
+
+      {
+        id: "kol-39",
+        prefix: "Der Chef hat den",
+        gapPlaceholder: "Nomen",
+        suffix: "erteilt, alle Dokumente zu überprüfen.",
+        correctAnswer: "Auftrag",
+        acceptableAnswers: ["Auftrag", "auftrag"],
+        options: ["Auftrag", "Antrag", "Anspruch", "Angebot"],
+        collocation: "einen Auftrag geben / erteilen",
+        meaning: "jemanden mit einer Aufgabe beauftragen",
+        example:
+          "Der Projektleiter hat dem Team den Auftrag erteilt, die Daten zu analysieren.",
+        tip: "Beide Varianten sind möglich: einen Auftrag geben / einen Auftrag erteilen."
+      },
+
+      {
+        id: "kol-40",
+        prefix: "Er brachte im Meeting seine Besorgnis zum",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Ausdruck",
+        acceptableAnswers: ["Ausdruck", "ausdruck"],
+        options: ["Ausdruck", "Anwendung", "Auftrag", "Anspruch"],
+        collocation: "etwas zum Ausdruck bringen",
+        meaning: "etwas äußern oder ausdrücken",
+        example:
+          "Sie brachte ihre Unzufriedenheit deutlich zum Ausdruck.",
+        tip: "Feste Verbindung: etwas zum Ausdruck bringen."
+      },
+
+      {
+        id: "kol-41",
+        prefix: "Heute stehen viele zukunftsweisende Berufe zur",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Auswahl",
+        acceptableAnswers: ["Auswahl", "auswahl"],
+        options: ["Auswahl", "Anwendung", "Anerkennung", "Auffassung"],
+        collocation: "zur Auswahl stehen",
+        meaning: "angeboten werden oder ausgewählt werden können",
+        example:
+          "Für die Stelle stehen mehrere Bewerber zur Auswahl.",
+        tip: "zur Auswahl stehen = als Möglichkeit angeboten werden."
+      },
+
+      {
+        id: "kol-42",
+        prefix: "Die Wartungsarbeiten haben",
+        gapPlaceholder: "Nomen",
+        suffix: "auf den gesamten Betrieb.",
+        correctAnswer: "Auswirkungen",
+        acceptableAnswers: ["Auswirkungen", "auswirkungen"],
+        options: ["Auswirkungen", "Anforderungen", "Aufmerksamkeiten", "Anwendungen"],
+        collocation: "Auswirkungen haben auf",
+        meaning: "sich auf etwas auswirken",
+        example:
+          "Die Entscheidung wird erhebliche Auswirkungen auf den gesamten Betrieb haben.",
+        tip: "Auswirkungen haben auf + Akkusativ."
+      },
+      {
+        id: "kol-43",
+        prefix: "Alternative Arbeitsmodelle finden momentan große",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Beachtung",
+        acceptableAnswers: ["Beachtung", "beachtung"],
+        options: ["Beachtung", "Anerkennung", "Aufmerksamkeit", "Bedeutung"],
+        collocation: "Beachtung finden",
+        meaning: "beachtet werden",
+        example:
+          "Alternative Arbeitsmodelle finden momentan große Beachtung.",
+        tip: "Feste Verbindung: Beachtung finden = beachtet werden."
+      },
+
+      {
+        id: "kol-44",
+        prefix: "Jeder kann einen",
+        gapPlaceholder: "Nomen",
+        suffix: "zur Verbesserung der Arbeitsabläufe leisten.",
+        correctAnswer: "Beitrag",
+        acceptableAnswers: ["Beitrag", "beitrag"],
+        options: ["Beitrag", "Bezug", "Bescheid", "Beruf"],
+        collocation: "einen Beitrag leisten",
+        meaning: "zu etwas beitragen",
+        example:
+          "Jeder Mitarbeiter kann einen Beitrag zur Verbesserung des Arbeitsklimas leisten.",
+        tip: "Typische Verbindung: einen Beitrag zu etwas leisten."
+      },
+
+      {
+        id: "kol-45",
+        prefix: "Sie übt ihren",
+        gapPlaceholder: "Nomen",
+        suffix: "als Sozialarbeiterin schon seit vielen Jahren aus.",
+        correctAnswer: "Beruf",
+        acceptableAnswers: ["Beruf", "beruf"],
+        options: ["Beruf", "Beitrag", "Bescheid", "Bezug"],
+        collocation: "einen Beruf ausüben",
+        meaning: "arbeiten; einen Beruf beruflich machen",
+        example:
+          "Sie übt ihren Beruf als Ärztin mit großer Leidenschaft aus.",
+        tip: "Feste Verbindung: einen Beruf ausüben."
+      },
+
+      {
+        id: "kol-46",
+        prefix: "Ich wollte schon immer einen",
+        gapPlaceholder: "Nomen",
+        suffix: "im Hotel ergreifen.",
+        correctAnswer: "Beruf",
+        acceptableAnswers: ["Beruf", "beruf"],
+        options: ["Beruf", "Beitrag", "Bescheid", "Berufung"],
+        collocation: "einen Beruf ergreifen",
+        meaning: "beginnen, beruflich in einem bestimmten Bereich zu arbeiten",
+        example:
+          "Nach dem Studium möchte er einen Beruf im sozialen Bereich ergreifen.",
+        tip: "einen Beruf ergreifen = einen bestimmten beruflichen Weg einschlagen."
+      },
+
+      {
+        id: "kol-47",
+        prefix: "Können Sie mir bitte",
+        gapPlaceholder: "Nomen",
+        suffix: "geben, wenn die Datenbank aktualisiert ist?",
+        correctAnswer: "Bescheid",
+        acceptableAnswers: ["Bescheid", "bescheid"],
+        options: ["Bescheid", "Beitrag", "Beruf", "Bezug"],
+        collocation: "Bescheid geben / sagen",
+        meaning: "informieren",
+        example:
+          "Bitte geben Sie mir Bescheid, sobald Sie eine Antwort erhalten.",
+        tip: "Sehr häufig im Alltag: jemandem Bescheid geben."
+      },
+
+      {
+        id: "kol-48",
+        prefix: "Über die Rechte von Arbeitnehmern wissen viele immer noch zu wenig",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Bescheid",
+        acceptableAnswers: ["Bescheid", "bescheid"],
+        options: ["Bescheid", "Beitrag", "Beruf", "Bezug"],
+        collocation: "über etwas Bescheid wissen",
+        meaning: "über etwas informiert sein",
+        example:
+          "Ich weiß über die neuen Regelungen noch nicht genau Bescheid.",
+        tip: "Korrekte Struktur: über etwas Bescheid wissen."
+      },
+
+      {
+        id: "kol-49",
+        prefix: "Wir haben unsere",
+        gapPlaceholder: "Nomen",
+        suffix: "bereits vor einer Stunde aufgegeben.",
+        correctAnswer: "Bestellung",
+        acceptableAnswers: ["Bestellung", "bestellung"],
+        options: ["Bestellung", "Bezahlung", "Bewerbung", "Beratung"],
+        collocation: "eine Bestellung aufgeben",
+        meaning: "etwas bestellen",
+        example:
+          "Ich habe gestern eine Bestellung im Online-Shop aufgegeben.",
+        tip: "Feste Verbindung: eine Bestellung aufgeben."
+      },
+
+      {
+        id: "kol-50",
+        prefix: "Zur Lösung des Problems kommen mehrere Möglichkeiten in",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Betracht",
+        acceptableAnswers: ["Betracht", "betracht"],
+        options: ["Betracht", "Betrieb", "Bezug", "Druck"],
+        collocation: "in Betracht kommen",
+        meaning: "möglich sein",
+        example:
+          "Für die Reise kommen mehrere Hotels in Betracht.",
+        tip: "in Betracht kommen = möglich sein."
+      },
+
+      {
+        id: "kol-51",
+        prefix: "Viele Menschen ziehen",
+        gapPlaceholder: "Nomen",
+        suffix: ", wegen einer Arbeitsstelle umzuziehen.",
+        correctAnswer: "in Betracht",
+        acceptableAnswers: ["in Betracht", "in betracht"],
+        options: ["in Betracht", "in Anspruch", "in Angriff", "zum Ausdruck"],
+        collocation: "in Betracht ziehen",
+        meaning: "überlegen; erwägen",
+        example:
+          "Wir ziehen in Betracht, nächstes Jahr nach Hamburg umzuziehen.",
+        tip: "in Betracht ziehen = etwas als Möglichkeit erwägen."
+      },
+
+      {
+        id: "kol-52",
+        prefix: "Seit heute ist im Büro die neue Lüftungsanlage in",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Betrieb",
+        acceptableAnswers: ["Betrieb", "betrieb"],
+        options: ["Betrieb", "Betracht", "Bezug", "Druck"],
+        collocation: "im Betrieb sein",
+        meaning: "laufen; eingeschaltet sein",
+        example:
+          "Die neue Maschine ist seit Montag im Betrieb.",
+        tip: "im Betrieb sein = funktionieren oder laufen."
+      },
+
+      {
+        id: "kol-53",
+        prefix: "Ich nehme",
+        gapPlaceholder: "Nomen",
+        suffix: "auf Ihr Schreiben vom 13. Februar.",
+        correctAnswer: "Bezug",
+        acceptableAnswers: ["Bezug", "bezug"],
+        options: ["Bezug", "Betrieb", "Bescheid", "Beitrag"],
+        collocation: "Bezug nehmen auf",
+        meaning: "sich beziehen auf",
+        example:
+          "Ich nehme Bezug auf Ihre E-Mail vom vergangenen Montag.",
+        tip: "Formelle Verbindung: Bezug nehmen auf + Akkusativ."
+      },
+
+      {
+        id: "kol-54",
+        prefix: "Die neue Chefin muss ihr Können erst noch unter",
+        gapPlaceholder: "Nomen",
+        suffix: "stellen.",
+        correctAnswer: "Beweis",
+        acceptableAnswers: ["Beweis", "beweis"],
+        options: ["Beweis", "Druck", "Ausdruck", "Einfluss"],
+        collocation: "etwas unter Beweis stellen",
+        meaning: "etwas beweisen",
+        example:
+          "Im Vorstellungsgespräch konnte sie ihre Fachkenntnisse unter Beweis stellen.",
+        tip: "Feste Verbindung: etwas unter Beweis stellen."
+      },
+
+      {
+        id: "kol-55",
+        prefix: "Verschiedene Lösungen stehen zur",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Diskussion",
+        acceptableAnswers: ["Diskussion", "diskussion"],
+        options: ["Diskussion", "Auswahl", "Anwendung", "Verfügung"],
+        collocation: "zur Diskussion stehen",
+        meaning: "diskutiert werden",
+        example:
+          "Mehrere Vorschläge stehen derzeit zur Diskussion.",
+        tip: "zur Diskussion stehen = Gegenstand einer Diskussion sein."
+      },
+
+      {
+        id: "kol-56",
+        prefix: "Arbeitnehmer stehen heute enorm unter",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Druck",
+        acceptableAnswers: ["Druck", "druck"],
+        options: ["Druck", "Beweis", "Einfluss", "Betrieb"],
+        collocation: "unter Druck stehen",
+        meaning: "gestresst sein; stark belastet sein",
+        example:
+          "Viele Beschäftigte stehen wegen des Zeitdrucks unter großer Belastung.",
+        tip: "unter Druck stehen = stark unter Stress oder Belastung stehen."
+      },
+
+      {
+        id: "kol-57",
+        prefix: "Das Engagement des ganzen Teams macht großen",
+        gapPlaceholder: "Nomen",
+        suffix: "auf mich.",
+        correctAnswer: "Eindruck",
+        acceptableAnswers: ["Eindruck", "eindruck"],
+        options: ["Eindruck", "Einfluss", "Ausdruck", "Aufwand"],
+        collocation: "Eindruck machen auf",
+        meaning: "beeindrucken",
+        example:
+          "Seine professionelle Präsentation hat einen guten Eindruck auf mich gemacht.",
+        tip: "Eindruck machen auf + Akkusativ."
+      },
+
+      {
+        id: "kol-58",
+        prefix: "Ich möchte auf diese Entscheidung keinen",
+        gapPlaceholder: "Nomen",
+        suffix: "nehmen.",
+        correctAnswer: "Einfluss",
+        acceptableAnswers: ["Einfluss", "einfluss"],
+        options: ["Einfluss", "Eindruck", "Ausdruck", "Aufwand"],
+        collocation: "Einfluss nehmen auf",
+        meaning: "beeinflussen",
+        example:
+          "Die Medien können großen Einfluss auf die öffentliche Meinung nehmen.",
+        tip: "Einfluss nehmen auf + Akkusativ."
+      },
+
+      {
+        id: "kol-59",
+        prefix: "Wir müssen die Umstrukturierung endlich zu",
+        gapPlaceholder: "Nomen",
+        suffix: "bringen.",
+        correctAnswer: "Ende",
+        acceptableAnswers: ["Ende", "ende"],
+        options: ["Ende", "Ausdruck", "Anwendung", "Auswahl"],
+        collocation: "etwas zu Ende bringen",
+        meaning: "etwas beenden oder abschließen",
+        example:
+          "Wir müssen die Arbeiten noch heute zu Ende bringen.",
+        tip: "zu Ende bringen = etwas erfolgreich abschließen."
+      },
+
+      {
+        id: "kol-60",
+        prefix: "Ich habe endlich den",
+        gapPlaceholder: "Nomen",
+        suffix: "gefasst zu kündigen.",
+        correctAnswer: "Entschluss",
+        acceptableAnswers: ["Entschluss", "entschluss"],
+        options: ["Entschluss", "Eindruck", "Einfluss", "Entwurf"],
+        collocation: "einen Entschluss fassen",
+        meaning: "beschließen; sich entschließen",
+        example:
+          "Nach langem Überlegen fasste er den Entschluss, eine neue Stelle zu suchen.",
+        tip: "einen Entschluss fassen = eine Entscheidung treffen."
+      },
+
+      {
+        id: "kol-61",
+        prefix: "Haben Sie wegen der neuen Stelle schon eine",
+        gapPlaceholder: "Nomen",
+        suffix: "getroffen?",
+        correctAnswer: "Entscheidung",
+        acceptableAnswers: ["Entscheidung", "entscheidung"],
+        options: ["Entscheidung", "Entschließung", "Erlaubnis", "Auffassung"],
+        collocation: "eine Entscheidung treffen",
+        meaning: "entscheiden",
+        example:
+          "Wir müssen heute eine wichtige Entscheidung treffen.",
+        tip: "Sehr häufige Verbindung: eine Entscheidung treffen."
+      },
+
+      {
+        id: "kol-62",
+        prefix: "Mein größter Wunsch ist in",
+        gapPlaceholder: "Nomen",
+        suffix: "gegangen.",
+        correctAnswer: "Erfüllung",
+        acceptableAnswers: ["Erfüllung", "erfüllung"],
+        options: ["Erfüllung", "Anwendung", "Auswahl", "Anerkennung"],
+        collocation: "in Erfüllung gehen",
+        meaning: "sich erfüllen; wahr werden",
+        example:
+          "Endlich ist mein großer Traum in Erfüllung gegangen.",
+        tip: "in Erfüllung gehen = wahr werden."
+      },
+
+      {
+        id: "kol-63",
+        prefix: "Die Geschäftsführung erteilte den Mitarbeitenden die",
+        gapPlaceholder: "Nomen",
+        suffix: ", im Homeoffice zu arbeiten.",
+        correctAnswer: "Erlaubnis",
+        acceptableAnswers: ["Erlaubnis", "erlaubnis"],
+        options: ["Erlaubnis", "Entscheidung", "Anforderung", "Anerkennung"],
+        collocation: "die Erlaubnis erteilen",
+        meaning: "erlauben",
+        example:
+          "Der Arbeitgeber erteilte ihm die Erlaubnis, früher zu gehen.",
+        tip: "die Erlaubnis erteilen = etwas offiziell erlauben."
+      },
+
+      {
+        id: "kol-64",
+        prefix: "Ich beging einen",
+        gapPlaceholder: "Nomen",
+        suffix: ", als ich mir ohne Rücksprache Urlaub nahm.",
+        correctAnswer: "Fehler",
+        acceptableAnswers: ["Fehler", "fehler"],
+        options: ["Fehler", "Entschluss", "Einfluss", "Fortschritt"],
+        collocation: "einen Fehler begehen",
+        meaning: "etwas falsch machen",
+        example:
+          "Er hat einen schweren Fehler begangen.",
+        tip: "einen Fehler begehen ist etwas formeller als einen Fehler machen."
+      },
+
+      {
+        id: "kol-65",
+        prefix: "Die Entwicklung der letzten Jahre hat",
+        gapPlaceholder: "Nomen",
+        suffix: ", dass wir neue Märkte erschließen.",
+        correctAnswer: "zur Folge",
+        acceptableAnswers: ["zur Folge", "zur folge"],
+        options: ["zur Folge", "zur Auswahl", "zur Anwendung", "zur Verfügung"],
+        collocation: "zur Folge haben",
+        meaning: "bewirken; zu etwas führen",
+        example:
+          "Die Umstrukturierung hatte zahlreiche Veränderungen zur Folge.",
+        tip: "etwas zur Folge haben = etwas bewirken oder verursachen."
+      },
+
+      {
+        id: "kol-66",
+        prefix: "Er stellt ganz schön viele",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Forderungen",
+        acceptableAnswers: ["Forderungen", "forderungen"],
+        options: ["Forderungen", "Fragen", "Fehler", "Fortschritte"],
+        collocation: "eine Forderung stellen",
+        meaning: "etwas fordern",
+        example:
+          "Die Gewerkschaft stellt mehrere Forderungen an den Arbeitgeber.",
+        tip: "Forderung stellen an + Akkusativ."
+      },
+
+      {
+        id: "kol-67",
+        prefix: "Im Seminar gehen wir der",
+        gapPlaceholder: "Nomen",
+        suffix: "nach, wie man mit Arbeitsstress am besten umgeht.",
+        correctAnswer: "Frage",
+        acceptableAnswers: ["Frage", "frage"],
+        options: ["Frage", "Forderung", "Folge", "Funktion"],
+        collocation: "einer Frage nachgehen",
+        meaning: "forschen; etwas genauer untersuchen oder herausfinden",
+        example:
+          "Die Wissenschaftler gehen der Frage nach, warum die Ergebnisse so unterschiedlich sind.",
+        tip: "einer Frage nachgehen + Dativ."
+      },
+
+      {
+        id: "kol-68",
+        prefix: "Es steht völlig außer",
+        gapPlaceholder: "Nomen",
+        suffix: ", dass wir diese Frist einhalten müssen.",
+        correctAnswer: "Frage",
+        acceptableAnswers: ["Frage", "frage"],
+        options: ["Frage", "Zweifel", "Gefahr", "Lage"],
+        collocation: "außer Frage stehen",
+        meaning: "zweifellos richtig sein / unbestreitbar sein",
+        example: "Es steht außer Frage, dass er den Job bekommt.",
+        tip: "Bedeutet: Es gibt absolut nichts daran zu zweifeln."
+      },
+      {
+        id: "kol-69",
+        prefix: "Darf ich Ihnen vor der Entscheidung noch eine kurze",
+        gapPlaceholder: "Nomen",
+        suffix: "stellen?",
+        correctAnswer: "Frage",
+        acceptableAnswers: ["Frage", "frage"],
+        options: ["Frage", "Rolle", "Bedingung", "Auskunft"],
+        collocation: "eine Frage stellen",
+        meaning: "etwas fragen",
+        example: "Die Journalisten durften dem Minister mehrere Fragen stellen.",
+        tip: "Typische Kollokation: 'eine Frage' + 'stellen'."
+      },
+      {
+        id: "kol-70",
+        prefix: "Über meine berufliche Zukunft mache ich mir derzeit viele",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Gedanken",
+        acceptableAnswers: ["Gedanken", "gedanken"],
+        options: ["Gedanken", "Sorgen", "Zweifel", "Pläne"],
+        collocation: "sich Gedanken machen über (+ Akk)",
+        meaning: "nachdenken / etwas genau überlegen",
+        example: "Du solltest dir Gedanken über deine Ausbildung machen.",
+        tip: "Reflexiv: sich (Dativ) Gedanken machen über etwas."
+      },
+      {
+        id: "kol-71",
+        prefix: "Wenn wir nicht sofort handeln, ist das gesamte Projekt in",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Gefahr",
+        acceptableAnswers: ["Gefahr", "gefahr"],
+        options: ["Gefahr", "Not", "Sorge", "Verlegenheit"],
+        collocation: "in Gefahr sein",
+        meaning: "gefährdet sein / vom Scheitern bedroht sein",
+        example: "Durch den Sturm sind viele Ernten in Gefahr.",
+        tip: "Feste Präpositionalverbindung: 'in Gefahr sein'."
+      },
+      {
+        id: "kol-72",
+        prefix: "Hattest du schon die",
+        gapPlaceholder: "Nomen",
+        suffix: ", dich mit dem neuen Teamleiter zu unterhalten?",
+        correctAnswer: "Gelegenheit",
+        acceptableAnswers: ["Gelegenheit", "gelegenheit"],
+        options: ["Gelegenheit", "Möglichkeit", "Erlaubnis", "Absicht"],
+        collocation: "die Gelegenheit haben zu",
+        meaning: "die Chance haben, etwas zu tun",
+        example: "Ich hatte leider noch keine Gelegenheit, das Buch zu lesen.",
+        tip: "Feminines Nomen: die Gelegenheit."
+      },
+      {
+        id: "kol-73",
+        prefix: "Mit dem Abteilungsleiter habe ich gestern ein klärendes",
+        gapPlaceholder: "Nomen",
+        suffix: "geführt.",
+        correctAnswer: "Gespräch",
+        acceptableAnswers: ["Gespräch", "gespräch"],
+        options: ["Gespräch", "Inhalt", "Verhandlung", "Interview"],
+        collocation: "ein Gespräch führen mit/über",
+        meaning: "sich unterhalten / ein altes oder wichtiges Thema besprechen",
+        example: "Wir müssen dringend ein ernstes Gespräch über die Finanzen führen.",
+        tip: "Verbindung aus 'führen' + neutrum Nomen (das Gespräch)."
+      },
+      {
+        id: "kol-74",
+        prefix: "Der Manager wollte für sein abruptes Kündigen keinen",
+        gapPlaceholder: "Nomen",
+        suffix: "angeben.",
+        correctAnswer: "Grund",
+        acceptableAnswers: ["Grund", "grund"],
+        options: ["Grund", "Beweis", "Bericht", "Bescheid"],
+        collocation: "den Grund angeben",
+        meaning: "etwas begründen / Ursachen nennen",
+        example: "Bitte geben Sie einen Grund für Ihre Stornierung an.",
+        tip: "Maskulines Substantiv: der Grund."
+      },
+      {
+        id: "kol-75",
+        prefix: "Es gehört zum guten Ton, einen freundlichen Gruß höflich zu",
+        gapPlaceholder: "Verb",
+        suffix: ".",
+        correctAnswer: "erwidern",
+        acceptableAnswers: ["erwidern"],
+        options: ["erwidern", "beantworten", "zurückgeben", "bestätigen"],
+        collocation: "einen Gruß erwidern",
+        meaning: "zurückgrüßen",
+        example: "Er lächelte und erwiderte ihren freundlichen Gruß.",
+        tip: "Gehobener Ausdruck: 'erwidern'."
+      },
+      {
+        id: "kol-76",
+        prefix: "Das neue Produktkonzept konnte beim Kunden sofort großes",
+        gapPlaceholder: "Nomen",
+        suffix: "wecken.",
+        correctAnswer: "Interesse",
+        acceptableAnswers: ["Interesse", "interesse"],
+        options: ["Interesse", "Gefühl", "Aufsehen", "Verständnis"],
+        collocation: "Interesse wecken für",
+        meaning: "jemanden für etwas begeistern / neugierig machen",
+        example: "Der Vortrag hat mein Interesse für Informatik geweckt.",
+        tip: "Verbindung mit dem Verb 'wecken' (Neutrum: das Interesse)."
+      },
+      {
+        id: "kol-77",
+        prefix: "Wir müssen diese Regelung leider offiziell zur",
+        gapPlaceholder: "Nomen",
+        suffix: "nehmen.",
+        correctAnswer: "Kenntnis",
+        acceptableAnswers: ["Kenntnis", "kenntnis"],
+        options: ["Kenntnis", "Achtung", "Meinung", "Ansicht"],
+        collocation: "zur Kenntnis nehmen",
+        meaning: "etwas wahrnehmen, zur Kenntnis erhalten und akzeptieren",
+        example: "Ich habe Ihre Absage bedauernd zur Kenntnis genommen.",
+        tip: "Verbindung mit 'nehmen': etwas zur Kenntnis nehmen."
+      },
+      {
+        id: "kol-78",
+        prefix: "Sie sollten direkt mit der Personalabteilung",
+        gapPlaceholder: "Nomen",
+        suffix: "aufnehmen.",
+        correctAnswer: "Kontakt",
+        acceptableAnswers: ["Kontakt", "kontakt"],
+        options: ["Kontakt", "Verbindung", "Beziehung", "Anfrage"],
+        collocation: "Kontakt aufnehmen mit",
+        meaning: "jemanden kontaktieren",
+        example: "Wir werden in den nächsten Tagen Kontakt mit Ihnen aufnehmen.",
+        tip: "Nomen-Verb-Verbindung mit 'aufnehmen'."
+      },
+      {
+        id: "kol-79",
+        prefix: "Wer trägt nach diesem Transportschaden eigentlich die finanziellen",
+        gapPlaceholder: "Nomen (Plural)",
+        suffix: "?",
+        correctAnswer: "Kosten",
+        acceptableAnswers: ["Kosten", "kosten"],
+        options: ["Kosten", "Folgen", "Verluste", "Rechnungen"],
+        collocation: "die Kosten tragen",
+        meaning: "für etwas bezahlen",
+        example: "Die Versicherung hat die gesamten Kosten getragen.",
+        tip: "Pluralwort: die Kosten."
+      },
+      {
+        id: "kol-80",
+        prefix: "Ich bin wegen meiner Kopfschmerzen heute leider nicht in der",
+        gapPlaceholder: "Nomen",
+        suffix: ", die Präsentation zu halten.",
+        correctAnswer: "Lage",
+        acceptableAnswers: ["Lage", "lage"],
+        options: ["Lage", "Bereitschaft", "Verfassung", "Form"],
+        collocation: "in der Lage sein zu",
+        meaning: "fähig sein / etwas tun können",
+        example: "Bist du in der Lage, das Auto selbst zu reparieren?",
+        tip: "Formel für Fähigkeit: in der Lage sein zu + Infinitiv."
+      },
+      {
+        id: "kol-81",
+        prefix: "Es erfordert Geduld, diesen zähen Prozess am",
+        gapPlaceholder: "Nomen",
+        suffix: "zu halten.",
+        correctAnswer: "Laufen",
+        acceptableAnswers: ["Laufen", "laufen"],
+        options: ["Laufen", "Gehen", "Fließen", "Arbeiten"],
+        collocation: "am Laufen halten",
+        meaning: "dafür sorgen, dass etwas weiterfunktioniert/weiterläuft",
+        example: "Es ist schwer, das Geschäft während der Krise am Laufen zu halten.",
+        tip: "Substantivierter Infinitiv: das Laufen."
+      },
+      {
+        id: "kol-82",
+        prefix: "Halten Sie mich bitte bezüglich aller Entscheidungen auf dem",
+        gapPlaceholder: "Nomen",
+        suffix: "!",
+        correctAnswer: "Laufenden",
+        acceptableAnswers: ["Laufenden", "laufenden"],
+        options: ["Laufenden", "Stand", "Neuesten", "Wissen"],
+        collocation: "auf dem Laufenden sein / halten",
+        meaning: "informiert sein / kontinuierlich informieren",
+        example: "Ich halte dich über die Entwicklung auf dem Laufenden.",
+        tip: "Substantiviertes Adjektiv: auf dem Laufenden."
+      },
+      {
+        id: "kol-83",
+        prefix: "Das neue E-Auto soll im Herbst diesen Jahres auf den",
+        gapPlaceholder: "Nomen",
+        suffix: "gebracht werden.",
+        correctAnswer: "Markt",
+        acceptableAnswers: ["Markt", "markt"],
+        options: ["Markt", "Verkauf", "Handel", "Start"],
+        collocation: "auf den Markt bringen",
+        meaning: "etwas zum ersten Mal zum Verkauf anbieten",
+        example: "Das Unternehmen bringt eine neue Software auf den Markt.",
+        tip: "Maskulines Substantiv: der Markt."
+      },
+      {
+        id: "kol-84",
+        prefix: "Der Auszubildende gibt sich große",
+        gapPlaceholder: "Nomen",
+        suffix: ", um keine Fehler zu machen.",
+        correctAnswer: "Mühe",
+        acceptableAnswers: ["Mühe", "muehe"],
+        options: ["Mühe", "Arbeit", "Sorge", "Kraft"],
+        collocation: "sich Mühe geben",
+        meaning: "sich bemühen / fleißig sein",
+        example: "Er hat sich viel Mühe gegeben, um die Prüfung zu bestehen.",
+        tip: "Feste reflexive Verbindung: sich Mühe geben."
+      },
+      {
+        id: "kol-85",
+        prefix: "Dieses ständige und laute Hupen geht mir gehörig auf die",
+        gapPlaceholder: "Nomen (Plural)",
+        suffix: ".",
+        correctAnswer: "Nerven",
+        acceptableAnswers: ["Nerven", "nerven"],
+        options: ["Nerven", "Gedanken", "Ohren", "Gefühle"],
+        collocation: "auf die Nerven gehen",
+        meaning: "jemanden extrem nerven oder stören",
+        example: "Seine Unpünktlichkeit geht mir wirklich auf die Nerven.",
+        tip: "Pluralform: die Nerven."
+      },
+      {
+        id: "kol-86",
+        prefix: "Trotz anfänglicher Kritik hielt der Erfinder starr an seinem",
+        gapPlaceholder: "Nomen",
+        suffix: "fest.",
+        correctAnswer: "Plan",
+        acceptableAnswers: ["Plan", "plan"],
+        options: ["Plan", "Traum", "Wunsch", "Ziel"],
+        collocation: "an einem Plan festhalten",
+        meaning: "eine Idee oder ein Vorhaben nicht aufgeben",
+        example: "Wir sollten unbedingt an unserem ursprünglichen Plan festhalten.",
+        tip: "Trennbare Verbindung mit 'festhalten an' + Dativ."
+      },
+      {
+        id: "kol-87",
+        prefix: "Nach drei Jahren Lehrzeit muss er nun seine praktische",
+        gapPlaceholder: "Nomen",
+        suffix: "ablegen.",
+        correctAnswer: "Prüfung",
+        acceptableAnswers: ["Prüfung", "pruefung"],
+        options: ["Prüfung", "Aufgabe", "Arbeit", "Kontrolle"],
+        collocation: "eine Prüfung ablegen",
+        meaning: "geprüft werden / an einer Prüfung teilnehmen",
+        example: "Morgen lege ich meine Sprachprüfung auf C1-Niveau ab.",
+        tip: "Kollokation mit 'ablegen': eine Prüfung ablegen."
+      },
+      {
+        id: "kol-88",
+        prefix: "Bitte geben Sie mir bis Freitag eine kurze",
+        gapPlaceholder: "Nomen",
+        suffix: "zu den Terminvorschlägen.",
+        correctAnswer: "Rückmeldung",
+        acceptableAnswers: ["Rückmeldung", "rueckmeldung"],
+        options: ["Rückmeldung", "Antwort", "Bescheid", "Auskunft"],
+        collocation: "Rückmeldung geben zu",
+        meaning: "sich zurückmelden / Feedback geben",
+        example: "Der Chef hat mir noch keine Rückmeldung zu meinem Antrag gegeben.",
+        tip: "Feminines Nomen: die Rückmeldung."
+      },
+      {
+        id: "kol-89",
+        prefix: "In heiklen Situationen ist es extrem wichtig, stets Ruhe zu",
+        gapPlaceholder: "Verb",
+        suffix: ".",
+        correctAnswer: "bewahren",
+        acceptableAnswers: ["bewahren"],
+        options: ["bewahren", "halten", "machen", "haben"],
+        collocation: "Ruhe bewahren",
+        meaning: "ruhig bleiben / gelassen bleiben",
+        example: "Bitte bewahren Sie Ruhe und verlassen Sie das Gebäude.",
+        tip: "Standard-Verbindung: Ruhe bewahren."
+      },
+      {
+        id: "kol-90",
+        prefix: "Obwohl der Fehler gravierend war, nahm die Chefin ihren Mitarbeiter in",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Schutz",
+        acceptableAnswers: ["Schutz", "schutz"],
+        options: ["Schutz", "Sicherheit", "Anspruch", "Hut"],
+        collocation: "in Schutz nehmen",
+        meaning: "beschützen / verteidigen",
+        example: "Er nimmt seine Freunde immer sofort in Schutz.",
+        tip: "Nomen-Verb-Verbindung mit 'in Schutz nehmen'."
+      },
+      {
+        id: "kol-91",
+        prefix: "Du solltest dir wegen der kleinen Verspätung nicht gleich große",
+        gapPlaceholder: "Nomen (Plural)",
+        suffix: "machen.",
+        correctAnswer: "Sorgen",
+        acceptableAnswers: ["Sorgen", "sorgen"],
+        options: ["Sorgen", "Gedanken", "Zweifel", "Ängste"],
+        collocation: "sich Sorgen machen um",
+        meaning: "sich um jemanden oder etwas sorgen",
+        example: "Die Eltern machen sich Sorgen um die Gesundheit ihres Kindes.",
+        tip: "Verbindung im Plural mit 'um': sich Sorgen machen um."
+      },
+      {
+        id: "kol-92",
+        prefix: "Mit dieser unüberlegten Investition hast du das gesamte Firmenkapital aufs",
+        gapPlaceholder: "Nomen",
+        suffix: "gesetzt.",
+        correctAnswer: "Spiel",
+        acceptableAnswers: ["Spiel", "spiel"],
+        options: ["Spiel", "Risiko", "Glück", "Geld"],
+        collocation: "aufs Spiel setzen",
+        meaning: "etwas wertvolles riskieren",
+        example: "Er wollte seinen guten Ruf nicht aufs Spiel setzen.",
+        tip: "Feste Wendung: aufs Spiel setzen."
+      },
+      {
+        id: "kol-93",
+        prefix: "Wir müssen das Problem bei der nächsten Besprechung unbedingt zur",
+        gapPlaceholder: "Nomen",
+        suffix: "bringen.",
+        correctAnswer: "Sprache",
+        acceptableAnswers: ["Sprache", "sprache"],
+        options: ["Sprache", "Diskussion", "Rede", "Meinung"],
+        collocation: "zur Sprache bringen",
+        meaning: "ein Thema ansprechen oder einbringen",
+        example: "Sie hat die hohen Kosten endlich zur Sprache gebracht.",
+        tip: "Verbindung mit 'bringen': zur Sprache bringen."
+      },
+      {
+        id: "kol-94",
+        prefix: "Ich stehe fest auf dem",
+        gapPlaceholder: "Nomen",
+        suffix: ", dass Überstunden bezahlt werden müssen.",
+        correctAnswer: "Standpunkt",
+        acceptableAnswers: ["Standpunkt", "standpunkt"],
+        options: ["Standpunkt", "Gedanken", "Grundsatz", "Meinung"],
+        collocation: "auf dem Standpunkt stehen",
+        meaning: "eine bestimmte gefestigte Meinung haben",
+        example: "Er steht auf dem Standpunkt, dass Ehrlichkeit das Wichtigste ist.",
+        tip: "Zusammengesetztes Nomen: der Standpunkt."
+      },
+      {
+        id: "kol-95",
+        prefix: "Der Pressesprecher wollte zu den Gerüchten bislang keine",
+        gapPlaceholder: "Nomen",
+        suffix: "nehmen.",
+        correctAnswer: "Stellung",
+        acceptableAnswers: ["Stellung", "stellung"],
+        options: ["Stellung", "Meinung", "Auskunft", "Kritik"],
+        collocation: "Stellung nehmen zu",
+        meaning: "seine Meinung zu einem Vorfall oder Vorwurf äußern",
+        example: "Wir bitten Sie, zu diesen Vorwürfen Stellung zu nehmen.",
+        tip: "Kollokation mit 'nehmen': Stellung nehmen zu + Dativ."
+      },
+      {
+        id: "kol-96",
+        prefix: "Setzen Sie sich bei weiteren technischen Fragen bitte direkt mit der IT-Abteilung in",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Verbindung",
+        acceptableAnswers: ["Verbindung", "verbindung"],
+        options: ["Verbindung", "Kontakt", "Gespräch", "Beziehung"],
+        collocation: "sich in Verbindung setzen mit",
+        meaning: "jemanden kontaktieren",
+        example: "Ich werde mich zeitnah mit Ihnen in Verbindung setzen.",
+        tip: "Reflexiv: sich in Verbindung setzen mit + Dativ."
+      },
+      {
+        id: "kol-97",
+        prefix: "Mit dieser sehr persönlichen Frage hat er den Gast in arge",
+        gapPlaceholder: "Nomen",
+        suffix: "gebracht.",
+        correctAnswer: "Verlegenheit",
+        acceptableAnswers: ["Verlegenheit", "verlegenheit"],
+        options: ["Verlegenheit", "Sorge", "Gefahr", "Angst"],
+        collocation: "in Verlegenheit bringen",
+        meaning: "jemanden verlegen, unsicher oder verlegen machen",
+        example: "Seine Komplimente brachten sie spürbar in Verlegenheit.",
+        tip: "Feminines Substantiv: die Verlegenheit."
+      },
+      {
+        id: "kol-98",
+        prefix: "Das Kundenzentrum stellt allen Besuchern kostenloses WLAN zur",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Verfügung",
+        acceptableAnswers: ["Verfügung", "verfuegung"],
+        options: ["Verfügung", "Auswahl", "Bereitschaft", "Anwendung"],
+        collocation: "zur Verfügung stellen",
+        meaning: "dafür sorgen, dass etwas genutzt werden kann",
+        example: "Die Firma stellt ihren Mitarbeitenden Dienstwagen zur Verfügung.",
+        tip: "Kollokation mit 'stellen' (Aktiv-Funktion)."
+      },
+      {
+        id: "kol-99",
+        prefix: "Ich kann für sein unfreundliches Verhalten absolut kein",
+        gapPlaceholder: "Nomen",
+        suffix: "aufbringen.",
+        correctAnswer: "Verständnis",
+        acceptableAnswers: ["Verständnis", "verstaendnis"],
+        options: ["Verständnis", "Mitleid", "Gefühl", "Interesse"],
+        collocation: "Verständnis aufbringen für",
+        meaning: "etwas verstehen / nachvollziehen können",
+        example: "Für solche Ausreden kann ich leider kein Verständnis aufbringen.",
+        tip: "Nomen-Verb-Verbindung mit 'aufbringen'."
+      },
+      {
+        id: "kol-100",
+        prefix: "Wenn zwei Qualifikationen gleichwertig sind, sollte man der erfahreneren Person den",
+        gapPlaceholder: "Nomen",
+        suffix: "geben.",
+        correctAnswer: "Vorzug",
+        acceptableAnswers: ["Vorzug", "vorzug"],
+        options: ["Vorzug", "Vorteil", "Wert", "Rang"],
+        collocation: "jemandem den Vorzug geben",
+        meaning: "jemanden oder etwas bevorzugen",
+        example: "Bei der Auswahl gab die Jury dem jüngeren Kandidaten den Vorzug.",
+        tip: "Gehobener Ausdruck für bevorzugen: jemandem den Vorzug geben."
+      },
+      {
+        id: "kol-101",
+        prefix: "Seit unserem Streit versucht er mir im Büro konsequent aus dem",
+        gapPlaceholder: "Nomen",
+        suffix: "zu gehen.",
+        correctAnswer: "Weg",
+        acceptableAnswers: ["Weg", "weg"],
+        options: ["Weg", "Blick", "Platz", "Fokus"],
+        collocation: "jemandem aus dem Weg gehen",
+        meaning: "jemanden meiden / ausweichen",
+        example: "Er geht schwierigen Aufgaben gerne aus dem Weg.",
+        tip: "Feste Redewendung: jemandem aus dem Weg gehen."
+      },
+      {
+        id: "kol-102",
+        prefix: "Bei unserer Firmenphilosophie steht die Kundenzufriedenheit stets im",
+        gapPlaceholder: "Nomen",
+        suffix: ".",
+        correctAnswer: "Zentrum",
+        acceptableAnswers: ["Zentrum", "zentrum"],
+        options: ["Zentrum", "Fokus", "Mittelpunkt", "Hauptteil"],
+        collocation: "im Zentrum stehen",
+        meaning: "am wichtigsten sein / das Zentrale sein",
+        example: "Das Wohl der Patienten steht in diesem Krankenhaus im Zentrum.",
+        tip: "Verbindung: im Zentrum stehen."
+      },
+      {
+        id: "kol-103",
+        prefix: "Der Rückgang der Absatzzahlen steht in direktem",
+        gapPlaceholder: "Nomen",
+        suffix: "mit den gestiegenen Preisen.",
+        correctAnswer: "Zusammenhang",
+        acceptableAnswers: ["Zusammenhang", "zusammenhang"],
+        options: ["Zusammenhang", "Vergleich", "Kontakt", "Einfluss"],
+        collocation: "im Zusammenhang stehen mit",
+        meaning: "zusammenhängen / eine Verbindung aufweisen",
+        example: "Die beiden Ereignisse stehen in keinem kausalen Zusammenhang.",
+        tip: "Maskulines Substantiv: der Zusammenhang."
+      },
+      {
+        id: "kol-104",
+        prefix: "Ich habe erhebliche",
+        gapPlaceholder: "Nomen (Plural)",
+        suffix: "an der Richtigkeit dieser Angaben.",
+        correctAnswer: "Zweifel",
+        acceptableAnswers: ["Zweifel", "zweifel"],
+        options: ["Zweifel", "Sorgen", "Fragen", "Bedenken"],
+        collocation: "Zweifel haben an (+ Dat)",
+        meaning: "etwas bezweifeln",
+        example: "Hast du keine Zweifel an seinen Aussagen?",
+        tip: "Nomen mit Präposition: Zweifel haben an + Dativ."
+      },
+      {
+        id: "kol-105",
+        prefix: "Es steht außer",
+        gapPlaceholder: "Nomen",
+        suffix: ", dass sie für diesen Job die beste Kandidatin ist.",
+        correctAnswer: "Zweifel",
+        acceptableAnswers: ["Zweifel", "zweifel"],
+        options: ["Zweifel", "Frage", "Gefahr", "Sorge"],
+        collocation: "außer Zweifel stehen",
+        meaning: "gar nicht bezweifelt werden / sicher sein",
+        example: "Seine fachliche Qualifikation steht völlig außer Zweifel.",
+        tip: "Bedeutet: Es gibt keinerlei Zweifel daran."
       }
     ]
   },
