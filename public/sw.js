@@ -1,4 +1,4 @@
-const CACHE_NAME = 'deutschify-v1';
+const CACHE_NAME = 'deutschify-v2';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
@@ -6,6 +6,8 @@ const ASSETS_TO_CACHE = [
   '/js/app.js',
   '/js/storage.js',
   '/js/audio.js',
+  '/js/fsrs.js',
+  '/js/scheduler.js',
   '/js/data/topics.js',
   '/manifest.json',
   '/icons/icon.svg'

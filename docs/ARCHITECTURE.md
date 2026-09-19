@@ -19,10 +19,12 @@ public/
 │   └── icon.svg         # Vektorbasiertes App-Icon (SVG, skalierbar)
 └── js/
     ├── app.js           # Haupt-Controller & View-Orchestrierung
-    ├── storage.js       # LocalStorage-Persistenz (Fortschritt, Streak, Einstellungen)
+    ├── fsrs.js          # FSRS Spaced-Repetition-Engine (DSR-Modell: Difficulty, Stability, Retrievability)
+    ├── scheduler.js     # 10-Sätze-Session Builder & Anki Analytics Engine
+    ├── storage.js       # LocalStorage-Persistenz (Fortschritt, Streak, FSRS-Zeitpläne)
     ├── audio.js         # Sound-Synthesizer (Web Audio API) & Sprachausgabe (Web Speech API)
     └── data/
-        └── topics.js    # Statischer Übungs- und Themendatensatz
+        └── topics.js    # Statischer Übungs- und Themendatensatz (55 authentische Sätze)
 ```
 
 ---
@@ -32,6 +34,8 @@ public/
 ```mermaid
 flowchart LR
     User[Benutzerinteraktion] --> App[js/app.js - Controller]
+    App --> Scheduler[js/scheduler.js - 10-Sätze Builder]
+    Scheduler --> FSRS[js/fsrs.js - DSR Memory Model]
     App --> UI[index.html / DOM Rendering]
     App --> Storage[js/storage.js - LocalStorage]
     App --> Audio[js/audio.js - Web Audio & Speech]
