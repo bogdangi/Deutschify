@@ -5925,9 +5925,9 @@ export const TOPICS = [
       },
       {
         id: "adj-3",
-        prefix: "Der Wissenschaftler ist fest davon überzeugt,",
+        prefix: "Der Wissenschaftler ist seit Jahren fest",
         gapPlaceholder: "Präposition",
-        suffix: "der Richtigkeit seiner Theorie keinen Zweifel mehr zu lassen.",
+        suffix: "der Richtigkeit seiner Theorie überzeugt.",
         correctAnswer: "von",
         acceptableAnswers: ["von"],
         options: ["von", "über", "an", "mit"],
@@ -6003,9 +6003,9 @@ export const TOPICS = [
       },
       {
         id: "adj-9",
-        prefix: "Mit ausreichend Konzentration und Ausdauer ist der Mensch fähig",
+        prefix: "Mit ausreichender Konzentration ist der Mensch",
         gapPlaceholder: "Präposition",
-        suffix: "außergewöhnlichen Höchstleistungen.",
+        suffix: "erstaunlichen Höchstleistungen fähig.",
         correctAnswer: "zu",
         acceptableAnswers: ["zu"],
         options: ["zu", "für", "an", "nach"],
@@ -6025,7 +6025,7 @@ export const TOPICS = [
         collocation: "überrascht sein über (+ Akkusativ)",
         meaning: "durch ein unerwartetes Ereignis in Erstaunen versetzt werden",
         example: "Wir waren über das hervorragende Wahlergebnis überrascht.",
-        tip: "'überrascht sein' steht mit 'über' + Akkusativ (oder seltener mit 'von' + Dativ)."
+        tip: "'überrascht sein' steht mit 'über' + Akkusativ (oder auch mit 'von' + Dativ)."
       },
       {
         id: "adj-11",
@@ -6276,12 +6276,12 @@ export const TOPICS = [
       },
       {
         id: "adj-30",
-        prefix: "Die Bewerberin ist für die vakante Stelle im Marketing bestens",
+        prefix: "Die Bewerberin ist aufgrund ihrer langjährigen Erfahrung bestens",
         gapPlaceholder: "Präposition",
-        suffix: "ihre langjährige Erfahrung geeignet.",
-        correctAnswer: "durch",
-        acceptableAnswers: ["durch", "aufgrund"],
-        options: ["durch", "für", "mit", "zu"],
+        suffix: "die vakante Stelle im Marketing geeignet.",
+        correctAnswer: "für",
+        acceptableAnswers: ["für", "fuer"],
+        options: ["für", "durch", "mit", "zu"],
         collocation: "geeignet sein für (+ Akkusativ)",
         meaning: "die nötigen Qualifikationen oder Eigenschaften besitzen",
         example: "Das Hotel ist gut geeignet für Familien.",
@@ -6349,7 +6349,7 @@ export const TOPICS = [
         options: ["zu", "mit", "an", "wie"],
         collocation: "analog sein zu (+ Dativ)",
         meaning: "entsprechend / ähnlich aufgebaut sein",
-        example: "Das Verhalten ist analog zu früher Beobachtungen.",
+        example: "Das Verhalten ist analog zu früheren Beobachtungen.",
         tip: "analog sein zu + Dativ."
       },
       {
@@ -6410,9 +6410,9 @@ export const TOPICS = [
         gapPlaceholder: "Präposition",
         suffix: "ihre bevorstehende Premiere.",
         correctAnswer: "über",
-        acceptableAnswers: ["über", "ueber", "wegen"],
+        acceptableAnswers: ["über", "ueber"],
         options: ["über", "von", "an", "um"],
-        collocation: "aufgeregt sein über (+ Akkusativ) / wegen (+ Genitiv)",
+        collocation: "aufgeregt sein über (+ Akkusativ)",
         meaning: "nervös oder in emotionaler Spannung sein",
         example: "Alle waren aufgeregt über das Ergebnis.",
         tip: "aufgeregt sein über + Akkusativ (Verb: sich aufregen über / Nomen: die Aufregung über)."
@@ -6476,7 +6476,7 @@ export const TOPICS = [
         suffix: "die Verweigerung der Gehaltserhöhung.",
         correctAnswer: "über",
         acceptableAnswers: ["über", "ueber"],
-        options: ["über", "von", " an", "in"],
+        options: ["über", "von", "an", "in"],
         collocation: "enttäuscht sein über (+ Akkusativ) / von (+ Dativ)",
         meaning: "niedergeschlagen wegen unerfüllter Erwartung sein",
         example: "Er war enttäuscht von seinem besten Freund.",
@@ -6640,16 +6640,16 @@ export const TOPICS = [
       },
       {
         id: "adj-58",
-        prefix: "Er blieb stur und unverrückbar überlegen",
+        prefix: "Die Experten waren überrascht",
         gapPlaceholder: "Präposition",
-        suffix: "seinen Mitstreitern im Fachwissen.",
-        correctAnswer: "über",
-        acceptableAnswers: ["über", "ueber"],
-        options: ["über", "von", "an", "auf"],
-        collocation: "überlegen sein (+ Dativ) / über (+ Akkusativ)",
-        meaning: "besser / kompetenter als andere sein",
-        example: "Er war seinem Gegner deutlich überlegen.",
-        tip: "überlegen sein + Dativ."
+        suffix: "den schnellen Fortschritten des Projekts.",
+        correctAnswer: "von",
+        acceptableAnswers: ["von"],
+        options: ["von", "über", "an", "auf"],
+        collocation: "überrascht sein von (+ Dativ) / über (+ Akkusativ)",
+        meaning: "staunen über ein Unerwartetes Ergebnis",
+        example: "Ich war von der guten Qualität überrascht.",
+        tip: "überrascht sein von + Dativ (oder über + Akkusativ)."
       },
       {
         id: "adj-59",
@@ -6794,7 +6794,6 @@ export const TOPICS = [
         example: "Ich bin nicht zuständig für diesen Bereich.",
         tip: "zuständig sein für + Akkusativ (Nomen: die Zuständigkeit für)."
       }
-
     ]
   }
 ];
