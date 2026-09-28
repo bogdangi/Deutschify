@@ -5766,7 +5766,7 @@ export const TOPICS = [
         acceptableAnswers: ["getreten"],
         options: ["getreten", "gefallen", "gesprungen", "geraten"],
         collocation: "ins Fettnäpfchen treten",
-        meaning: "sich ungeschickt oder peinlich verhalten und jemanden verletzen",
+        meaning: "sich ungeschickt oder peinlich verhalten und jemanden kränken",
         example: "Da bin ich wohl ins Fettnäpfchen getreten, tut mir leid!",
         tip: "Partizip II des unregelmäßigen Verbs 'treten' (treten - trat - getreten)."
       },
@@ -5778,10 +5778,10 @@ export const TOPICS = [
         correctAnswer: "voll",
         acceptableAnswers: ["voll"],
         options: ["voll", "leer", "satt", "fertig"],
-        collocation: "die Nase voll haben von (+ Dat)",
+        collocation: "die Nase voll haben von (+ Dativ)",
         meaning: "von einer Situation oder Person völlig genervt sein",
         example: "Ich habe die Nase voll vom ständigen Stau am Morgen.",
-        tip: "Verbindung mit dem Wörtchen 'voll' (die Nase voll haben)."
+        tip: "Redewendung: 'die Nase (gestrichen) voll haben'."
       },
       {
         id: "red-5",
@@ -5826,7 +5826,7 @@ export const TOPICS = [
         id: "red-8",
         prefix: "Deine Vermutung stimmt leider überhaupt nicht, du bist völlig auf dem",
         gapPlaceholder: "Nomen",
-        suffix: "unterwegs.",
+        suffix: ".",
         correctAnswer: "Holzweg",
         acceptableAnswers: ["Holzweg", "holzweg"],
         options: ["Holzweg", "Umweg", "Irrweg", "Waldweg"],
