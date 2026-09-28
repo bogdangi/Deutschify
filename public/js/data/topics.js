@@ -6795,5 +6795,171 @@ export const TOPICS = [
         tip: "zuständig sein für + Akkusativ (Nomen: die Zuständigkeit für)."
       }
     ]
+  },
+  {
+    id: "konjunktionen",
+    title: "Konjunktionen & Konnektoren",
+    shortDescription: "Wichtige Bindewörter und Satzverbindungen für Haupt- und Nebensätze",
+    icon: "🔗",
+    level: "B1 – B2",
+    color: "#3b82f6",
+    exercises: [
+      {
+        id: "konj-1",
+        prefix: "Er geht heute nicht ins Fitnessstudio,",
+        gapPlaceholder: "Konjunktion",
+        suffix: "er fühlt sich schon den ganzen Tag müde und erkältet.",
+        correctAnswer: "denn",
+        acceptableAnswers: ["denn"],
+        options: ["denn", "weil", "deshalb", "obwohl"],
+        collocation: "denn (Hauptsatz + Hauptsatz / Position 0)",
+        meaning: "Gibt einen Grund an; verändert die Satzstellung im Folgesatz nicht",
+        example: "Ich bleibe zu Hause, denn das Wetter ist schlecht.",
+        tip: "Nebenordnende Konjunktion auf Position 0 (Verb bleibt auf Position 2)."
+      },
+      {
+        id: "konj-2",
+        prefix: "Wir sagten den Ausflug ab,",
+        gapPlaceholder: "Subjunktion",
+        suffix: "es den ganzen Tag ununterbrochen geregnet hatte.",
+        correctAnswer: "weil",
+        acceptableAnswers: ["weil"],
+        options: ["weil", "denn", "deshalb", "trotzdem"],
+        collocation: "weil (Nebensatz / Verb am Ende)",
+        meaning: "Begründung für eine Handlung oder Situation",
+        example: "Er lernt fleißig Deutsch, weil er in Berlin arbeiten möchte.",
+        tip: "Unterordnende Subjunktion: Schiebt das konjugierte Verb ('hatte') ans Satzende."
+      },
+      {
+        id: "konj-3",
+        prefix: "Sie ist pünktlich zum Vorstellungsgespräch erschienen,",
+        gapPlaceholder: "Subjunktion",
+        suffix: "ihr Zug eine erhebliche Verspätung hatte.",
+        correctAnswer: "obwohl",
+        acceptableAnswers: ["obwohl"],
+        options: ["obwohl", "weil", "damit", "sodass"],
+        collocation: "obwohl (Konzessivsatz / Verb am Ende)",
+        meaning: "Drückt einen Gegengrund oder unerwarteten Hindernisgrund aus",
+        example: "Obwohl es sehr kalt war, ging sie ohne Jacke spazieren.",
+        tip: "Konzessivsatz mit 'obwohl': Verb steht ganz am Ende."
+      },
+      {
+        id: "konj-4",
+        prefix: "Bitte informieren Sie mich rechtzeitig,",
+        gapPlaceholder: "Subjunktion",
+        suffix: "Sie den Termin nicht wahrnehmen können.",
+        correctAnswer: "falls",
+        acceptableAnswers: ["falls", "wenn"],
+        options: ["falls", "dass", "obwohl", "damit"],
+        collocation: "falls / wenn (Konditionalsatz / Verb am Ende)",
+        meaning: "Drückt eine Bedingung oder Voraussetzung aus",
+        example: "Falls Sie Fragen haben, rufen Sie uns bitte an.",
+        tip: "Konditionaler Nebensatz: Verb rückt an das Satzende."
+      },
+      {
+        id: "konj-5",
+        prefix: "Der Arzt rät dem Patienten zu mehr Bewegung,",
+        gapPlaceholder: "Subjunktion",
+        suffix: "sich sein allgemeiner Gesundheitszustand verbessert.",
+        correctAnswer: "damit",
+        acceptableAnswers: ["damit"],
+        options: ["damit", "um", "weil", "dass"],
+        collocation: "damit (Finalsatz mit neuem Subjekt / Verb am Ende)",
+        meaning: "Gibt ein Ziel oder eine Absicht an (Subjekte von Haupt- und Nebensatz können verschieden sein)",
+        example: "Ich erkläre es noch einmal, damit alle es verstehen.",
+        tip: "Finalsatz mit 'damit' hat ein eigenes Subjekt und das Verb am Ende."
+      },
+      {
+        id: "konj-6",
+        prefix: "Er sparte monatelang jeden Cent,",
+        gapPlaceholder: "Infinitivkonstruktion",
+        suffix: "sich eine Reise nach Japan leisten zu können.",
+        correctAnswer: "um",
+        acceptableAnswers: ["um"],
+        options: ["um", "damit", "weil", "dass"],
+        collocation: "um ... zu (+ Infinitiv)",
+        meaning: "Drückt ein Ziel/Absicht aus (nur wenn das Subjekt in beiden Satzteilen identisch ist)",
+        example: "Sie geht zum Supermarkt, um Brot zu kaufen.",
+        tip: "Verbindet sich mit 'zu + Infinitiv' am Ende des Nebensatzes."
+      },
+      {
+        id: "konj-7",
+        prefix: "Der Trainer war nicht nur sehr kompetent,",
+        gapPlaceholder: "Doppelkonjunktion",
+        suffix: "auch außerordentlich geduldig mit den Anfängern.",
+        correctAnswer: "sondern",
+        acceptableAnswers: ["sondern"],
+        options: ["sondern", "aber", "oder", "wie"],
+        collocation: "nicht nur ... sondern auch",
+        meaning: "Zweiteilige Konjunktion zur Aufzählung von zwei positiven Ergänzungen",
+        example: "Er spricht nicht nur Deutsch, sondern auch Englisch.",
+        tip: "Doppelkonjunktion: 'nicht nur' steht im ersten Teil, 'sondern auch' im zweiten Teil."
+      },
+      {
+        id: "konj-8",
+        prefix: "Das Wetter war zwar extrem windig,",
+        gapPlaceholder: "Doppelkonjunktion",
+        suffix: "wir hatten trotzdem sehr viel Spaß beim Ausflug.",
+        correctAnswer: "aber",
+        acceptableAnswers: ["aber"],
+        options: ["aber", "sondern", "oder", "und"],
+        collocation: "zwar ... aber / jedoch",
+        meaning: "Drückt eine Einschränkung aus (Eines ist wahr, aber ein anderer Aspekt relativiert es)",
+        example: "Das Hotel war zwar teuer, aber sehr komfortabel.",
+        tip: "Zweiteilige Konjunktion für gegensätzliche/einschränkende Aussagen."
+      },
+      {
+        id: "konj-9",
+        prefix: "Du kannst am Wochenende",
+        gapPlaceholder: "Doppelkonjunktion",
+        suffix: "mit uns zum Campen kommen oder zu Hause bleiben.",
+        correctAnswer: "entweder",
+        acceptableAnswers: ["entweder"],
+        options: ["entweder", "sowohl", "weder", "zwar"],
+        collocation: "entweder ... oder",
+        meaning: "Drückt eine Alternative zwischen zwei Möglichkeiten aus",
+        example: "Wir fahren entweder nach Italien oder nach Spanien.",
+        tip: "Zweiteilige Konjunktion für Alternativen."
+      },
+      {
+        id: "konj-10",
+        prefix: "Der Bewerber konnte",
+        gapPlaceholder: "Doppelkonjunktion",
+        suffix: "praktische Erfahrung vorweisen noch gute Sprachkenntnisse vorlegen.",
+        correctAnswer: "weder",
+        acceptableAnswers: ["weder"],
+        options: ["weder", "sowohl", "entweder", "zwar"],
+        collocation: "weder ... noch",
+        meaning: "Doppelte Verneinung (weder das eine noch das andere trifft zu)",
+        example: "Er hat weder Zeit noch Geld für ein neues Hobby.",
+        tip: "Zweiteilige Konjunktion zur doppelten Negation ohne zusätzliches 'nicht'."
+      },
+      {
+        id: "konj-11",
+        prefix: "Ich bin mir noch nicht ganz sicher,",
+        gapPlaceholder: "Subjunktion",
+        suffix: "ich die neue Stelle annehmen soll.",
+        correctAnswer: "ob",
+        acceptableAnswers: ["ob"],
+        options: ["ob", "dass", "wenn", "wie"],
+        collocation: "ob (Indirekte Frage / Verb am Ende)",
+        meaning: "Leitet eine indirekte Ja/Nein-Frage oder Unsiherheit ein",
+        example: "Weißt du schon, ob der Bus pünktlich kommt?",
+        tip: "Subjunktion für indirekte Fragen: Verb rückt ans Satzende."
+      },
+      {
+        id: "konj-12",
+        prefix: "Es tut mir leid,",
+        gapPlaceholder: "Subjunktion",
+        suffix: "ich mich erst jetzt auf Ihre E-Mail melde.",
+        correctAnswer: "dass",
+        acceptableAnswers: ["dass", "daß"],
+        options: ["dass", "damit", "weil", "ob"],
+        collocation: "dass (Objektsatz / Verb am Ende)",
+        meaning: "Verbindet Haupt- und Nebensatz bei Aussagen, Gefühlen oder Feststellungen",
+        example: "Ich habe gehört, dass du eine neue Wohnung gefunden hast.",
+        tip: "Standard-Subjunktion nach Verben des Wissens, Fühlens oder Sagens."
+      }
+    ]
   }
 ];
