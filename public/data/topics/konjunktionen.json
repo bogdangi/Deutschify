@@ -1,0 +1,667 @@
+{
+  "id": "konjunktionen",
+  "title": "Konjunktionen & Konnektoren",
+  "shortDescription": "Wichtige Bindewörter und Satzverbindungen für Haupt- und Nebensätze",
+  "icon": "🔗",
+  "level": "B1 – B2",
+  "color": "#3b82f6",
+  "totalExercises": 32,
+  "exercises": [
+    {
+      "id": "konj-1",
+      "prefix": "Er geht heute nicht ins Fitnessstudio,",
+      "gapPlaceholder": "Konjunktion",
+      "suffix": "er fühlt sich schon den ganzen Tag müde und erkältet.",
+      "correctAnswer": "denn",
+      "acceptableAnswers": [
+        "denn"
+      ],
+      "options": [
+        "denn",
+        "weil",
+        "deshalb",
+        "obwohl"
+      ],
+      "collocation": "denn (Hauptsatz + Hauptsatz / Position 0)",
+      "meaning": "Gibt einen Grund an; verändert die Satzstellung im Folgesatz nicht",
+      "example": "Ich bleibe zu Hause, denn das Wetter ist schlecht.",
+      "tip": "Nebenordnende Konjunktion auf Position 0 (Verb bleibt auf Position 2)."
+    },
+    {
+      "id": "konj-2",
+      "prefix": "Wir sagten den Ausflug ab,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "es den ganzen Tag ununterbrochen geregnet hatte.",
+      "correctAnswer": "weil",
+      "acceptableAnswers": [
+        "weil"
+      ],
+      "options": [
+        "weil",
+        "denn",
+        "deshalb",
+        "trotzdem"
+      ],
+      "collocation": "weil (Nebensatz / Verb am Ende)",
+      "meaning": "Begründung für eine Handlung oder Situation",
+      "example": "Er lernt fleißig Deutsch, weil er in Berlin arbeiten möchte.",
+      "tip": "Unterordnende Subjunktion: Schiebt das konjugierte Verb ('hatte') ans Satzende."
+    },
+    {
+      "id": "konj-3",
+      "prefix": "Sie ist pünktlich zum Vorstellungsgespräch erschienen,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "ihr Zug eine erhebliche Verspätung hatte.",
+      "correctAnswer": "obwohl",
+      "acceptableAnswers": [
+        "obwohl"
+      ],
+      "options": [
+        "obwohl",
+        "weil",
+        "damit",
+        "sodass"
+      ],
+      "collocation": "obwohl (Konzessivsatz / Verb am Ende)",
+      "meaning": "Drückt einen Gegengrund oder unerwarteten Hindernisgrund aus",
+      "example": "Obwohl es sehr kalt war, ging sie ohne Jacke spazieren.",
+      "tip": "Konzessivsatz mit 'obwohl': Verb steht ganz am Ende."
+    },
+    {
+      "id": "konj-4",
+      "prefix": "Bitte informieren Sie mich rechtzeitig,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "Sie den Termin nicht wahrnehmen können.",
+      "correctAnswer": "falls",
+      "acceptableAnswers": [
+        "falls",
+        "wenn"
+      ],
+      "options": [
+        "falls",
+        "dass",
+        "obwohl",
+        "damit"
+      ],
+      "collocation": "falls / wenn (Konditionalsatz / Verb am Ende)",
+      "meaning": "Drückt eine Bedingung oder Voraussetzung aus",
+      "example": "Falls Sie Fragen haben, rufen Sie uns bitte an.",
+      "tip": "Konditionaler Nebensatz: Verb rückt an das Satzende."
+    },
+    {
+      "id": "konj-5",
+      "prefix": "Der Arzt rät dem Patienten zu mehr Bewegung,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "sich sein allgemeiner Gesundheitszustand verbessert.",
+      "correctAnswer": "damit",
+      "acceptableAnswers": [
+        "damit"
+      ],
+      "options": [
+        "damit",
+        "um",
+        "weil",
+        "dass"
+      ],
+      "collocation": "damit (Finalsatz mit neuem Subjekt / Verb am Ende)",
+      "meaning": "Gibt ein Ziel oder eine Absicht an (Subjekte von Haupt- und Nebensatz können verschieden sein)",
+      "example": "Ich erkläre es noch einmal, damit alle es verstehen.",
+      "tip": "Finalsatz mit 'damit' hat ein eigenes Subjekt und das Verb am Ende."
+    },
+    {
+      "id": "konj-6",
+      "prefix": "Er sparte monatelang jeden Cent,",
+      "gapPlaceholder": "Infinitivkonstruktion",
+      "suffix": "sich eine Reise nach Japan leisten zu können.",
+      "correctAnswer": "um",
+      "acceptableAnswers": [
+        "um"
+      ],
+      "options": [
+        "um",
+        "damit",
+        "weil",
+        "dass"
+      ],
+      "collocation": "um ... zu (+ Infinitiv)",
+      "meaning": "Drückt ein Ziel/Absicht aus (nur wenn das Subjekt in beiden Satzteilen identisch ist)",
+      "example": "Sie geht zum Supermarkt, um Brot zu kaufen.",
+      "tip": "Verbindet sich mit 'zu + Infinitiv' am Ende des Nebensatzes."
+    },
+    {
+      "id": "konj-7",
+      "prefix": "Der Trainer war nicht nur sehr kompetent,",
+      "gapPlaceholder": "Doppelkonjunktion",
+      "suffix": "auch außerordentlich geduldig mit den Anfängern.",
+      "correctAnswer": "sondern",
+      "acceptableAnswers": [
+        "sondern"
+      ],
+      "options": [
+        "sondern",
+        "aber",
+        "oder",
+        "wie"
+      ],
+      "collocation": "nicht nur ... sondern auch",
+      "meaning": "Zweiteilige Konjunktion zur Aufzählung von zwei positiven Ergänzungen",
+      "example": "Er spricht nicht nur Deutsch, sondern auch Englisch.",
+      "tip": "Doppelkonjunktion: 'nicht nur' steht im ersten Teil, 'sondern auch' im zweiten Teil."
+    },
+    {
+      "id": "konj-8",
+      "prefix": "Das Wetter war zwar extrem windig,",
+      "gapPlaceholder": "Doppelkonjunktion",
+      "suffix": "wir hatten trotzdem sehr viel Spaß beim Ausflug.",
+      "correctAnswer": "aber",
+      "acceptableAnswers": [
+        "aber"
+      ],
+      "options": [
+        "aber",
+        "sondern",
+        "oder",
+        "und"
+      ],
+      "collocation": "zwar ... aber / jedoch",
+      "meaning": "Drückt eine Einschränkung aus (Eines ist wahr, aber ein anderer Aspekt relativiert es)",
+      "example": "Das Hotel war zwar teuer, aber sehr komfortabel.",
+      "tip": "Zweiteilige Konjunktion für gegensätzliche/einschränkende Aussagen."
+    },
+    {
+      "id": "konj-9",
+      "prefix": "Du kannst am Wochenende",
+      "gapPlaceholder": "Doppelkonjunktion",
+      "suffix": "mit uns zum Campen kommen oder zu Hause bleiben.",
+      "correctAnswer": "entweder",
+      "acceptableAnswers": [
+        "entweder"
+      ],
+      "options": [
+        "entweder",
+        "sowohl",
+        "weder",
+        "zwar"
+      ],
+      "collocation": "entweder ... oder",
+      "meaning": "Drückt eine Alternative zwischen zwei Möglichkeiten aus",
+      "example": "Wir fahren entweder nach Italien oder nach Spanien.",
+      "tip": "Zweiteilige Konjunktion für Alternativen."
+    },
+    {
+      "id": "konj-10",
+      "prefix": "Der Bewerber konnte",
+      "gapPlaceholder": "Doppelkonjunktion",
+      "suffix": "praktische Erfahrung vorweisen noch gute Sprachkenntnisse vorlegen.",
+      "correctAnswer": "weder",
+      "acceptableAnswers": [
+        "weder"
+      ],
+      "options": [
+        "weder",
+        "sowohl",
+        "entweder",
+        "zwar"
+      ],
+      "collocation": "weder ... noch",
+      "meaning": "Doppelte Verneinung (weder das eine noch das andere trifft zu)",
+      "example": "Er hat weder Zeit noch Geld für ein neues Hobby.",
+      "tip": "Zweiteilige Konjunktion zur doppelten Negation ohne zusätzliches 'nicht'."
+    },
+    {
+      "id": "konj-11",
+      "prefix": "Ich bin mir noch nicht ganz sicher,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "ich die neue Stelle annehmen soll.",
+      "correctAnswer": "ob",
+      "acceptableAnswers": [
+        "ob"
+      ],
+      "options": [
+        "ob",
+        "dass",
+        "wenn",
+        "wie"
+      ],
+      "collocation": "ob (Indirekte Frage / Verb am Ende)",
+      "meaning": "Leitet eine indirekte Ja/Nein-Frage oder Unsiherheit ein",
+      "example": "Weißt du schon, ob der Bus pünktlich kommt?",
+      "tip": "Subjunktion für indirekte Fragen: Verb rückt ans Satzende."
+    },
+    {
+      "id": "konj-12",
+      "prefix": "Es tut mir leid,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "ich mich erst jetzt auf Ihre E-Mail melde.",
+      "correctAnswer": "dass",
+      "acceptableAnswers": [
+        "dass",
+        "daß"
+      ],
+      "options": [
+        "dass",
+        "damit",
+        "weil",
+        "ob"
+      ],
+      "collocation": "dass (Objektsatz / Verb am Ende)",
+      "meaning": "Verbindet Haupt- und Nebensatz bei Aussagen, Gefühlen oder Feststellungen",
+      "example": "Ich habe gehört, dass du eine neue Wohnung gefunden hast.",
+      "tip": "Standard-Subjunktion nach Verben des Wissens, Fühlens oder Sagens."
+    },
+    {
+      "id": "konj-13",
+      "prefix": "Ich rufe dich sofort an,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "ich aus der Besprechung komme.",
+      "correctAnswer": "sobald",
+      "acceptableAnswers": [
+        "sobald",
+        "wenn"
+      ],
+      "options": [
+        "sobald",
+        "solange",
+        "bis",
+        "ehe"
+      ],
+      "collocation": "sobald (Temporalsatz / Verb am Ende)",
+      "meaning": "Drückt eine unmittelbare zeitliche Abfolge aus (Gleich nach dem Moment)",
+      "example": "Sobald der Regen aufhört, gehen wir spazieren.",
+      "tip": "Temporale Subjunktion: Leitet einen Nebensatz ein (Verb am Ende)."
+    },
+    {
+      "id": "konj-14",
+      "prefix": "Er liest während der Zugfahrt ein Buch,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "seine Kollegin Podcasts hört.",
+      "correctAnswer": "während",
+      "acceptableAnswers": [
+        "während",
+        "waehrend"
+      ],
+      "options": [
+        "während",
+        "bevor",
+        "seitdem",
+        "nachdem"
+      ],
+      "collocation": "während (Temporalsatz / Gegensätzlichkeit / Verb am Ende)",
+      "meaning": "Drückt Gleichzeitigkeit oder einen Kontrast zwischen zwei Handlungen aus",
+      "example": "Während er kocht, deckt sie den Tisch.",
+      "tip": "Subjunktion mit Verb am Ende."
+    },
+    {
+      "id": "konj-15",
+      "prefix": "Wir müssen warten,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "der Chef die Dokumente unterschrieben hat.",
+      "correctAnswer": "bis",
+      "acceptableAnswers": [
+        "bis"
+      ],
+      "options": [
+        "bis",
+        "seit",
+        "sobald",
+        "ehe"
+      ],
+      "collocation": "bis (Temporalsatz / Endpunkt)",
+      "meaning": "Gibt den Endpunkt eines Zeitraums oder einer Handlung an",
+      "example": "Bleiben Sie bitte sitzen, bis das Flugzeug vollständig steht.",
+      "tip": "Temporale Subjunktion für einen zeitlichen Endpunkt."
+    },
+    {
+      "id": "konj-16",
+      "prefix": "Bitte prüfen Sie die Rechnung genau,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "Sie den Betrag überweisen.",
+      "correctAnswer": "bevor",
+      "acceptableAnswers": [
+        "bevor",
+        "ehe"
+      ],
+      "options": [
+        "bevor",
+        "nachdem",
+        "sobald",
+        "seitdem"
+      ],
+      "collocation": "bevor / ehe (Temporalsatz / Vorzeitigkeit der Hauptsatzhandlung)",
+      "meaning": "Drückt aus, dass die Handlung im Hauptsatz zuerst passiert",
+      "example": "Wasche dir die Hände, bevor du isst.",
+      "tip": "Subjunktion: Verb rückt an das Satzende."
+    },
+    {
+      "id": "konj-17",
+      "prefix": "Er fühlt sich viel fitter,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "er regelmäßig jeden Morgen joggen geht.",
+      "correctAnswer": "seitdem",
+      "acceptableAnswers": [
+        "seitdem",
+        "seit"
+      ],
+      "options": [
+        "seitdem",
+        "bis",
+        "während",
+        "nachdem"
+      ],
+      "collocation": "seitdem / seit (Temporalsatz / Anfangspunkt in der Vergangenheit)",
+      "meaning": "Bezeichnet den Startpunkt eines Geschehens, das bis jetzt andauert",
+      "example": "Seitdem sie in Berlin wohnt, lernt sie intensiv Deutsch.",
+      "tip": "Temporale Subjunktion für andauernde Zustände ab einem Startpunkt."
+    },
+    {
+      "id": "konj-18",
+      "prefix": "Er ist heute sehr müde,",
+      "gapPlaceholder": "Konjunktionaladverb",
+      "suffix": "geht er am Abend trotzdem ins Fitnessstudio.",
+      "correctAnswer": "trotzdem",
+      "acceptableAnswers": [
+        "trotzdem",
+        "dennoch"
+      ],
+      "options": [
+        "trotzdem",
+        "deshalb",
+        "weil",
+        "obwohl"
+      ],
+      "collocation": "trotzdem / dennoch (Konjunktionaladverb / Position 1)",
+      "meaning": "Drückt eine gegensätzliche/unerwartete Folge aus",
+      "example": "Es regnet in Strömen; trotzdem geht er ohne Regenschirm raus.",
+      "tip": "Achtung: Steht auf Position 1 im Hauptsatz, danach folgt sofort das Verb!"
+    },
+    {
+      "id": "konj-19",
+      "prefix": "Das Auto hatte einen Motorschaden,",
+      "gapPlaceholder": "Konjunktionaladverb",
+      "suffix": "musste die Familie den Urlaub verschieben.",
+      "correctAnswer": "deshalb",
+      "acceptableAnswers": [
+        "deshalb",
+        "darum",
+        "deswegen"
+      ],
+      "options": [
+        "deshalb",
+        "weil",
+        "denn",
+        "obwohl"
+      ],
+      "collocation": "deshalb / deswegen / darum (Konjunktionaladverb / Position 1)",
+      "meaning": "Drückt die logische Folge/Konsequenz aus",
+      "example": "Sie hat die Prüfung bestanden, deshalb feiert sie heute.",
+      "tip": "Hauptsatzverbindung: Steht auf Position 1 (Verb folgt direkt auf Position 2)."
+    },
+    {
+      "id": "konj-20",
+      "prefix": "Er bestand die schwere B2-Prüfung auf Anhieb,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "er kaum Zeit zum Lernen hatte.",
+      "correctAnswer": "obwohl",
+      "acceptableAnswers": [
+        "obwohl",
+        "obgleich"
+      ],
+      "options": [
+        "obwohl",
+        "weil",
+        "da",
+        "sodass"
+      ],
+      "collocation": "obwohl (Konzessivsatz / Verb am Ende)",
+      "meaning": "Drückt einen Unerwarteten Gegensatz aus",
+      "example": "Obwohl der Test schwer war, haben alle bestanden.",
+      "tip": "Konzessive Subjunktion mit Verb am Ende."
+    },
+    {
+      "id": "konj-21",
+      "prefix": "Das Hotel liegt sehr zentral,",
+      "gapPlaceholder": "Konjunktion",
+      "suffix": "die Zimmer sind leider extrem laut.",
+      "correctAnswer": "aber",
+      "acceptableAnswers": [
+        "aber",
+        "doch"
+      ],
+      "options": [
+        "aber",
+        "sondern",
+        "denn",
+        "oder"
+      ],
+      "collocation": "aber (Nebenordnend / Position 0)",
+      "meaning": "Drückt eine Einschränkung oder einen Gegensatz aus",
+      "example": "Die Wohnung ist klein, aber sehr gemütlich.",
+      "tip": "Position 0: Beeinflusst die Wortstellung im Folgesatz nicht."
+    },
+    {
+      "id": "konj-22",
+      "prefix": "Wir fahren nicht nach Spanien,",
+      "gapPlaceholder": "Konjunktion",
+      "suffix": "wir verbringen den Urlaub in Italien.",
+      "correctAnswer": "sondern",
+      "acceptableAnswers": [
+        "sondern"
+      ],
+      "options": [
+        "sondern",
+        "aber",
+        "denn",
+        "oder"
+      ],
+      "collocation": "sondern (Position 0 / nach Verneinung)",
+      "meaning": "Korrigiert eine vorherige Negation ('nicht ... sondern')",
+      "example": "Das ist kein Apfel, sondern eine Birne.",
+      "tip": "Steht immer nach einer Verneinung ('nicht' / 'kein') zur Korrektur."
+    },
+    {
+      "id": "konj-23",
+      "prefix": "Sie hat das Dokument korrigiert,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "keine Missverständnisse entstehen.",
+      "correctAnswer": "sodass",
+      "acceptableAnswers": [
+        "sodass",
+        "so dass"
+      ],
+      "options": [
+        "sodass",
+        "damit",
+        "weil",
+        "obwohl"
+      ],
+      "collocation": "sodass (Konsekutivsatz / Verb am Ende)",
+      "meaning": "Gibt die Folge oder Konsequenz einer Handlung an",
+      "example": "Es schneite sehr stark, sodass die Bahnen ausfielen.",
+      "tip": "Konsekutive Subjunktion mit Verb am Satzende."
+    },
+    {
+      "id": "konj-24",
+      "prefix": "Er löste das schwierige Problem,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "er die Anleitung Schritt für Schritt befolgte.",
+      "correctAnswer": "indem",
+      "acceptableAnswers": [
+        "indem"
+      ],
+      "options": [
+        "indem",
+        "sodass",
+        "damit",
+        "weil"
+      ],
+      "collocation": "indem (Modalsatz / Verb am Ende)",
+      "meaning": "Gibt das Mittel oder die Methode an, wie etwas erreicht wird",
+      "example": "Man spart Energie, indem man das Licht ausschaltet.",
+      "tip": "Antwortet auf die Frage 'Wie?' oder 'Wodurch?'."
+    },
+    {
+      "id": "konj-25",
+      "prefix": "Die neue Mitarbeiterin ist",
+      "gapPlaceholder": "Doppelkonjunktion",
+      "suffix": "sehr fleißig als auch äußerst zuverlässig.",
+      "correctAnswer": "sowohl",
+      "acceptableAnswers": [
+        "sowohl"
+      ],
+      "options": [
+        "sowohl",
+        "entweder",
+        "weder",
+        "zwar"
+      ],
+      "collocation": "sowohl ... als auch",
+      "meaning": "Zweiteilige Aufzählung (Beides trifft zu)",
+      "example": "Ich esse sowohl Gemüse als auch Obst gerne.",
+      "tip": "Verbindet zwei gleichwertige positive Elemente."
+    },
+    {
+      "id": "konj-26",
+      "prefix": "Er ging einfach vorbei,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "uns zu grüßen.",
+      "correctAnswer": "ohne",
+      "acceptableAnswers": [
+        "ohne"
+      ],
+      "options": [
+        "ohne",
+        "anstatt",
+        "um",
+        "ausser"
+      ],
+      "collocation": "ohne ... zu (+ Infinitiv)",
+      "meaning": "Drückt das Fehlen einer erwarteten Handlung aus",
+      "example": "Er verließ den Raum, ohne etwas zu sagen.",
+      "tip": "Infinitivkonstruktion: verbindet sich mit 'zu + Infinitiv'."
+    },
+    {
+      "id": "konj-27",
+      "prefix": "Er blieb den ganzen Tag im Bett,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "zum Arzt zu gehen.",
+      "correctAnswer": "anstatt",
+      "acceptableAnswers": [
+        "anstatt",
+        "statt"
+      ],
+      "options": [
+        "anstatt",
+        "ohne",
+        "um",
+        "ausser"
+      ],
+      "collocation": "anstatt ... zu / statt ... zu (+ Infinitiv)",
+      "meaning": "Drückt eine Alternative aus, die NICHT gewählt wurde",
+      "example": "Er spielte Videospiele, anstatt für die Prüfung zu lernen.",
+      "tip": "Infinitivkonstruktion für versäumte/nicht gewählte Aktionen."
+    },
+    {
+      "id": "konj-28",
+      "prefix": "Wir müssen die Präsentation fertigstellen,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "der Kunde zum Meeting eintrifft.",
+      "correctAnswer": "ehe",
+      "acceptableAnswers": [
+        "ehe",
+        "bevor"
+      ],
+      "options": [
+        "ehe",
+        "nachdem",
+        "seitdem",
+        "sobald"
+      ],
+      "collocation": "ehe / bevor (Temporalsatz / Verb am Ende)",
+      "meaning": "Synonym zu 'bevor' (gehobenes/schriftsprachliches Deutsch)",
+      "example": "Ehe die Sonne aufgeht, fahren wir los.",
+      "tip": "Temporale Subjunktion mit Verb am Satzende."
+    },
+    {
+      "id": "konj-29",
+      "prefix": "Er spricht so gut Deutsch,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "wäre es seine Muttersprache.",
+      "correctAnswer": "als",
+      "acceptableAnswers": [
+        "als"
+      ],
+      "options": [
+        "als",
+        "wie",
+        "wenn",
+        "ob"
+      ],
+      "collocation": "als ob / als + Konjunktiv II",
+      "meaning": "Irrealer Vergleich (Vergleich mit einer hypothetischen Situation)",
+      "example": "Er tut so, als wüsste er von nichts.",
+      "tip": "Nach 'als' ohne 'ob' steht das Verb direkt auf Position 2!"
+    },
+    {
+      "id": "konj-30",
+      "prefix": "Je mehr man eine Sprache im Alltag spricht,",
+      "gapPlaceholder": "Doppelkonjunktion",
+      "suffix": "leichter fällt einem die Grammatik.",
+      "correctAnswer": "desto",
+      "acceptableAnswers": [
+        "desto",
+        "umso"
+      ],
+      "options": [
+        "desto",
+        "je",
+        "wie",
+        "als"
+      ],
+      "collocation": "je ... desto / umso (Proportionaler Vergleich)",
+      "meaning": "Drückt eine parallele Veränderung/Proportionalität aus",
+      "example": "Je früher wir losfahren, desto schneller kommen wir an.",
+      "tip": "'je' leitet den Nebensatz ein (Verb am Ende), 'desto/umso' steht im Hauptsatz (Komparativ + Verb direkt danach)."
+    },
+    {
+      "id": "konj-31",
+      "prefix": "Wir sagten das Seminar ab,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "sich nicht genügend Teilnehmer angemeldet hatten.",
+      "correctAnswer": "da",
+      "acceptableAnswers": [
+        "da",
+        "weil"
+      ],
+      "options": [
+        "da",
+        "denn",
+        "deshalb",
+        "darum"
+      ],
+      "collocation": "da / weil (Kausalsatz / bekannten Grund nennen)",
+      "meaning": "Gibt einen Kausalgrund an (wird oft am Satzanfang genutzt)",
+      "example": "Da das Wetter schlecht war, blieben wir im Haus.",
+      "tip": "Kausale Subjunktion (Synonym zu 'weil', schriftsprachlich bevorzugt)."
+    },
+    {
+      "id": "konj-32",
+      "prefix": "Er wusste genau,",
+      "gapPlaceholder": "Subjunktion",
+      "suffix": "er den Fehler in der Software korrigieren musste.",
+      "correctAnswer": "wie",
+      "acceptableAnswers": [
+        "wie"
+      ],
+      "options": [
+        "wie",
+        "was",
+        "dass",
+        "ob"
+      ],
+      "collocation": "wie (Fragewort als Subjunktion / Indirekter Fragesatz)",
+      "meaning": "Leitet einen indirekten Fragesatz zur Art und Weise ein",
+      "example": "Zeig mir bitte, wie das Gerät funktioniert.",
+      "tip": "Fragewörter als Konnektoren schieben das Verb ans Satzende."
+    }
+  ]
+}

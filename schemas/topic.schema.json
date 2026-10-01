@@ -1,0 +1,127 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Deutschify Topic Data Schema",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "shortDescription",
+    "icon",
+    "level",
+    "color",
+    "exercises"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Unique kebab-case identifier for the topic"
+    },
+    "title": {
+      "type": "string",
+      "description": "Display title in German"
+    },
+    "shortDescription": {
+      "type": "string",
+      "description": "Short summary of the topic's learning goal"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Emoji or icon for the topic card"
+    },
+    "level": {
+      "type": "string",
+      "description": "CEFR proficiency level (e.g., 'B1 – C1')"
+    },
+    "color": {
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$",
+      "description": "Hex accent color for the topic"
+    },
+    "totalExercises": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total number of exercises in this topic"
+    },
+    "exercises": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/exercise"
+      }
+    }
+  },
+  "definitions": {
+    "exercise": {
+      "type": "object",
+      "required": [
+        "id",
+        "prefix",
+        "gapPlaceholder",
+        "suffix",
+        "correctAnswer",
+        "acceptableAnswers",
+        "options",
+        "meaning",
+        "example",
+        "tip"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for FSRS progress tracking"
+        },
+        "prefix": {
+          "type": "string",
+          "description": "Sentence text before the gap"
+        },
+        "gapPlaceholder": {
+          "type": "string",
+          "description": "Grammatical placeholder for the gap (e.g. Nomen, Verb, Präposition)"
+        },
+        "suffix": {
+          "type": "string",
+          "description": "Sentence text after the gap"
+        },
+        "correctAnswer": {
+          "type": "string",
+          "description": "Primary correct word to fill into the gap"
+        },
+        "acceptableAnswers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of accepted variations (case variations, etc.)"
+        },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "string"
+          },
+          "description": "Multiple choice chips shown to the user"
+        },
+        "collocation": {
+          "type": "string",
+          "description": "Target collocation or grammatical phrase"
+        },
+        "verb": {
+          "type": "string",
+          "description": "Optional root verb"
+        },
+        "meaning": {
+          "type": "string",
+          "description": "German explanation of the meaning"
+        },
+        "example": {
+          "type": "string",
+          "description": "Authentic example sentence"
+        },
+        "tip": {
+          "type": "string",
+          "description": "Grammar hint or mnemonic rule"
+        }
+      }
+    }
+  }
+}

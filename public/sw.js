@@ -1,4 +1,4 @@
-const CACHE_NAME = 'deutschify-v2';
+const CACHE_NAME = 'deutschify-v3';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
@@ -8,7 +8,14 @@ const ASSETS_TO_CACHE = [
   '/js/audio.js',
   '/js/fsrs.js',
   '/js/scheduler.js',
-  '/js/data/topics.js',
+  '/js/data/TopicRepository.js',
+  '/data/topics.json',
+  '/data/topics/kollokationen.json',
+  '/data/topics/praepositionen.json',
+  '/data/topics/nomen-praepositionen.json',
+  '/data/topics/redewendungen.json',
+  '/data/topics/adjektive.json',
+  '/data/topics/konjunktionen.json',
   '/manifest.json',
   '/icons/icon.svg'
 ];

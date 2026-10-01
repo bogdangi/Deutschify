@@ -1,0 +1,3203 @@
+{
+  "id": "nomen-praepositionen",
+  "title": "Nomen mit Präpositionen",
+  "shortDescription": "Feste Präpositionen bei Substantiven (z. B. Hoffnung auf, Angst vor, Skepsis gegenüber)",
+  "icon": "📌",
+  "level": "B1 – C1",
+  "color": "#f59e0b",
+  "totalExercises": 157,
+  "exercises": [
+    {
+      "id": "nom-1",
+      "prefix": "Viele Menschen verspüren vor öffentlichen Auftritten eine erhebliche Angst",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Versagen.",
+      "correctAnswer": "vor",
+      "acceptableAnswers": [
+        "vor"
+      ],
+      "options": [
+        "vor",
+        "von",
+        "an",
+        "für"
+      ],
+      "collocation": "die Angst vor (+ Dativ)",
+      "meaning": "Gefühl der Bedrohung oder Furcht",
+      "example": "Sie hat ihre Angst vor Spinnen erfolgreich überwunden.",
+      "tip": "die Angst vor + Dativ (Verb: sich ängstigen vor + Dativ)."
+    },
+    {
+      "id": "nom-2",
+      "prefix": "Trotz der anhaltenden Rückschläge gaben die Retter die Hoffnung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Überlebende niemals auf.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "für",
+        "an",
+        "zu"
+      ],
+      "collocation": "die Hoffnung auf (+ Akkusativ)",
+      "meaning": "zuversichtliche Erwartung einer positiven Wendung",
+      "example": "Wir haben die Hoffnung auf ein gutes Ende nicht verloren.",
+      "tip": "die Hoffnung auf + Akkusativ (Verb: hoffen auf + Akkusativ)."
+    },
+    {
+      "id": "nom-3",
+      "prefix": "In den Verhandlungen zeigten beide Parteien eine erfreuliche Bereitschaft",
+      "gapPlaceholder": "Präposition",
+      "suffix": "einem fairen Kompromiss.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "für",
+        "an",
+        "auf"
+      ],
+      "collocation": "die Bereitschaft zu (+ Dativ)",
+      "meaning": "Bereitwilligkeit, etwas Bestimmtes zu tun",
+      "example": "Die Bereitschaft zur Hilfe war in der Bevölkerung riesig.",
+      "tip": "die Bereitschaft zu + Dativ (Adjektiv: bereit zu + Dativ)."
+    },
+    {
+      "id": "nom-4",
+      "prefix": "Öffentliche Verkehrsmittel und Fahrräder stellen eine umweltfreundliche Alternative",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem motorisierten Individualverkehr dar.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "für",
+        "an",
+        "von"
+      ],
+      "collocation": "die Alternative zu (+ Dativ)",
+      "meaning": "eine andere Möglichkeit oder Option",
+      "example": "Gibt es eine bezahlbare Alternative zu dieser teuren Software?",
+      "tip": "die Alternative zu + Dativ (Adjektiv: alternativ zu + Dativ)."
+    },
+    {
+      "id": "nom-5",
+      "prefix": "Nach den jüngsten Skandalen wuchs in der Bevölkerung das Misstrauen",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den politischen Institutionen.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "vor",
+        "gegen",
+        "über"
+      ],
+      "collocation": "das Misstrauen gegenüber (+ Dativ)",
+      "meaning": "fehlendes Vertrauen oder Skepsis",
+      "example": "Ein gesundes Misstrauen gegenüber Phishing-Mails schützt Ihre Daten.",
+      "tip": "das Misstrauen gegenüber + Dativ (Adjektiv: misstrauisch gegenüber + Dativ)."
+    },
+    {
+      "id": "nom-6",
+      "prefix": "Die Schulleitung wandte sich mit einer dringenden Bitte",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Unterstützung an den Förderverein.",
+      "correctAnswer": "um",
+      "acceptableAnswers": [
+        "um"
+      ],
+      "options": [
+        "um",
+        "für",
+        "nach",
+        "auf"
+      ],
+      "collocation": "die Bitte um (+ Akkusativ)",
+      "meaning": "das höfliche Ersuchen um etwas",
+      "example": "Ich komme mit einer großen Bitte um Ihre Mithilfe zu Ihnen.",
+      "tip": "die Bitte um + Akkusativ (Verb: bitten um + Akkusativ)."
+    },
+    {
+      "id": "nom-7",
+      "prefix": "Im Namen des Vorstands sprach die Direktorin ihren tiefen Dank",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die geleistete Arbeit aus.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "über",
+        "an",
+        "von"
+      ],
+      "collocation": "der Dank für (+ Akkusativ)",
+      "meaning": "Ausdruck der Anerkennung und Verbundenheit",
+      "example": "Herzlichen Dank für Ihre schnelle Rückmeldung!",
+      "tip": "der Dank für + Akkusativ (Verb: danken für / Adjektiv: dankbar für + Akkusativ)."
+    },
+    {
+      "id": "nom-8",
+      "prefix": "Das große Interesse des Publikums",
+      "gapPlaceholder": "Präposition",
+      "suffix": "der neuen Kunstausstellung überraschte selbst die Museumsleitung.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "für",
+        "über",
+        "zu"
+      ],
+      "collocation": "das Interesse an (+ Dativ)",
+      "meaning": "Aufmerksamkeit, Neugier oder Anteilnahme an einer Sache",
+      "example": "Er bekundete reges Interesse an den Verhandlungen.",
+      "tip": "Nomen: das Interesse AN + Dativ (aber Verb: sich interessieren FÜR + Akkusativ!)."
+    },
+    {
+      "id": "nom-9",
+      "prefix": "Der bloße Gedanke",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die bevorstehende mündliche Prüfung raubte ihm den Schlaf.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "über",
+        "auf",
+        "in"
+      ],
+      "collocation": "der Gedanke an (+ Akkusativ)",
+      "meaning": "das Nachdenken über oder Erinnern an eine Sache",
+      "example": "Der Gedanke an den Urlaub hält meine Laune aufrecht.",
+      "tip": "der Gedanke an + Akkusativ (Verb: denken an + Akkusativ)."
+    },
+    {
+      "id": "nom-10",
+      "prefix": "Ihre unstillbare Neugier",
+      "gapPlaceholder": "Präposition",
+      "suffix": "fremde Kulturen führte sie in viele entlegene Weltregionen.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "nach",
+        "für",
+        "über"
+      ],
+      "collocation": "die Neugier auf (+ Akkusativ)",
+      "meaning": "Drang, Neues kennenzulernen und zu erforschen",
+      "example": "Die Neugier auf das neue Buch war enorm.",
+      "tip": "die Neugier auf + Akkusativ (Adjektiv: neugierig auf + Akkusativ)."
+    },
+    {
+      "id": "nom-11",
+      "prefix": "Trotz der Versprechungen blieb eine spürbare Skepsis",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den wirtschaftlichen Prognosen bestehen.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "an",
+        "vor",
+        "wider"
+      ],
+      "collocation": "die Skepsis gegenüber (+ Dativ)",
+      "meaning": "kritisches Zweifeln oder Bedenken",
+      "example": "Viele Bürger hegen Skepsis gegenüber neuen Technologien.",
+      "tip": "die Skepsis gegenüber + Dativ (Adjektiv: skeptisch gegenüber + Dativ)."
+    },
+    {
+      "id": "nom-12",
+      "prefix": "Nach den jüngsten Enthüllungen gibt es kaum noch einen Zweifel",
+      "gapPlaceholder": "Präposition",
+      "suffix": "der Schuld des Angeklagten.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "in",
+        "über",
+        "von"
+      ],
+      "collocation": "der Zweifel an (+ Dativ)",
+      "meaning": "Ungewissheit oder Bedenken bezüglich einer Tatsache",
+      "example": "Zweifel an seinen Fähigkeiten sind völlig unbegründet.",
+      "tip": "der Zweifel an + Dativ (Verb: zweifeln an + Dativ / Adjektiv: verzweifelt an + Dativ)."
+    },
+    {
+      "id": "nom-13",
+      "prefix": "Eine sorgfältige Vorbereitung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "das Vorstellungsgespräch erhöht die Erfolgschancen beträchtlich.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "zu",
+        "für",
+        "an"
+      ],
+      "collocation": "die Vorbereitung auf (+ Akkusativ)",
+      "meaning": "das Vorbereiten für ein bevorstehendes Ereignis",
+      "example": "Die Vorbereitung auf den Marathon dauert Monate.",
+      "tip": "die Vorbereitung auf + Akkusativ (Verb: sich vorbereiten auf / Adjektiv: vorbereitet auf)."
+    },
+    {
+      "id": "nom-14",
+      "prefix": "Die monatelange Suche",
+      "gapPlaceholder": "Präposition",
+      "suffix": "einer bezahlbaren Dreizimmerwohnung war endlich von Erfolg gekrönt.",
+      "correctAnswer": "nach",
+      "acceptableAnswers": [
+        "nach"
+      ],
+      "options": [
+        "nach",
+        "für",
+        "um",
+        "zu"
+      ],
+      "collocation": "die Suche nach (+ Dativ)",
+      "meaning": "das Bemühen, jemanden oder etwas aufzufinden",
+      "example": "Die Polizei setzte die Suche nach der vermissten Person fort.",
+      "tip": "die Suche nach + Dativ (Verb: suchen nach + Dativ)."
+    },
+    {
+      "id": "nom-15",
+      "prefix": "Die Vorfreude und allgemeine Freude",
+      "gapPlaceholder": "Präposition",
+      "suffix": "das traditionelle Sommerfest war überall im Betrieb spürbar.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "über",
+        "für",
+        "an"
+      ],
+      "collocation": "die Freude auf (+ Akkusativ)",
+      "meaning": "freudige Erwartung eines zukünftigen Ereignisses",
+      "example": "Die Freude auf die Ferien ist bei den Kindern riesig.",
+      "tip": "Freude AUF = Vorfreude auf Zukünftiges (Verb: sich freuen auf + Akkusativ)."
+    },
+    {
+      "id": "nom-16",
+      "prefix": "Die Freude der Athletin",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den unerwarteten Gewinn der Goldmedaille rührte das gesamte Stadion.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "auf",
+        "an",
+        "von"
+      ],
+      "collocation": "die Freude über (+ Akkusativ)",
+      "meaning": "Glücksgefühl über ein bereits eingetretenes Ereignis",
+      "example": "Ihre Freude über das Geschenk war aufrichtig.",
+      "tip": "Freude ÜBER = Reaktion auf Gegenwart/Vergangenheit (Adjektiv: erfreut über / froh über)."
+    },
+    {
+      "id": "nom-17",
+      "prefix": "Ein intensiver Austausch",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den europäischen Partnerhochschulen bereichert das Studium.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "bei",
+        "von",
+        "zu"
+      ],
+      "collocation": "der Austausch mit (+ Dativ)",
+      "meaning": "gegenseitige Kommunikation und Erfahrungsaustausch",
+      "example": "Der Austausch mit erfahrenen Kollegen ist sehr lehrreich.",
+      "tip": "der Austausch mit + Dativ (Partner) / über + Akkusativ (Thema)."
+    },
+    {
+      "id": "nom-18",
+      "prefix": "Die finale Entscheidung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Ausbau des regionalen Schienennetzes fiel einstimmig.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "über",
+        "an",
+        "auf"
+      ],
+      "collocation": "die Entscheidung für (+ Akkusativ)",
+      "meaning": "Wahl zugunsten einer bestimmten Option",
+      "example": "Seine Entscheidung für ein Medizinstudium stand früh fest.",
+      "tip": "die Entscheidung für / gegen + Akkusativ (Verb: sich entscheiden für/gegen)."
+    },
+    {
+      "id": "nom-19",
+      "prefix": "Die lebhafte Erinnerung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die gemeinsame Wanderung begleitete sie ihr ganzes Leben lang.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "von",
+        "über",
+        "in"
+      ],
+      "collocation": "die Erinnerung an (+ Akkusativ)",
+      "meaning": "das Behalten oder Wiederaufleben eines vergangenen Eindrucks",
+      "example": "Eine schöne Erinnerung an die Schulzeit.",
+      "tip": "die Erinnerung an + Akkusativ (Verb: sich erinnern an + Akkusativ)."
+    },
+    {
+      "id": "nom-20",
+      "prefix": "Die rechtzeitige Warnung der Meteorologen",
+      "gapPlaceholder": "Präposition",
+      "suffix": "orkanartigen Böen verhinderte schwere Schäden.",
+      "correctAnswer": "vor",
+      "acceptableAnswers": [
+        "vor"
+      ],
+      "options": [
+        "vor",
+        "von",
+        "gegen",
+        "an"
+      ],
+      "collocation": "die Warnung vor (+ Dativ)",
+      "meaning": "Hinweis auf eine drohende Gefahr",
+      "example": "Wir beachteten die Warnung vor Lawinenabgängen.",
+      "tip": "die Warnung vor + Dativ (Verb: warnen vor + Dativ)."
+    },
+    {
+      "id": "nom-21",
+      "prefix": "Die hohe Zufriedenheit der Kundschaft",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Kundendienst spiegelt sich in den Bewertungen wider.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "über",
+        "von",
+        "an"
+      ],
+      "collocation": "die Zufriedenheit mit (+ Dativ)",
+      "meaning": "Gefühl der Genugtuung und des Einverstandenseins",
+      "example": "Ihre Zufriedenheit mit dem Testergebnis war unübersehbar.",
+      "tip": "die Zufriedenheit mit + Dativ (Adjektiv: zufrieden mit + Dativ)."
+    },
+    {
+      "id": "nom-22",
+      "prefix": "Die regelmäßige Teilnahme",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Praxisseminaren ist Voraussetzung für die Prüfungszulassung.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "bei",
+        "in",
+        "zu"
+      ],
+      "collocation": "die Teilnahme an (+ Dativ)",
+      "meaning": "das Dabeisein oder Mitmachen bei einer Veranstaltung",
+      "example": "Die Teilnahme am Wettbewerb ist kostenlos.",
+      "tip": "die Teilnahme an + Dativ (Verb: teilnehmen an + Dativ)."
+    },
+    {
+      "id": "nom-23",
+      "prefix": "Ihr unerschütterliches Vertrauen",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Gerechtigkeit gab ihr in schweren Zeiten Zuversicht.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "an",
+        "für",
+        "in"
+      ],
+      "collocation": "das Vertrauen auf (+ Akkusativ)",
+      "meaning": "feste Zuversicht auf eine Sache oder Instanz",
+      "example": "Das Vertrauen auf eine rasche Besserung der Lage.",
+      "tip": "das Vertrauen auf + Akkusativ (Verb: vertrauen auf + Akkusativ)."
+    },
+    {
+      "id": "nom-24",
+      "prefix": "Ein bewusster Verzicht",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Einwegplastik schont Umwelt und Meere.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "von",
+        "an",
+        "für"
+      ],
+      "collocation": "der Verzicht auf (+ Akkusativ)",
+      "meaning": "freiwillige Entbehrung oder Nichtinanspruchnahme",
+      "example": "Der Verzicht auf ein Dienstfahrzeug spart Kosten.",
+      "tip": "der Verzicht auf + Akkusativ (Verb: verzichten auf + Akkusativ)."
+    },
+    {
+      "id": "nom-25",
+      "prefix": "Die Forscher suchten jahrelang vergeblich nach einer Antwort",
+      "gapPlaceholder": "Präposition",
+      "suffix": "diese fundamentale naturwissenschaftliche Frage.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "zu",
+        "für",
+        "an"
+      ],
+      "collocation": "die Antwort auf (+ Akkusativ)",
+      "meaning": "Erklärung, Replik oder Lösung für eine Frage",
+      "example": "Haben Sie schon eine Antwort auf Ihren Brief erhalten?",
+      "tip": "die Antwort auf + Akkusativ (Verb: antworten auf + Akkusativ)."
+    },
+    {
+      "id": "nom-26",
+      "prefix": "Ihre bemerkenswerte Aufgeschlossenheit",
+      "gapPlaceholder": "Präposition",
+      "suffix": "anderen Kulturen und Denkweisen zeichnet sie aus.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "für",
+        "zu",
+        "mit"
+      ],
+      "collocation": "die Aufgeschlossenheit gegenüber (+ Dativ)",
+      "meaning": "Offenheit und Toleranz für Neues oder Fremdes",
+      "example": "Eine offene Aufgeschlossenheit gegenüber Innovationen.",
+      "tip": "die Aufgeschlossenheit gegenüber + Dativ (Adjektiv: aufgeschlossen gegenüber + Dativ)."
+    },
+    {
+      "id": "nom-27",
+      "prefix": "Anfangs spürte man bei den Anwohnern eine gewisse Zurückhaltung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den neuen Bauprojekten.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "zu",
+        "bei",
+        "von"
+      ],
+      "collocation": "die Zurückhaltung gegenüber (+ Dativ)",
+      "meaning": "vorsichtige Distanz oder Reserviertheit",
+      "example": "Diplomatische Zurückhaltung gegenüber Journalisten.",
+      "tip": "die Zurückhaltung gegenüber + Dativ (Adjektiv: zurückhaltend gegenüber + Dativ)."
+    },
+    {
+      "id": "nom-28",
+      "prefix": "Im Kollegium herrschte große Verwunderung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die überraschende Umstrukturierung der Abteilung.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "an",
+        "von",
+        "auf"
+      ],
+      "collocation": "die Verwunderung über (+ Akkusativ)",
+      "meaning": "Erstaunen oder Befremden über eine Neuigkeit",
+      "example": "Seine Verwunderung über das Resultat war ehrlich.",
+      "tip": "die Verwunderung über + Akkusativ (Verb: sich wundern über / Adjektiv: verwundert über + Akkusativ)."
+    },
+    {
+      "id": "nom-29",
+      "prefix": "Der ständige Zwang",
+      "gapPlaceholder": "Präposition",
+      "suffix": "immer höherer Wirtschaftlichkeit belastet viele Beschäftigte.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "an",
+        "nach",
+        "auf"
+      ],
+      "collocation": "der Zwang zu (+ Dativ)",
+      "meaning": "Notwendigkeit oder Druck, der zum Handeln nötigt",
+      "example": "Es bestand keinerlei Zwang zur Teilnahme.",
+      "tip": "der Zwang zu + Dativ (Verb: zwingen zu / Partizip: gezwungen zu + Dativ)."
+    },
+    {
+      "id": "nom-30",
+      "prefix": "Vielen Dank für die freundliche Einladung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Ihrer festlichen Jubiläumsveranstaltung.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "auf",
+        "in",
+        "für"
+      ],
+      "collocation": "die Einladung zu (+ Dativ)",
+      "meaning": "Aufforderung, an einem Event teilzunehmen",
+      "example": "Ich habe eine Einladung zur Hochzeit erhalten.",
+      "tip": "die Einladung zu + Dativ (Verb: einladen zu + Dativ)."
+    },
+    {
+      "id": "nom-31",
+      "prefix": "Der Beschuldigte bat höflich um Entschuldigung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "sein unangemessenes Verhalten während der Sitzung.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "über",
+        "von",
+        "an"
+      ],
+      "collocation": "die Entschuldigung für (+ Akkusativ)",
+      "meaning": "Bitte um Verzeihung für ein Fehlverhalten",
+      "example": "Wir bitten um Entschuldigung für die Unannehmlichkeiten.",
+      "tip": "die Entschuldigung für + Akkusativ (Verb: sich entschuldigen für)."
+    },
+    {
+      "id": "nom-32",
+      "prefix": "Nach dem langwierigen Rechtsstreit gelangten die Parteien zu einer Einigung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "alle wesentlichen Punkte des Vertrags.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "mit",
+        "in",
+        "zu"
+      ],
+      "collocation": "die Einigung über (+ Akkusativ)",
+      "meaning": "Übereinstimmung oder Kompromiss in einem Streitfall",
+      "example": "Die Verhandlungen führten zu einer Einigung über den Preis.",
+      "tip": "die Einigung über + Akkusativ (Verb: sich einigen über)."
+    },
+    {
+      "id": "nom-33",
+      "prefix": "Bei vielen Berufstätigen wächst die Enttäuschung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die ausbleibenden Gehaltserhöhungen.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "an",
+        "in"
+      ],
+      "collocation": "die Enttäuschung über (+ Akkusativ)",
+      "meaning": "Gefühl der Niedergeschlagenheit wegen unerfüllter Erwartung",
+      "example": "Seine Enttäuschung über die Absage war groß.",
+      "tip": "die Enttäuschung über + Akkusativ (Sache) / von + Dativ (Person)."
+    },
+    {
+      "id": "nom-34",
+      "prefix": "Ihre persönliche Begeisterung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "erneuerbare Energien steckt das gesamte Team an.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "von",
+        "an",
+        "über"
+      ],
+      "collocation": "die Begeisterung für (+ Akkusativ)",
+      "meaning": "große Faszination und Freude an einer Sache",
+      "example": "Seine Begeisterung für Musik war spürbar.",
+      "tip": "die Begeisterung für + Akkusativ (Verb: sich begeistern für / Adjektiv: begeistert von)."
+    },
+    {
+      "id": "nom-35",
+      "prefix": "Für den reibungslosen Ablauf ist eine enge Abstimmung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Beteiligten unerlässlich.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "bei",
+        "zu",
+        "von"
+      ],
+      "collocation": "die Abstimmung mit (+ Dativ)",
+      "meaning": "gegenseitige Koordination oder Absprache",
+      "example": "In Abstimmung mit der Geschäftsführung wurde der Plan geändert.",
+      "tip": "die Abstimmung mit + Dativ (Verb: sich abstimmen mit)."
+    },
+    {
+      "id": "nom-36",
+      "prefix": "Die finanzielle Abhängigkeit der Familie",
+      "gapPlaceholder": "Präposition",
+      "suffix": "staatlicher Unterstützung soll verringert werden.",
+      "correctAnswer": "von",
+      "acceptableAnswers": [
+        "von"
+      ],
+      "options": [
+        "von",
+        "aus",
+        "an",
+        "zu"
+      ],
+      "collocation": "die Abhängigkeit von (+ Dativ)",
+      "meaning": "angewiesen sein auf / keine Selbstständigkeit haben",
+      "example": "Die wirtschaftliche Abhängigkeit von Rohstoffimporten ist hoch.",
+      "tip": "die Abhängigkeit von + Dativ (Verb: abhängen von / Adjektiv: abhängig von)."
+    },
+    {
+      "id": "nom-37",
+      "prefix": "Die fristgerechte Abmeldung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Sprachkurs muss schriftlich erfolgen.",
+      "correctAnswer": "von",
+      "acceptableAnswers": [
+        "von"
+      ],
+      "options": [
+        "von",
+        "aus",
+        "an",
+        "bei"
+      ],
+      "collocation": "die Abmeldung von (+ Dativ)",
+      "meaning": "offizielle Benachrichtigung über das Beenden einer Teilnahme",
+      "example": "Für die Abmeldung vom Unterricht gilt eine Frist von zwei Wochen.",
+      "tip": "die Abmeldung von + Dativ (Verb: sich abmelden von)."
+    },
+    {
+      "id": "nom-38",
+      "prefix": "Eine professionelle Abwicklung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den gesamten Kundenauftrag erfordert gute Planung.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "in",
+        "mit"
+      ],
+      "collocation": "die Abwicklung über (+ Akkusativ)",
+      "meaning": "Durchführung oder Organisation einer Aufgabe",
+      "example": "Die Abwicklung der Schäden dauert mehrere Tage.",
+      "tip": "die Abwicklung über + Akkusativ / von + Dativ (Verb: abwickeln)."
+    },
+    {
+      "id": "nom-39",
+      "prefix": "Mit dem schnellen Umbau schuf man eine gute Alternative",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den bisherigen Arbeitsplätzen.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "für",
+        "an",
+        "von"
+      ],
+      "collocation": "die Alternative zu (+ Dativ)",
+      "meaning": "andere Ausweichmöglichkeit",
+      "example": "Es gibt keine sinnvolle Alternative zu diesem Plan.",
+      "tip": "die Alternative zu + Dativ (Adjektiv: alternativ zu)."
+    },
+    {
+      "id": "nom-40",
+      "prefix": "Wir müssen eine kleine Änderung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Zeitplan vornehmen.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "in",
+        "zu",
+        "auf"
+      ],
+      "collocation": "die Änderung an (+ Dativ)",
+      "meaning": "Anpassung oder Modifikation einer Sache",
+      "example": "Eine Änderung am Vertrag ist nachträglich nicht möglich.",
+      "tip": "die Änderung an + Dativ (Verb: ändern an)."
+    },
+    {
+      "id": "nom-41",
+      "prefix": "Ihre ständige Angst",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Fehlern blockierte ihren beruflichen Fortschritt.",
+      "correctAnswer": "vor",
+      "acceptableAnswers": [
+        "vor"
+      ],
+      "options": [
+        "vor",
+        "von",
+        "an",
+        "für"
+      ],
+      "collocation": "die Angst vor (+ Dativ)",
+      "meaning": "Furcht vor einer Bedrohung oder Person",
+      "example": "Seine Angst vor Dunkelheit ist verschwunden.",
+      "tip": "die Angst vor + Dativ (Verb: sich ängstigen vor)."
+    },
+    {
+      "id": "nom-42",
+      "prefix": "Die stufenweise Anpassung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die neuen Gesetze verläuft reibungslos.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "zu",
+        "auf",
+        "in"
+      ],
+      "collocation": "die Anpassung an (+ Akkusativ)",
+      "meaning": "Einstellung auf neue Gegebenheiten",
+      "example": "Die Anpassung an das heiße Klima fällt schwer.",
+      "tip": "die Anpassung an + Akkusativ (Verb: sich anpassen an / Adjektiv: angepasst an)."
+    },
+    {
+      "id": "nom-43",
+      "prefix": "Ein kurzer Anruf",
+      "gapPlaceholder": "Präposition",
+      "suffix": "der Kundenservice-Hotline klärte das Missverständnis.",
+      "correctAnswer": "bei",
+      "acceptableAnswers": [
+        "bei"
+      ],
+      "options": [
+        "bei",
+        "an",
+        "zu",
+        "in"
+      ],
+      "collocation": "der Anruf bei (+ Dativ)",
+      "meaning": "telefonische Kontaktaufnahme mit einer Person/Institution",
+      "example": "Mein Anruf bei der Behörde war erfolgreich.",
+      "tip": "der Anruf bei + Dativ (Verb: anrufen bei)."
+    },
+    {
+      "id": "nom-44",
+      "prefix": "Gibt es schon eine offizielle Antwort",
+      "gapPlaceholder": "Präposition",
+      "suffix": "unsere schriftliche Beschwerde?",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "zu",
+        "für",
+        "an"
+      ],
+      "collocation": "die Antwort auf (+ Akkusativ)",
+      "meaning": "Reaktion auf eine Frage oder ein Schreiben",
+      "example": "Ich warte auf die Antwort auf meine E-Mail.",
+      "tip": "die Antwort auf + Akkusativ (Verb: antworten auf)."
+    },
+    {
+      "id": "nom-45",
+      "prefix": "Die persönliche Anwesenheit aller Mitglieder",
+      "gapPlaceholder": "Präposition",
+      "suffix": "der Versammlung ist Pflicht.",
+      "correctAnswer": "bei",
+      "acceptableAnswers": [
+        "bei"
+      ],
+      "options": [
+        "bei",
+        "in",
+        "an",
+        "zu"
+      ],
+      "collocation": "die Anwesenheit bei (+ Dativ)",
+      "meaning": "das Dabeisein an einem Ort/Event",
+      "example": "Ihre Anwesenheit beim Gespräch wird gewünscht.",
+      "tip": "die Anwesenheit bei + Dativ (Adjektiv: anwesend bei)."
+    },
+    {
+      "id": "nom-46",
+      "prefix": "Er erledigt die intensive Arbeit",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem neuen Softwareprojekt sehr gewissenhaft.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "in",
+        "bei",
+        "zu"
+      ],
+      "collocation": "die Arbeit an (+ Dativ)",
+      "meaning": "Tätigkeit an einer konkreten Aufgabe",
+      "example": "Die Arbeit an der Buchübersetzung dauert Monate.",
+      "tip": "die Arbeit an + Dativ (Verb: arbeiten an)."
+    },
+    {
+      "id": "nom-47",
+      "prefix": "Sein großer Ärger",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die schlechte Organisation war absolut verständlich.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "an",
+        "mit"
+      ],
+      "collocation": "der Ärger über (+ Akkusativ)",
+      "meaning": "Gefühl von Zorn oder Unmut",
+      "example": "Ich verstehe deinen Ärger über die Absage.",
+      "tip": "der Ärger über + Akkusativ (Verb: sich ärgern über / Adjektiv: ärgerlich über)."
+    },
+    {
+      "id": "nom-48",
+      "prefix": "Ihre sichtbare Aufgeschlossenheit",
+      "gapPlaceholder": "Präposition",
+      "suffix": "neuen Ideen vereinfacht das Teamwork.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "für",
+        "zu",
+        "an"
+      ],
+      "collocation": "die Aufgeschlossenheit gegenüber (+ Dativ)",
+      "meaning": "Offenheit und Vorurteilslosigkeit",
+      "example": "Ihre Aufgeschlossenheit gegenüber Kritik hilft sehr.",
+      "tip": "die Aufgeschlossenheit gegenüber + Dativ (Adjektiv: aufgeschlossen gegenüber)."
+    },
+    {
+      "id": "nom-49",
+      "prefix": "Die plötzliche Aufregung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die unerwartete Nachricht legte sich langsam.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "an",
+        "um"
+      ],
+      "collocation": "die Aufregung über (+ Akkusativ)",
+      "meaning": "Unruhe oder emotionale Spannung",
+      "example": "Die Aufregung über die Wahl war riesig.",
+      "tip": "die Aufregung über + Akkusativ (Verb: sich aufregen über / Adjektiv: aufgeregt über)."
+    },
+    {
+      "id": "nom-50",
+      "prefix": "Die monatliche Ausgabe",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Fachbücher lohnt sich für das Studium.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "in",
+        "von",
+        "an"
+      ],
+      "collocation": "die Ausgabe für (+ Akkusativ)",
+      "meaning": "Geldaufwand für etwas Bestimmtes",
+      "example": "Die Ausgaben für Lebensmittel sind gestiegen.",
+      "tip": "die Ausgabe für + Akkusativ (Verb: ausgeben für)."
+    },
+    {
+      "id": "nom-51",
+      "prefix": "Ein konstruktiver Austausch",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Experten brachte neue Lösungsansätze.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "bei",
+        "von",
+        "zu"
+      ],
+      "collocation": "der Austausch mit (+ Dativ)",
+      "meaning": "Kommunikation mit anderen Personen",
+      "example": "Der Austausch mit den Kollegen tat gut.",
+      "tip": "der Austausch mit + Dativ (Person) / über + Akkusativ (Thema) (Verb: sich austauschen mit/über)."
+    },
+    {
+      "id": "nom-52",
+      "prefix": "Die direkten Auswirkungen der Entscheidung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Wirtschaft sind noch unklar.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "für",
+        "an",
+        "über"
+      ],
+      "collocation": "die Auswirkung auf (+ Akkusativ)",
+      "meaning": "Folge oder Konsequenz für etwas",
+      "example": "Der Klimawandel hat Auswirkungen auf die Natur.",
+      "tip": "die Auswirkung auf + Akkusativ (Verb: sich auswirken auf)."
+    },
+    {
+      "id": "nom-53",
+      "prefix": "Eine schwerwiegende Behinderung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "der täglichen Arbeit muss gemeldet werden.",
+      "correctAnswer": "bei",
+      "acceptableAnswers": [
+        "bei"
+      ],
+      "options": [
+        "bei",
+        "in",
+        "an",
+        "zu"
+      ],
+      "collocation": "die Behinderung bei (+ Dativ)",
+      "meaning": "Einschränkung oder Störung einer Tätigkeit",
+      "example": "Es gab eine Behinderung beim Ablauf des Programms.",
+      "tip": "die Behinderung bei + Dativ (Verb: behindern bei / Adjektiv: behindert bei)."
+    },
+    {
+      "id": "nom-54",
+      "prefix": "Sein kleiner Beitrag",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Umweltschutzprojekt fand hohe Anerkennung.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "für",
+        "an",
+        "in"
+      ],
+      "collocation": "der Beitrag zu (+ Dativ)",
+      "meaning": "Anteil an einem gemeinsamen Ergebnis",
+      "example": "Vielen Dank für Ihren Beitrag zur Diskussion.",
+      "tip": "der Beitrag zu + Dativ (Verb: beitragen zu)."
+    },
+    {
+      "id": "nom-55",
+      "prefix": "Ihre enge Bekanntschaft",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Abteilungsleiter war ihr von Nutzen.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "zu",
+        "von",
+        "bei"
+      ],
+      "collocation": "die Bekanntschaft mit (+ Dativ)",
+      "meaning": "persönliche Verbindung mit einer Person",
+      "example": "Ich habe die Bekanntschaft mit einer Künstlerin gemacht.",
+      "tip": "die Bekanntschaft mit + Dativ (Adjektiv: bekannt mit)."
+    },
+    {
+      "id": "nom-56",
+      "prefix": "Eine offizielle Klage",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Vertragsverletzung wurde eingereicht.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "gegen",
+        "von",
+        "an"
+      ],
+      "collocation": "die Klage über (+ Akkusativ)",
+      "meaning": "Beschwerde oder gerichtliche Klage",
+      "example": "Ihre Klage über den Lärm war berechtigt.",
+      "tip": "die Klage über + Akkusativ / gegen + Akkusativ (Verb: sich beklagen über)."
+    },
+    {
+      "id": "nom-57",
+      "prefix": "Die große Beliebtheit des Lehrers",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Schülerinnen und Schülern ist erstaunlich.",
+      "correctAnswer": "bei",
+      "acceptableAnswers": [
+        "bei"
+      ],
+      "options": [
+        "bei",
+        "in",
+        "unter",
+        "für"
+      ],
+      "collocation": "die Beliebtheit bei (+ Dativ)",
+      "meaning": "Gestimmtsein und Sympathie bei anderen",
+      "example": "Seine Beliebtheit bei den Kunden sichert Aufträge.",
+      "tip": "die Beliebtheit bei + Dativ (Adjektiv: beliebt bei)."
+    },
+    {
+      "id": "nom-58",
+      "prefix": "Seine ständige Bemühung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "einen sauberen Arbeitsplatz lohnt sich.",
+      "correctAnswer": "um",
+      "acceptableAnswers": [
+        "um"
+      ],
+      "options": [
+        "um",
+        "für",
+        "nach",
+        "an"
+      ],
+      "collocation": "die Bemühung um (+ Akkusativ)",
+      "meaning": "Anstrengung für das Erreichen eines Ziels",
+      "example": "Ihre Bemühungen um den Friedensprozess waren erfolgreich.",
+      "tip": "die Bemühung um + Akkusativ (Verb: sich bemühen um / Adjektiv: bemüht um)."
+    },
+    {
+      "id": "nom-59",
+      "prefix": "Die vollkommene Bereitschaft",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Veränderungen im Team ist vorhanden.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "für",
+        "an",
+        "auf"
+      ],
+      "collocation": "die Bereitschaft zu (+ Dativ)",
+      "meaning": "Bereitwilligkeit zu handeln",
+      "example": "Sie zeigten Bereitschaft zur Kooperation.",
+      "tip": "die Bereitschaft zu + Dativ (Adjektiv: bereit zu)."
+    },
+    {
+      "id": "nom-60",
+      "prefix": "Ein ausführlicher Bericht",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die internationale Konferenz liegt vor.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "an",
+        "in"
+      ],
+      "collocation": "der Bericht über (+ Akkusativ)",
+      "meaning": "Informationen zu einem Thema",
+      "example": "Ein Bericht über den Zustand der Gebäude.",
+      "tip": "der Bericht über + Akkusativ / von + Dativ (Verb: berichten über/von)."
+    },
+    {
+      "id": "nom-61",
+      "prefix": "Die tägliche Beschäftigung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "komplexen Fragen schärft den Verstand.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "bei",
+        "in",
+        "an"
+      ],
+      "collocation": "die Beschäftigung mit (+ Dativ)",
+      "meaning": "aktive Auseinandersetzung mit etwas",
+      "example": "Die Beschäftigung mit Sprachen macht Spaß.",
+      "tip": "die Beschäftigung mit + Dativ (Verb: sich beschäftigen mit / Adjektiv: beschäftigt mit)."
+    },
+    {
+      "id": "nom-62",
+      "prefix": "Ihre formelle Beschwerde",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Mangel im Hotelzimmer wurde bearbeitet.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "gegen",
+        "an",
+        "von"
+      ],
+      "collocation": "die Beschwerde über (+ Akkusativ)",
+      "meaning": "Kritik an negativer Situation",
+      "example": "Eine Beschwerde über das unfreundliche Personal.",
+      "tip": "die Beschwerde über + Akkusativ / bei + Dativ (Verb: sich beschweren über/bei)."
+    },
+    {
+      "id": "nom-63",
+      "prefix": "Die rege Beteiligung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Diskussionen hat uns gefreut.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "bei",
+        "in",
+        "zu"
+      ],
+      "collocation": "die Beteiligung an (+ Dativ)",
+      "meaning": "Mitwirken bei etwas",
+      "example": "Eine Beteiligung an den Projektkosten ist notwendig.",
+      "tip": "die Beteiligung an + Dativ (Verb: sich beteiligen an / Adjektiv: beteiligt an)."
+    },
+    {
+      "id": "nom-64",
+      "prefix": "Die Beunruhigung in der Stadt",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die steigenden Preise ist groß.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "an",
+        "um"
+      ],
+      "collocation": "die Beunruhigung über (+ Akkusativ)",
+      "meaning": "Sorge und Verunsicherung über eine Lage",
+      "example": "Die Beunruhigung über die Krise wächst.",
+      "tip": "die Beunruhigung über + Akkusativ (Adjektiv: beunruhigt über)."
+    },
+    {
+      "id": "nom-65",
+      "prefix": "Ihre schriftliche Bewerbung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Ausbildungsstelle war erfolgreich.",
+      "correctAnswer": "um",
+      "acceptableAnswers": [
+        "um"
+      ],
+      "options": [
+        "um",
+        "für",
+        "an",
+        "auf"
+      ],
+      "collocation": "die Bewerbung um (+ Akkusativ)",
+      "meaning": "offizielles Gesuch für einen Arbeitsplatz",
+      "example": "Reichen Sie die Bewerbung um den Job online ein.",
+      "tip": "die Bewerbung um + Akkusativ / bei + Dativ (Verb: sich bewerben um/bei)."
+    },
+    {
+      "id": "nom-66",
+      "prefix": "Die korrekte Bezeichnung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dieses Gerät lautet Präzisionswaage.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "von",
+        "in",
+        "an"
+      ],
+      "collocation": "die Bezeichnung für (+ Akkusativ)",
+      "meaning": "Name oder Fachbegriff für eine Sache",
+      "example": "Was ist die deutsche Bezeichnung für diesen Begriff?",
+      "tip": "die Bezeichnung für + Akkusativ (Adjektiv: bezeichnend für)."
+    },
+    {
+      "id": "nom-67",
+      "prefix": "Wir nehmen direkten Bezug",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Ihr Schreiben vom letzten Dienstag.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "an",
+        "zu",
+        "für"
+      ],
+      "collocation": "der Bezug auf (+ Akkusativ)",
+      "meaning": "Verweis oder Verknüpfung zu etwas",
+      "example": "In Bezug auf Ihre Nachfrage möchten wir informieren...",
+      "tip": "der Bezug auf + Akkusativ (Verb: sich beziehen auf / Adjektiv: bezugnehmend auf)."
+    },
+    {
+      "id": "nom-68",
+      "prefix": "Wir danken Ihnen für die höfliche Bitte",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Unterstützung.",
+      "correctAnswer": "um",
+      "acceptableAnswers": [
+        "um"
+      ],
+      "options": [
+        "um",
+        "für",
+        "nach",
+        "zu"
+      ],
+      "collocation": "die Bitte um (+ Akkusativ)",
+      "meaning": "Ersuchen um Hilfe oder Information",
+      "example": "Ihre Bitte um Nachsicht wurde akzeptiert.",
+      "tip": "die Bitte um + Akkusativ (Verb: bitten um)."
+    },
+    {
+      "id": "nom-69",
+      "prefix": "Mein aufrichtiger Dank",
+      "gapPlaceholder": "Präposition",
+      "suffix": "deine Hilfe kommt von Herzen.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "über",
+        "an",
+        "zu"
+      ],
+      "collocation": "der Dank für (+ Akkusativ)",
+      "meaning": "Anerkennung für erbrachte Leistung",
+      "example": "Als Dank für Ihren Einsatz überreichen wir dieses Präsent.",
+      "tip": "der Dank für + Akkusativ (Verb: danken für / Adjektiv: dankbar für)."
+    },
+    {
+      "id": "nom-70",
+      "prefix": "Der Gedanke",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Prüfung machte sie sehr nervös.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "über",
+        "in",
+        "auf"
+      ],
+      "collocation": "der Gedanke an (+ Akkusativ)",
+      "meaning": "Überlegung oder Erinnerung an ein Ereignis",
+      "example": "Der Gedanke an den Urlaub hebt meine Stimmung.",
+      "tip": "der Gedanke an + Akkusativ (Verb: denken an)."
+    },
+    {
+      "id": "nom-71",
+      "prefix": "Die sachliche Diskussion",
+      "gapPlaceholder": "Präposition",
+      "suffix": "das neue Gesetz dauerte lange.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "mit",
+        "an",
+        "von"
+      ],
+      "collocation": "die Diskussion über (+ Akkusativ)",
+      "meaning": "Auseinandersetzung über ein Thema",
+      "example": "Eine fruchtbare Diskussion über Umweltmaßnahmen.",
+      "tip": "die Diskussion über + Akkusativ / mit + Dativ (Verb: diskutieren über/mit)."
+    },
+    {
+      "id": "nom-72",
+      "prefix": "Ihre besondere Eignung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "diese Führungsposition steht außer Zweifel.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "zu",
+        "an",
+        "in"
+      ],
+      "collocation": "die Eignung für (+ Akkusativ) / zu (+ Dativ)",
+      "meaning": "Fähigkeit oder Qualifikation für etwas",
+      "example": "Ihre Eignung zum Beruf wurde nachgewiesen.",
+      "tip": "die Eignung für + Akkusativ / zu + Dativ (Verb: sich eignen für/zu / Adjektiv: geeignet für/zu)."
+    },
+    {
+      "id": "nom-73",
+      "prefix": "Vielen Dank für die Einladung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Ihrer Feier.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "auf",
+        "in",
+        "für"
+      ],
+      "collocation": "die Einladung zu (+ Dativ)",
+      "meaning": "Aufforderung zur Teilnahme",
+      "example": "Ich habe eine Einladung zur Hochzeit erhalten.",
+      "tip": "die Einladung zu + Dativ (Verb: einladen zu)."
+    },
+    {
+      "id": "nom-74",
+      "prefix": "Die veränderte Einstellung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "seiner Arbeit überraschte den Chef.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "an",
+        "für",
+        "gegenüber"
+      ],
+      "collocation": "die Einstellung zu (+ Dativ)",
+      "meaning": "Haltung gegenüber einer Sache",
+      "example": "Eine positive Einstellung zum Leben hilft weiter.",
+      "tip": "die Einstellung zu + Dativ (Adjektiv: eingestellt zu)."
+    },
+    {
+      "id": "nom-75",
+      "prefix": "Das volle Einverständnis",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den neuen Regeln war Voraussetzung.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "zu",
+        "über",
+        "in"
+      ],
+      "collocation": "das Einverständnis mit (+ Dativ)",
+      "meaning": "Zustimmung zu einem Vorschlag",
+      "example": "Ich erkläre mein Einverständnis mit den Bedingungen.",
+      "tip": "das Einverständnis mit + Dativ (Adjektiv: einverstanden mit)."
+    },
+    {
+      "id": "nom-76",
+      "prefix": "Die öffentliche Empörung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "das Urteil war gewaltig.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "gegen",
+        "von",
+        "an"
+      ],
+      "collocation": "die Empörung über (+ Akkusativ)",
+      "meaning": "Entrüstung und Wut über eine Ungerechtigkeit",
+      "example": "Ihre Empörung über den Skandal war spürbar.",
+      "tip": "die Empörung über + Akkusativ (Adjektiv: empört über)."
+    },
+    {
+      "id": "nom-77",
+      "prefix": "Ihr vorbildliches Engagement",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Tierschutz verdient Lob.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "gegen",
+        "an",
+        "in"
+      ],
+      "collocation": "das Engagement für (+ Akkusativ)",
+      "meaning": "Einsatz für ein Ziel oder Projekt",
+      "example": "Sein Engagement gegen Armut ist beachtlich.",
+      "tip": "das Engagement für / gegen + Akkusativ (Verb: sich engagieren für/gegen / Adjektiv: engagiert für)."
+    },
+    {
+      "id": "nom-78",
+      "prefix": "Die weite Entfernung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "ihrer Heimatstadt macht sie manchmal traurig.",
+      "correctAnswer": "von",
+      "acceptableAnswers": [
+        "von"
+      ],
+      "options": [
+        "von",
+        "aus",
+        "zu",
+        "an"
+      ],
+      "collocation": "die Entfernung von (+ Dativ)",
+      "meaning": "räumlicher oder zeitlicher Abstand",
+      "example": "In großer Entfernung vom Zentrum liegen die Vororte.",
+      "tip": "die Entfernung von + Dativ (Verb: sich entfernen von / Adjektiv: entfernt von)."
+    },
+    {
+      "id": "nom-79",
+      "prefix": "Ihre mutige Entscheidung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Neuanfang erwies sich als richtig.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "gegen",
+        "über",
+        "an"
+      ],
+      "collocation": "die Entscheidung für (+ Akkusativ)",
+      "meaning": "Wahl zugunsten einer Option",
+      "example": "Eine Entscheidung für oder gegen den Vorschlag.",
+      "tip": "die Entscheidung für / gegen + Akkusativ (Verb: sich entscheiden für/gegen / Adjektiv: entscheidend für)."
+    },
+    {
+      "id": "nom-80",
+      "prefix": "Der feste Entschluss",
+      "gapPlaceholder": "Präposition",
+      "suffix": "einer Weiterbildung stand schon lange fest.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "für",
+        "an",
+        "in"
+      ],
+      "collocation": "der Entschluss zu (+ Dativ)",
+      "meaning": "gefasste Absicht etwas zu tun",
+      "example": "Mein Entschluss zur Kündigung steht fest.",
+      "tip": "der Entschluss zu + Dativ (Verb: sich entschließen zu / Adjektiv: entschlossen zu)."
+    },
+    {
+      "id": "nom-81",
+      "prefix": "Die höfliche Entschuldigung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Verspätung wurde angenommen.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "über",
+        "von",
+        "an"
+      ],
+      "collocation": "die Entschuldigung für (+ Akkusativ)",
+      "meaning": "Bitte um Verzeihung",
+      "example": "Wir bitten um Entschuldigung für den Fehler.",
+      "tip": "die Entschuldigung für + Akkusativ / bei + Dativ (Verb: sich entschuldigen für/bei)."
+    },
+    {
+      "id": "nom-82",
+      "prefix": "Die rasche Entwicklung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "einem führenden Betrieb dauerte Jahre.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "in",
+        "an",
+        "für"
+      ],
+      "collocation": "die Entwicklung zu (+ Dativ)",
+      "meaning": "Prozess der Veränderung hin zu etwas",
+      "example": "Die Entwicklung zur Großstadt ging schnell.",
+      "tip": "die Entwicklung zu + Dativ (Verb: sich entwickeln zu)."
+    },
+    {
+      "id": "nom-83",
+      "prefix": "Ihre jahrelange Erfahrung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Beruf zeichnet sie aus.",
+      "correctAnswer": "in",
+      "acceptableAnswers": [
+        "in"
+      ],
+      "options": [
+        "in",
+        "an",
+        "bei",
+        "mit"
+      ],
+      "collocation": "die Erfahrung in (+ Dativ)",
+      "meaning": "Wissen durch praktische Praxis",
+      "example": "Praktische Erfahrung im Vertrieb ist erforderlich.",
+      "tip": "die Erfahrung in + Dativ (Adjektiv: erfahren in)."
+    },
+    {
+      "id": "nom-84",
+      "prefix": "Der schnelle Erfolg",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Verkauf übertraf alle Erwartungen.",
+      "correctAnswer": "in",
+      "acceptableAnswers": [
+        "in"
+      ],
+      "options": [
+        "in",
+        "bei",
+        "an",
+        "zu"
+      ],
+      "collocation": "der Erfolg in (+ Dativ)",
+      "meaning": "positives Ergebnis in einem Bereich",
+      "example": "Großer Erfolg im Beruf bringt Zufriedenheit.",
+      "tip": "der Erfolg in / bei + Dativ (Adjektiv: erfolgreich in)."
+    },
+    {
+      "id": "nom-85",
+      "prefix": "Die gute Erholung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Stress tat ihr spürbar gut.",
+      "correctAnswer": "von",
+      "acceptableAnswers": [
+        "von"
+      ],
+      "options": [
+        "von",
+        "aus",
+        "über",
+        "an"
+      ],
+      "collocation": "die Erholung von (+ Dativ)",
+      "meaning": "Regeneration nach Anstrengung",
+      "example": "Schnelle Erholung von der Krankheit.",
+      "tip": "die Erholung von + Dativ (Verb: sich erholen von / Adjektiv: erholt von)."
+    },
+    {
+      "id": "nom-86",
+      "prefix": "Die schöne Erinnerung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "das Fest wird bleiben.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "von",
+        "über",
+        "in"
+      ],
+      "collocation": "die Erinnerung an (+ Akkusativ)",
+      "meaning": "Gedächtnisbild vergangenener Geschehnisse",
+      "example": "Eine Erinnerung an meine Kindheit.",
+      "tip": "die Erinnerung an + Akkusativ (Verb: sich erinnern an)."
+    },
+    {
+      "id": "nom-87",
+      "prefix": "Die freundliche Erkundigung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "seinem Befinden erfreute ihn sehr.",
+      "correctAnswer": "nach",
+      "acceptableAnswers": [
+        "nach"
+      ],
+      "options": [
+        "nach",
+        "über",
+        "von",
+        "zu"
+      ],
+      "collocation": "die Erkundigung nach (+ Dativ)",
+      "meaning": "Nachfrage nach Informationen",
+      "example": "Erkundigungen nach den Preisen einholen.",
+      "tip": "die Erkundigung nach + Dativ / bei + Dativ (Verb: sich erkundigen nach/bei)."
+    },
+    {
+      "id": "nom-88",
+      "prefix": "Das große Erstaunen",
+      "gapPlaceholder": "Präposition",
+      "suffix": "das Ergebnis war verständlich.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "an",
+        "auf"
+      ],
+      "collocation": "das Erstaunen über (+ Akkusativ)",
+      "meaning": "Überraschung über etwas Unerwartetes",
+      "example": "Mein Erstaunen über den Sieg war groß.",
+      "tip": "das Erstaunen über + Akkusativ (Adjektiv: erstaunt über)."
+    },
+    {
+      "id": "nom-89",
+      "prefix": "Ihre hohe Erwartung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den neuen Mitarbeiter wurde erfüllt.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "von",
+        "zu",
+        "für"
+      ],
+      "collocation": "die Erwartung an (+ Akkusativ)",
+      "meaning": "Anforderung an Personen oder Ergebnisse",
+      "example": "Erwartungen an das Team klären.",
+      "tip": "die Erwartung an + Akkusativ / von + Dativ (Verb: erwarten von)."
+    },
+    {
+      "id": "nom-90",
+      "prefix": "Eine spannende Erzählung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "seine Reise fesselte die Zuhörer.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "an",
+        "in"
+      ],
+      "collocation": "die Erzählung über (+ Akkusativ)",
+      "meaning": "Schilderung einer Geschichte",
+      "example": "Eine Erzählung vom Krieg aus alter Zeit.",
+      "tip": "die Erzählung über + Akkusativ / von + Dativ (Verb: erzählen über/von)."
+    },
+    {
+      "id": "nom-91",
+      "prefix": "Ihre hervorragende Fähigkeit",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Problemlösung zeichnet sie aus.",
+      "correctAnswer": "zur",
+      "acceptableAnswers": [
+        "zur",
+        "zu der"
+      ],
+      "options": [
+        "zur",
+        "für",
+        "an",
+        "in"
+      ],
+      "collocation": "die Fähigkeit zu (+ Dativ)",
+      "meaning": "Begabung oder Kompetenz für Aufgaben",
+      "example": "Die Fähigkeit zur Teamarbeit ist wichtig.",
+      "tip": "die Fähigkeit zu + Dativ (Adjektiv: fähig zu)."
+    },
+    {
+      "id": "nom-92",
+      "prefix": "Eine höfliche Frage",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den genauen Weg hilft Touristen weiter.",
+      "correctAnswer": "nach",
+      "acceptableAnswers": [
+        "nach"
+      ],
+      "options": [
+        "nach",
+        "über",
+        "zu",
+        "an"
+      ],
+      "collocation": "die Frage nach (+ Dativ)",
+      "meaning": "Informationsersuchen",
+      "example": "Die Frage nach der Zukunft beschäftigt alle.",
+      "tip": "die Frage nach + Dativ (Verb: fragen nach)."
+    },
+    {
+      "id": "nom-93",
+      "prefix": "Ihre große Freude",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den kommenden Urlaub ist riesig.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "über",
+        "für",
+        "an"
+      ],
+      "collocation": "die Freude auf (+ Akkusativ)",
+      "meaning": "Vorfreude auf ein zukünftiges Ereignis",
+      "example": "Die Freude auf Weihnachten wächst.",
+      "tip": "die Freude auf + Akkusativ (Zukunft) / über + Akkusativ (Gegenwart/Vergangenheit) (Verb: sich freuen auf/über / Adjektiv: erfreut über)."
+    },
+    {
+      "id": "nom-94",
+      "prefix": "Die schreckliche Furcht",
+      "gapPlaceholder": "Präposition",
+      "suffix": "der Prüfung lähmte den Schüler.",
+      "correctAnswer": "vor",
+      "acceptableAnswers": [
+        "vor"
+      ],
+      "options": [
+        "vor",
+        "von",
+        "an",
+        "gegen"
+      ],
+      "collocation": "die Furcht vor (+ Dativ)",
+      "meaning": "Angst vor Gefahren oder Aufgaben",
+      "example": "Ihre Furcht vor Hunden war begründet.",
+      "tip": "die Furcht vor + Dativ (Verb: sich fürchten vor)."
+    },
+    {
+      "id": "nom-95",
+      "prefix": "Die allmähliche Gewöhnung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "das frühe Aufstehen dauerte Wochen.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "zu",
+        "auf",
+        "in"
+      ],
+      "collocation": "die Gewöhnung an (+ Akkusativ)",
+      "meaning": "Anpassung an neue Gewohnheiten",
+      "example": "Die Gewöhnung an Schichtarbeit ist schwer.",
+      "tip": "die Gewöhnung an + Akkusativ (Verb: sich gewöhnen an / Adjektiv: gewöhnt an)."
+    },
+    {
+      "id": "nom-96",
+      "prefix": "Sein fester Glaube",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Erfolg versetzte Berge.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "in",
+        "zu",
+        "auf"
+      ],
+      "collocation": "der Glaube an (+ Akkusativ)",
+      "meaning": "Überzeugung und Vertrauen in etwas",
+      "example": "Der Glaube an die Gerechtigkeit gibt Kraft.",
+      "tip": "der Glaube an + Akkusativ (Verb: glauben an)."
+    },
+    {
+      "id": "nom-97",
+      "prefix": "Ihre völlige Gleichgültigkeit",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Problemen anderer ist traurig.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "zu",
+        "mit",
+        "an"
+      ],
+      "collocation": "die Gleichgültigkeit gegenüber (+ Dativ)",
+      "meaning": "Desinteresse oder Kälte",
+      "example": "Gleichgültigkeit gegenüber Regeln führt zu Chaos.",
+      "tip": "die Gleichgültigkeit gegenüber + Dativ (Adjektiv: gleichgültig gegenüber)."
+    },
+    {
+      "id": "nom-98",
+      "prefix": "Wir gratulieren herzlich mit der Gratulation",
+      "gapPlaceholder": "Präposition",
+      "suffix": "bestandenen Prüfung.",
+      "correctAnswer": "zur",
+      "acceptableAnswers": [
+        "zur",
+        "zu der"
+      ],
+      "options": [
+        "zur",
+        "für",
+        "an",
+        "auf"
+      ],
+      "collocation": "die Gratulation zu (+ Dativ)",
+      "meaning": "Glückwunsch zu einem Erfolg",
+      "example": "Herzliche Gratulation zum Geburtstag!",
+      "tip": "die Gratulation zu + Dativ (Verb: gratulieren zu)."
+    },
+    {
+      "id": "nom-99",
+      "prefix": "Ein fairer Handel",
+      "gapPlaceholder": "Präposition",
+      "suffix": "gebrauchten Waren schont Ressourcen.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "bei",
+        "von",
+        "in"
+      ],
+      "collocation": "der Handel mit (+ Dativ)",
+      "meaning": "Kauf und Verkauf von Waren",
+      "example": "Der Handel mit Gewürzen war lukrativ.",
+      "tip": "der Handel mit + Dativ (Verb: handeln mit)."
+    },
+    {
+      "id": "nom-100",
+      "prefix": "Rasche Hilfe",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Aufräumarbeiten wurde dringend benötigt.",
+      "correctAnswer": "bei",
+      "acceptableAnswers": [
+        "bei"
+      ],
+      "options": [
+        "bei",
+        "zu",
+        "in",
+        "an"
+      ],
+      "collocation": "die Hilfe bei (+ Dativ)",
+      "meaning": "Unterstützung in einer Notsituation",
+      "example": "Vielen Dank für Ihre Hilfe beim Umzug.",
+      "tip": "die Hilfe bei + Dativ (Verb: helfen bei / Adjektiv: behilflich bei)."
+    },
+    {
+      "id": "nom-101",
+      "prefix": "Ein deutlicher Hinweis",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Gefahrenstelle verhinderte Unfälle.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "an",
+        "für",
+        "vor"
+      ],
+      "collocation": "der Hinweis auf (+ Akkusativ)",
+      "meaning": "Information oder Tipp zu einer Sache",
+      "example": "Ein wichtiger Hinweis auf Änderungen.",
+      "tip": "der Hinweis auf + Akkusativ (Verb: hinweisen auf)."
+    },
+    {
+      "id": "nom-102",
+      "prefix": "Ihre unerschütterliche Hoffnung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Genesung blieb bestehen.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "für",
+        "an",
+        "zu"
+      ],
+      "collocation": "die Hoffnung auf (+ Akkusativ)",
+      "meaning": "Zuversichtliche Erwartung",
+      "example": "Die Hoffnung auf Frieden stirbt zuletzt.",
+      "tip": "die Hoffnung auf + Akkusativ (Verb: hoffen auf)."
+    },
+    {
+      "id": "nom-103",
+      "prefix": "Ausführliche Information",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Kurse erhalten Sie im Büro.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "zu",
+        "an"
+      ],
+      "collocation": "die Information über (+ Akkusativ)",
+      "meaning": "Auskunft oder Wissen zu einem Thema",
+      "example": "Informationen über die Anreise finden Sie online.",
+      "tip": "die Information über + Akkusativ (Verb: sich informieren über / Adjektiv: informiert über)."
+    },
+    {
+      "id": "nom-104",
+      "prefix": "Eine gelungene Interaktion",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Teilnehmern förderte das Lernen.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "bei",
+        "zwischen",
+        "zu"
+      ],
+      "collocation": "die Interaktion mit (+ Dativ)",
+      "meaning": "Wechselwirkung oder Gespräch mit anderen",
+      "example": "Die Interaktion mit dem Publikum war super.",
+      "tip": "die Interaktion mit + Dativ (Verb: interagieren mit)."
+    },
+    {
+      "id": "nom-105",
+      "prefix": "Großes Interesse",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Geschichte zeigt der Schüler täglich.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "für",
+        "über",
+        "in"
+      ],
+      "collocation": "das Interesse an (+ Dativ)",
+      "meaning": "Aufmerksamkeit und Neugier für ein Gebiet",
+      "example": "Mein Interesse an Kunst wächst.",
+      "tip": "das Interesse AN + Dativ (Achtung: Verb lautet 'sich interessieren FÜR' + Akkusativ / Adjektiv: interessiert an)."
+    },
+    {
+      "id": "nom-106",
+      "prefix": "Eine kluge Investition",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Bildung zahlt sich immer aus.",
+      "correctAnswer": "in",
+      "acceptableAnswers": [
+        "in"
+      ],
+      "options": [
+        "in",
+        "für",
+        "an",
+        "auf"
+      ],
+      "collocation": "die Investition in (+ Akkusativ)",
+      "meaning": "Anlage von Geld oder Mitteln",
+      "example": "Investitionen in Erneuerbare Energien.",
+      "tip": "die Investition in + Akkusativ (Verb: investieren in)."
+    },
+    {
+      "id": "nom-107",
+      "prefix": "Gute Konzentration",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die wesentlichen Dinge spart Zeit.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "in",
+        "an",
+        "über"
+      ],
+      "collocation": "die Konzentration auf (+ Akkusativ)",
+      "meaning": "Fokussierung der Gedanken",
+      "example": "Die Konzentration auf das Spiel war hoch.",
+      "tip": "die Konzentration auf + Akkusativ (Verb: sich konzentrieren auf / Adjektiv: konzentriert auf)."
+    },
+    {
+      "id": "nom-108",
+      "prefix": "Das tiefe Misstrauen",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Fremden legte sich langsam.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "vor",
+        "gegen",
+        "über"
+      ],
+      "collocation": "das Misstrauen gegenüber (+ Dativ)",
+      "meaning": "Skepsis und Mangel an Vertrauen",
+      "example": "Ein Misstrauen gegenüber Aussagen im Netz.",
+      "tip": "das Misstrauen gegenüber + Dativ (Adjektiv: misstrauisch gegenüber)."
+    },
+    {
+      "id": "nom-109",
+      "prefix": "Hohe Motivation",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Lernen führt zum Erfolg.",
+      "correctAnswer": "zum",
+      "acceptableAnswers": [
+        "zum",
+        "zu dem"
+      ],
+      "options": [
+        "zum",
+        "für",
+        "an",
+        "auf"
+      ],
+      "collocation": "die Motivation zu (+ Dativ)",
+      "meaning": "Innerer Antrieb für eine Handlung",
+      "example": "Ihre Motivation zur Mitarbeit war vorbildlich.",
+      "tip": "die Motivation zu + Dativ (Verb: motivieren zu / Adjektiv: motiviert zu)."
+    },
+    {
+      "id": "nom-110",
+      "prefix": "Brennende Neugier",
+      "gapPlaceholder": "Präposition",
+      "suffix": "das Ende der Geschichte trieb sie an.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "nach",
+        "für",
+        "über"
+      ],
+      "collocation": "die Neugier auf (+ Akkusativ)",
+      "meaning": "Wissbegierde nach Neuigkeiten",
+      "example": "Neugier auf fremde Länder.",
+      "tip": "die Neugier auf + Akkusativ (Adjektiv: neugierig auf)."
+    },
+    {
+      "id": "nom-111",
+      "prefix": "Die dringende Notwendigkeit",
+      "gapPlaceholder": "Präposition",
+      "suffix": "schnelle Reformen liegt auf der Hand.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "zu",
+        "an",
+        "von"
+      ],
+      "collocation": "die Notwendigkeit für (+ Akkusativ)",
+      "meaning": "Dringlicher Zwang oder Erfordernis",
+      "example": "Die Notwendigkeit für Maßnahmen steht fest.",
+      "tip": "die Notwendigkeit für + Akkusativ (Adjektiv: notwendig für)."
+    },
+    {
+      "id": "nom-112",
+      "prefix": "Der praktische Nutzen",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Anwender ist unbestreitbar.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "zu",
+        "von",
+        "in"
+      ],
+      "collocation": "der Nutzen für (+ Akkusativ)",
+      "meaning": "Gewinn oder Vorteil aus etwas",
+      "example": "Ein großer Nutzen für die Umwelt.",
+      "tip": "der Nutzen für + Akkusativ (Adjektiv: nützlich für)."
+    },
+    {
+      "id": "nom-113",
+      "prefix": "Ihre bemerkenswerte Offenheit",
+      "gapPlaceholder": "Präposition",
+      "suffix": "neue Kontakte zeichnet sie aus.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "gegenüber",
+        "zu",
+        "mit"
+      ],
+      "collocation": "die Offenheit für (+ Akkusativ)",
+      "meaning": "Bereitschaft zur Aufnahme von Neuem",
+      "example": "Offenheit für Kritik ist wichtig.",
+      "tip": "die Offenheit für + Akkusativ (Adjektiv: offen für)."
+    },
+    {
+      "id": "nom-114",
+      "prefix": "Die genaue Orientierung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Verkehrsregeln schützt alle.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "in",
+        "nach",
+        "zu"
+      ],
+      "collocation": "die Orientierung an (+ Dativ)",
+      "meaning": "Richtschnur oder Wegweiser an etwas",
+      "example": "Orientierung an den Leitlinien des Betriebs.",
+      "tip": "die Orientierung an + Dativ (Verb: sich orientieren an)."
+    },
+    {
+      "id": "nom-115",
+      "prefix": "Heftige Reaktion",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Preiserhöhung folgte sogleich.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "an",
+        "für",
+        "über"
+      ],
+      "collocation": "die Reaktion auf (+ Akkusativ)",
+      "meaning": "Antwort oder Gegenhandlung auf Reiz",
+      "example": "Eine schnelle Reaktion auf Fehler ist nötig.",
+      "tip": "die Reaktion auf + Akkusativ (Verb: reagieren auf)."
+    },
+    {
+      "id": "nom-116",
+      "prefix": "Die lange Rede",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Lage der Nation dauerte eine Stunde.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "an",
+        "zu"
+      ],
+      "collocation": "die Rede über (+ Akkusativ)",
+      "meaning": "Vortrag zu einem Thema",
+      "example": "Eine Rede über Zukunftspläne halten.",
+      "tip": "die Rede über + Akkusativ / von + Dativ (Verb: reden über/von)."
+    },
+    {
+      "id": "nom-117",
+      "prefix": "Der immense Schaden",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Gebäude wurde geschätzt.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "in",
+        "zu",
+        "auf"
+      ],
+      "collocation": "der Schaden an (+ Dativ)",
+      "meaning": "Beschädigung einer Sache",
+      "example": "Ein Schaden an der Wasserleitung.",
+      "tip": "der Schaden an + Dativ (Adjektiv: schädlich für)."
+    },
+    {
+      "id": "nom-118",
+      "prefix": "Eigene Schuld",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Misserfolg muss man eingestehen.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "in",
+        "für",
+        "von"
+      ],
+      "collocation": "die Schuld an (+ Dativ)",
+      "meaning": "Verantwortung für ein negatives Ereignis",
+      "example": "Wer trägt die Schuld an diesem Unfall?",
+      "tip": "die Schuld an + Dativ (Adjektiv: schuld an)."
+    },
+    {
+      "id": "nom-119",
+      "prefix": "Gesunde Skepsis",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Vorspiegelungen im Internet schützt.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "vor",
+        "gegen",
+        "an"
+      ],
+      "collocation": "die Skepsis gegenüber (+ Dativ)",
+      "meaning": "Bedenken und Hinterfragen",
+      "example": "Skepsis gegenüber neuen Theorien.",
+      "tip": "die Skepsis gegenüber + Dativ (Adjektiv: skeptisch gegenüber)."
+    },
+    {
+      "id": "nom-120",
+      "prefix": "Ihre große Sorge",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Zukunft der Kinder trieb sie um.",
+      "correctAnswer": "um",
+      "acceptableAnswers": [
+        "um"
+      ],
+      "options": [
+        "um",
+        "für",
+        "über",
+        "wegen"
+      ],
+      "collocation": "die Sorge um (+ Akkusativ)",
+      "meaning": "Bekümmernis um das Wohlergehen",
+      "example": "Die Sorge um die Finanzen wächst.",
+      "tip": "die Sorge um + Akkusativ (Verb: sich sorgen um / Adjektiv: besorgt um)."
+    },
+    {
+      "id": "nom-121",
+      "prefix": "Eine gezielte Spezialisierung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Steuerrecht zahlt sich im Beruf aus.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "in",
+        "für",
+        "an"
+      ],
+      "collocation": "die Spezialisierung auf (+ Akkusativ)",
+      "meaning": "Fokussierung auf ein Fachgebiet",
+      "example": "Spezialisierung auf Umweltrecht.",
+      "tip": "die Spezialisierung auf + Akkusativ (Verb: sich spezialisieren auf / Adjektiv: spezialisiert auf)."
+    },
+    {
+      "id": "nom-122",
+      "prefix": "Ein offenes Gespräch",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Arbeitsbedingungen klärte vieles.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "mit",
+        "von",
+        "zu"
+      ],
+      "collocation": "das Gespräch über (+ Akkusativ)",
+      "meaning": "Unterhaltung zu einem Fachthema",
+      "example": "Das Gespräch über das Projekt war kurz.",
+      "tip": "das Gespräch über + Akkusativ / mit + Dativ (Verb: sprechen über/mit)."
+    },
+    {
+      "id": "nom-123",
+      "prefix": "Ein bitterer Streit",
+      "gapPlaceholder": "Präposition",
+      "suffix": "das Erbe spaltete die Familie.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "um",
+        "mit",
+        "gegen"
+      ],
+      "collocation": "der Streit über (+ Akkusativ)",
+      "meaning": "Konflikt wegen einer Sache",
+      "example": "Ein Streit über Geld lohnt sich nicht.",
+      "tip": "der Streit über / um + Akkusativ (Verb: sich streiten über/um)."
+    },
+    {
+      "id": "nom-124",
+      "prefix": "Die intensive Suche",
+      "gapPlaceholder": "Präposition",
+      "suffix": "einer Lösung geht weiter.",
+      "correctAnswer": "nach",
+      "acceptableAnswers": [
+        "nach"
+      ],
+      "options": [
+        "nach",
+        "für",
+        "um",
+        "zu"
+      ],
+      "collocation": "die Suche nach (+ Dativ)",
+      "meaning": "Recherche nach vermissten Dingen/Lösungen",
+      "example": "Die Suche nach Wahrheit treibt ihn an.",
+      "tip": "die Suche nach + Dativ (Verb: suchen nach)."
+    },
+    {
+      "id": "nom-125",
+      "prefix": "Ihre ehrenamtliche Tätigkeit",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Trainer erwies sich als bereichernd.",
+      "correctAnswer": "als",
+      "acceptableAnswers": [
+        "als"
+      ],
+      "options": [
+        "als",
+        "wie",
+        "in",
+        "bei"
+      ],
+      "collocation": "die Tätigkeit als (+ Nominativ)",
+      "meaning": "Arbeit in einer bestimmten Rolle/Funktion",
+      "example": "Eine Tätigkeit als Lehrer erfordert Geduld.",
+      "tip": "die Tätigkeit als + Nominativ (Adjektiv: tätig als)."
+    },
+    {
+      "id": "nom-126",
+      "prefix": "Ein fairer Tausch",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Alt gegen Neu wurde vereinbart.",
+      "correctAnswer": "von",
+      "acceptableAnswers": [
+        "von"
+      ],
+      "options": [
+        "von",
+        "aus",
+        "mit",
+        "an"
+      ],
+      "collocation": "der Tausch von (+ Dativ)",
+      "meaning": "Wechseln von Waren/Leistungen",
+      "example": "Tausch von Daten im Netzwerk.",
+      "tip": "der Tausch von + Dativ / gegen + Akkusativ (Verb: tauschen)."
+    },
+    {
+      "id": "nom-127",
+      "prefix": "Die verbindliche Teilnahme",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Kurs ist Pflicht.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "bei",
+        "in",
+        "zu"
+      ],
+      "collocation": "die Teilnahme an (+ Dativ)",
+      "meaning": "Dabeisein bei einer Veranstaltung",
+      "example": "Dank für die Teilnahme am Seminar.",
+      "tip": "die Teilnahme an + Dativ (Verb: teilnehmen an)."
+    },
+    {
+      "id": "nom-128",
+      "prefix": "Eine klare Tendenz",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Besserung ist erkennbar.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "nach",
+        "für",
+        "an"
+      ],
+      "collocation": "die Tendenz zu (+ Dativ)",
+      "meaning": "Neigung zu einer bestimmten Entwicklung",
+      "example": "Tendenz zu höheren Preisen.",
+      "tip": "die Tendenz zu + Dativ (Verb: tendieren zu)."
+    },
+    {
+      "id": "nom-129",
+      "prefix": "Ein spontanes Treffen",
+      "gapPlaceholder": "Präposition",
+      "suffix": "alten Freunden machte Freude.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "bei",
+        "zu",
+        "von"
+      ],
+      "collocation": "das Treffen mit (+ Dativ)",
+      "meaning": "Zusammenkommen von Personen",
+      "example": "Das Treffen mit dem Chef verlief gut.",
+      "tip": "das Treffen mit + Dativ (Verb: sich treffen mit)."
+    },
+    {
+      "id": "nom-130",
+      "prefix": "Die große Freude und Überraschung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "das gelungene Geschenk war ihm anzusehen.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "an",
+        "auf"
+      ],
+      "collocation": "die Überraschung über (+ Akkusativ)",
+      "meaning": "Staunen wegen unerwartetem Ereignis",
+      "example": "Überraschung über den Besuch.",
+      "tip": "die Überraschung über + Akkusativ (Adjektiv: überrascht über)."
+    },
+    {
+      "id": "nom-131",
+      "prefix": "Ein geschickter Umgang",
+      "gapPlaceholder": "Präposition",
+      "suffix": "schwierigen Situationen zeichnet sie aus.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "bei",
+        "zu",
+        "an"
+      ],
+      "collocation": "der Umgang mit (+ Dativ)",
+      "meaning": "Behandlungsweise von Dingen/Menschen",
+      "example": "Richtiger Umgang mit Werkzeugen.",
+      "tip": "der Umgang mit + Dativ (Verb: umgehen mit)."
+    },
+    {
+      "id": "nom-132",
+      "prefix": "Eine ungewollte Unterbrechung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Vortrag störte den Fluss.",
+      "correctAnswer": "bei",
+      "acceptableAnswers": [
+        "bei"
+      ],
+      "options": [
+        "bei",
+        "in",
+        "an",
+        "zu"
+      ],
+      "collocation": "die Unterbrechung bei (+ Dativ)",
+      "meaning": "Kurzes Stoppen eines Vorgangs",
+      "example": "Unterbrechung bei der Stromversorgung.",
+      "tip": "die Unterbrechung bei + Dativ (Verb: unterbrechen bei / Adjektiv: unterbrochen bei)."
+    },
+    {
+      "id": "nom-133",
+      "prefix": "Eine angenehme Unterhaltung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Gästen sorgte für beste Stimmung.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "bei",
+        "über",
+        "in"
+      ],
+      "collocation": "die Unterhaltung mit (+ Dativ)",
+      "meaning": "Gespräch zur Entspannung",
+      "example": "Unterhaltung über Sportthemen.",
+      "tip": "die Unterhaltung mit + Dativ / über + Akkusativ (Verb: sich unterhalten mit/über)."
+    },
+    {
+      "id": "nom-134",
+      "prefix": "Eine klare Unterscheidung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den beiden Begriffen ist wichtig.",
+      "correctAnswer": "zwischen",
+      "acceptableAnswers": [
+        "zwischen"
+      ],
+      "options": [
+        "zwischen",
+        "von",
+        "in",
+        "aus"
+      ],
+      "collocation": "die Unterscheidung zwischen (+ Dativ)",
+      "meaning": "Differenzierung von Dingen",
+      "example": "Unterscheidung nach Qualität oder Preis.",
+      "tip": "die Unterscheidung zwischen + Dativ / nach + Dativ (Verb: sich unterscheiden nach/von / Adjektiv: unterscheidbar nach)."
+    },
+    {
+      "id": "nom-135",
+      "prefix": "Die finanzielle Unterstützung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Projekt kam direkt vom Staat.",
+      "correctAnswer": "bei",
+      "acceptableAnswers": [
+        "bei"
+      ],
+      "options": [
+        "bei",
+        "für",
+        "an",
+        "zu"
+      ],
+      "collocation": "die Unterstützung bei (+ Dativ)",
+      "meaning": "Hilfeleistung für ein Vorhaben",
+      "example": "Unterstützung für Bedürftige bereitstellen.",
+      "tip": "die Unterstützung bei + Dativ / für + Akkusativ (Verb: unterstützen bei)."
+    },
+    {
+      "id": "nom-136",
+      "prefix": "Die feste Verabredung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "der Kollegin steht seit gestern.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "bei",
+        "zu",
+        "für"
+      ],
+      "collocation": "die Verabredung mit (+ Dativ)",
+      "meaning": "Vereinbarter Treffpunkt",
+      "example": "Eine Verabredung zum Essen.",
+      "tip": "die Verabredung mit + Dativ (Verb: sich verabreden mit / Adjektiv: verabredet mit)."
+    },
+    {
+      "id": "nom-137",
+      "prefix": "Eine herzliche Verabschiedung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Gästen rührte alle.",
+      "correctAnswer": "von",
+      "acceptableAnswers": [
+        "von"
+      ],
+      "options": [
+        "von",
+        "aus",
+        "mit",
+        "an"
+      ],
+      "collocation": "die Verabschiedung von (+ Dativ)",
+      "meaning": "Abschied nehmen",
+      "example": "Die Verabschiedung vom Chef war emotional.",
+      "tip": "die Verabschiedung von + Dativ (Verb: sich verabschieden von)."
+    },
+    {
+      "id": "nom-138",
+      "prefix": "Die volle Verantwortung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "das Projekt liegt bei ihr.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "über",
+        "an",
+        "zu"
+      ],
+      "collocation": "die Verantwortung für (+ Akkusativ)",
+      "meaning": "Pflicht für Folgen einzustehen",
+      "example": "Verantwortung für Mitarbeiter übernehmen.",
+      "tip": "die Verantwortung für + Akkusativ (Adjektiv: verantwortlich für)."
+    },
+    {
+      "id": "nom-139",
+      "prefix": "Es ist wichtig, eine enge Verbindung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Kundenstamm zu pflegen.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "zu",
+        "an",
+        "bei"
+      ],
+      "collocation": "die Verbindung mit (+ Dativ)",
+      "meaning": "Kontakt oder Verknüpfung",
+      "example": "Eine Verbindung zur Zentrale aufbauen.",
+      "tip": "die Verbindung mit / zu + Dativ (Verb: verbinden mit / Adjektiv: verbunden mit)."
+    },
+    {
+      "id": "nom-140",
+      "prefix": "Die schwierige Vereinbarkeit",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Familie und Beruf belastet viele Eltern.",
+      "correctAnswer": "von",
+      "acceptableAnswers": [
+        "von"
+      ],
+      "options": [
+        "von",
+        "zwischen",
+        "aus",
+        "mit"
+      ],
+      "collocation": "die Vereinbarkeit von (+ Dativ)",
+      "meaning": "Einklang zweier Anforderungen",
+      "example": "Gute Vereinbarkeit der Ziele.",
+      "tip": "die Vereinbarkeit von + Dativ (Verb: vereinbaren mit / Adjektiv: vereinbar mit)."
+    },
+    {
+      "id": "nom-141",
+      "prefix": "Ein direkter Vergleich",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Vorjahr zeigt deutliche Erfolge.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "zu",
+        "von",
+        "gegen"
+      ],
+      "collocation": "der Vergleich mit (+ Dativ)",
+      "meaning": "Gegenüberstellung von Dingen",
+      "example": "Im Vergleich zum Vormonat stiegen die Zahlen.",
+      "tip": "der Vergleich mit / zu + Dativ (Verb: vergleichen mit / Adjektiv: vergleichbar mit)."
+    },
+    {
+      "id": "nom-142",
+      "prefix": "Die gesetzliche Verpflichtung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Steuerzahlung gilt für alle Bürger.",
+      "correctAnswer": "zur",
+      "acceptableAnswers": [
+        "zur",
+        "zu der"
+      ],
+      "options": [
+        "zur",
+        "für",
+        "an",
+        "auf"
+      ],
+      "collocation": "die Verpflichtung zu (+ Dativ)",
+      "meaning": "Pflicht zu einer Handlung",
+      "example": "Verpflichtung zur Einhaltung der Regeln.",
+      "tip": "die Verpflichtung zu + Dativ (Verb: sich verpflichten zu / Adjektiv: verpflichtet zu)."
+    },
+    {
+      "id": "nom-143",
+      "prefix": "Eine schnelle Verständigung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Nachbarn löste das Problem.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "über",
+        "zu",
+        "bei"
+      ],
+      "collocation": "die Verständigung mit (+ Dativ)",
+      "meaning": "Einigung durch Gespräch",
+      "example": "Verständigung über die Kosten sichern.",
+      "tip": "die Verständigung mit + Dativ / über + Akkusativ (Verb: sich verständigen mit/über)."
+    },
+    {
+      "id": "nom-144",
+      "prefix": "Großes Vertrauen",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die eigenen Fähigkeiten hilft weiter.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "in",
+        "zu",
+        "an"
+      ],
+      "collocation": "das Vertrauen auf (+ Akkusativ)",
+      "meaning": "Zutrauen in Erfolg oder Person",
+      "example": "Mein Vertrauen in das Team ist stark.",
+      "tip": "das Vertrauen auf + Akkusativ / in + Akkusativ (Verb: vertrauen auf)."
+    },
+    {
+      "id": "nom-145",
+      "prefix": "Ein klarer Verweis",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Regeln beendete den Streit.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "an",
+        "zu",
+        "für"
+      ],
+      "collocation": "der Verweis auf (+ Akkusativ)",
+      "meaning": "Hinweis auf eine Quelle oder Regel",
+      "example": "Verweis auf Paragraf 5 der Ordnung.",
+      "tip": "der Verweis auf + Akkusativ (Verb: verweisen auf)."
+    },
+    {
+      "id": "nom-146",
+      "prefix": "Der bewusste Verzicht",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Zucker tut der Gesundheit gut.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "von",
+        "an",
+        "aus"
+      ],
+      "collocation": "der Verzicht auf (+ Akkusativ)",
+      "meaning": "Freiwillige Entbehrung",
+      "example": "Verzicht auf ein Auto spart Geld.",
+      "tip": "der Verzicht auf + Akkusativ (Verb: verzichten auf)."
+    },
+    {
+      "id": "nom-147",
+      "prefix": "Gute Vorbereitung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Prüfung nimmt die Angst.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "zu",
+        "für",
+        "in"
+      ],
+      "collocation": "die Vorbereitung auf (+ Akkusativ)",
+      "meaning": "Planvolles Einarbeiten vor einem Event",
+      "example": "Vorbereitung auf das Interview.",
+      "tip": "die Vorbereitung auf + Akkusativ (Verb: sich vorbereiten auf / Adjektiv: vorbereitet auf)."
+    },
+    {
+      "id": "nom-148",
+      "prefix": "Eine ernste Warnung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Betrug schützt Bürger.",
+      "correctAnswer": "vor",
+      "acceptableAnswers": [
+        "vor"
+      ],
+      "options": [
+        "vor",
+        "von",
+        "gegen",
+        "an"
+      ],
+      "collocation": "die Warnung vor (+ Dativ)",
+      "meaning": "Hinweis auf drohende Gefahr",
+      "example": "Warnung vor Sturm wurde herausgegeben.",
+      "tip": "die Warnung vor + Dativ (Verb: warnen vor)."
+    },
+    {
+      "id": "nom-149",
+      "prefix": "Schnelle Weiterleitung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die zuständige Abteilung veranlasst.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "zu",
+        "in",
+        "auf"
+      ],
+      "collocation": "die Weiterleitung an (+ Akkusativ)",
+      "meaning": "Übergabe von Dokumenten/Infos an Empfänger",
+      "example": "Weiterleitung an den Chef erfolgt sofort.",
+      "tip": "die Weiterleitung an + Akkusativ (Verb: weiterleiten an)."
+    },
+    {
+      "id": "nom-150",
+      "prefix": "Wirksame Werbung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "das neue Produkt bringt Kunden.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "von",
+        "an",
+        "zu"
+      ],
+      "collocation": "die Werbung für (+ Akkusativ)",
+      "meaning": "Anpreisung zur Verkaufsförderung",
+      "example": "Werbung für gesundes Essen im TV.",
+      "tip": "die Werbung für + Akkusativ (Verb: werben für)."
+    },
+    {
+      "id": "nom-151",
+      "prefix": "Die positive Wirkung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Gesundheit ist bewiesen.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "für",
+        "an",
+        "in"
+      ],
+      "collocation": "die Wirkung auf (+ Akkusativ)",
+      "meaning": "Einfluss oder Effekte auf etwas",
+      "example": "Wirkung auf den Körper beobachten.",
+      "tip": "die Wirkung auf + Akkusativ (Verb: wirken auf)."
+    },
+    {
+      "id": "nom-152",
+      "prefix": "Große Verwunderung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Ausgang der Wahl war spürbar.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "an",
+        "auf"
+      ],
+      "collocation": "die Verwunderung über (+ Akkusativ)",
+      "meaning": "Erstaunen und Ungläubigkeit",
+      "example": "Verwunderung über den Beschluss.",
+      "tip": "die Verwunderung über + Akkusativ (Verb: sich wundern über / Adjektiv: verwundert über)."
+    },
+    {
+      "id": "nom-153",
+      "prefix": "Hohe Zufriedenheit",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Gehalt ist wichtig.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "über",
+        "von",
+        "in"
+      ],
+      "collocation": "die Zufriedenheit mit (+ Dativ)",
+      "meaning": "Einverstandensein mit Gegebenheiten",
+      "example": "Zufriedenheit mit dem Service ist hoch.",
+      "tip": "die Zufriedenheit mit + Dativ (Adjektiv: zufrieden mit)."
+    },
+    {
+      "id": "nom-154",
+      "prefix": "Diplomatische Zurückhaltung",
+      "gapPlaceholder": "Präposition",
+      "suffix": "der Presse verhinderte Spekulationen.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "zu",
+        "vor",
+        "mit"
+      ],
+      "collocation": "die Zurückhaltung gegenüber (+ Dativ)",
+      "meaning": "Vorsichtige Distanz im Auftreten",
+      "example": "Zurückhaltung gegenüber Vorwürfen zeigen.",
+      "tip": "die Zurückhaltung gegenüber + Dativ (Adjektiv: zurückhaltend gegenüber)."
+    },
+    {
+      "id": "nom-155",
+      "prefix": "Die volle Zuständigkeit",
+      "gapPlaceholder": "Präposition",
+      "suffix": "diese Frage liegt beim Amt.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "an",
+        "zu",
+        "über"
+      ],
+      "collocation": "die Zuständigkeit für (+ Akkusativ)",
+      "meaning": "Fachliche Verantwortung",
+      "example": "Zuständigkeit für Sicherheit klären.",
+      "tip": "die Zuständigkeit für + Akkusativ (Adjektiv: zuständig für)."
+    },
+    {
+      "id": "nom-156",
+      "prefix": "Ein begründeter Zweifel",
+      "gapPlaceholder": "Präposition",
+      "suffix": "seiner Ehrlichkeit blieb bestehen.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "in",
+        "über",
+        "von"
+      ],
+      "collocation": "der Zweifel an (+ Dativ)",
+      "meaning": "Skepsis bezüglich einer Sache/Aussage",
+      "example": "Keine Zweifel an der Wahrheit haben.",
+      "tip": "der Zweifel an + Dativ (Verb: zweifeln an / Adjektiv: verzweifelt an)."
+    },
+    {
+      "id": "nom-157",
+      "prefix": "Der harte Zwang",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Sparen belastet die Abteilung.",
+      "correctAnswer": "zum",
+      "acceptableAnswers": [
+        "zum",
+        "zu dem"
+      ],
+      "options": [
+        "zum",
+        "für",
+        "auf",
+        "an"
+      ],
+      "collocation": "der Zwang zu (+ Dativ)",
+      "meaning": "Äußerer Druck zu einer Handlung",
+      "example": "Kein Zwang zur Teilnahme.",
+      "tip": "der Zwang zu + Dativ (Verb: zwingen zu / Adjektiv: gezwungen zu)."
+    }
+  ]
+}

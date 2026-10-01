@@ -1,0 +1,1427 @@
+{
+  "id": "adjektive",
+  "title": "Adjektive mit Präpositionen",
+  "shortDescription": "Feste Kombinationen von Eigenschaftswörtern und Präpositionen",
+  "icon": "⭐",
+  "level": "B1 – B2",
+  "color": "#8b5cf6",
+  "totalExercises": 69,
+  "exercises": [
+    {
+      "id": "adj-1",
+      "prefix": "Die Eltern sind unheimlich stolz",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die hervorragenden schulischen Leistungen ihrer Tochter.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "über",
+        "für",
+        "an"
+      ],
+      "collocation": "stolz sein auf (+ Akkusativ)",
+      "meaning": "große Freude und Genugtuung über jemanden oder eine Leistung empfinden",
+      "example": "Du kannst wirklich stolz auf dich sein!",
+      "tip": "Verbindet sich stets mit 'auf' gefolgt vom Akkusativ."
+    },
+    {
+      "id": "adj-2",
+      "prefix": "Mit dem neuen Smartphone und der Akkulaufzeit bin ich überaus zufrieden",
+      "gapPlaceholder": "Präposition",
+      "suffix": "meiner Kaufentscheidung.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "über",
+        "an",
+        "von"
+      ],
+      "collocation": "zufrieden sein mit (+ Dativ)",
+      "meaning": "keine Beschwerden haben und glücklich mit einem Zustand sein",
+      "example": "Sind Sie mit unserem Kundenservice zufrieden?",
+      "tip": "Verlangt immer die Präposition 'mit' + Dativ."
+    },
+    {
+      "id": "adj-3",
+      "prefix": "Der Wissenschaftler ist seit Jahren fest",
+      "gapPlaceholder": "Präposition",
+      "suffix": "der Richtigkeit seiner Theorie überzeugt.",
+      "correctAnswer": "von",
+      "acceptableAnswers": [
+        "von"
+      ],
+      "options": [
+        "von",
+        "über",
+        "an",
+        "mit"
+      ],
+      "collocation": "überzeugt sein von (+ Dativ)",
+      "meaning": "keinerlei Zweifel an einer Tatsache haben",
+      "example": "Ich bin fest von ihrem Erfolg überzeugt.",
+      "tip": "Adjektiv 'überzeugt' verlangt 'von' + Dativ."
+    },
+    {
+      "id": "adj-4",
+      "prefix": "Ohne eigenes Auto ist man auf dem Land stark angewiesen",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den öffentlichen Nahverkehr.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "an",
+        "zu",
+        "nach"
+      ],
+      "collocation": "angewiesen sein auf (+ Akkusativ)",
+      "meaning": "Hilfe oder Unterstützung von jemandem oder etwas zwingend benötigen",
+      "example": "Wir sind auf die finanzielle Unterstützung der Förderer angewiesen.",
+      "tip": "'angewiesen sein auf' + Akkusativ."
+    },
+    {
+      "id": "adj-5",
+      "prefix": "Die Studentin ist sehr interessiert",
+      "gapPlaceholder": "Präposition",
+      "suffix": "zeitgenössischer deutscher Literatur und Kunst.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "für",
+        "mit",
+        "über"
+      ],
+      "collocation": "interessiert sein an (+ Dativ)",
+      "meaning": "großes Interesse an einem Fachgebiet oder Thema haben",
+      "example": "Sind Sie an einer Mitgliedschaft in unserem Verein interessiert?",
+      "tip": "Achtung: 'sich interessieren FÜR' (Akk), aber 'interessiert sein AN' (Dat)!"
+    },
+    {
+      "id": "adj-6",
+      "prefix": "Wir sind allen Helferinnen und Helfern überaus dankbar",
+      "gapPlaceholder": "Präposition",
+      "suffix": "ihre unermüdliche Unterstützung bei den Aufräumarbeiten.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "über",
+        "an",
+        "mit"
+      ],
+      "collocation": "dankbar sein für (+ Akkusativ)",
+      "meaning": "Dankbarkeit für eine Handlung oder Sache empfinden",
+      "example": "Ich bin dir für deinen wertvollen Rat sehr dankbar.",
+      "tip": "'dankbar sein' verlangt 'für' + Akkusativ für die Sache."
+    },
+    {
+      "id": "adj-7",
+      "prefix": "Das gesamte Publikum war nach dem Konzert restlos begeistert",
+      "gapPlaceholder": "Präposition",
+      "suffix": "der mitreißenden Darbietung des Orchesters.",
+      "correctAnswer": "von",
+      "acceptableAnswers": [
+        "von"
+      ],
+      "options": [
+        "von",
+        "über",
+        "an",
+        "für"
+      ],
+      "collocation": "begeistert sein von (+ Dativ)",
+      "meaning": "volle Begeisterung und Faszination für etwas empfinden",
+      "example": "Alle waren von der neuen Produktidee begeistert.",
+      "tip": "Feste Verbindung: 'begeistert sein' + 'von' + Dativ."
+    },
+    {
+      "id": "adj-8",
+      "prefix": "Frau Schmidt ist ab diesem Monat hauptverantwortlich und zuständig",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Betreuung der internationalen Austauschstudenten.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "an",
+        "zu",
+        "über"
+      ],
+      "collocation": "zuständig sein für (+ Akkusativ)",
+      "meaning": "die behördliche oder fachliche Verantwortung für etwas tragen",
+      "example": "Wer ist in dieser Abteilung für die IT-Sicherheit zuständig?",
+      "tip": "Verbindet sich stets mit 'für' + Akkusativ."
+    },
+    {
+      "id": "adj-9",
+      "prefix": "Mit ausreichender Konzentration ist der Mensch",
+      "gapPlaceholder": "Präposition",
+      "suffix": "erstaunlichen Höchstleistungen fähig.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "für",
+        "an",
+        "nach"
+      ],
+      "collocation": "fähig sein zu (+ Dativ)",
+      "meaning": "die geistige oder physische Kraft besitzen, etwas zu vollbringen",
+      "example": "Sie ist zu großen Leistungen fähig.",
+      "tip": "Adjektiv 'fähig' verlangt die Präposition 'zu' + Dativ."
+    },
+    {
+      "id": "adj-10",
+      "prefix": "Die Einheimischen waren sehr überrascht",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den ungewöhnlich frühen Wintereinbruch im Oktober.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "an",
+        "auf"
+      ],
+      "collocation": "überrascht sein über (+ Akkusativ)",
+      "meaning": "durch ein unerwartetes Ereignis in Erstaunen versetzt werden",
+      "example": "Wir waren über das hervorragende Wahlergebnis überrascht.",
+      "tip": "'überrascht sein' steht mit 'über' + Akkusativ (oder auch mit 'von' + Dativ)."
+    },
+    {
+      "id": "adj-11",
+      "prefix": "Er war nach der ungerechtfertigten Kritik verständlicherweise wütend",
+      "gapPlaceholder": "Präposition",
+      "suffix": "seinen Vorgesetzten.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "über",
+        "an",
+        "gegen"
+      ],
+      "collocation": "wütend sein auf (+ Akkusativ)",
+      "meaning": "großen Zorn gegenüber einer Person verspüren",
+      "example": "Sei bitte nicht wütend auf mich, es war keine Absicht.",
+      "tip": "Merke: 'wütend sein AUF' eine Person (Akk), aber 'wütend sein ÜBER' eine Sache (Akk)."
+    },
+    {
+      "id": "adj-12",
+      "prefix": "Die Grundschüler sind inzwischen vollkommen",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Umgang mit digitalen Medien gewöhnt.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "zu",
+        "auf",
+        "mit"
+      ],
+      "collocation": "gewöhnt sein an (+ Akkusativ)",
+      "meaning": "an eine Gegebenheit oder Situation angepasst sein",
+      "example": "Wir sind an das raue norddeutsche Klima gewöhnt.",
+      "tip": "Adjektivische Fügung: 'gewöhnt sein' + 'an' + Akkusativ."
+    },
+    {
+      "id": "adj-13",
+      "prefix": "Die junge Teamleiterin zeigt sich stets sehr aufgeschlossen",
+      "gapPlaceholder": "Präposition",
+      "suffix": "neuen und kreativen Arbeitsmethoden.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "zu",
+        "für",
+        "an"
+      ],
+      "collocation": "aufgeschlossen sein gegenüber (+ Dativ)",
+      "meaning": "bereit sein, Neues ohne Vorurteile anzunehmen",
+      "example": "Er ist anderen Meinungen gegenüber sehr aufgeschlossen.",
+      "tip": "aufgeschlossen gegenüber + Dativ (Nomen: die Aufgeschlossenheit gegenüber)."
+    },
+    {
+      "id": "adj-14",
+      "prefix": "Nach mehreren schlechten Erfahrungen ist sie Fremden",
+      "gapPlaceholder": "Präposition",
+      "suffix": "äußerst misstrauisch eingestellt.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "vor",
+        "mit",
+        "wider"
+      ],
+      "collocation": "misstrauisch sein gegenüber (+ Dativ)",
+      "meaning": "jemandem nicht vertrauen und Argwohn hegen",
+      "example": "Der Kunde war dem Angebot gegenüber misstrauisch.",
+      "tip": "misstrauisch gegenüber + Dativ (Nomen: das Misstrauen gegenüber)."
+    },
+    {
+      "id": "adj-15",
+      "prefix": "Viele Konsumenten sind gentechnisch veränderten Lebensmitteln",
+      "gapPlaceholder": "Präposition",
+      "suffix": "sehr skeptisch eingestellt.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "zu",
+        "an",
+        "vor"
+      ],
+      "collocation": "skeptisch sein gegenüber (+ Dativ)",
+      "meaning": "kritisches Zweifeln oder Bedenken hegen",
+      "example": "Die Belegschaft war den Plänen gegenüber skeptisch.",
+      "tip": "skeptisch gegenüber + Dativ (Nomen: die Skepsis gegenüber)."
+    },
+    {
+      "id": "adj-16",
+      "prefix": "Die Bürgerinitiative zeigte sich zutiefst empört",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die willkürliche Abholzung des alten Stadtparks.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "auf",
+        "an"
+      ],
+      "collocation": "empört sein über (+ Akkusativ)",
+      "meaning": "voller moralischer Entrüstung und Wut sein",
+      "example": "Alle waren über die unverschämte Äußerung empört.",
+      "tip": "empört über + Akkusativ (Nomen: die Empörung über)."
+    },
+    {
+      "id": "adj-17",
+      "prefix": "Er verhielt sich dem Schicksal und den Sorgen seiner Mitmenschen",
+      "gapPlaceholder": "Präposition",
+      "suffix": "völlig gleichgültig.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "zu",
+        "mit",
+        "an"
+      ],
+      "collocation": "gleichgültig sein gegenüber (+ Dativ)",
+      "meaning": "keinerlei Interesse oder Mitgefühl für jemanden/etwas zeigen",
+      "example": "Sie war seinen Vorwürfen gegenüber vollkommen gleichgültig.",
+      "tip": "gleichgültig gegenüber + Dativ (Nomen: die Gleichgültigkeit gegenüber)."
+    },
+    {
+      "id": "adj-18",
+      "prefix": "Alle Zuschauer im Saal waren schon brennend neugierig",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die überraschende Auflösung des Kriminalfalls.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "nach",
+        "über",
+        "für"
+      ],
+      "collocation": "neugierig sein auf (+ Akkusativ)",
+      "meaning": "begierig darauf sein, etwas Neues zu erfahren",
+      "example": "Ich bin neugierig auf deine Reiseberichte.",
+      "tip": "neugierig auf + Akkusativ (Nomen: die Neugier auf)."
+    },
+    {
+      "id": "adj-19",
+      "prefix": "Der Gutachter stellte fest, dass technisches Versagen schuld",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem schweren Unfall war.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "von",
+        "in",
+        "für"
+      ],
+      "collocation": "schuld sein an (+ Dativ)",
+      "meaning": "die Ursache oder Verantwortung für etwas Negatives tragen",
+      "example": "Er war selbst an seiner Niederlage schuld.",
+      "tip": "schuld sein an + Dativ (Nomen: die Schuld an + Dativ)."
+    },
+    {
+      "id": "adj-20",
+      "prefix": "Der Leiter verhält sich neuen Geschäftspartnern",
+      "gapPlaceholder": "Präposition",
+      "suffix": "zunächst meist eher zurückhaltend.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "zu",
+        "an",
+        "bei"
+      ],
+      "collocation": "zurückhaltend sein gegenüber (+ Dativ)",
+      "meaning": "distanziert, vorsichtig oder reserviert sein",
+      "example": "Sie blieb dem Angebot gegenüber zurückhaltend.",
+      "tip": "zurückhaltend gegenüber + Dativ (Nomen: die Zurückhaltung gegenüber)."
+    },
+    {
+      "id": "adj-21",
+      "prefix": "Der Dozent war sichtlich verwundert",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die vielen leeren Plätze im Hörsaal.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "auf",
+        "an"
+      ],
+      "collocation": "verwundert sein über (+ Akkusativ)",
+      "meaning": "erstaunt oder befremdet sein",
+      "example": "Wir waren über seine späte Absage verwundert.",
+      "tip": "verwundert über + Akkusativ (Verb: sich wundern über / Nomen: die Verwunderung über)."
+    },
+    {
+      "id": "adj-22",
+      "prefix": "Nach der schwachen Teamleistung waren die treuen Fans maßlos enttäuscht",
+      "gapPlaceholder": "Präposition",
+      "suffix": "ihrer Mannschaft.",
+      "correctAnswer": "von",
+      "acceptableAnswers": [
+        "von"
+      ],
+      "options": [
+        "von",
+        "über",
+        "in",
+        "an"
+      ],
+      "collocation": "enttäuscht sein von (+ Dativ)",
+      "meaning": "in seinen Erwartungen oder Hoffnungen betrogen sein",
+      "example": "Ich bin menschlich sehr von ihm enttäuscht.",
+      "tip": "enttäuscht von + Dativ (bei Personen) / über + Akkusativ (bei Ereignissen)."
+    },
+    {
+      "id": "adj-23",
+      "prefix": "Pünktlichkeit und gründliche Planung gelten traditionell als typisch",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die deutsche Arbeitskultur.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "von",
+        "in",
+        "an"
+      ],
+      "collocation": "typisch sein für (+ Akkusativ)",
+      "meaning": "charakteristisch oder kennzeichnend für jemanden/etwas",
+      "example": "Das ist wieder einmal typisch für ihn!",
+      "tip": "typisch für + Akkusativ."
+    },
+    {
+      "id": "adj-24",
+      "prefix": "Wegen des anhaltend hohen Fiebers waren die Eltern außerordentlich besorgt",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Gesundheitszustand ihres Sohnes.",
+      "correctAnswer": "um",
+      "acceptableAnswers": [
+        "um"
+      ],
+      "options": [
+        "um",
+        "über",
+        "für",
+        "wegen"
+      ],
+      "collocation": "besorgt sein um (+ Akkusativ)",
+      "meaning": "große Sorge oder Angst um das Wohlergehen haben",
+      "example": "Die Bürger sind um ihren Arbeitsplatz besorgt.",
+      "tip": "besorgt um + Akkusativ (Nomen: die Sorge um / Verb: sich sorgen um)."
+    },
+    {
+      "id": "adj-25",
+      "prefix": "Die Mitarbeiter im Kundendienst waren stets zuvorkommend und freundlich",
+      "gapPlaceholder": "Präposition",
+      "suffix": "allen Anrufern.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "mit",
+        "an",
+        "für"
+      ],
+      "collocation": "freundlich sein zu (+ Dativ)",
+      "meaning": "ein liebenswürdiges, hilfsbereites Verhalten zeigen",
+      "example": "Sei bitte immer freundlich zu deinen Mitmenschen.",
+      "tip": "freundlich zu + Dativ."
+    },
+    {
+      "id": "adj-26",
+      "prefix": "Nach stundenlangen Verhandlungen waren die Tarifparteien endlich bereit",
+      "gapPlaceholder": "Präposition",
+      "suffix": "einem fairen Kompromiss.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "für",
+        "an",
+        "auf"
+      ],
+      "collocation": "bereit sein zu (+ Dativ)",
+      "meaning": "willens oder vorbereitet sein, etwas zu tun",
+      "example": "Wir sind zu jedem sachlichen Gespräch bereit.",
+      "tip": "bereit sein zu + Dativ (Nomen: die Bereitschaft zu)."
+    },
+    {
+      "id": "adj-27",
+      "prefix": "Gute Fremdsprachenkenntnisse sind im internationalen Handel überaus nützlich",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den beruflichen Aufstieg.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "zu",
+        "an",
+        "bei"
+      ],
+      "collocation": "nützlich sein für (+ Akkusativ)",
+      "meaning": "von praktischem Nutzen oder Vorteil sein",
+      "example": "Dieser Ratgeber ist sehr nützlich für Einsteiger.",
+      "tip": "nützlich für + Akkusativ (Nomen: der Nutzen für)."
+    },
+    {
+      "id": "adj-28",
+      "prefix": "Dauerhafter Schlafmangel und ungesunde Ernährung sind nachweislich schädlich",
+      "gapPlaceholder": "Präposition",
+      "suffix": "das menschliche Immunsystem.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "zu",
+        "an",
+        "auf"
+      ],
+      "collocation": "schädlich sein für (+ Akkusativ)",
+      "meaning": "eine schädigende oder negative Wirkung ausüben",
+      "example": "Rauchen ist schädlich für die Gesundheit.",
+      "tip": "schädlich für + Akkusativ (Nomen: der Schaden für)."
+    },
+    {
+      "id": "adj-29",
+      "prefix": "Viele Bürger sind wütend und verärgert",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die erneute Verspätung der Züge.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "auf",
+        "an"
+      ],
+      "collocation": "verärgert / ärgerlich sein über (+ Akkusativ)",
+      "meaning": "Zorn oder Unmut empfinden",
+      "example": "Er war extrem verärgert über die Kritik.",
+      "tip": "verärgert über + Akkusativ (Nomen: der Ärger über)."
+    },
+    {
+      "id": "adj-30",
+      "prefix": "Die Bewerberin ist aufgrund ihrer langjährigen Erfahrung bestens",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die vakante Stelle im Marketing geeignet.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "durch",
+        "mit",
+        "zu"
+      ],
+      "collocation": "geeignet sein für (+ Akkusativ)",
+      "meaning": "die nötigen Qualifikationen oder Eigenschaften besitzen",
+      "example": "Das Hotel ist gut geeignet für Familien.",
+      "tip": "geeignet sein für + Akkusativ (Verb: sich eignen für)."
+    },
+    {
+      "id": "adj-31",
+      "prefix": "In der Debatte zeigte er sich tief verbunden",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Werten seiner Heimatregion.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "zu",
+        "an",
+        "bei"
+      ],
+      "collocation": "verbunden sein mit (+ Dativ)",
+      "meaning": "eine enge Beziehung oder Zugehörigkeit empfinden",
+      "example": "Ich fühle mich eng mit dieser Stadt verbunden.",
+      "tip": "verbunden sein mit + Dativ (Nomen: die Verbindung mit)."
+    },
+    {
+      "id": "adj-32",
+      "prefix": "Die Führungskraft ist persönlich verantwortlich",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Einhaltung aller Sicherheitsvorschriften.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "zu",
+        "an",
+        "über"
+      ],
+      "collocation": "verantwortlich sein für (+ Akkusativ)",
+      "meaning": "die Verantwortung für Handlungen oder Ergebnisse tragen",
+      "example": "Wer ist verantwortlich für diesen Fehler?",
+      "tip": "verantwortlich sein für + Akkusativ (Nomen: die Verantwortung für)."
+    },
+    {
+      "id": "adj-33",
+      "prefix": "Die Anwohner sind sehr beunruhigt",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die geplanten Baumaßnahmen in ihrer Straße.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "um",
+        "an"
+      ],
+      "collocation": "beunruhigt sein über (+ Akkusativ)",
+      "meaning": "Sorge oder Unruhe wegen einer Nachricht/Situation verspüren",
+      "example": "Wir sind beunruhigt über die wirtschaftliche Lage.",
+      "tip": "beunruhigt sein über + Akkusativ (Nomen: die Beunruhigung über)."
+    },
+    {
+      "id": "adj-34",
+      "prefix": "Die finanzielle Lage der Familie ist stark",
+      "gapPlaceholder": "Präposition",
+      "suffix": "staatlicher Unterstützung abhängig.",
+      "correctAnswer": "von",
+      "acceptableAnswers": [
+        "von"
+      ],
+      "options": [
+        "von",
+        "aus",
+        "an",
+        "zu"
+      ],
+      "collocation": "abhängig sein von (+ Dativ)",
+      "meaning": "angewiesen auf / nicht selbstständig sein",
+      "example": "Kinder sind völlig abhängig von ihren Eltern.",
+      "tip": "abhängig sein von + Dativ (Verb: abhängen von / Nomen: die Abhängigkeit von)."
+    },
+    {
+      "id": "adj-35",
+      "prefix": "Die neue Software ist in ihren Grundfunktionen völlig analog",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Vorgängermodell aufgebaut.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "mit",
+        "an",
+        "wie"
+      ],
+      "collocation": "analog sein zu (+ Dativ)",
+      "meaning": "entsprechend / ähnlich aufgebaut sein",
+      "example": "Das Verhalten ist analog zu früheren Beobachtungen.",
+      "tip": "analog sein zu + Dativ."
+    },
+    {
+      "id": "adj-36",
+      "prefix": "Wir müssen alle Abläufe stets angepasst",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die aktuellen Richtlinien gestalten.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "zu",
+        "auf",
+        "in"
+      ],
+      "collocation": "angepasst sein an (+ Akkusativ)",
+      "meaning": "harmonierend / eingestellt auf Gegebenheiten",
+      "example": "Er ist gut angepasst an das Team.",
+      "tip": "angepasst sein an + Akkusativ (Verb: sich anpassen an / Nomen: die Anpassung an)."
+    },
+    {
+      "id": "adj-37",
+      "prefix": "Der Schulleiter war bei dem Treffen persönlich anwesend",
+      "gapPlaceholder": "Präposition",
+      "suffix": "der wichtigen Zeugnisvergabe.",
+      "correctAnswer": "bei",
+      "acceptableAnswers": [
+        "bei"
+      ],
+      "options": [
+        "bei",
+        "in",
+        "an",
+        "zu"
+      ],
+      "collocation": "anwesend sein bei (+ Dativ)",
+      "meaning": "vor Ort dabei sein",
+      "example": "Alle Zeugen waren bei der Verhandlung anwesend.",
+      "tip": "anwesend sein bei + Dativ (Nomen: die Anwesenheit bei)."
+    },
+    {
+      "id": "adj-38",
+      "prefix": "Mein Kollege zeigte sich extrem ärgerlich",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die erneute Absage des Termins.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "auf",
+        "an"
+      ],
+      "collocation": "ärgerlich sein über (+ Akkusativ)",
+      "meaning": "verärgert / verstimmt wegen etwas sein",
+      "example": "Sie war ärgerlich über den Fehler.",
+      "tip": "ärgerlich sein über + Akkusativ (Verb: sich ärgern über / Nomen: der Ärger über)."
+    },
+    {
+      "id": "adj-39",
+      "prefix": "Das Team war sehr aufgeschlossen",
+      "gapPlaceholder": "Präposition",
+      "suffix": "neuen technischen Innovationen gegenüber.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "für",
+        "zu",
+        "an"
+      ],
+      "collocation": "aufgeschlossen sein gegenüber (+ Dativ)",
+      "meaning": "offen und interessiert für Neues sein",
+      "example": "Wir sind für alle Vorschläge aufgeschlossen.",
+      "tip": "aufgeschlossen sein gegenüber + Dativ / für + Akkusativ (Nomen: die Aufgeschlossenheit gegenüber)."
+    },
+    {
+      "id": "adj-40",
+      "prefix": "Vor dem Auftritt war die junge Künstlerin sehr aufgeregt",
+      "gapPlaceholder": "Präposition",
+      "suffix": "ihre bevorstehende Premiere.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "an",
+        "um"
+      ],
+      "collocation": "aufgeregt sein über (+ Akkusativ)",
+      "meaning": "nervös oder in emotionaler Spannung sein",
+      "example": "Alle waren aufgeregt über das Ergebnis.",
+      "tip": "aufgeregt sein über + Akkusativ (Verb: sich aufregen über / Nomen: die Aufregung über)."
+    },
+    {
+      "id": "adj-41",
+      "prefix": "Die Schüler waren von Anfang an begeistert",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem neuen Experiment im Unterricht.",
+      "correctAnswer": "von",
+      "acceptableAnswers": [
+        "von"
+      ],
+      "options": [
+        "von",
+        "für",
+        "über",
+        "an"
+      ],
+      "collocation": "begeistert sein von (+ Dativ)",
+      "meaning": "große Faszination empfinden",
+      "example": "Ich bin begeistert von diesem Buch.",
+      "tip": "begeistert sein VON + Dativ (Achtung Nomen: die Begeisterung FÜR + Akkusativ / Verb: sich begeistern für)."
+    },
+    {
+      "id": "adj-42",
+      "prefix": "Das Hotel ist für Familien mit Kindern bestens geeignet",
+      "gapPlaceholder": "Präposition",
+      "suffix": "einen entspannten Urlaub.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "zu",
+        "an",
+        "in"
+      ],
+      "collocation": "geeignet sein für (+ Akkusativ) / zu (+ Dativ)",
+      "meaning": "passende Eigenschaften haben",
+      "example": "Das Werkzeug ist gut geeignet zur Holzbearbeitung.",
+      "tip": "geeignet sein für + Akkusativ / zu + Dativ (Verb: sich eignen für/zu / Nomen: die Eignung für/zu)."
+    },
+    {
+      "id": "adj-43",
+      "prefix": "Viele Bürger sind äußerst beunruhigt",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die wirtschaftliche Entwicklung.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "um",
+        "an"
+      ],
+      "collocation": "beunruhigt sein über (+ Akkusativ)",
+      "meaning": "voller Sorge wegen einer Lage sein",
+      "example": "Wir sind beunruhigt über die Nachrichten.",
+      "tip": "beunruhigt sein über + Akkusativ (Nomen: die Beunruhigung über)."
+    },
+    {
+      "id": "adj-44",
+      "prefix": "Sie war sehr dankbar",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die schnelle und unkomplizierte Hilfe.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "über",
+        "an",
+        "zu"
+      ],
+      "collocation": "dankbar sein für (+ Akkusativ)",
+      "meaning": "Dankbarkeit empfinden",
+      "example": "Ich bin dir sehr dankbar für deine Unterstützung.",
+      "tip": "dankbar sein für + Akkusativ (Verb: danken für / Nomen: der Dank für)."
+    },
+    {
+      "id": "adj-45",
+      "prefix": "Der Mitarbeiter zeigte sich aufrichtig enttäuscht",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Verweigerung der Gehaltserhöhung.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "an",
+        "in"
+      ],
+      "collocation": "enttäuscht sein über (+ Akkusativ) / von (+ Dativ)",
+      "meaning": "niedergeschlagen wegen unerfüllter Erwartung sein",
+      "example": "Er war enttäuscht von seinem besten Freund.",
+      "tip": "enttäuscht sein über + Akkusativ (Sache) / von + Dativ (Person) (Nomen: die Enttäuschung über/von)."
+    },
+    {
+      "id": "adj-46",
+      "prefix": "Wir waren alle positiv erstaunt",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die hohe Qualität des Produkts.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "an",
+        "auf"
+      ],
+      "collocation": "erstaunt sein über (+ Akkusativ)",
+      "meaning": "überrascht / verwundert sein",
+      "example": "Sie war erstaunt über seinen schnellen Erfolg.",
+      "tip": "erstaunt sein über + Akkusativ (Nomen: das Erstaunen über)."
+    },
+    {
+      "id": "adj-47",
+      "prefix": "Er ist als erfahrener Techniker sehr fähig",
+      "gapPlaceholder": "Präposition",
+      "suffix": "Lösung komplexer Probleme.",
+      "correctAnswer": "zur",
+      "acceptableAnswers": [
+        "zur",
+        "zu der"
+      ],
+      "options": [
+        "zur",
+        "für",
+        "an",
+        "in"
+      ],
+      "collocation": "fähig sein zu (+ Dativ)",
+      "meaning": "Kompetenz und Potenzial für etwas haben",
+      "example": "Sie ist zu allem fähig.",
+      "tip": "fähig sein zu + Dativ (Nomen: die Fähigkeit zu)."
+    },
+    {
+      "id": "adj-48",
+      "prefix": "Ich bin schon sehr gewöhnt",
+      "gapPlaceholder": "Präposition",
+      "suffix": "das frühe Aufstehen am Morgen.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "zu",
+        "auf",
+        "in"
+      ],
+      "collocation": "gewöhnt sein an (+ Akkusativ)",
+      "meaning": "vertraut mit einer Gewohnheit sein",
+      "example": "Er ist an das kalte Klima gewöhnt.",
+      "tip": "gewöhnt sein an + Akkusativ (Verb: sich gewöhnen an / Nomen: die Gewöhnung an)."
+    },
+    {
+      "id": "adj-49",
+      "prefix": "Sein Verhalten war völlig gleichgültig",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Sorgen und Problemen seiner Kollegen.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "zu",
+        "mit",
+        "an"
+      ],
+      "collocation": "gleichgültig sein gegenüber (+ Dativ)",
+      "meaning": "desinteressiert / ohne Empathie sein",
+      "example": "Er ist Kritik gegenüber völlig gleichgültig.",
+      "tip": "gleichgültig sein gegenüber + Dativ (Nomen: die Gleichgültigkeit gegenüber)."
+    },
+    {
+      "id": "adj-50",
+      "prefix": "Sie ist in allen Fachbereichen bestens informiert",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die neuesten Entwicklungen im Markt.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "zu",
+        "an"
+      ],
+      "collocation": "informiert sein über (+ Akkusativ)",
+      "meaning": "Wissen über ein Thema besitzen",
+      "example": "Bist du gut über die Lage informiert?",
+      "tip": "informiert sein über + Akkusativ (Verb: sich informieren über / Nomen: die Information über)."
+    },
+    {
+      "id": "adj-51",
+      "prefix": "Der Forscher war schon immer sehr interessiert",
+      "gapPlaceholder": "Präposition",
+      "suffix": "der Geschichte der Antike.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "für",
+        "über",
+        "in"
+      ],
+      "collocation": "interessiert sein an (+ Dativ)",
+      "meaning": "Aufmerksamkeit / Neugier haben",
+      "example": "Wir sind an einem Kauf interessiert.",
+      "tip": "interessiert sein AN + Dativ (Achtung Verb: sich interessieren FÜR + Akkusativ / Nomen: das Interesse an)."
+    },
+    {
+      "id": "adj-52",
+      "prefix": "Für das Projekt ist diese Maßnahme absolut notwendig",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Erfolg.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "zu",
+        "an",
+        "von"
+      ],
+      "collocation": "notwendig sein für (+ Akkusativ)",
+      "meaning": "unbedingt erforderlich sein",
+      "example": "Wasser ist notwendig für das Leben.",
+      "tip": "notwendig sein für + Akkusativ (Nomen: die Notwendigkeit für)."
+    },
+    {
+      "id": "adj-53",
+      "prefix": "Das kleine Kind war extrem neugierig",
+      "gapPlaceholder": "Präposition",
+      "suffix": "das eingepackte Geburtstagsgeschenk.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "nach",
+        "für",
+        "über"
+      ],
+      "collocation": "neugierig sein auf (+ Akkusativ)",
+      "meaning": "wissbegierig bezüglich Neuheiten sein",
+      "example": "Ich bin neugierig auf deine neue Wohnung.",
+      "tip": "neugierig sein auf + Akkusativ (Nomen: die Neugier auf)."
+    },
+    {
+      "id": "adj-54",
+      "prefix": "Die Führungskraft war stets offen",
+      "gapPlaceholder": "Präposition",
+      "suffix": "konstruktive Kritik aus dem Team.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "gegenüber",
+        "zu",
+        "mit"
+      ],
+      "collocation": "offen sein für (+ Akkusativ)",
+      "meaning": "bereit für Vorschläge oder Neues sein",
+      "example": "Er ist immer offen für Fragen.",
+      "tip": "offen sein für + Akkusativ (Nomen: die Offenheit für)."
+    },
+    {
+      "id": "adj-55",
+      "prefix": "Diese Jacke ist nicht wirklich passend",
+      "gapPlaceholder": "Präposition",
+      "suffix": "einem festlichen Anlass.",
+      "correctAnswer": "zu",
+      "acceptableAnswers": [
+        "zu"
+      ],
+      "options": [
+        "zu",
+        "für",
+        "an",
+        "in"
+      ],
+      "collocation": "passend sein zu (+ Dativ)",
+      "meaning": "angemessen / harmonierend mit etwas sein",
+      "example": "Die Schuhe sind sehr passend zum Kleid.",
+      "tip": "passend sein zu + Dativ (Verb: passen zu)."
+    },
+    {
+      "id": "adj-56",
+      "prefix": "Er fühlte sich tief schuld",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem geschehenen Verkehrsunfall.",
+      "correctAnswer": "an",
+      "acceptableAnswers": [
+        "an"
+      ],
+      "options": [
+        "an",
+        "in",
+        "für",
+        "von"
+      ],
+      "collocation": "schuld sein an (+ Dativ)",
+      "meaning": "die Verantwortung für etwas Negatives tragen",
+      "example": "Wer ist schuld an der Misere?",
+      "tip": "schuld sein an + Dativ (Nomen: die Schuld an)."
+    },
+    {
+      "id": "adj-57",
+      "prefix": "Der Facharzt ist sehr spezialisiert",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Behandlung von Herzkrankheiten.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "in",
+        "für",
+        "an"
+      ],
+      "collocation": "spezialisiert sein auf (+ Akkusativ)",
+      "meaning": "Experte auf einem Fachgebiet sein",
+      "example": "Die Kanzlei ist auf Arbeitsrecht spezialisiert.",
+      "tip": "spezialisiert sein auf + Akkusativ (Verb: sich spezialisieren auf / Nomen: die Spezialisierung auf)."
+    },
+    {
+      "id": "adj-58",
+      "prefix": "Die Experten waren überrascht",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den schnellen Fortschritten des Projekts.",
+      "correctAnswer": "von",
+      "acceptableAnswers": [
+        "von"
+      ],
+      "options": [
+        "von",
+        "über",
+        "an",
+        "auf"
+      ],
+      "collocation": "überrascht sein von (+ Dativ) / über (+ Akkusativ)",
+      "meaning": "staunen über ein Unerwartetes Ergebnis",
+      "example": "Ich war von der guten Qualität überrascht.",
+      "tip": "überrascht sein von + Dativ (oder über + Akkusativ)."
+    },
+    {
+      "id": "adj-59",
+      "prefix": "Ich bin fest davon überzeugt",
+      "gapPlaceholder": "Präposition",
+      "suffix": "der Richtigkeit dieser Entscheidung.",
+      "correctAnswer": "von",
+      "acceptableAnswers": [
+        "von"
+      ],
+      "options": [
+        "von",
+        "über",
+        "an",
+        "mit"
+      ],
+      "collocation": "überzeugt sein von (+ Dativ)",
+      "meaning": "sicher und ohne Zweifel bezüglich einer Sache sein",
+      "example": "Sie ist überzeugt von ihrer Leistung.",
+      "tip": "überzeugt sein von + Dativ (Verb: sich überzeugen von)."
+    },
+    {
+      "id": "adj-60",
+      "prefix": "Die Führungskraft ist persönlich verantwortlich",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Einhaltung der Vorschriften.",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "über",
+        "an",
+        "zu"
+      ],
+      "collocation": "verantwortlich sein für (+ Akkusativ)",
+      "meaning": "die Pflicht/Verantwortung tragen",
+      "example": "Wer ist verantwortlich für dieses Projekt?",
+      "tip": "verantwortlich sein für + Akkusativ (Nomen: die Verantwortung für)."
+    },
+    {
+      "id": "adj-61",
+      "prefix": "In der Debatte zeigte er sich eng verbunden",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den Werten seiner Heimat.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "zu",
+        "an",
+        "bei"
+      ],
+      "collocation": "verbunden sein mit (+ Dativ)",
+      "meaning": "eine enge Beziehung zu etwas/jemandem haben",
+      "example": "Ich fühle mich sehr mit dieser Region verbunden.",
+      "tip": "verbunden sein mit + Dativ (Verb: verbinden mit / Nomen: die Verbindung mit)."
+    },
+    {
+      "id": "adj-62",
+      "prefix": "Der Redner war extrem verärgert",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die unsachlichen Zwischenrufe.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "auf",
+        "an"
+      ],
+      "collocation": "verärgert sein über (+ Akkusativ)",
+      "meaning": "Zorn / Ärger über eine Lage empfinden",
+      "example": "Sie war verärgert über das verpasste Angebot.",
+      "tip": "verärgert sein über + Akkusativ (Verb: sich ärgern über / Nomen: der Ärger über)."
+    },
+    {
+      "id": "adj-63",
+      "prefix": "Diese zwei Angebote sind in Qualität und Preis durchaus vergleichbar",
+      "gapPlaceholder": "Präposition",
+      "suffix": "einander.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "zu",
+        "von",
+        "gegen"
+      ],
+      "collocation": "vergleichbar sein mit (+ Dativ)",
+      "meaning": "ähnliche Eigenschaften aufweisen",
+      "example": "Die Situation ist vergleichbar mit den Vorjahren.",
+      "tip": "vergleichbar sein mit + Dativ (Verb: vergleichen mit / Nomen: der Vergleich mit/zu)."
+    },
+    {
+      "id": "adj-64",
+      "prefix": "Alle Mitarbeiter sind vertraglich verpflichtet",
+      "gapPlaceholder": "Präposition",
+      "suffix": "der Verschwiegenheit über Betriebsgeheimnisse.",
+      "correctAnswer": "zur",
+      "acceptableAnswers": [
+        "zur",
+        "zu der"
+      ],
+      "options": [
+        "zur",
+        "für",
+        "an",
+        "auf"
+      ],
+      "collocation": "verpflichtet sein zu (+ Dativ)",
+      "meaning": "gebunden an eine Pflicht sein",
+      "example": "Wir sind verpflichtet zur Einhaltung der Gesetze.",
+      "tip": "verpflichtet sein zu + Dativ (Verb: sich verpflichten zu / Nomen: die Verpflichtung zu)."
+    },
+    {
+      "id": "adj-65",
+      "prefix": "Wir waren alle tief verwundert",
+      "gapPlaceholder": "Präposition",
+      "suffix": "das plötzliche Auftauchen des Chefs.",
+      "correctAnswer": "über",
+      "acceptableAnswers": [
+        "über",
+        "ueber"
+      ],
+      "options": [
+        "über",
+        "von",
+        "an",
+        "auf"
+      ],
+      "collocation": "verwundert sein über (+ Akkusativ)",
+      "meaning": "staunend / erstaunt über ein Ereignis sein",
+      "example": "Er war sehr verwundert über die Antwort.",
+      "tip": "verwundert sein über + Akkusativ (Verb: sich wundern über / Nomen: die Verwunderung über)."
+    },
+    {
+      "id": "adj-66",
+      "prefix": "Die Studenten waren bestens vorbereitet",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die schwere mündliche Prüfung.",
+      "correctAnswer": "auf",
+      "acceptableAnswers": [
+        "auf"
+      ],
+      "options": [
+        "auf",
+        "zu",
+        "für",
+        "in"
+      ],
+      "collocation": "vorbereitet sein auf (+ Akkusativ)",
+      "meaning": "gut gerüstet / bereit für ein Event sein",
+      "example": "Bist du gut auf das Gespräch vorbereitet?",
+      "tip": "vorbereitet sein auf + Akkusativ (Verb: sich vorbereiten auf / Nomen: die Vorbereitung auf)."
+    },
+    {
+      "id": "adj-67",
+      "prefix": "Mit dem Gesamtergebnis der Verhandlungen sind wir absolut zufrieden",
+      "gapPlaceholder": "Präposition",
+      "suffix": "dem Erreichten.",
+      "correctAnswer": "mit",
+      "acceptableAnswers": [
+        "mit"
+      ],
+      "options": [
+        "mit",
+        "über",
+        "von",
+        "in"
+      ],
+      "collocation": "zufrieden sein mit (+ Dativ)",
+      "meaning": "einverstanden / glücklich mit einer Leistung sein",
+      "example": "Ich bin sehr zufrieden mit meinem neuen Auto.",
+      "tip": "zufrieden sein mit + Dativ (Nomen: die Zufriedenheit mit)."
+    },
+    {
+      "id": "adj-68",
+      "prefix": "Der Politiker zeigte sich in der Pressekonferenz sehr zurückhaltend",
+      "gapPlaceholder": "Präposition",
+      "suffix": "den neuen Spekulationen.",
+      "correctAnswer": "gegenüber",
+      "acceptableAnswers": [
+        "gegenüber",
+        "gegenueber"
+      ],
+      "options": [
+        "gegenüber",
+        "zu",
+        "vor",
+        "mit"
+      ],
+      "collocation": "zurückhaltend sein gegenüber (+ Dativ)",
+      "meaning": "distanziert / vorsichtig im Urteil sein",
+      "example": "Er war Fremden gegenüber immer zurückhaltend.",
+      "tip": "zurückhaltend sein gegenüber + Dativ (Nomen: die Zurückhaltung gegenüber)."
+    },
+    {
+      "id": "adj-69",
+      "prefix": "Welche Abteilung ist hier genau zuständig",
+      "gapPlaceholder": "Präposition",
+      "suffix": "die Bearbeitung dieser Anträge?",
+      "correctAnswer": "für",
+      "acceptableAnswers": [
+        "für",
+        "fuer"
+      ],
+      "options": [
+        "für",
+        "an",
+        "zu",
+        "über"
+      ],
+      "collocation": "zuständig sein für (+ Akkusativ)",
+      "meaning": "die amtliche / fachliche Verantwortung haben",
+      "example": "Ich bin nicht zuständig für diesen Bereich.",
+      "tip": "zuständig sein für + Akkusativ (Nomen: die Zuständigkeit für)."
+    }
+  ]
+}

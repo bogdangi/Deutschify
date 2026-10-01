@@ -85,12 +85,17 @@ Deutschify/
 │   │   └── style.css       # Design-System, Theme-Variablen & Animationen
 │   ├── icons/
 │   │   └── icon.svg        # Vektorbasiertes App-Icon
+│   ├── data/               # Reine Lerndaten (JSON)
+│   │   ├── topics.json     # Metadaten-Manifest
+│   │   └── topics/*.json   # Modulare Übungsdatensätze je Thema
 │   └── js/
 │       ├── app.js          # Haupt-Controller & Benutzeroberflächenlogik
+│       ├── fsrs.js         # FSRS Spaced-Repetition-Algorithmus
+│       ├── scheduler.js    # 10-Sätze-Session Builder & Anki Analytics
 │       ├── storage.js      # LocalStorage-Verwaltung für Lernstand & Serie
 │       ├── audio.js        # Soundeffekte & deutsche Sprachausgabe
 │       └── data/
-│           └── topics.js   # Themendatensätze & Lückentext-Aufgaben
+│           └── TopicRepository.js # Data Access Layer (JSON-Lader & Cache)
 ├── docs/                   # Erweiterte Dokumentation
 │   ├── ARCHITECTURE.md     # Technische Architektur & Datenfluss
 │   └── CONTENT_GUIDE.md    # Anleitung zum Hinzufügen neuer Übungen & Themen

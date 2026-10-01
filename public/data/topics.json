@@ -1,0 +1,62 @@
+[
+  {
+    "id": "kollokationen",
+    "title": "Kollokationen (Nomen-Verb)",
+    "shortDescription": "Feste Nomen-Verb-Verbindungen für authentisches Deutsch (B1–C1)",
+    "icon": "🔗",
+    "level": "B1 – C1",
+    "color": "#10b981",
+    "totalExercises": 105,
+    "file": "topics/kollokationen.json"
+  },
+  {
+    "id": "praepositionen",
+    "title": "Verben mit Präpositionen",
+    "shortDescription": "Feste Präpositionen und der richtige Kasus (Akkusativ / Dativ)",
+    "icon": "🎯",
+    "level": "A2 – B2",
+    "color": "#3b82f6",
+    "totalExercises": 168,
+    "file": "topics/praepositionen.json"
+  },
+  {
+    "id": "nomen-praepositionen",
+    "title": "Nomen mit Präpositionen",
+    "shortDescription": "Feste Präpositionen bei Substantiven (z. B. Hoffnung auf, Angst vor, Skepsis gegenüber)",
+    "icon": "📌",
+    "level": "B1 – C1",
+    "color": "#f59e0b",
+    "totalExercises": 157,
+    "file": "topics/nomen-praepositionen.json"
+  },
+  {
+    "id": "redewendungen",
+    "title": "Redewendungen & Sprichwörter",
+    "shortDescription": "Typische bildhafte Redensarten aus dem deutschen Alltag",
+    "icon": "💡",
+    "level": "B1 – C2",
+    "color": "#f59e0b",
+    "totalExercises": 12,
+    "file": "topics/redewendungen.json"
+  },
+  {
+    "id": "adjektive",
+    "title": "Adjektive mit Präpositionen",
+    "shortDescription": "Feste Kombinationen von Eigenschaftswörtern und Präpositionen",
+    "icon": "⭐",
+    "level": "B1 – B2",
+    "color": "#8b5cf6",
+    "totalExercises": 69,
+    "file": "topics/adjektive.json"
+  },
+  {
+    "id": "konjunktionen",
+    "title": "Konjunktionen & Konnektoren",
+    "shortDescription": "Wichtige Bindewörter und Satzverbindungen für Haupt- und Nebensätze",
+    "icon": "🔗",
+    "level": "B1 – B2",
+    "color": "#3b82f6",
+    "totalExercises": 32,
+    "file": "topics/konjunktionen.json"
+  }
+]

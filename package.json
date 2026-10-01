@@ -1,6 +1,12 @@
 {
+  "name": "deutschify",
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "build": "echo 'Build completed'"
+    "build": "echo 'Build completed'",
+    "validate:data": "node scripts/validate-data.js",
+    "export:data": "node scripts/export-data.js",
+    "test": "node scripts/test-fsrs.js && node scripts/validate-data.js"
   },
   "dependencies": {
     "firebase": "^12.19.0"

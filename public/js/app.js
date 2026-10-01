@@ -1,7 +1,6 @@
 // Deutschify - Haupt-Anwendungslogik (Controller)
 // Vollständige deutsche Interaktion, Lückentext-Prüfung, Audio, PWA & FSRS-Spaced-Repetition
-
-import { TOPICS } from './data/topics.js';
+import { topicRepo } from './data/TopicRepository.js';
 import { storage } from './storage.js';
 import { sounds, speech } from './audio.js';
 import { FSRSEngine } from './fsrs.js';
@@ -319,14 +318,20 @@ class DeutschifyApp {
     }
   }
 
-  renderTopics() {
+  async renderTopics() {
+    let topics = topicRepo.getAllCachedTopics();
+    if (topics.length === 0) {
+      topics = await topicRepo.loadAll();
+    }
+
     this.topicsContainer.innerHTML = '';
     const scheduleStore = storage.getAllSchedule();
 
     let totalDueCount = 0;
 
-    TOPICS.forEach((topic) => {
-      const progress = storage.getTopicProgress(topic.id, topic.exercises.length);
+    topics.forEach((topic) => {
+      const exerciseCount = topic.totalExercises || (topic.exercises ? topic.exercises.length : 0);
+      const progress = storage.getTopicProgress(topic.id, exerciseCount);
       const dueCount = SessionScheduler.getTopicDueCount(topic.exercises, scheduleStore);
       totalDueCount += dueCount;
 
@@ -378,8 +383,8 @@ class DeutschifyApp {
     }
   }
 
-  startTopic(topicId) {
-    const topic = TOPICS.find((t) => t.id === topicId);
+  async startTopic(topicId) {
+    const topic = await topicRepo.getTopic(topicId);
     if (!topic) return;
 
     this.currentTopic = topic;
@@ -395,11 +400,9 @@ class DeutschifyApp {
     this.loadExercise();
   }
 
-  startSmartSession() {
-    const allExercises = [];
-    TOPICS.forEach((t) => {
-      if (t.exercises) allExercises.push(...t.exercises);
-    });
+  async startSmartSession() {
+    await topicRepo.loadAll();
+    const allExercises = topicRepo.getAllExercises();
 
     this.currentTopic = {
       id: 'smart-mix',
@@ -627,7 +630,7 @@ class DeutschifyApp {
     this.showView('summary');
   }
 
-  openStatsModal() {
+  async openStatsModal() {
     const stats = storage.getGlobalStats();
     this.statsTotalAnswered.textContent = stats.totalExercisesAnswered;
     this.statsAccuracy.textContent = `${stats.accuracy}%`;
@@ -636,7 +639,11 @@ class DeutschifyApp {
 
     // Anki-Style FSRS Repetition Analytics berechnen
     const scheduleStore = storage.getAllSchedule();
-    const libraryStats = SessionScheduler.getLibraryStats(TOPICS, scheduleStore);
+    let topics = topicRepo.getAllCachedTopics();
+    if (topics.length === 0) {
+      topics = await topicRepo.loadAll();
+    }
+    const libraryStats = SessionScheduler.getLibraryStats(topics, scheduleStore);
 
     if (this.ankiRetentionBadge) {
       this.ankiRetentionBadge.textContent = `Behaltequote: ${libraryStats.averageRetention}%`;
