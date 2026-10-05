@@ -1,4 +1,4 @@
-const CACHE_NAME = 'deutschify-v3';
+const CACHE_NAME = 'deutschify-v4';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
@@ -8,6 +8,7 @@ const ASSETS_TO_CACHE = [
   '/js/audio.js',
   '/js/fsrs.js',
   '/js/scheduler.js',
+  '/js/notifications.js',
   '/js/data/TopicRepository.js',
   '/data/topics.json',
   '/data/topics/kollokationen.json',
@@ -79,6 +80,23 @@ self.addEventListener('fetch', (event) => {
           return caches.match('/index.html');
         }
       });
+    })
+  );
+});
+
+// Notification Click Event: Focus or open window when user clicks notification
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+  event.waitUntil(
+    self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
+      for (const client of clientList) {
+        if (client.url && 'focus' in client) {
+          return client.focus();
+        }
+      }
+      if (self.clients.openWindow) {
+        return self.clients.openWindow('/');
+      }
     })
   );
 });

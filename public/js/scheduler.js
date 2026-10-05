@@ -88,6 +88,20 @@ export class SessionScheduler {
   }
 
   /**
+   * Zählt, wie viele Sätze themenübergreifend aktuell fällig sind
+   */
+  static getTotalDueCount(topics, scheduleStore = {}, now = Date.now()) {
+    if (!topics || topics.length === 0) return 0;
+    let total = 0;
+    for (const topic of topics) {
+      if (topic.exercises) {
+        total += this.getTopicDueCount(topic.exercises, scheduleStore, now);
+      }
+    }
+    return total;
+  }
+
+  /**
    * Aggregiert Anki-ähnliche Gedächtnisstatistiken & 7-Tage-Prognose über alle Themen
    */
   static getLibraryStats(topics, scheduleStore = {}, now = Date.now()) {

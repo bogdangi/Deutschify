@@ -1,14 +1,14 @@
-// Deutschify - Haupt-Anwendungslogik (Controller)
-// Vollständige deutsche Interaktion, Lückentext-Prüfung, Audio, PWA & FSRS-Spaced-Repetition
 import { topicRepo } from './data/TopicRepository.js';
 import { storage } from './storage.js';
 import { sounds, speech } from './audio.js';
 import { FSRSEngine } from './fsrs.js';
 import { SessionScheduler } from './scheduler.js';
+import { notificationManager } from './notifications.js';
 
 class DeutschifyApp {
   constructor() {
     this.currentTopic = null;
+    this.cachedTopics = [];
     this.exerciseQueue = [];
     this.currentIndex = 0;
     this.selectedAnswer = '';
@@ -21,6 +21,7 @@ class DeutschifyApp {
 
     this.cacheDOM();
     this.initPreferences();
+    this.initNotifications();
     this.bindEvents();
     this.initPWA();
     this.renderTopics();
@@ -39,6 +40,8 @@ class DeutschifyApp {
     this.streakCounterVal = document.getElementById('streak-counter-val');
     this.btnToggleSound = document.getElementById('btn-toggle-sound');
     this.soundIcon = document.getElementById('sound-icon');
+    this.btnToggleNotifications = document.getElementById('btn-toggle-notifications');
+    this.notificationIcon = document.getElementById('notification-icon');
     this.btnToggleTheme = document.getElementById('btn-toggle-theme');
     this.themeIcon = document.getElementById('theme-icon');
     this.btnOpenStats = document.getElementById('btn-open-stats');
@@ -98,6 +101,12 @@ class DeutschifyApp {
     this.statsCurrentStreak = document.getElementById('stats-current-streak');
     this.statsBestStreak = document.getElementById('stats-best-streak');
     this.btnResetStats = document.getElementById('btn-reset-stats');
+
+    // Notification UI in Stats Modal
+    this.notifPermissionBadge = document.getElementById('notif-permission-badge');
+    this.btnEnableNotifications = document.getElementById('btn-enable-notifications');
+    this.btnTestNotification = document.getElementById('btn-test-notification');
+    this.notifStatusNote = document.getElementById('notif-status-note');
 
     // Anki Repetition Analytics Elements
     this.ankiRetentionBadge = document.getElementById('anki-retention-badge');
@@ -171,6 +180,20 @@ class DeutschifyApp {
       storage.setPreference('theme', next);
       this.themeIcon.textContent = next === 'light' ? '☀️' : '🌙';
     });
+
+    // Notification Toggles & Testing
+    if (this.btnToggleNotifications) {
+      this.btnToggleNotifications.addEventListener('click', () => this.handleNotificationToggle());
+    }
+    if (this.btnEnableNotifications) {
+      this.btnEnableNotifications.addEventListener('click', () => this.handleNotificationToggle());
+    }
+    if (this.btnTestNotification) {
+      this.btnTestNotification.addEventListener('click', () => {
+        notificationManager.sendTestNotification();
+        this.updateNotificationUI();
+      });
+    }
 
     // Stats Modal
     this.btnOpenStats.addEventListener('click', () => this.openStatsModal());
@@ -257,7 +280,9 @@ class DeutschifyApp {
   initPWA() {
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').catch((err) => {
+        navigator.serviceWorker.register('/sw.js').then((reg) => {
+          notificationManager.setServiceWorkerRegistration(reg);
+        }).catch((err) => {
           console.warn('ServiceWorker-Registrierung fehlgeschlagen:', err);
         });
       });
@@ -381,6 +406,11 @@ class DeutschifyApp {
         this.btnSmartStart.innerHTML = `10 Sätze starten <span>→</span>`;
       }
     }
+
+    this.cachedTopics = topics;
+
+    // Fällige Wiederholungen prüfen & ggf. genau einmal benachrichtigen (wenn >= 10)
+    notificationManager.checkDueAndNotify(topics, scheduleStore);
   }
 
   async startTopic(topicId) {
@@ -628,6 +658,102 @@ class DeutschifyApp {
     }
 
     this.showView('summary');
+
+    // Nach Rundenabschluss Wiederholungsstand prüfen & Latch ggf. zurücksetzen
+    notificationManager.checkDueAndNotify(this.cachedTopics, storage.getAllSchedule());
+  }
+
+  initNotifications() {
+    notificationManager.init({
+      onStartSession: () => this.startSmartSession()
+    });
+    this.updateNotificationUI();
+  }
+
+  updateNotificationUI() {
+    const status = notificationManager.getPermissionStatus();
+    const notifState = storage.getNotificationState();
+
+    if (this.notifPermissionBadge) {
+      this.notifPermissionBadge.className = `notif-badge ${status}`;
+      if (status === 'granted') {
+        this.notifPermissionBadge.textContent = 'Aktiviert';
+      } else if (status === 'denied') {
+        this.notifPermissionBadge.textContent = 'Blockiert';
+      } else if (status === 'unsupported') {
+        this.notifPermissionBadge.textContent = 'Nicht unterstützt';
+      } else {
+        this.notifPermissionBadge.textContent = 'Aus';
+      }
+    }
+
+    if (this.btnEnableNotifications) {
+      if (status === 'granted') {
+        this.btnEnableNotifications.textContent = 'Benachrichtigungen aktiv ✓';
+        this.btnEnableNotifications.classList.add('is-active');
+      } else if (status === 'denied') {
+        this.btnEnableNotifications.textContent = 'Im Browser blockiert ⚠';
+        this.btnEnableNotifications.classList.remove('is-active');
+      } else {
+        this.btnEnableNotifications.textContent = 'Benachrichtigungen aktivieren';
+        this.btnEnableNotifications.classList.remove('is-active');
+      }
+    }
+
+    if (this.btnToggleNotifications) {
+      if (status === 'granted') {
+        this.btnToggleNotifications.classList.add('notif-active');
+        this.btnToggleNotifications.title = 'Wiederholungs-Erinnerungen aktiv (bei 10 fälligen Sätzen)';
+      } else {
+        this.btnToggleNotifications.classList.remove('notif-active');
+        this.btnToggleNotifications.title = 'Wiederholungs-Erinnerungen aktivieren';
+      }
+    }
+
+    if (this.notifStatusNote) {
+      if (status === 'granted') {
+        if (notifState.notifiedForCurrentBatch) {
+          this.notifStatusNote.textContent = 'Hinweis: Du wurdest für die aktuellen fälligen Sätze bereits benachrichtigt. Nach dem nächsten Üben wird beim nächsten Erreichen von 10 Sätzen erneut benachrichtigt.';
+        } else {
+          this.notifStatusNote.textContent = 'Bereit: Sobald 10 Sätze fällig werden, erhältst du genau eine Benachrichtigung auf dein Gerät.';
+        }
+      } else if (status === 'denied') {
+        this.notifStatusNote.textContent = 'Benachrichtigungen sind in den Browser-Einstellungen für diese Seite deaktiviert. In-App-Hinweise funktionieren weiterhin.';
+      } else if (status === 'unsupported') {
+        this.notifStatusNote.textContent = 'Dieser Browser unterstützt keine System-Benachrichtigungen. Deutschify blendet Hinweise direkt in der App ein.';
+      } else {
+        this.notifStatusNote.textContent = 'Klicke auf aktivieren, damit dich Deutschify benachrichtigt, sobald 10 Sätze zur Wiederholung anstehen.';
+      }
+    }
+  }
+
+  async handleNotificationToggle() {
+    const status = notificationManager.getPermissionStatus();
+    if (status === 'default') {
+      const res = await notificationManager.requestPermission();
+      this.updateNotificationUI();
+      if (res === 'granted') {
+        notificationManager.showToast({
+          title: '🔔 Benachrichtigungen aktiviert!',
+          message: 'Deutschify erinnert dich genau einmal, sobald 10 Sätze zur Wiederholung bereitstehen.',
+          actionText: 'Prima!'
+        });
+      }
+    } else if (status === 'denied') {
+      notificationManager.showToast({
+        title: 'Benachrichtigungen blockiert',
+        message: 'Bitte erlaube Benachrichtigungen in den Website-Einstellungen deines Browsers.',
+        actionText: 'Verstanden'
+      });
+    } else if (status === 'granted') {
+      this.openStatsModal();
+    } else {
+      notificationManager.showToast({
+        title: 'Nicht unterstützt',
+        message: 'Dein Browser unterstützt keine System-Benachrichtigungen. In-App-Meldungen bleiben aktiv.',
+        actionText: 'OK'
+      });
+    }
   }
 
   async openStatsModal() {
@@ -682,6 +808,7 @@ class DeutschifyApp {
         .join('');
     }
 
+    this.updateNotificationUI();
     this.modalStats.classList.add('active');
   }
 

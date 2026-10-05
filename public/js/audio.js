@@ -8,7 +8,7 @@ class SoundEffects {
   }
 
   _initContext() {
-    if (!this.audioCtx) {
+    if (!this.audioCtx && typeof window !== 'undefined') {
       const AudioContext = window.AudioContext || window.webkitAudioContext;
       if (AudioContext) {
         this.audioCtx = new AudioContext();
@@ -109,6 +109,38 @@ class SoundEffects {
     }
   }
 
+  playNotification() {
+    if (!this.soundEnabled) return;
+    try {
+      this._initContext();
+      if (!this.audioCtx) return;
+
+      const now = this.audioCtx.currentTime;
+      // Sanfter Zweiklang (E5 -> G#5) für eine dezente, angenehme Erinnerung
+      const notes = [659.25, 830.61];
+
+      notes.forEach((freq, i) => {
+        const osc = this.audioCtx.createOscillator();
+        const gain = this.audioCtx.createGain();
+
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(freq, now + i * 0.12);
+
+        gain.gain.setValueAtTime(0, now + i * 0.12);
+        gain.gain.linearRampToValueAtTime(0.2, now + i * 0.12 + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.12 + 0.35);
+
+        osc.connect(gain);
+        gain.connect(this.audioCtx.destination);
+
+        osc.start(now + i * 0.12);
+        osc.stop(now + i * 0.12 + 0.4);
+      });
+    } catch (e) {
+      console.warn('Audio nicht verfügbar:', e);
+    }
+  }
+
   setSoundEnabled(enabled) {
     this.soundEnabled = Boolean(enabled);
   }
@@ -116,7 +148,7 @@ class SoundEffects {
 
 class SpeechService {
   constructor() {
-    this.speechSynthesis = window.speechSynthesis || null;
+    this.speechSynthesis = (typeof window !== 'undefined' && window.speechSynthesis) || null;
     this.germanVoice = null;
     this.initVoice();
   }

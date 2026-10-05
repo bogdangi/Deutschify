@@ -11,6 +11,12 @@ const defaultState = {
     soundEnabled: true,
     inputMode: 'chips' // 'chips' (Auswahlmodus) oder 'typing' (Tippmodus)
   },
+  notifications: {
+    enabled: false,
+    notifiedForCurrentBatch: false,
+    lastNotifiedAt: null,
+    lastNotifiedCount: 0
+  },
   stats: {
     totalExercisesAnswered: 0,
     correctCount: 0,
@@ -33,22 +39,28 @@ class StorageManager {
     if (!this.state.schedule) {
       this.state.schedule = {};
     }
+    if (!this.state.notifications) {
+      this.state.notifications = { ...defaultState.notifications };
+    }
     this._checkStreakContinuity();
   }
 
   _load() {
     try {
-      const data = localStorage.getItem(STORAGE_KEY);
-      if (data) {
-        const parsed = JSON.parse(data);
-        return {
-          ...defaultState,
-          ...parsed,
-          preferences: { ...defaultState.preferences, ...(parsed.preferences || {}) },
-          stats: { ...defaultState.stats, ...(parsed.stats || {}) },
-          topicProgress: parsed.topicProgress || {},
-          schedule: parsed.schedule || {}
-        };
+      if (typeof localStorage !== 'undefined' && typeof localStorage.getItem === 'function') {
+        const data = localStorage.getItem(STORAGE_KEY);
+        if (data) {
+          const parsed = JSON.parse(data);
+          return {
+            ...defaultState,
+            ...parsed,
+            preferences: { ...defaultState.preferences, ...(parsed.preferences || {}) },
+            notifications: { ...defaultState.notifications, ...(parsed.notifications || {}) },
+            stats: { ...defaultState.stats, ...(parsed.stats || {}) },
+            topicProgress: parsed.topicProgress || {},
+            schedule: parsed.schedule || {}
+          };
+        }
       }
     } catch (e) {
       console.error('Fehler beim Laden von LocalStorage:', e);
@@ -58,7 +70,9 @@ class StorageManager {
 
   save() {
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(this.state));
+      if (typeof localStorage !== 'undefined' && typeof localStorage.setItem === 'function') {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(this.state));
+      }
     } catch (e) {
       console.error('Fehler beim Speichern in LocalStorage:', e);
     }
@@ -199,6 +213,31 @@ class StorageManager {
   setPreference(key, value) {
     this.state.preferences[key] = value;
     this.save();
+  }
+
+  getNotificationState() {
+    return this.state.notifications || {
+      enabled: false,
+      notifiedForCurrentBatch: false,
+      lastNotifiedAt: null,
+      lastNotifiedCount: 0
+    };
+  }
+
+  setNotificationState(updates = {}) {
+    this.state.notifications = {
+      ...this.getNotificationState(),
+      ...updates
+    };
+    this.save();
+    return this.state.notifications;
+  }
+
+  resetNotificationBatch() {
+    if (this.state.notifications) {
+      this.state.notifications.notifiedForCurrentBatch = false;
+      this.save();
+    }
   }
 
   resetAll() {

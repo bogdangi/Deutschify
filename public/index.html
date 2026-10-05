@@ -50,6 +50,11 @@
           <span id="sound-icon">🔊</span>
         </button>
 
+        <!-- Repetition Notifications Toggle -->
+        <button class="icon-btn" id="btn-toggle-notifications" title="Wiederholungs-Erinnerungen" aria-label="Benachrichtigungen">
+          <span id="notification-icon">🔔</span>
+        </button>
+
         <!-- Statistics Modal Trigger -->
         <button class="icon-btn" id="btn-open-stats" title="Statistiken anzeigen" aria-label="Statistiken">
           <span>📊</span>
@@ -289,6 +294,28 @@
         </div>
       </div>
 
+      <!-- REPETITION NOTIFICATION SETTINGS -->
+      <div class="notification-settings-section">
+        <div class="notif-section-header">
+          <div class="notif-header-text">
+            <h4 class="notif-section-title">🔔 Wiederholungs-Erinnerung</h4>
+            <p class="notif-section-desc">
+              Erhalte eine Benachrichtigung, sobald 10 Sätze zur Wiederholung bereitstehen (wird genau einmal benachrichtigt).
+            </p>
+          </div>
+          <span class="notif-badge" id="notif-permission-badge">Aus</span>
+        </div>
+        <div class="notif-action-row">
+          <button type="button" class="btn-notif-toggle" id="btn-enable-notifications">
+            Benachrichtigungen aktivieren
+          </button>
+          <button type="button" class="btn-notif-test" id="btn-test-notification" title="Testet die System- und In-App-Benachrichtigung">
+            Test senden ⚡
+          </button>
+        </div>
+        <div class="notif-status-note" id="notif-status-note"></div>
+      </div>
+
       <div style="text-align: right; margin-top: 16px;">
         <button type="button" class="btn-secondary" id="btn-reset-stats" style="font-size: 0.85rem; color: #f43f5e; border-color: rgba(244, 63, 94, 0.3);">
           Fortschritt zurücksetzen
@@ -307,6 +334,9 @@
       <button class="pwa-close-btn" id="pwa-dismiss-action" aria-label="Schließen">&times;</button>
     </div>
   </aside>
+
+  <!-- In-App Toast Container -->
+  <div class="toast-notification-container" id="toast-notification-container" aria-live="polite"></div>
 
   <!-- Main ES Module Script -->
   <script type="module" src="/js/app.js"></script>
