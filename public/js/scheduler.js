@@ -175,4 +175,71 @@ export class SessionScheduler {
       forecast: forecastDays
     };
   }
+
+  /**
+   * Sammelt alle bereits geübten Sätze und sortiert sie nach Schwierigkeit:
+   * 1. Höchste FSRS-Schwierigkeit (card.difficulty) absteigend (10.0 -> 1.0)
+   * 2. Höchste Fehlversuche (card.lapses) absteigend
+   * 3. Geringste Stabilität (card.stability) aufsteigend
+   * 4. Geringste Abrufbarkeit (Retrievability R) aufsteigend
+   *
+   * @param {Array} topics - Alle Themen mit exercises
+   * @param {Object} scheduleStore - Map von exerciseId -> CardState
+   * @param {Number} now - Zeitstempel (ms)
+   * @returns {Array} Sortierte Liste bereits geübter Aufgaben
+   */
+  static getWorkedExercisesSortedByDifficulty(topics, scheduleStore = {}, now = Date.now()) {
+    if (!topics || topics.length === 0) return [];
+
+    const workedList = [];
+    topics.forEach((topic) => {
+      if (!topic.exercises) return;
+      topic.exercises.forEach((ex) => {
+        const card = scheduleStore[ex.id];
+        if (card && card.reps > 0) {
+          const r = fsrs.getRetrievability(card, now);
+          workedList.push({
+            ...ex,
+            topicId: topic.id,
+            topicTitle: topic.title,
+            topicIcon: topic.icon,
+            topicColor: topic.color || '#10b981',
+            card,
+            retrievability: r
+          });
+        }
+      });
+    });
+
+    workedList.sort((a, b) => {
+      const cardA = a.card;
+      const cardB = b.card;
+
+      // 1. Höchste Schwierigkeit zuerst (FSRS difficulty 1-10)
+      const diffB = typeof cardB.difficulty === 'number' ? cardB.difficulty : 5.0;
+      const diffA = typeof cardA.difficulty === 'number' ? cardA.difficulty : 5.0;
+      if (diffB !== diffA) {
+        return diffB - diffA;
+      }
+
+      // 2. Höchste Lapses (Fehleranzahl) zuerst
+      const lapsesB = cardB.lapses || 0;
+      const lapsesA = cardA.lapses || 0;
+      if (lapsesB !== lapsesA) {
+        return lapsesB - lapsesA;
+      }
+
+      // 3. Geringste Stabilität zuerst (verfällt schneller)
+      const stabA = typeof cardA.stability === 'number' ? cardA.stability : 1.0;
+      const stabB = typeof cardB.stability === 'number' ? cardB.stability : 1.0;
+      if (stabA !== stabB) {
+        return stabA - stabB;
+      }
+
+      // 4. Geringste Abrufwahrscheinlichkeit
+      return a.retrievability - b.retrievability;
+    });
+
+    return workedList;
+  }
 }

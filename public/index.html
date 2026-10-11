@@ -45,9 +45,14 @@
           <span id="streak-counter-val">0</span>
         </div>
 
-        <!-- Audio Toggle -->
+        <!-- Audio Toggle (Sound Effects) -->
         <button class="icon-btn" id="btn-toggle-sound" title="Ton ein-/ausschalten" aria-label="Ton umschalten">
           <span id="sound-icon">🔊</span>
+        </button>
+
+        <!-- Background Audio Mode Trigger -->
+        <button class="icon-btn" id="btn-open-audio-mode" title="Audio-Hintergrundmodus (Schwierigste zuerst)" aria-label="Audio-Hintergrundmodus">
+          <span>🎧</span>
         </button>
 
         <!-- Repetition Notifications Toggle -->
@@ -86,6 +91,7 @@
         <div class="segmented-control" role="group" aria-label="Übungsmodus">
           <button type="button" id="mode-btn-chips" class="active">Auswahlkarten</button>
           <button type="button" id="mode-btn-typing">Tippmodus</button>
+          <button type="button" id="mode-btn-audio">🎧 Audio-Modus</button>
         </div>
       </div>
 
@@ -98,6 +104,20 @@
         </div>
         <button type="button" class="btn-smart-start" id="btn-smart-start">
           10 Sätze starten <span>→</span>
+        </button>
+      </div>
+
+      <!-- Audio-Hintergrundmodus Karte (Alle geübten Sätze, schwierigste zuerst) -->
+      <div class="audio-training-card" id="audio-training-card">
+        <div class="audio-card-info">
+          <div class="audio-card-badge">🎧 Freihändig lernen • Schwierigste zuerst</div>
+          <h3 class="audio-card-title">Audio-Hintergrundmodus</h3>
+          <p class="audio-card-desc" id="audio-card-desc">
+            Höre alle bisher geübten Sätze im Hintergrund – automatisch sortiert von schwer nach leicht.
+          </p>
+        </div>
+        <button type="button" class="btn-audio-start" id="btn-audio-start">
+          Audio starten <span>▶</span>
         </button>
       </div>
 
@@ -233,6 +253,155 @@
       </div>
     </section>
 
+    <!-- VIEW 4: AUDIO-LERNMODUS (HINTERGRUND) -->
+    <section id="view-audio" class="view-section">
+      <div class="audio-view-wrapper">
+        <!-- Top Navigation -->
+        <div class="audio-topbar">
+          <button class="back-btn" id="btn-exit-audio">
+            <span>←</span> Übersicht
+          </button>
+          
+          <div class="audio-view-badge">
+            <span>🎧</span> Audio-Hintergrundmodus
+          </div>
+
+          <div class="audio-track-counter-pill" id="audio-track-counter">0 / 0</div>
+        </div>
+
+        <!-- Empty State (wenn noch keine Sätze geübt wurden) -->
+        <div class="audio-empty-card" id="audio-empty-card" style="display: none;">
+          <div class="empty-emoji">🎧</div>
+          <h2 class="empty-title">Noch keine geübten Sätze</h2>
+          <p class="empty-desc">
+            Im Audio-Modus hörst du alle Sätze, die du bereits in Deutschify geübt hast – automatisch sortiert mit den schwierigsten Aufgaben zuerst.
+          </p>
+          <p class="empty-subtext">
+            Schließe einfach eine erste Übungsrunde oder ein Smart-Training ab!
+          </p>
+          <button type="button" class="btn-primary" id="btn-empty-start-learning">
+            Jetzt erstes Thema üben ⚡
+          </button>
+        </div>
+
+        <!-- Main Player Content (wenn geübte Sätze vorhanden sind) -->
+        <div class="audio-player-content" id="audio-player-content">
+          <!-- Zentrale Player Card -->
+          <div class="audio-main-card">
+            
+            <div class="audio-card-top">
+              <span class="audio-topic-tag" id="audio-topic-badge">Thema</span>
+              <div class="audio-difficulty-pill" id="audio-difficulty-badge" title="FSRS Schwierigkeit (1-10)">
+                <span class="diff-dot"></span>
+                <span id="audio-difficulty-val">Schwierigkeit: 8.5</span>
+              </div>
+            </div>
+
+            <!-- Equalizer / Visualizer Glow -->
+            <div class="audio-visualizer" id="audio-visualizer">
+              <span class="bar bar-1"></span>
+              <span class="bar bar-2"></span>
+              <span class="bar bar-3"></span>
+              <span class="bar bar-4"></span>
+              <span class="bar bar-5"></span>
+            </div>
+
+            <!-- Status-Pill des aktuellen Vorlese-Schritts -->
+            <div class="audio-step-pill" id="audio-step-badge">
+              <span>🗣️</span> Satz wird vorgelesen...
+            </div>
+
+            <!-- Deutscher Satz mit Lücke/Kollokation hervorgehoben -->
+            <div class="audio-sentence-box" id="audio-sentence-display">
+              <!-- Satz-Text -->
+            </div>
+
+            <!-- Details: Kollokation & Bedeutung -->
+            <div class="audio-details-grid">
+              <div class="audio-detail-item">
+                <span class="audio-detail-label">Kollokation:</span>
+                <span class="audio-detail-value highlight-collocation" id="audio-collocation-display">-</span>
+              </div>
+              <div class="audio-detail-item">
+                <span class="audio-detail-label">Bedeutung:</span>
+                <span class="audio-detail-value" id="audio-meaning-display">-</span>
+              </div>
+              <div class="audio-detail-item" id="audio-example-row">
+                <span class="audio-detail-label">Beispiel:</span>
+                <span class="audio-detail-value" id="audio-example-display">-</span>
+              </div>
+            </div>
+
+            <!-- Fortschritts-Track -->
+            <div class="audio-progress-container">
+              <div class="audio-progress-bar">
+                <div class="audio-progress-fill" id="audio-progress-fill" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <!-- Haupt-Steuerelemente -->
+            <div class="audio-controls-row">
+              <button type="button" class="audio-btn-secondary" id="btn-audio-repeat" title="Diesen Satz wiederholen" aria-label="Wiederholen">
+                <span>🔂</span>
+              </button>
+
+              <button type="button" class="audio-btn-skip" id="btn-audio-prev" title="Vorheriger Satz (Alt + Links)" aria-label="Vorheriger Satz">
+                <span>⏮</span>
+              </button>
+
+              <button type="button" class="audio-btn-play-pause" id="btn-audio-play-pause" title="Wiedergabe / Pause (Leertaste)" aria-label="Wiedergabe">
+                <span id="audio-play-icon">▶</span>
+              </button>
+
+              <button type="button" class="audio-btn-skip" id="btn-audio-next" title="Nächster Satz (Alt + Rechts)" aria-label="Nächster Satz">
+                <span>⏭</span>
+              </button>
+
+              <button type="button" class="audio-btn-secondary" id="btn-audio-speed" title="Sprechgeschwindigkeit ändern" aria-label="Geschwindigkeit">
+                <span id="audio-speed-val">0.9x</span>
+              </button>
+            </div>
+
+            <!-- Audio-Modus Einstellungen & Hintergrund-Hinweis -->
+            <div class="audio-options-panel">
+              <div class="audio-toggles-row">
+                <label class="audio-toggle-label">
+                  <input type="checkbox" id="toggle-audio-sentence" checked>
+                  <span>Satz</span>
+                </label>
+                <label class="audio-toggle-label">
+                  <input type="checkbox" id="toggle-audio-collocation" checked>
+                  <span>Kollokation</span>
+                </label>
+                <label class="audio-toggle-label">
+                  <input type="checkbox" id="toggle-audio-meaning" checked>
+                  <span>Bedeutung</span>
+                </label>
+              </div>
+
+              <div class="audio-bg-notice">
+                <span>📱</span>
+                <span>Läuft im Hintergrund & bei Sperrbildschirm kontinuierlich weiter.</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Queue / Playlist aller geübten Sätze -->
+          <div class="audio-queue-panel">
+            <div class="queue-header">
+              <h3 class="queue-title">📋 Playlist: Geübte Sätze (Schwierigste zuerst)</h3>
+              <span class="queue-badge" id="audio-queue-badge">0 Sätze</span>
+            </div>
+            <div class="queue-list" id="audio-queue-list">
+              <!-- Dynamische Liste -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- MODAL: STATISTIKEN & GESAMTFORTSCHRITT -->
@@ -332,6 +501,30 @@
     <div style="display: flex; gap: 8px; align-items: center;">
       <button class="pwa-install-btn" id="pwa-install-action">Installieren</button>
       <button class="pwa-close-btn" id="pwa-dismiss-action" aria-label="Schließen">&times;</button>
+    </div>
+  </aside>
+
+  <!-- Persistent Floating Mini-Player for Background Audio -->
+  <aside class="audio-mini-player" id="audio-mini-player" style="display: none;" aria-label="Audio-Player im Hintergrund">
+    <div class="mini-player-body" id="mini-player-clickable" title="Zum Audio-Player wechseln">
+      <div class="mini-player-icon" id="mini-player-icon">
+        <span>🎧</span>
+      </div>
+      <div class="mini-player-text">
+        <div class="mini-player-collocation" id="mini-player-collocation">Audio-Modus</div>
+        <div class="mini-player-sentence" id="mini-player-sentence">Wird abgespielt...</div>
+      </div>
+    </div>
+    <div class="mini-player-controls">
+      <button type="button" class="mini-btn-play" id="mini-btn-play-pause" title="Wiedergabe / Pause" aria-label="Wiedergabe">
+        <span id="mini-play-icon">▶</span>
+      </button>
+      <button type="button" class="mini-btn-next" id="mini-btn-next" title="Nächster Satz" aria-label="Nächster Satz">
+        <span>⏭</span>
+      </button>
+      <button type="button" class="mini-btn-close" id="mini-btn-close" title="Player schließen" aria-label="Schließen">
+        &times;
+      </button>
     </div>
   </aside>
 

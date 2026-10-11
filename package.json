@@ -6,7 +6,7 @@
     "build": "echo 'Build completed'",
     "validate:data": "node scripts/validate-data.js",
     "export:data": "node scripts/export-data.js",
-    "test": "node scripts/test-fsrs.js && node scripts/test-notifications.js && node scripts/validate-data.js"
+    "test": "node scripts/test-fsrs.js && node scripts/test-audio-scheduler.js && node scripts/test-notifications.js && node scripts/validate-data.js"
   },
   "dependencies": {
     "firebase": "^12.19.0"

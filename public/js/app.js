@@ -4,6 +4,7 @@ import { sounds, speech } from './audio.js';
 import { FSRSEngine } from './fsrs.js';
 import { SessionScheduler } from './scheduler.js';
 import { notificationManager } from './notifications.js';
+import { backgroundPlayer } from './audio-player.js';
 
 class DeutschifyApp {
   constructor() {
@@ -22,6 +23,7 @@ class DeutschifyApp {
     this.cacheDOM();
     this.initPreferences();
     this.initNotifications();
+    this.initAudioPlayerEvents();
     this.bindEvents();
     this.initPWA();
     this.renderTopics();
@@ -33,6 +35,7 @@ class DeutschifyApp {
     this.viewTopics = document.getElementById('view-topics');
     this.viewExercise = document.getElementById('view-exercise');
     this.viewSummary = document.getElementById('view-summary');
+    this.viewAudio = document.getElementById('view-audio');
 
     // Header & Controls
     this.btnLogoHome = document.getElementById('btn-logo-home');
@@ -40,6 +43,7 @@ class DeutschifyApp {
     this.streakCounterVal = document.getElementById('streak-counter-val');
     this.btnToggleSound = document.getElementById('btn-toggle-sound');
     this.soundIcon = document.getElementById('sound-icon');
+    this.btnOpenAudioMode = document.getElementById('btn-open-audio-mode');
     this.btnToggleNotifications = document.getElementById('btn-toggle-notifications');
     this.notificationIcon = document.getElementById('notification-icon');
     this.btnToggleTheme = document.getElementById('btn-toggle-theme');
@@ -50,9 +54,13 @@ class DeutschifyApp {
     this.smartTrainingCard = document.getElementById('smart-training-card');
     this.smartCardDesc = document.getElementById('smart-card-desc');
     this.btnSmartStart = document.getElementById('btn-smart-start');
+    this.audioTrainingCard = document.getElementById('audio-training-card');
+    this.audioCardDesc = document.getElementById('audio-card-desc');
+    this.btnAudioStart = document.getElementById('btn-audio-start');
     this.topicsContainer = document.getElementById('topics-container');
     this.modeBtnChips = document.getElementById('mode-btn-chips');
     this.modeBtnTyping = document.getElementById('mode-btn-typing');
+    this.modeBtnAudio = document.getElementById('mode-btn-audio');
 
     // Exercise View
     this.btnExitExercise = document.getElementById('btn-exit-exercise');
@@ -127,6 +135,46 @@ class DeutschifyApp {
 
     // Canvas
     this.canvas = document.getElementById('confetti-canvas');
+
+    // Audio-Modus Elemente
+    this.btnExitAudio = document.getElementById('btn-exit-audio');
+    this.audioTrackCounter = document.getElementById('audio-track-counter');
+    this.audioEmptyCard = document.getElementById('audio-empty-card');
+    this.audioPlayerContent = document.getElementById('audio-player-content');
+    this.btnEmptyStartLearning = document.getElementById('btn-empty-start-learning');
+    this.audioTopicBadge = document.getElementById('audio-topic-badge');
+    this.audioDifficultyBadge = document.getElementById('audio-difficulty-badge');
+    this.audioDifficultyVal = document.getElementById('audio-difficulty-val');
+    this.audioVisualizer = document.getElementById('audio-visualizer');
+    this.audioStepBadge = document.getElementById('audio-step-badge');
+    this.audioSentenceDisplay = document.getElementById('audio-sentence-display');
+    this.audioCollocationDisplay = document.getElementById('audio-collocation-display');
+    this.audioMeaningDisplay = document.getElementById('audio-meaning-display');
+    this.audioExampleRow = document.getElementById('audio-example-row');
+    this.audioExampleDisplay = document.getElementById('audio-example-display');
+    this.audioProgressFill = document.getElementById('audio-progress-fill');
+    this.btnAudioRepeat = document.getElementById('btn-audio-repeat');
+    this.btnAudioPrev = document.getElementById('btn-audio-prev');
+    this.btnAudioPlayPause = document.getElementById('btn-audio-play-pause');
+    this.audioPlayIcon = document.getElementById('audio-play-icon');
+    this.btnAudioNext = document.getElementById('btn-audio-next');
+    this.btnAudioSpeed = document.getElementById('btn-audio-speed');
+    this.audioSpeedVal = document.getElementById('audio-speed-val');
+    this.toggleAudioSentence = document.getElementById('toggle-audio-sentence');
+    this.toggleAudioCollocation = document.getElementById('toggle-audio-collocation');
+    this.toggleAudioMeaning = document.getElementById('toggle-audio-meaning');
+    this.audioQueueBadge = document.getElementById('audio-queue-badge');
+    this.audioQueueList = document.getElementById('audio-queue-list');
+
+    // Mini-Player Elemente
+    this.audioMiniPlayer = document.getElementById('audio-mini-player');
+    this.miniPlayerClickable = document.getElementById('mini-player-clickable');
+    this.miniPlayerCollocation = document.getElementById('mini-player-collocation');
+    this.miniPlayerSentence = document.getElementById('mini-player-sentence');
+    this.miniBtnPlayPause = document.getElementById('mini-btn-play-pause');
+    this.miniPlayIcon = document.getElementById('mini-play-icon');
+    this.miniBtnNext = document.getElementById('mini-btn-next');
+    this.miniBtnClose = document.getElementById('mini-btn-close');
   }
 
   initPreferences() {
@@ -213,6 +261,97 @@ class DeutschifyApp {
     // Mode Switcher Buttons
     this.modeBtnChips.addEventListener('click', () => this.setInputMode('chips'));
     this.modeBtnTyping.addEventListener('click', () => this.setInputMode('typing'));
+    if (this.modeBtnAudio) {
+      this.modeBtnAudio.addEventListener('click', () => this.openAudioMode());
+    }
+
+    // Audio-Hintergrundmodus Entrypoints & Navigation
+    if (this.btnOpenAudioMode) {
+      this.btnOpenAudioMode.addEventListener('click', () => this.openAudioMode());
+    }
+    if (this.btnAudioStart) {
+      this.btnAudioStart.addEventListener('click', () => this.openAudioMode());
+    }
+    if (this.btnExitAudio) {
+      this.btnExitAudio.addEventListener('click', () => this.showView('topics'));
+    }
+    if (this.btnEmptyStartLearning) {
+      this.btnEmptyStartLearning.addEventListener('click', () => this.showView('topics'));
+    }
+
+    // Audio Player Controls
+    if (this.btnAudioPlayPause) {
+      this.btnAudioPlayPause.addEventListener('click', () => backgroundPlayer.togglePlay());
+    }
+    if (this.btnAudioPrev) {
+      this.btnAudioPrev.addEventListener('click', () => backgroundPlayer.previous());
+    }
+    if (this.btnAudioNext) {
+      this.btnAudioNext.addEventListener('click', () => backgroundPlayer.next());
+    }
+    if (this.btnAudioRepeat) {
+      this.btnAudioRepeat.addEventListener('click', () => {
+        const nextRepeat = !backgroundPlayer.options.repeatOne;
+        backgroundPlayer.setOption('repeatOne', nextRepeat);
+        this.btnAudioRepeat.classList.toggle('is-active', nextRepeat);
+        this.btnAudioRepeat.title = nextRepeat ? 'Satz-Wiederholung aktiv' : 'Diesen Satz wiederholen';
+      });
+    }
+    if (this.btnAudioSpeed) {
+      const speeds = [0.8, 0.92, 1.15];
+      let speedIdx = 1;
+      this.btnAudioSpeed.addEventListener('click', () => {
+        speedIdx = (speedIdx + 1) % speeds.length;
+        const newSpeed = speeds[speedIdx];
+        backgroundPlayer.setSpeed(newSpeed);
+        if (this.audioSpeedVal) {
+          this.audioSpeedVal.textContent = `${newSpeed.toFixed(1)}x`;
+        }
+      });
+    }
+
+    // Audio Toggles
+    if (this.toggleAudioSentence) {
+      this.toggleAudioSentence.addEventListener('change', (e) => {
+        backgroundPlayer.setOption('speakSentence', e.target.checked);
+      });
+    }
+    if (this.toggleAudioCollocation) {
+      this.toggleAudioCollocation.addEventListener('change', (e) => {
+        backgroundPlayer.setOption('speakCollocation', e.target.checked);
+      });
+    }
+    if (this.toggleAudioMeaning) {
+      this.toggleAudioMeaning.addEventListener('change', (e) => {
+        backgroundPlayer.setOption('speakMeaning', e.target.checked);
+      });
+    }
+
+    // Mini-Player Controls
+    if (this.miniBtnPlayPause) {
+      this.miniBtnPlayPause.addEventListener('click', (e) => {
+        e.stopPropagation();
+        backgroundPlayer.togglePlay();
+      });
+    }
+    if (this.miniBtnNext) {
+      this.miniBtnNext.addEventListener('click', (e) => {
+        e.stopPropagation();
+        backgroundPlayer.next();
+      });
+    }
+    if (this.miniBtnClose) {
+      this.miniBtnClose.addEventListener('click', (e) => {
+        e.stopPropagation();
+        backgroundPlayer.stop();
+        if (this.audioMiniPlayer) this.audioMiniPlayer.style.display = 'none';
+      });
+    }
+    if (this.miniPlayerClickable) {
+      this.miniPlayerClickable.addEventListener('click', () => {
+        this.showView('audio');
+      });
+    }
 
     // Exercise Interaction
     this.btnCheckAnswer.addEventListener('click', () => this.checkAnswer());
@@ -241,7 +380,7 @@ class DeutschifyApp {
       });
     });
 
-    // Global Hotkeys (Enter to check/continue, 1-4 for options)
+    // Global Hotkeys (Enter / 1-4 for exercise, Space / Arrows for Audio-Modus)
     window.addEventListener('keydown', (e) => {
       if (this.viewExercise.classList.contains('active')) {
         if (e.key === 'Enter') {
@@ -256,6 +395,17 @@ class DeutschifyApp {
             const chips = this.optionsChipsContainer.querySelectorAll('.option-chip');
             if (chips[num - 1]) chips[num - 1].click();
           }
+        }
+      } else if (this.viewAudio && this.viewAudio.classList.contains('active')) {
+        if (e.code === 'Space' && e.target.tagName !== 'INPUT') {
+          e.preventDefault();
+          backgroundPlayer.togglePlay();
+        } else if (e.key === 'ArrowRight') {
+          e.preventDefault();
+          backgroundPlayer.next();
+        } else if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          backgroundPlayer.previous();
         }
       }
     });
@@ -296,12 +446,15 @@ class DeutschifyApp {
   }
 
   showView(viewName) {
-    // Reset any speaking audio
-    speech.stop();
+    // Falls Audio im Hintergrund aktiv ist, Sprachausgabe nicht grundlos stoppen
+    if (backgroundPlayer.state !== 'playing') {
+      speech.stop();
+    }
 
     this.viewTopics.classList.remove('active');
     this.viewExercise.classList.remove('active');
     this.viewSummary.classList.remove('active');
+    if (this.viewAudio) this.viewAudio.classList.remove('active');
 
     if (viewName === 'topics') {
       this.viewTopics.classList.add('active');
@@ -311,6 +464,17 @@ class DeutschifyApp {
       this.viewExercise.classList.add('active');
     } else if (viewName === 'summary') {
       this.viewSummary.classList.add('active');
+    } else if (viewName === 'audio') {
+      if (this.viewAudio) this.viewAudio.classList.add('active');
+    }
+
+    // Mini-Player anzeigen, wenn Audio im Hintergrund läuft und wir eine andere Ansicht betrachten
+    if (this.audioMiniPlayer) {
+      if (viewName !== 'audio' && backgroundPlayer.state === 'playing') {
+        this.audioMiniPlayer.style.display = 'flex';
+      } else {
+        this.audioMiniPlayer.style.display = 'none';
+      }
     }
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -404,6 +568,19 @@ class DeutschifyApp {
       } else {
         this.smartCardDesc.textContent = `10 ausgewählte Sätze: Neue Kollokationen & Grammatik festigen.`;
         this.btnSmartStart.innerHTML = `10 Sätze starten <span>→</span>`;
+      }
+    }
+
+    // Audio-Hintergrundmodus Card konfigurieren
+    if (this.audioTrainingCard) {
+      this.audioTrainingCard.style.display = 'flex';
+      const workedList = SessionScheduler.getWorkedExercisesSortedByDifficulty(topics, scheduleStore);
+      if (workedList.length > 0) {
+        this.audioCardDesc.textContent = `${workedList.length} geübte Sätze bereit – automatisch nach den schwierigsten Aufgaben sortiert.`;
+        this.btnAudioStart.innerHTML = `Audio starten (${workedList.length} Sätze) <span>▶</span>`;
+      } else {
+        this.audioCardDesc.textContent = `Höre alle bereits geübten Sätze im Hintergrund – schließe zuerst eine Übung ab!`;
+        this.btnAudioStart.innerHTML = `Audio-Modus öffnen <span>▶</span>`;
       }
     }
 
@@ -881,6 +1058,209 @@ class DeutschifyApp {
     };
 
     render();
+  }
+
+  // ==========================================================================
+  // AUDIO-HINTERGRUNDMODUS (HANDS-FREE LISTENING METHODS)
+  // ==========================================================================
+
+  initAudioPlayerEvents() {
+    backgroundPlayer.on('trackChange', (item, index, total) => {
+      this.updateAudioPlayerUI(item, index, total);
+    });
+
+    backgroundPlayer.on('stateChange', (state) => {
+      this.updateAudioPlayerStateUI(state);
+    });
+
+    backgroundPlayer.on('stepChange', (step) => {
+      this.updateAudioPlayerStepUI(step);
+    });
+
+    backgroundPlayer.on('playlistUpdate', (playlist) => {
+      this.renderAudioQueue(playlist);
+    });
+  }
+
+  async openAudioMode() {
+    let topics = topicRepo.getAllCachedTopics();
+    if (topics.length === 0) {
+      topics = await topicRepo.loadAll();
+    }
+    const scheduleStore = storage.getAllSchedule();
+    const workedList = SessionScheduler.getWorkedExercisesSortedByDifficulty(topics, scheduleStore);
+
+    this.showView('audio');
+
+    if (workedList.length === 0) {
+      if (this.audioEmptyCard) this.audioEmptyCard.style.display = 'block';
+      if (this.audioPlayerContent) this.audioPlayerContent.style.display = 'none';
+      if (this.audioTrackCounter) this.audioTrackCounter.textContent = '0 / 0';
+    } else {
+      if (this.audioEmptyCard) this.audioEmptyCard.style.display = 'none';
+      if (this.audioPlayerContent) this.audioPlayerContent.style.display = 'block';
+      backgroundPlayer.setPlaylist(workedList);
+      if (backgroundPlayer.state !== 'playing') {
+        backgroundPlayer.play();
+      }
+    }
+  }
+
+  updateAudioPlayerUI(item, index, total) {
+    if (!item) return;
+
+    if (this.audioTrackCounter) {
+      this.audioTrackCounter.textContent = `${index + 1} / ${total}`;
+    }
+
+    if (this.audioProgressFill) {
+      const pct = total > 0 ? Math.round(((index + 1) / total) * 100) : 0;
+      this.audioProgressFill.style.width = `${pct}%`;
+    }
+
+    if (this.audioTopicBadge) {
+      this.audioTopicBadge.textContent = `${item.topicIcon || '📌'} ${item.topicTitle || 'Thema'}`;
+    }
+
+    const diff = typeof item.card?.difficulty === 'number' ? item.card.difficulty : 5.0;
+    const diffStr = diff.toFixed(1);
+    const lapses = item.card?.lapses || 0;
+
+    if (this.audioDifficultyVal) {
+      this.audioDifficultyVal.textContent = `Schwierigkeit: ${diffStr} / 10${lapses > 0 ? ` • ${lapses} Fehlversuch${lapses > 1 ? 'e' : ''}` : ''}`;
+    }
+
+    if (this.audioDifficultyBadge) {
+      this.audioDifficultyBadge.className = 'audio-difficulty-pill';
+      if (diff >= 7.5) {
+        this.audioDifficultyBadge.classList.add('diff-hard');
+      } else if (diff >= 5.5) {
+        this.audioDifficultyBadge.classList.add('diff-medium');
+      } else {
+        this.audioDifficultyBadge.classList.add('diff-easy');
+      }
+    }
+
+    if (this.audioSentenceDisplay) {
+      this.audioSentenceDisplay.innerHTML = `
+        ${this.escapeHTML(item.prefix)} <span class="audio-highlight">${this.escapeHTML(item.correctAnswer)}</span> ${this.escapeHTML(item.suffix)}
+      `;
+    }
+
+    if (this.audioCollocationDisplay) {
+      this.audioCollocationDisplay.textContent = item.collocation || item.correctAnswer;
+    }
+
+    if (this.audioMeaningDisplay) {
+      this.audioMeaningDisplay.textContent = item.meaning || '-';
+    }
+
+    if (this.audioExampleDisplay && this.audioExampleRow) {
+      if (item.example) {
+        this.audioExampleRow.style.display = 'flex';
+        this.audioExampleDisplay.textContent = `„${item.example}“`;
+      } else {
+        this.audioExampleRow.style.display = 'none';
+      }
+    }
+
+    // Mini-Player Text aktualisieren
+    if (this.miniPlayerCollocation) {
+      this.miniPlayerCollocation.textContent = item.collocation || item.correctAnswer;
+    }
+    if (this.miniPlayerSentence) {
+      this.miniPlayerSentence.textContent = `${item.prefix} ${item.correctAnswer} ${item.suffix}`.replace(/\s+/g, ' ').trim();
+    }
+
+    // Aktiven Eintrag in Queue hervorheben
+    if (this.audioQueueList) {
+      const items = this.audioQueueList.querySelectorAll('.queue-item');
+      items.forEach((el, idx) => {
+        if (idx === index) {
+          el.classList.add('active');
+          el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else {
+          el.classList.remove('active');
+        }
+      });
+    }
+  }
+
+  updateAudioPlayerStateUI(state) {
+    const isPlaying = state === 'playing';
+
+    if (this.audioPlayIcon) {
+      this.audioPlayIcon.textContent = isPlaying ? '⏸' : '▶';
+    }
+    if (this.miniPlayIcon) {
+      this.miniPlayIcon.textContent = isPlaying ? '⏸' : '▶';
+    }
+
+    if (this.audioVisualizer) {
+      if (isPlaying) {
+        this.audioVisualizer.classList.add('is-playing');
+      } else {
+        this.audioVisualizer.classList.remove('is-playing');
+      }
+    }
+
+    // Mini-Player anzeigen, wenn Audio aktiv ist und eine andere Seite geöffnet ist
+    if (this.audioMiniPlayer) {
+      if (isPlaying && !this.viewAudio.classList.contains('active')) {
+        this.audioMiniPlayer.style.display = 'flex';
+      } else if (!isPlaying && state === 'stopped') {
+        this.audioMiniPlayer.style.display = 'none';
+      }
+    }
+  }
+
+  updateAudioPlayerStepUI(step) {
+    if (!this.audioStepBadge) return;
+
+    if (step === 'sentence') {
+      this.audioStepBadge.innerHTML = '<span>🗣️</span> Ganzer Satz wird vorgelesen...';
+    } else if (step === 'collocation') {
+      this.audioStepBadge.innerHTML = '<span>🔗</span> Kollokation wird vorgelesen...';
+    } else if (step === 'meaning') {
+      this.audioStepBadge.innerHTML = '<span>💡</span> Bedeutung wird erklärt...';
+    } else if (step === 'pause') {
+      this.audioStepBadge.innerHTML = '<span>⏳</span> Pause zum Verinnerlichen...';
+    } else {
+      this.audioStepBadge.innerHTML = '<span>🎧</span> Bereit zum Anhören';
+    }
+  }
+
+  renderAudioQueue(playlist) {
+    if (!this.audioQueueList) return;
+
+    if (this.audioQueueBadge) {
+      this.audioQueueBadge.textContent = `${playlist.length} Sätze`;
+    }
+
+    this.audioQueueList.innerHTML = '';
+    playlist.forEach((item, idx) => {
+      const diff = typeof item.card?.difficulty === 'number' ? item.card.difficulty : 5.0;
+      const diffClass = diff >= 7.5 ? 'diff-hard' : (diff >= 5.5 ? 'diff-medium' : 'diff-easy');
+      const isActive = idx === backgroundPlayer.currentIndex;
+
+      const row = document.createElement('div');
+      row.className = `queue-item ${isActive ? 'active' : ''}`;
+      row.dataset.index = idx;
+      row.innerHTML = `
+        <span class="queue-rank">#${idx + 1}</span>
+        <div class="queue-item-info">
+          <div class="queue-item-collocation">${this.escapeHTML(item.collocation || item.correctAnswer)}</div>
+          <div class="queue-item-sentence">${this.escapeHTML(item.prefix)} ${this.escapeHTML(item.correctAnswer)} ${this.escapeHTML(item.suffix)}</div>
+        </div>
+        <span class="queue-diff-pill ${diffClass}">D: ${diff.toFixed(1)}</span>
+      `;
+
+      row.addEventListener('click', () => {
+        backgroundPlayer.jumpTo(idx);
+      });
+
+      this.audioQueueList.appendChild(row);
+    });
   }
 }
 
