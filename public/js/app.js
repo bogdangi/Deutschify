@@ -809,11 +809,13 @@ class DeutschifyApp {
     }
 
     this.updateNotificationUI();
+    document.body.classList.add('modal-open');
     this.modalStats.classList.add('active');
   }
 
   closeStatsModal() {
     this.modalStats.classList.remove('active');
+    document.body.classList.remove('modal-open');
   }
 
   escapeHTML(str) {
