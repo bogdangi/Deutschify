@@ -18,11 +18,13 @@ export class BackgroundAudioPlayer {
       speakSentence: true,
       speakCollocation: true,
       speakMeaning: true,
+      speakExample: false,
+      repeatCount: 1, // 1 oder 2 Wiederholungen pro Beispielsatz
       repeatOne: false,
       autoAdvance: true,
       pauseAfterSentenceMs: 1200,
       pauseAfterCollocationMs: 1000,
-      pauseBeforeNextMs: 2500
+      pauseBeforeNextMs: 2200
     };
 
     // Event Listeners
@@ -211,20 +213,24 @@ export class BackgroundAudioPlayer {
       this._updateMediaMetadata(item);
       this.emit('trackChange', item, this.currentIndex, this.playlist.length);
 
-      // STEP 1: Vollständiger Beispielsatz
+      // STEP 1: Vollständiger Beispielsatz (1x oder 2x wiederholen)
       if (this.options.speakSentence && this.state === 'playing' && !this.isCancelling) {
-        this.currentStep = 'sentence';
-        this.emit('stepChange', this.currentStep);
-
         const fullSentence = `${item.prefix} ${item.correctAnswer} ${item.suffix}`
           .replace(/\s+/g, ' ')
           .trim();
 
-        await speech.speakAsync(fullSentence, { rate: this.options.speed });
-        if (this.state !== 'playing' || this.isCancelling) break;
+        const repeats = Math.max(1, this.options.repeatCount || 1);
+        for (let r = 1; r <= repeats; r++) {
+          if (this.state !== 'playing' || this.isCancelling) break;
+          this.currentStep = 'sentence';
+          this.emit('stepChange', this.currentStep, { repeatIndex: r, totalRepeats: repeats });
 
-        await this._sleep(this.options.pauseAfterSentenceMs);
-        if (this.state !== 'playing' || this.isCancelling) break;
+          await speech.speakAsync(fullSentence, { rate: this.options.speed });
+          if (this.state !== 'playing' || this.isCancelling) break;
+
+          await this._sleep(this.options.pauseAfterSentenceMs);
+          if (this.state !== 'playing' || this.isCancelling) break;
+        }
       }
 
       // STEP 2: Kollokation & Lösung
@@ -252,13 +258,30 @@ export class BackgroundAudioPlayer {
         await speech.speakAsync(meaningText, { rate: this.options.speed });
         if (this.state !== 'playing' || this.isCancelling) break;
 
-        await this._sleep(this.options.pauseBeforeNextMs);
-        if (this.state !== 'playing' || this.isCancelling) break;
-      } else {
-        // Kurze Pause vor dem nächsten Satz
-        await this._sleep(this.options.pauseBeforeNextMs);
+        await this._sleep(this.options.pauseAfterCollocationMs);
         if (this.state !== 'playing' || this.isCancelling) break;
       }
+
+      // STEP 4: Beispielsatz (falls aktiviert und vorhanden)
+      if (this.options.speakExample && item.example && this.state === 'playing' && !this.isCancelling) {
+        const repeats = Math.max(1, this.options.repeatCount || 1);
+        for (let r = 1; r <= repeats; r++) {
+          if (this.state !== 'playing' || this.isCancelling) break;
+          this.currentStep = 'example';
+          this.emit('stepChange', this.currentStep, { repeatIndex: r, totalRepeats: repeats });
+
+          const exampleText = `Beispiel: ${item.example}`;
+          await speech.speakAsync(exampleText, { rate: this.options.speed });
+          if (this.state !== 'playing' || this.isCancelling) break;
+
+          await this._sleep(this.options.pauseAfterSentenceMs);
+          if (this.state !== 'playing' || this.isCancelling) break;
+        }
+      }
+
+      // Pause vor dem nächsten Satz
+      await this._sleep(this.options.pauseBeforeNextMs);
+      if (this.state !== 'playing' || this.isCancelling) break;
 
       // Nächsten Satz ermitteln
       if (this.options.repeatOne) {
