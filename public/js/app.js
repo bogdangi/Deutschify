@@ -154,6 +154,8 @@ class DeutschifyApp {
     this.audioExampleDisplay = document.getElementById('audio-example-display');
     this.audioProgressFill = document.getElementById('audio-progress-fill');
     this.btnAudioRepeat = document.getElementById('btn-audio-repeat');
+    this.btnAudioRepeatCount = document.getElementById('btn-audio-repeat-count');
+    this.audioRepeatCountVal = document.getElementById('audio-repeat-count-val');
     this.btnAudioPrev = document.getElementById('btn-audio-prev');
     this.btnAudioPlayPause = document.getElementById('btn-audio-play-pause');
     this.audioPlayIcon = document.getElementById('audio-play-icon');
@@ -161,8 +163,10 @@ class DeutschifyApp {
     this.btnAudioSpeed = document.getElementById('btn-audio-speed');
     this.audioSpeedVal = document.getElementById('audio-speed-val');
     this.toggleAudioSentence = document.getElementById('toggle-audio-sentence');
+    this.toggleAudioRepeat2x = document.getElementById('toggle-audio-repeat-2x');
     this.toggleAudioCollocation = document.getElementById('toggle-audio-collocation');
     this.toggleAudioMeaning = document.getElementById('toggle-audio-meaning');
+    this.toggleAudioExample = document.getElementById('toggle-audio-example');
     this.audioQueueBadge = document.getElementById('audio-queue-badge');
     this.audioQueueList = document.getElementById('audio-queue-list');
 
@@ -190,6 +194,11 @@ class DeutschifyApp {
 
     // Mode
     this.setInputMode(prefs.inputMode || 'chips');
+
+    // Audio Repetition Preference
+    if (prefs.audioRepeatCount) {
+      this.setAudioRepeatCount(Number(prefs.audioRepeatCount));
+    }
   }
 
   bindEvents() {
@@ -297,6 +306,13 @@ class DeutschifyApp {
         this.btnAudioRepeat.title = nextRepeat ? 'Satz-Wiederholung aktiv' : 'Diesen Satz wiederholen';
       });
     }
+    if (this.btnAudioRepeatCount) {
+      this.btnAudioRepeatCount.addEventListener('click', () => {
+        const current = backgroundPlayer.options.repeatCount || 1;
+        const next = current === 2 ? 1 : 2;
+        this.setAudioRepeatCount(next);
+      });
+    }
     if (this.btnAudioSpeed) {
       const speeds = [0.8, 0.92, 1.15];
       let speedIdx = 1;
@@ -316,6 +332,11 @@ class DeutschifyApp {
         backgroundPlayer.setOption('speakSentence', e.target.checked);
       });
     }
+    if (this.toggleAudioRepeat2x) {
+      this.toggleAudioRepeat2x.addEventListener('change', (e) => {
+        this.setAudioRepeatCount(e.target.checked ? 2 : 1);
+      });
+    }
     if (this.toggleAudioCollocation) {
       this.toggleAudioCollocation.addEventListener('change', (e) => {
         backgroundPlayer.setOption('speakCollocation', e.target.checked);
@@ -324,6 +345,11 @@ class DeutschifyApp {
     if (this.toggleAudioMeaning) {
       this.toggleAudioMeaning.addEventListener('change', (e) => {
         backgroundPlayer.setOption('speakMeaning', e.target.checked);
+      });
+    }
+    if (this.toggleAudioExample) {
+      this.toggleAudioExample.addEventListener('change', (e) => {
+        backgroundPlayer.setOption('speakExample', e.target.checked);
       });
     }
 
@@ -1073,13 +1099,31 @@ class DeutschifyApp {
       this.updateAudioPlayerStateUI(state);
     });
 
-    backgroundPlayer.on('stepChange', (step) => {
-      this.updateAudioPlayerStepUI(step);
+    backgroundPlayer.on('stepChange', (step, meta) => {
+      this.updateAudioPlayerStepUI(step, meta);
     });
 
     backgroundPlayer.on('playlistUpdate', (playlist) => {
       this.renderAudioQueue(playlist);
     });
+  }
+
+  setAudioRepeatCount(count) {
+    const is2x = count === 2;
+    backgroundPlayer.setOption('repeatCount', count);
+    storage.setPreference('audioRepeatCount', count);
+    if (this.audioRepeatCountVal) {
+      this.audioRepeatCountVal.textContent = is2x ? '2x' : '1x';
+    }
+    if (this.btnAudioRepeatCount) {
+      this.btnAudioRepeatCount.classList.toggle('is-active', is2x);
+      this.btnAudioRepeatCount.title = is2x
+        ? 'Wiederholung: 2x (Klick für 1x)'
+        : 'Satz/Beispiel 2x wiederholen';
+    }
+    if (this.toggleAudioRepeat2x) {
+      this.toggleAudioRepeat2x.checked = is2x;
+    }
   }
 
   async openAudioMode() {

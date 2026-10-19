@@ -341,8 +341,8 @@
 
             <!-- Haupt-Steuerelemente -->
             <div class="audio-controls-row">
-              <button type="button" class="audio-btn-secondary" id="btn-audio-repeat" title="Diesen Satz wiederholen" aria-label="Wiederholen">
-                <span>🔂</span>
+              <button type="button" class="audio-btn-secondary" id="btn-audio-repeat-count" title="Satz/Beispiel 2x wiederholen" aria-label="Wiederholungen">
+                <span id="audio-repeat-count-val">1x</span>
               </button>
 
               <button type="button" class="audio-btn-skip" id="btn-audio-prev" title="Vorheriger Satz (Alt + Links)" aria-label="Vorheriger Satz">
@@ -360,6 +360,10 @@
               <button type="button" class="audio-btn-secondary" id="btn-audio-speed" title="Sprechgeschwindigkeit ändern" aria-label="Geschwindigkeit">
                 <span id="audio-speed-val">0.9x</span>
               </button>
+
+              <button type="button" class="audio-btn-secondary" id="btn-audio-repeat" title="Diesen einzelnen Satz endlos wiederholen" aria-label="Endlosschleife">
+                <span>🔂</span>
+              </button>
             </div>
 
             <!-- Audio-Modus Einstellungen & Hintergrund-Hinweis -->
@@ -370,12 +374,20 @@
                   <span>Satz</span>
                 </label>
                 <label class="audio-toggle-label">
+                  <input type="checkbox" id="toggle-audio-repeat-2x">
+                  <span>2x wiederholen</span>
+                </label>
+                <label class="audio-toggle-label">
                   <input type="checkbox" id="toggle-audio-collocation" checked>
                   <span>Kollokation</span>
                 </label>
                 <label class="audio-toggle-label">
                   <input type="checkbox" id="toggle-audio-meaning" checked>
                   <span>Bedeutung</span>
+                </label>
+                <label class="audio-toggle-label">
+                  <input type="checkbox" id="toggle-audio-example">
+                  <span>Beispielsatz</span>
                 </label>
               </div>
 
