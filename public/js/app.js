@@ -1258,17 +1258,27 @@ class DeutschifyApp {
     }
   }
 
-  updateAudioPlayerStepUI(step) {
+  updateAudioPlayerStepUI(step, meta = {}) {
     if (!this.audioStepBadge) return;
 
     if (step === 'sentence') {
-      this.audioStepBadge.innerHTML = '<span>🗣️</span> Ganzer Satz wird vorgelesen...';
+      if (meta.totalRepeats > 1) {
+        this.audioStepBadge.innerHTML = `<span>🔁</span> Satz wird vorgelesen (${meta.repeatIndex}/${meta.totalRepeats})...`;
+      } else {
+        this.audioStepBadge.innerHTML = '<span>🗣️</span> Ganzer Satz wird vorgelesen...';
+      }
     } else if (step === 'collocation') {
       this.audioStepBadge.innerHTML = '<span>🔗</span> Kollokation wird vorgelesen...';
     } else if (step === 'meaning') {
       this.audioStepBadge.innerHTML = '<span>💡</span> Bedeutung wird erklärt...';
+    } else if (step === 'example') {
+      if (meta.totalRepeats > 1) {
+        this.audioStepBadge.innerHTML = `<span>🔁</span> Beispielsatz (${meta.repeatIndex}/${meta.totalRepeats})...`;
+      } else {
+        this.audioStepBadge.innerHTML = '<span>📖</span> Beispielsatz wird vorgelesen...';
+      }
     } else if (step === 'pause') {
-      this.audioStepBadge.innerHTML = '<span>⏳</span> Pause zum Verinnerlichen...';
+      this.audioStepBadge.innerHTML = '<span>⏳</span> Pause zum Nachsprechen...';
     } else {
       this.audioStepBadge.innerHTML = '<span>🎧</span> Bereit zum Anhören';
     }
