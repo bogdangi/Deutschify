@@ -2631,24 +2631,396 @@ body.modal-open {
   color: var(--text-main);
 }
 
-/* Responsive adjustments */
+/* ==========================================================================
+   MOBILE & RESPONSIVE REFINEMENTS
+   ========================================================================== */
+
 @media (max-width: 640px) {
   .audio-training-card {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    padding: 20px 16px;
   }
+
   .btn-audio-start {
     width: 100%;
     justify-content: center;
   }
-  .audio-sentence-box {
-    font-size: 1.15rem;
+}
+
+@media (max-width: 520px) {
+  /* Navigation & Header */
+  .header-inner {
+    padding: 8px 10px;
   }
-  .audio-controls-row {
+
+  .logo-area {
+    gap: 8px;
+  }
+
+  .logo-icon-wrap {
+    width: 32px;
+    height: 32px;
+  }
+
+  .logo-icon-svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .logo-text {
+    font-size: 1.05rem;
+  }
+
+  .header-controls {
+    gap: 4px;
+  }
+
+  .streak-pill {
+    padding: 4px 8px;
+    font-size: 0.78rem;
+    gap: 4px;
+  }
+
+  .icon-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+    border-radius: var(--radius-sm);
+  }
+
+  /* App Main Layout */
+  .app-main {
+    padding: 14px 10px 80px;
+  }
+
+  .hero-banner {
+    padding: 12px 6px 18px;
+  }
+
+  .hero-title {
+    font-size: 1.45rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.88rem;
+    margin-bottom: 14px;
+  }
+
+  /* Mode Toggle Bar (3 buttons) */
+  .mode-toggle-bar {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .segmented-control {
+    display: flex;
+    width: 100%;
+    padding: 3px;
+  }
+
+  .segmented-control button {
+    flex: 1;
+    min-width: 0;
+    padding: 7px 4px;
+    font-size: 0.76rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Topics Grid */
+  .topics-grid {
+    grid-template-columns: 1fr;
     gap: 12px;
   }
+
+  .topic-card {
+    padding: 16px 14px;
+  }
+
+  /* Exercise Card */
+  .exercise-card {
+    padding: 18px 14px;
+    border-radius: var(--radius-lg);
+  }
+
+  .sentence-container {
+    font-size: 1.15rem;
+    line-height: 1.5;
+  }
+
+  .text-gap-input {
+    font-size: 1rem;
+    padding: 12px 14px;
+  }
+
+  .umlaut-bar {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .umlaut-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 0.9rem;
+  }
+
+  /* Audio View & Topbar */
+  .audio-view-wrapper {
+    padding: 4px 0 60px;
+  }
+
+  .audio-topbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .audio-view-badge {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  .audio-track-counter-pill {
+    order: 2;
+    font-size: 0.78rem;
+    padding: 4px 10px;
+  }
+
+  /* Audio Main Card */
+  .audio-main-card {
+    padding: 18px 14px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 18px;
+  }
+
+  .audio-card-top {
+    margin-bottom: 12px;
+    gap: 6px;
+  }
+
+  .audio-topic-tag {
+    font-size: 0.76rem;
+    padding: 3px 9px;
+  }
+
+  .audio-difficulty-pill {
+    font-size: 0.74rem;
+    padding: 3px 9px;
+  }
+
+  .audio-visualizer {
+    margin: 6px 0 12px;
+    height: 28px;
+  }
+
+  .audio-step-pill {
+    font-size: 0.74rem;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+  }
+
+  .audio-sentence-box {
+    font-size: 1.12rem;
+    line-height: 1.5;
+    min-height: 56px;
+    padding: 6px 8px;
+    margin-bottom: 14px;
+  }
+
+  .audio-details-grid {
+    padding: 12px 10px;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .audio-detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    font-size: 0.85rem;
+  }
+
+  .audio-detail-label {
+    font-size: 0.72rem;
+    min-width: auto;
+  }
+
+  .audio-progress-container {
+    margin-bottom: 16px;
+  }
+
+  /* Audio Controls Row */
+  .audio-controls-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 6px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
   .audio-btn-play-pause {
-    width: 56px;
-    height: 56px;
+    width: 52px;
+    height: 52px;
+    font-size: 1.35rem;
+    flex-shrink: 0;
+  }
+
+  .audio-btn-skip {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  .audio-btn-secondary {
+    width: 34px;
+    height: 34px;
+    font-size: 0.78rem;
+    flex-shrink: 0;
+  }
+
+  /* Audio Options Panel */
+  .audio-options-panel {
+    padding-top: 14px;
+    gap: 10px;
+  }
+
+  .audio-toggles-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 16px;
+  }
+
+  .audio-toggle-label {
+    font-size: 0.78rem;
+  }
+
+  .audio-bg-notice {
+    font-size: 0.72rem;
+    line-height: 1.4;
+  }
+
+  /* Queue Panel */
+  .audio-queue-panel {
+    padding: 16px 12px;
+    border-radius: var(--radius-lg);
+  }
+
+  .queue-header {
+    margin-bottom: 12px;
+  }
+
+  .queue-title {
+    font-size: 0.95rem;
+  }
+
+  .queue-item {
+    padding: 10px 10px;
+    gap: 8px;
+  }
+
+  .queue-item-collocation {
+    font-size: 0.86rem;
+  }
+
+  .queue-item-sentence {
+    font-size: 0.74rem;
+  }
+
+  .queue-diff-pill {
+    font-size: 0.68rem;
+    padding: 2px 6px;
+  }
+
+  /* Persistent Mini Player Safe Area */
+  .audio-mini-player {
+    bottom: max(12px, env(safe-area-inset-bottom, 12px));
+    width: calc(100% - 16px);
+    padding: 8px 12px;
+    gap: 10px;
+    border-radius: var(--radius-md);
+  }
+
+  .mini-player-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+  }
+
+  .mini-player-collocation {
+    font-size: 0.82rem;
+  }
+
+  .mini-player-sentence {
+    font-size: 0.72rem;
+  }
+
+  .mini-btn-play {
+    width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
+  }
+
+  .mini-btn-next {
+    width: 28px;
+    height: 28px;
+    font-size: 0.75rem;
   }
 }
+
+/* Extra small devices (< 380px) */
+@media (max-width: 380px) {
+  .logo-text {
+    font-size: 0.95rem;
+  }
+
+  .streak-pill {
+    padding: 3px 6px;
+    font-size: 0.74rem;
+  }
+
+  .icon-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 0.88rem;
+  }
+
+  .segmented-control button {
+    font-size: 0.72rem;
+    padding: 6px 2px;
+  }
+
+  .audio-controls-row {
+    gap: 4px;
+  }
+
+  .audio-btn-play-pause {
+    width: 48px;
+    height: 48px;
+    font-size: 1.25rem;
+  }
+
+  .audio-btn-skip {
+    width: 34px;
+    height: 34px;
+    font-size: 0.92rem;
+  }
+
+  .audio-btn-secondary {
+    width: 30px;
+    height: 30px;
+    font-size: 0.72rem;
+  }
+}
+
