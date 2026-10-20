@@ -1,4 +1,4 @@
-const CACHE_NAME = 'deutschify-v5';
+const CACHE_NAME = 'deutschify-v6';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
@@ -17,6 +17,7 @@ const ASSETS_TO_CACHE = [
   '/data/topics/redewendungen.json',
   '/data/topics/adjektive.json',
   '/data/topics/konjunktionen.json',
+  '/data/topics/modalverben.json',
   '/manifest.json',
   '/icons/icon.svg'
 ];

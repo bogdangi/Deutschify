@@ -17,7 +17,8 @@ public/data/
     ├── nomen-praepositionen.json<-- Nomen mit Präpositionen (157 Sätze)
     ├── redewendungen.json       <-- Redewendungen (12 Sätze)
     ├── adjektive.json           <-- Adjektive mit Präpositionen (69 Sätze)
-    └── konjunktionen.json       <-- Konnektoren (32 Sätze)
+    ├── konjunktionen.json       <-- Konnektoren (32 Sätze)
+    └── modalverben.json         <-- Modalverben in verschiedenen Zeiten (30 Sätze)
 ```
 
 Der Code (`public/js/`) greift ausschließlich über den Service **`TopicRepository`** (`public/js/data/TopicRepository.js`) auf die Daten zu.
