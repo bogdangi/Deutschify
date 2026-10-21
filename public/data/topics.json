@@ -68,5 +68,15 @@
     "color": "#ec4899",
     "totalExercises": 30,
     "file": "topics/modalverben.json"
+  },
+  {
+    "id": "passivformen",
+    "title": "Passivformen & Alternativen",
+    "shortDescription": "Vorgangspassiv, Passiv mit Modalverben, Perfekt und wichtige Alternativen zum Passiv (B2)",
+    "icon": "🔄",
+    "level": "B2",
+    "color": "#14b8a6",
+    "totalExercises": 60,
+    "file": "topics/passivformen.json"
   }
 ]

@@ -1,0 +1,1221 @@
+{
+  "id": "passivformen",
+  "title": "Passivformen & Alternativen",
+  "shortDescription": "Vorgangspassiv, Passiv mit Modalverben, Perfekt und wichtige Alternativen zum Passiv (B2)",
+  "icon": "🔄",
+  "level": "B2",
+  "color": "#14b8a6",
+  "totalExercises": 60,
+  "exercises": [
+    {
+      "id": "passiv-1",
+      "prefix": "Der Patient",
+      "gapPlaceholder": "Passiv Präsens",
+      "suffix": "vom Arzt untersucht.",
+      "correctAnswer": "wird",
+      "acceptableAnswers": [
+        "wird"
+      ],
+      "options": [
+        "wird",
+        "wurde",
+        "ist",
+        "hat"
+      ],
+      "collocation": "werden + Partizip II",
+      "meaning": "Drückt einen Vorgang im Präsens aus.",
+      "example": "Der Patient wird vom Arzt untersucht.",
+      "tip": "Passiv Präsens: werden + Partizip II."
+    },
+    {
+      "id": "passiv-2",
+      "prefix": "Die neuen Computer",
+      "gapPlaceholder": "Passiv Präsens",
+      "suffix": "heute installiert.",
+      "correctAnswer": "werden",
+      "acceptableAnswers": [
+        "werden"
+      ],
+      "options": [
+        "werden",
+        "wird",
+        "wurden",
+        "sind"
+      ],
+      "collocation": "werden + Partizip II",
+      "meaning": "Drückt einen Vorgang mit einem Subjekt im Plural aus.",
+      "example": "Die neuen Computer werden heute installiert.",
+      "tip": "Bei einem Subjekt im Plural steht 'werden'."
+    },
+    {
+      "id": "passiv-3",
+      "prefix": "Die Rechnung",
+      "gapPlaceholder": "Passiv Präsens",
+      "suffix": "morgen bezahlt.",
+      "correctAnswer": "wird",
+      "acceptableAnswers": [
+        "wird"
+      ],
+      "options": [
+        "wird",
+        "werden",
+        "wurde",
+        "ist"
+      ],
+      "collocation": "bezahlen → wird bezahlt",
+      "meaning": "Eine Handlung wird im Präsens passivisch ausgedrückt.",
+      "example": "Die Rechnung wird morgen bezahlt.",
+      "tip": "Das Akkusativobjekt des Aktivsatzes wird zum Subjekt."
+    },
+    {
+      "id": "passiv-4",
+      "prefix": "In diesem Unternehmen",
+      "gapPlaceholder": "Passiv Präsens",
+      "suffix": "viel Wert auf Weiterbildung gelegt.",
+      "correctAnswer": "wird",
+      "acceptableAnswers": [
+        "wird"
+      ],
+      "options": [
+        "wird",
+        "werden",
+        "wurde",
+        "ist"
+      ],
+      "collocation": "Wert auf etwas legen → es wird Wert auf etwas gelegt",
+      "meaning": "Unpersönliches Passiv ohne genanntes Akkusativobjekt.",
+      "example": "In diesem Unternehmen wird viel Wert auf Weiterbildung gelegt.",
+      "tip": "Bei unpersönlichem Passiv kann 'es' entfallen, wenn ein anderes Satzglied am Anfang steht."
+    },
+    {
+      "id": "passiv-5",
+      "prefix": "Die Daten",
+      "gapPlaceholder": "Passiv Präsens",
+      "suffix": "regelmäßig gesichert.",
+      "correctAnswer": "werden",
+      "acceptableAnswers": [
+        "werden"
+      ],
+      "options": [
+        "werden",
+        "wird",
+        "wurden",
+        "sind"
+      ],
+      "collocation": "Daten sichern → Daten werden gesichert",
+      "meaning": "Beschreibt einen regelmäßigen Vorgang im Passiv.",
+      "example": "Die Daten werden regelmäßig gesichert.",
+      "tip": "Plural: Die Daten werden ..."
+    },
+    {
+      "id": "passiv-6",
+      "prefix": "Der Antrag",
+      "gapPlaceholder": "Passiv Präsens",
+      "suffix": "von der Behörde geprüft.",
+      "correctAnswer": "wird",
+      "acceptableAnswers": [
+        "wird"
+      ],
+      "options": [
+        "wird",
+        "werden",
+        "wurde",
+        "ist"
+      ],
+      "collocation": "einen Antrag prüfen → der Antrag wird geprüft",
+      "meaning": "Der Vorgang des Prüfens steht im Mittelpunkt.",
+      "example": "Der Antrag wird von der Behörde geprüft.",
+      "tip": "Der Urheber kann mit 'von + Dativ' genannt werden."
+    },
+    {
+      "id": "passiv-7",
+      "prefix": "Die Türen",
+      "gapPlaceholder": "Passiv Präsens",
+      "suffix": "um 22 Uhr geschlossen.",
+      "correctAnswer": "werden",
+      "acceptableAnswers": [
+        "werden"
+      ],
+      "options": [
+        "werden",
+        "wird",
+        "wurden",
+        "sind"
+      ],
+      "collocation": "Türen schließen → Türen werden geschlossen",
+      "meaning": "Mehrere Türen sind das Subjekt des Passivsatzes.",
+      "example": "Die Türen werden um 22 Uhr geschlossen.",
+      "tip": "Plural des Passiv-Hilfsverbs: werden."
+    },
+    {
+      "id": "passiv-8",
+      "prefix": "Das neue Konzept",
+      "gapPlaceholder": "Passiv Präsens",
+      "suffix": "gerade diskutiert.",
+      "correctAnswer": "wird",
+      "acceptableAnswers": [
+        "wird"
+      ],
+      "options": [
+        "wird",
+        "werden",
+        "wurde",
+        "ist"
+      ],
+      "collocation": "ein Konzept diskutieren → ein Konzept wird diskutiert",
+      "meaning": "Ein gerade stattfindender Vorgang im Passiv.",
+      "example": "Das neue Konzept wird gerade diskutiert.",
+      "tip": "Im Präsens steht 'wird' vor dem Partizip II."
+    },
+    {
+      "id": "passiv-9",
+      "prefix": "Die Ergebnisse",
+      "gapPlaceholder": "Passiv Präsens",
+      "suffix": "am Freitag veröffentlicht.",
+      "correctAnswer": "werden",
+      "acceptableAnswers": [
+        "werden"
+      ],
+      "options": [
+        "werden",
+        "wird",
+        "wurden",
+        "sind"
+      ],
+      "collocation": "Ergebnisse veröffentlichen → Ergebnisse werden veröffentlicht",
+      "meaning": "Ein geplanter oder allgemeiner Vorgang wird passivisch formuliert.",
+      "example": "Die Ergebnisse werden am Freitag veröffentlicht.",
+      "tip": "Das Partizip II bleibt unverändert: veröffentlicht."
+    },
+    {
+      "id": "passiv-10",
+      "prefix": "In der Kantine",
+      "gapPlaceholder": "Passiv Präsens",
+      "suffix": "jeden Tag frisch gekocht.",
+      "correctAnswer": "wird",
+      "acceptableAnswers": [
+        "wird"
+      ],
+      "options": [
+        "wird",
+        "werden",
+        "wurde",
+        "ist"
+      ],
+      "collocation": "kochen → es wird gekocht",
+      "meaning": "Unpersönliches Passiv bei einem Verb ohne Akkusativobjekt.",
+      "example": "In der Kantine wird jeden Tag frisch gekocht.",
+      "tip": "Bei Verben ohne Akkusativobjekt bildet man das unpersönliche Passiv."
+    },
+    {
+      "id": "passiv-11",
+      "prefix": "Der Patient",
+      "gapPlaceholder": "Passiv Präteritum",
+      "suffix": "gestern untersucht.",
+      "correctAnswer": "wurde",
+      "acceptableAnswers": [
+        "wurde"
+      ],
+      "options": [
+        "wurde",
+        "wird",
+        "ist",
+        "war"
+      ],
+      "collocation": "werden → wurde",
+      "meaning": "Drückt einen abgeschlossenen Vorgang in der Vergangenheit aus.",
+      "example": "Der Patient wurde gestern untersucht.",
+      "tip": "Passiv Präteritum: wurde/wurden + Partizip II."
+    },
+    {
+      "id": "passiv-12",
+      "prefix": "Die Unterlagen",
+      "gapPlaceholder": "Passiv Präteritum",
+      "suffix": "am Montag verschickt.",
+      "correctAnswer": "wurden",
+      "acceptableAnswers": [
+        "wurden"
+      ],
+      "options": [
+        "wurden",
+        "wurde",
+        "werden",
+        "sind"
+      ],
+      "collocation": "Unterlagen verschicken → Unterlagen wurden verschickt",
+      "meaning": "Vergangener Passivvorgang mit einem Subjekt im Plural.",
+      "example": "Die Unterlagen wurden am Montag verschickt.",
+      "tip": "Plural im Präteritum: wurden."
+    },
+    {
+      "id": "passiv-13",
+      "prefix": "Das Gebäude",
+      "gapPlaceholder": "Passiv Präteritum",
+      "suffix": "im Jahr 1990 gebaut.",
+      "correctAnswer": "wurde",
+      "acceptableAnswers": [
+        "wurde"
+      ],
+      "options": [
+        "wurde",
+        "wird",
+        "war",
+        "ist"
+      ],
+      "collocation": "ein Gebäude bauen → das Gebäude wurde gebaut",
+      "meaning": "Ein historischer Vorgang wird im Passiv beschrieben.",
+      "example": "Das Gebäude wurde im Jahr 1990 gebaut.",
+      "tip": "Nicht 'war gebaut': Für einen Vorgang verwendet man 'wurde gebaut'."
+    },
+    {
+      "id": "passiv-14",
+      "prefix": "Die Entscheidung",
+      "gapPlaceholder": "Passiv Präteritum",
+      "suffix": "nach langer Diskussion getroffen.",
+      "correctAnswer": "wurde",
+      "acceptableAnswers": [
+        "wurde"
+      ],
+      "options": [
+        "wurde",
+        "wird",
+        "war",
+        "ist"
+      ],
+      "collocation": "eine Entscheidung treffen → die Entscheidung wurde getroffen",
+      "meaning": "Ein abgeschlossener Entscheidungsprozess in der Vergangenheit.",
+      "example": "Die Entscheidung wurde nach langer Diskussion getroffen.",
+      "tip": "Passiv Präteritum: wurde + Partizip II."
+    },
+    {
+      "id": "passiv-15",
+      "prefix": "Die Straße",
+      "gapPlaceholder": "Passiv Präteritum",
+      "suffix": "wegen des Unwetters gesperrt.",
+      "correctAnswer": "wurde",
+      "acceptableAnswers": [
+        "wurde"
+      ],
+      "options": [
+        "wurde",
+        "wird",
+        "war",
+        "ist"
+      ],
+      "collocation": "eine Straße sperren → die Straße wurde gesperrt",
+      "meaning": "Beschreibt eine vergangene Maßnahme.",
+      "example": "Die Straße wurde wegen des Unwetters gesperrt.",
+      "tip": "Das frühere Akkusativobjekt wird zum Subjekt."
+    },
+    {
+      "id": "passiv-16",
+      "prefix": "Mehrere Fehler",
+      "gapPlaceholder": "Passiv Präteritum",
+      "suffix": "im Bericht entdeckt.",
+      "correctAnswer": "wurden",
+      "acceptableAnswers": [
+        "wurden"
+      ],
+      "options": [
+        "wurden",
+        "wurde",
+        "werden",
+        "sind"
+      ],
+      "collocation": "Fehler entdecken → Fehler wurden entdeckt",
+      "meaning": "Mehrere Fehler sind das Subjekt des Passivsatzes.",
+      "example": "Mehrere Fehler wurden im Bericht entdeckt.",
+      "tip": "Mehrzahl: Mehrere Fehler wurden ..."
+    },
+    {
+      "id": "passiv-17",
+      "prefix": "Der Vertrag",
+      "gapPlaceholder": "Passiv Präteritum",
+      "suffix": "von beiden Seiten unterschrieben.",
+      "correctAnswer": "wurde",
+      "acceptableAnswers": [
+        "wurde"
+      ],
+      "options": [
+        "wurde",
+        "wird",
+        "war",
+        "ist"
+      ],
+      "collocation": "einen Vertrag unterschreiben → der Vertrag wurde unterschrieben",
+      "meaning": "Der Urheber wird mit 'von + Dativ' angegeben.",
+      "example": "Der Vertrag wurde von beiden Seiten unterschrieben.",
+      "tip": "'von beiden Seiten' bleibt eine Präpositionalangabe."
+    },
+    {
+      "id": "passiv-18",
+      "prefix": "Die neuen Regeln",
+      "gapPlaceholder": "Passiv Präteritum",
+      "suffix": "allen Mitarbeitenden erklärt.",
+      "correctAnswer": "wurden",
+      "acceptableAnswers": [
+        "wurden"
+      ],
+      "options": [
+        "wurden",
+        "wurde",
+        "werden",
+        "sind"
+      ],
+      "collocation": "Regeln erklären → Regeln wurden erklärt",
+      "meaning": "Vergangener Vorgang mit einem Subjekt im Plural.",
+      "example": "Die neuen Regeln wurden allen Mitarbeitenden erklärt.",
+      "tip": "Das Dativobjekt 'allen Mitarbeitenden' bleibt im Dativ."
+    },
+    {
+      "id": "passiv-19",
+      "prefix": "Der Patient",
+      "gapPlaceholder": "Passiv Perfekt",
+      "suffix": "erfolgreich behandelt worden.",
+      "correctAnswer": "ist",
+      "acceptableAnswers": [
+        "ist"
+      ],
+      "options": [
+        "ist",
+        "wird",
+        "wurde",
+        "hat"
+      ],
+      "collocation": "sein + Partizip II + worden",
+      "meaning": "Drückt einen abgeschlossenen Passivvorgang aus.",
+      "example": "Der Patient ist erfolgreich behandelt worden.",
+      "tip": "Passiv Perfekt: sein + Partizip II + worden."
+    },
+    {
+      "id": "passiv-20",
+      "prefix": "Die Rechnung",
+      "gapPlaceholder": "Passiv Perfekt",
+      "suffix": "bereits bezahlt worden.",
+      "correctAnswer": "ist",
+      "acceptableAnswers": [
+        "ist"
+      ],
+      "options": [
+        "ist",
+        "wird",
+        "wurde",
+        "hat"
+      ],
+      "collocation": "bezahlen → ist bezahlt worden",
+      "meaning": "Eine abgeschlossene Handlung wird im Perfekt passivisch ausgedrückt.",
+      "example": "Die Rechnung ist bereits bezahlt worden.",
+      "tip": "Verwende 'worden', nicht 'geworden', wenn das Passiv gemeint ist."
+    },
+    {
+      "id": "passiv-21",
+      "prefix": "Die Dokumente",
+      "gapPlaceholder": "Passiv Perfekt",
+      "suffix": "gestern kontrolliert worden.",
+      "correctAnswer": "sind",
+      "acceptableAnswers": [
+        "sind"
+      ],
+      "options": [
+        "sind",
+        "ist",
+        "wurden",
+        "haben"
+      ],
+      "collocation": "kontrollieren → sind kontrolliert worden",
+      "meaning": "Perfektpassiv bei einem Subjekt im Plural.",
+      "example": "Die Dokumente sind gestern kontrolliert worden.",
+      "tip": "Plural von 'sein': sind."
+    },
+    {
+      "id": "passiv-22",
+      "prefix": "Das Problem",
+      "gapPlaceholder": "Passiv Perfekt",
+      "suffix": "endlich gelöst worden.",
+      "correctAnswer": "ist",
+      "acceptableAnswers": [
+        "ist"
+      ],
+      "options": [
+        "ist",
+        "wird",
+        "wurde",
+        "hat"
+      ],
+      "collocation": "ein Problem lösen → ist gelöst worden",
+      "meaning": "Eine abgeschlossene Problemlösung im Passiv.",
+      "example": "Das Problem ist endlich gelöst worden.",
+      "tip": "Im Perfektpassiv steht 'ist ... worden'."
+    },
+    {
+      "id": "passiv-23",
+      "prefix": "Die Bestellung",
+      "gapPlaceholder": "Passiv Perfekt",
+      "suffix": "noch nicht geliefert worden.",
+      "correctAnswer": "ist",
+      "acceptableAnswers": [
+        "ist"
+      ],
+      "options": [
+        "ist",
+        "wird",
+        "wurde",
+        "hat"
+      ],
+      "collocation": "eine Bestellung liefern → ist geliefert worden",
+      "meaning": "Eine noch nicht abgeschlossene Lieferung wird mit dem Perfektpassiv beschrieben.",
+      "example": "Die Bestellung ist noch nicht geliefert worden.",
+      "tip": "Negation steht vor dem Partizip II."
+    },
+    {
+      "id": "passiv-24",
+      "prefix": "Die Ergebnisse",
+      "gapPlaceholder": "Passiv Perfekt",
+      "suffix": "bereits veröffentlicht worden.",
+      "correctAnswer": "sind",
+      "acceptableAnswers": [
+        "sind"
+      ],
+      "options": [
+        "sind",
+        "ist",
+        "wurden",
+        "haben"
+      ],
+      "collocation": "Ergebnisse veröffentlichen → sind veröffentlicht worden",
+      "meaning": "Abgeschlossener Veröffentlichungsvorgang im Plural.",
+      "example": "Die Ergebnisse sind bereits veröffentlicht worden.",
+      "tip": "Plural: Die Ergebnisse sind ... worden."
+    },
+    {
+      "id": "passiv-25",
+      "prefix": "Der Antrag",
+      "gapPlaceholder": "Passiv Perfekt",
+      "suffix": "von der Behörde abgelehnt worden.",
+      "correctAnswer": "ist",
+      "acceptableAnswers": [
+        "ist"
+      ],
+      "options": [
+        "ist",
+        "wird",
+        "wurde",
+        "hat"
+      ],
+      "collocation": "einen Antrag ablehnen → ist abgelehnt worden",
+      "meaning": "Ein abgeschlossener Verwaltungsvorgang im Perfektpassiv.",
+      "example": "Der Antrag ist von der Behörde abgelehnt worden.",
+      "tip": "Das Passivperfekt verwendet 'sein', nicht 'haben'."
+    },
+    {
+      "id": "passiv-26",
+      "prefix": "Viele wichtige Fragen",
+      "gapPlaceholder": "Passiv Perfekt",
+      "suffix": "in der Sitzung beantwortet worden.",
+      "correctAnswer": "sind",
+      "acceptableAnswers": [
+        "sind"
+      ],
+      "options": [
+        "sind",
+        "ist",
+        "wurden",
+        "haben"
+      ],
+      "collocation": "Fragen beantworten → Fragen sind beantwortet worden",
+      "meaning": "Perfektpassiv mit einem Subjekt im Plural.",
+      "example": "Viele wichtige Fragen sind in der Sitzung beantwortet worden.",
+      "tip": "Plural: sind + Partizip II + worden."
+    },
+    {
+      "id": "passiv-27",
+      "prefix": "Das Problem",
+      "gapPlaceholder": "Passiv mit Modalverb",
+      "suffix": "so schnell wie möglich gelöst werden.",
+      "correctAnswer": "muss",
+      "acceptableAnswers": [
+        "muss"
+      ],
+      "options": [
+        "muss",
+        "wird",
+        "ist",
+        "wurde"
+      ],
+      "collocation": "müssen + Partizip II + werden",
+      "meaning": "Drückt eine notwendige Handlung im Passiv aus.",
+      "example": "Das Problem muss so schnell wie möglich gelöst werden.",
+      "tip": "Modalverb + Partizip II + werden."
+    },
+    {
+      "id": "passiv-28",
+      "prefix": "Der Patient",
+      "gapPlaceholder": "Passiv mit Modalverb",
+      "suffix": "heute noch untersucht werden.",
+      "correctAnswer": "muss",
+      "acceptableAnswers": [
+        "muss"
+      ],
+      "options": [
+        "muss",
+        "wird",
+        "ist",
+        "wurde"
+      ],
+      "collocation": "müssen + untersucht werden",
+      "meaning": "Drückt eine medizinische Notwendigkeit aus.",
+      "example": "Der Patient muss heute noch untersucht werden.",
+      "tip": "Das Modalverb wird konjugiert; 'werden' bleibt im Infinitiv."
+    },
+    {
+      "id": "passiv-29",
+      "prefix": "Die Rechnung",
+      "gapPlaceholder": "Passiv mit Modalverb",
+      "suffix": "bis Freitag bezahlt werden.",
+      "correctAnswer": "muss",
+      "acceptableAnswers": [
+        "muss"
+      ],
+      "options": [
+        "muss",
+        "wird",
+        "ist",
+        "wurde"
+      ],
+      "collocation": "müssen + bezahlt werden",
+      "meaning": "Drückt eine Frist oder Verpflichtung aus.",
+      "example": "Die Rechnung muss bis Freitag bezahlt werden.",
+      "tip": "Bei Modalverben steht 'werden' am Satzende."
+    },
+    {
+      "id": "passiv-30",
+      "prefix": "Die Daten",
+      "gapPlaceholder": "Passiv mit Modalverb",
+      "suffix": "nicht ohne Zustimmung weitergegeben werden.",
+      "correctAnswer": "dürfen",
+      "acceptableAnswers": [
+        "dürfen"
+      ],
+      "options": [
+        "dürfen",
+        "müssen",
+        "werden",
+        "sollen"
+      ],
+      "collocation": "dürfen + weitergegeben werden",
+      "meaning": "Drückt ein Verbot oder eine fehlende Erlaubnis aus.",
+      "example": "Die Daten dürfen nicht ohne Zustimmung weitergegeben werden.",
+      "tip": "dürfen + nicht bedeutet ein Verbot."
+    },
+    {
+      "id": "passiv-31",
+      "prefix": "Der Antrag",
+      "gapPlaceholder": "Passiv mit Modalverb",
+      "suffix": "online eingereicht werden.",
+      "correctAnswer": "kann",
+      "acceptableAnswers": [
+        "kann"
+      ],
+      "options": [
+        "kann",
+        "muss",
+        "wird",
+        "wurde"
+      ],
+      "collocation": "können + eingereicht werden",
+      "meaning": "Drückt eine Möglichkeit aus.",
+      "example": "Der Antrag kann online eingereicht werden.",
+      "tip": "kann + Partizip II + werden = Möglichkeit im Passiv."
+    },
+    {
+      "id": "passiv-32",
+      "prefix": "Die Maschinen",
+      "gapPlaceholder": "Passiv mit Modalverb",
+      "suffix": "vor Beginn der Wartung ausgeschaltet werden.",
+      "correctAnswer": "müssen",
+      "acceptableAnswers": [
+        "müssen"
+      ],
+      "options": [
+        "müssen",
+        "können",
+        "werden",
+        "dürfen"
+      ],
+      "collocation": "müssen + ausgeschaltet werden",
+      "meaning": "Drückt eine notwendige Sicherheitsmaßnahme aus.",
+      "example": "Die Maschinen müssen vor der Wartung ausgeschaltet werden.",
+      "tip": "Plural: Die Maschinen müssen ..."
+    },
+    {
+      "id": "passiv-33",
+      "prefix": "Der Termin",
+      "gapPlaceholder": "Passiv mit Modalverb",
+      "suffix": "leider verschoben werden.",
+      "correctAnswer": "muss",
+      "acceptableAnswers": [
+        "muss"
+      ],
+      "options": [
+        "muss",
+        "kann",
+        "wird",
+        "ist"
+      ],
+      "collocation": "müssen + verschoben werden",
+      "meaning": "Drückt eine notwendige Änderung aus.",
+      "example": "Der Termin muss leider verschoben werden.",
+      "tip": "Auch mit Modalverb bleibt das Partizip II vor 'werden'."
+    },
+    {
+      "id": "passiv-34",
+      "prefix": "Die Präsentation",
+      "gapPlaceholder": "Passiv mit Modalverb",
+      "suffix": "morgen von allen Teilnehmenden gesehen werden.",
+      "correctAnswer": "soll",
+      "acceptableAnswers": [
+        "soll"
+      ],
+      "options": [
+        "soll",
+        "muss",
+        "wird",
+        "kann"
+      ],
+      "collocation": "sollen + gesehen werden",
+      "meaning": "Drückt eine Vorgabe oder Erwartung aus.",
+      "example": "Die Präsentation soll morgen von allen Teilnehmenden gesehen werden.",
+      "tip": "sollen kann im Passiv einen Auftrag oder eine Vorgabe ausdrücken."
+    },
+    {
+      "id": "passiv-35",
+      "prefix": "Der Arzt gibt dem Patienten das Medikament.",
+      "gapPlaceholder": "Dativ im Passiv",
+      "suffix": "Das Medikament wird",
+      "correctAnswer": "dem Patienten",
+      "acceptableAnswers": [
+        "dem Patienten"
+      ],
+      "options": [
+        "dem Patienten",
+        "den Patienten",
+        "der Patient",
+        "des Patienten"
+      ],
+      "collocation": "Dativobjekt bleibt Dativ",
+      "meaning": "Das Dativobjekt bleibt auch im Passiv im Dativ.",
+      "example": "Das Medikament wird dem Patienten gegeben.",
+      "tip": "Dativobjekte bleiben im Passiv im Dativ."
+    },
+    {
+      "id": "passiv-36",
+      "prefix": "Der Arzt verbindet dem Patienten das Bein.",
+      "gapPlaceholder": "Dativ im Passiv",
+      "suffix": "Das Bein wird",
+      "correctAnswer": "dem Patienten",
+      "acceptableAnswers": [
+        "dem Patienten"
+      ],
+      "options": [
+        "dem Patienten",
+        "den Patienten",
+        "der Patient",
+        "des Patienten"
+      ],
+      "collocation": "jemandem etwas verbinden",
+      "meaning": "Das Dativobjekt bleibt unverändert.",
+      "example": "Das Bein wird dem Patienten verbunden.",
+      "tip": "Nicht 'der Patient': Der Dativ bleibt Dativ."
+    },
+    {
+      "id": "passiv-37",
+      "prefix": "Man erklärt den Teilnehmern die Regeln.",
+      "gapPlaceholder": "Dativ im Passiv",
+      "suffix": "Die Regeln werden",
+      "correctAnswer": "den Teilnehmern",
+      "acceptableAnswers": [
+        "den Teilnehmern"
+      ],
+      "options": [
+        "den Teilnehmern",
+        "die Teilnehmer",
+        "der Teilnehmer",
+        "des Teilnehmers"
+      ],
+      "collocation": "jemandem etwas erklären",
+      "meaning": "Das Dativobjekt wird nicht zum Subjekt.",
+      "example": "Die Regeln werden den Teilnehmern erklärt.",
+      "tip": "Das Akkusativobjekt wird zum Passivsubjekt; der Dativ bleibt Dativ."
+    },
+    {
+      "id": "passiv-38",
+      "prefix": "Die Mitarbeiterin schickt dem Kunden die Rechnung.",
+      "gapPlaceholder": "Dativ im Passiv",
+      "suffix": "Die Rechnung wird",
+      "correctAnswer": "dem Kunden",
+      "acceptableAnswers": [
+        "dem Kunden"
+      ],
+      "options": [
+        "dem Kunden",
+        "den Kunden",
+        "der Kunde",
+        "des Kunden"
+      ],
+      "collocation": "jemandem etwas schicken",
+      "meaning": "Der Empfänger bleibt im Dativ.",
+      "example": "Die Rechnung wird dem Kunden geschickt.",
+      "tip": "dem Kunden = Dativ Singular."
+    },
+    {
+      "id": "passiv-39",
+      "prefix": "Der Lehrer erklärt den Schülern die Aufgabe.",
+      "gapPlaceholder": "Dativ im Passiv",
+      "suffix": "Die Aufgabe wird",
+      "correctAnswer": "den Schülern",
+      "acceptableAnswers": [
+        "den Schülern"
+      ],
+      "options": [
+        "den Schülern",
+        "die Schüler",
+        "der Schüler",
+        "des Schülers"
+      ],
+      "collocation": "jemandem etwas erklären",
+      "meaning": "Der Dativ Plural bleibt im Dativ.",
+      "example": "Die Aufgabe wird den Schülern erklärt.",
+      "tip": "Dativ Plural: den Schülern."
+    },
+    {
+      "id": "passiv-40",
+      "prefix": "Die Ärztin verschreibt dem Patienten ein Medikament.",
+      "gapPlaceholder": "Dativ im Passiv",
+      "suffix": "Ein Medikament wird",
+      "correctAnswer": "dem Patienten",
+      "acceptableAnswers": [
+        "dem Patienten"
+      ],
+      "options": [
+        "dem Patienten",
+        "den Patienten",
+        "der Patient",
+        "des Patienten"
+      ],
+      "collocation": "jemandem etwas verschreiben",
+      "meaning": "Der Patient bleibt als Dativobjekt erhalten.",
+      "example": "Ein Medikament wird dem Patienten verschrieben.",
+      "tip": "Im Passiv wird das Akkusativobjekt zum Subjekt."
+    },
+    {
+      "id": "passiv-41",
+      "prefix": "Das Problem",
+      "gapPlaceholder": "sich lassen + Infinitiv",
+      "suffix": "leicht lösen.",
+      "correctAnswer": "lässt sich",
+      "acceptableAnswers": [
+        "lässt sich",
+        "laesst sich"
+      ],
+      "options": [
+        "lässt sich",
+        "wird",
+        "ist zu",
+        "kann"
+      ],
+      "collocation": "sich lassen + Infinitiv",
+      "meaning": "Drückt eine Möglichkeit aus und entspricht oft 'kann ... werden'.",
+      "example": "Das Problem lässt sich leicht lösen.",
+      "tip": "Das Passiv mit Modalverb 'kann gelöst werden' kann durch 'lässt sich lösen' ersetzt werden."
+    },
+    {
+      "id": "passiv-42",
+      "prefix": "Die Tür",
+      "gapPlaceholder": "sich lassen + Infinitiv",
+      "suffix": "nicht öffnen.",
+      "correctAnswer": "lässt sich",
+      "acceptableAnswers": [
+        "lässt sich",
+        "laesst sich"
+      ],
+      "options": [
+        "lässt sich",
+        "wird",
+        "ist",
+        "kann"
+      ],
+      "collocation": "sich öffnen lassen",
+      "meaning": "Drückt aus, dass etwas nicht geöffnet werden kann.",
+      "example": "Die Tür lässt sich nicht öffnen.",
+      "tip": "lässt sich + Infinitiv beschreibt eine Möglichkeit oder Unmöglichkeit."
+    },
+    {
+      "id": "passiv-43",
+      "prefix": "Der Text",
+      "gapPlaceholder": "sich lassen + Infinitiv",
+      "suffix": "gut verstehen.",
+      "correctAnswer": "lässt sich",
+      "acceptableAnswers": [
+        "lässt sich",
+        "laesst sich"
+      ],
+      "options": [
+        "lässt sich",
+        "wird",
+        "ist zu",
+        "wurde"
+      ],
+      "collocation": "sich verstehen lassen",
+      "meaning": "Drückt aus, dass etwas gut verstanden werden kann.",
+      "example": "Der Text lässt sich gut verstehen.",
+      "tip": "Vergleiche: Der Text kann gut verstanden werden."
+    },
+    {
+      "id": "passiv-44",
+      "prefix": "Die Software",
+      "gapPlaceholder": "sich lassen + Infinitiv",
+      "suffix": "problemlos installieren.",
+      "correctAnswer": "lässt sich",
+      "acceptableAnswers": [
+        "lässt sich",
+        "laesst sich"
+      ],
+      "options": [
+        "lässt sich",
+        "wird",
+        "ist",
+        "wurde"
+      ],
+      "collocation": "sich installieren lassen",
+      "meaning": "Drückt eine einfache Möglichkeit aus.",
+      "example": "Die Software lässt sich problemlos installieren.",
+      "tip": "Das Subjekt steht im Nominativ; 'sich' gehört zur festen Konstruktion."
+    },
+    {
+      "id": "passiv-45",
+      "prefix": "Die Aufgabe",
+      "gapPlaceholder": "sich lassen + Infinitiv",
+      "suffix": "in wenigen Minuten erledigen.",
+      "correctAnswer": "lässt sich",
+      "acceptableAnswers": [
+        "lässt sich",
+        "laesst sich"
+      ],
+      "options": [
+        "lässt sich",
+        "wird",
+        "ist zu",
+        "wurde"
+      ],
+      "collocation": "sich erledigen lassen",
+      "meaning": "Drückt aus, dass eine Aufgabe erledigt werden kann.",
+      "example": "Die Aufgabe lässt sich in wenigen Minuten erledigen.",
+      "tip": "Entspricht: Die Aufgabe kann in wenigen Minuten erledigt werden."
+    },
+    {
+      "id": "passiv-46",
+      "prefix": "Die Rechnung",
+      "gapPlaceholder": "sein + zu + Infinitiv",
+      "suffix": "bis Freitag zu bezahlen.",
+      "correctAnswer": "ist",
+      "acceptableAnswers": [
+        "ist"
+      ],
+      "options": [
+        "ist",
+        "wird",
+        "wurde",
+        "kann"
+      ],
+      "collocation": "sein + zu + Infinitiv",
+      "meaning": "Drückt häufig eine Notwendigkeit oder Verpflichtung aus.",
+      "example": "Die Rechnung ist bis Freitag zu bezahlen.",
+      "tip": "sein + zu + Infinitiv kann oft 'muss ... werden' entsprechen."
+    },
+    {
+      "id": "passiv-47",
+      "prefix": "Die Aufgabe",
+      "gapPlaceholder": "sein + zu + Infinitiv",
+      "suffix": "bis morgen zu erledigen.",
+      "correctAnswer": "ist",
+      "acceptableAnswers": [
+        "ist"
+      ],
+      "options": [
+        "ist",
+        "wird",
+        "wurde",
+        "kann"
+      ],
+      "collocation": "eine Aufgabe ist zu erledigen",
+      "meaning": "Formuliert eine sachliche Verpflichtung.",
+      "example": "Die Aufgabe ist bis morgen zu erledigen.",
+      "tip": "Diese Konstruktion ist besonders in formeller Sprache üblich."
+    },
+    {
+      "id": "passiv-48",
+      "prefix": "Die Unterlagen",
+      "gapPlaceholder": "sein + zu + Infinitiv",
+      "suffix": "vollständig auszufüllen.",
+      "correctAnswer": "sind",
+      "acceptableAnswers": [
+        "sind"
+      ],
+      "options": [
+        "sind",
+        "ist",
+        "werden",
+        "wurden"
+      ],
+      "collocation": "Unterlagen sind auszufüllen",
+      "meaning": "Drückt eine notwendige Handlung im Plural aus.",
+      "example": "Die Unterlagen sind vollständig auszufüllen.",
+      "tip": "Plural: sind + zu + Infinitiv."
+    },
+    {
+      "id": "passiv-49",
+      "prefix": "Die Daten",
+      "gapPlaceholder": "sein + zu + Infinitiv",
+      "suffix": "vertraulich zu behandeln.",
+      "correctAnswer": "sind",
+      "acceptableAnswers": [
+        "sind"
+      ],
+      "options": [
+        "sind",
+        "ist",
+        "werden",
+        "wurden"
+      ],
+      "collocation": "Daten sind vertraulich zu behandeln",
+      "meaning": "Formuliert eine verbindliche Vorgabe.",
+      "example": "Die Daten sind vertraulich zu behandeln.",
+      "tip": "Im Plural: Die Daten sind ..."
+    },
+    {
+      "id": "passiv-50",
+      "prefix": "Der Fehler",
+      "gapPlaceholder": "sein + zu + Infinitiv",
+      "suffix": "sofort zu beheben.",
+      "correctAnswer": "ist",
+      "acceptableAnswers": [
+        "ist"
+      ],
+      "options": [
+        "ist",
+        "wird",
+        "wurde",
+        "kann"
+      ],
+      "collocation": "ein Fehler ist zu beheben",
+      "meaning": "Drückt eine dringende Notwendigkeit aus.",
+      "example": "Der Fehler ist sofort zu beheben.",
+      "tip": "Bedeutung ähnlich: Der Fehler muss sofort behoben werden."
+    },
+    {
+      "id": "passiv-51",
+      "prefix": "Das Problem ist",
+      "gapPlaceholder": "-bar",
+      "suffix": ".",
+      "correctAnswer": "lösbar",
+      "acceptableAnswers": [
+        "lösbar",
+        "loesbar"
+      ],
+      "options": [
+        "lösbar",
+        "gelöst",
+        "lösen",
+        "löslich"
+      ],
+      "collocation": "lösen → lösbar",
+      "meaning": "Drückt aus, dass etwas gelöst werden kann.",
+      "example": "Das Problem ist lösbar.",
+      "tip": "Die Endung '-bar' kann eine Möglichkeit ausdrücken: lösbar = kann gelöst werden."
+    },
+    {
+      "id": "passiv-52",
+      "prefix": "Die Datei ist",
+      "gapPlaceholder": "-bar",
+      "suffix": ".",
+      "correctAnswer": "lesbar",
+      "acceptableAnswers": [
+        "lesbar"
+      ],
+      "options": [
+        "lesbar",
+        "gelesen",
+        "lesen",
+        "leslich"
+      ],
+      "collocation": "lesen → lesbar",
+      "meaning": "Drückt aus, dass etwas gelesen werden kann.",
+      "example": "Die Datei ist gut lesbar.",
+      "tip": "lesbar = kann gelesen werden."
+    },
+    {
+      "id": "passiv-53",
+      "prefix": "Der Vorschlag ist",
+      "gapPlaceholder": "-abel",
+      "suffix": ".",
+      "correctAnswer": "diskutabel",
+      "acceptableAnswers": [
+        "diskutabel"
+      ],
+      "options": [
+        "diskutabel",
+        "diskutiert",
+        "diskutierbar",
+        "diskutieren"
+      ],
+      "collocation": "diskutieren → diskutabel",
+      "meaning": "Drückt aus, dass etwas diskutiert werden kann.",
+      "example": "Der Vorschlag ist diskutabel.",
+      "tip": "Bei einigen Verben gibt es die Endung '-abel': diskutabel."
+    },
+    {
+      "id": "passiv-54",
+      "prefix": "Der Vortrag ist",
+      "gapPlaceholder": "-lich",
+      "suffix": ".",
+      "correctAnswer": "verständlich",
+      "acceptableAnswers": [
+        "verständlich",
+        "verstaendlich"
+      ],
+      "options": [
+        "verständlich",
+        "verstanden",
+        "verstehbar",
+        "verstehen"
+      ],
+      "collocation": "verstehen → verständlich",
+      "meaning": "Drückt eine Eigenschaft aus, die sich oft passivisch paraphrasieren lässt.",
+      "example": "Der Vortrag ist gut verständlich.",
+      "tip": "verständlich bedeutet hier: Man kann den Vortrag gut verstehen."
+    },
+    {
+      "id": "passiv-55",
+      "prefix": "Die Bedienungsanleitung ist",
+      "gapPlaceholder": "-lich",
+      "suffix": ".",
+      "correctAnswer": "verständlich",
+      "acceptableAnswers": [
+        "verständlich",
+        "verstaendlich"
+      ],
+      "options": [
+        "verständlich",
+        "verstanden",
+        "verstehend",
+        "verständig"
+      ],
+      "collocation": "verständlich sein",
+      "meaning": "Beschreibt eine Eigenschaft, durch die etwas gut verstanden werden kann.",
+      "example": "Die Bedienungsanleitung ist verständlich.",
+      "tip": "Adjektive auf '-lich' können eine passive Bedeutung ausdrücken."
+    },
+    {
+      "id": "passiv-56",
+      "prefix": "Aktiv: Die Firma prüft den Antrag. → Passiv:",
+      "gapPlaceholder": "Transformation",
+      "suffix": "Der Antrag",
+      "correctAnswer": "wird geprüft",
+      "acceptableAnswers": [
+        "wird geprüft"
+      ],
+      "options": [
+        "wird geprüft",
+        "wurde geprüft",
+        "ist geprüft worden",
+        "prüft"
+      ],
+      "collocation": "Aktiv → Passiv Präsens",
+      "meaning": "Das Akkusativobjekt des Aktivsatzes wird zum Passivsubjekt.",
+      "example": "Der Antrag wird von der Firma geprüft.",
+      "tip": "Präsenspassiv: wird + Partizip II."
+    },
+    {
+      "id": "passiv-57",
+      "prefix": "Das Problem kann leicht gelöst werden. → Alternative:",
+      "gapPlaceholder": "Transformation",
+      "suffix": "Das Problem",
+      "correctAnswer": "lässt sich leicht lösen",
+      "acceptableAnswers": [
+        "lässt sich leicht lösen",
+        "laesst sich leicht loesen"
+      ],
+      "options": [
+        "lässt sich leicht lösen",
+        "ist leicht gelöst",
+        "wird leicht lösen",
+        "hat leicht gelöst"
+      ],
+      "collocation": "kann gelöst werden → lässt sich lösen",
+      "meaning": "Passiv mit Modalverb wird durch 'sich lassen + Infinitiv' ersetzt.",
+      "example": "Das Problem lässt sich leicht lösen.",
+      "tip": "kann gelöst werden ≈ lässt sich lösen."
+    },
+    {
+      "id": "passiv-58",
+      "prefix": "Die Rechnung muss heute bezahlt werden. → Alternative:",
+      "gapPlaceholder": "Transformation",
+      "suffix": "Die Rechnung",
+      "correctAnswer": "ist heute zu bezahlen",
+      "acceptableAnswers": [
+        "ist heute zu bezahlen",
+        "ist heute zu bezahlen."
+      ],
+      "options": [
+        "ist heute zu bezahlen",
+        "lässt sich heute bezahlen",
+        "wird heute bezahlen",
+        "ist heute bezahlt"
+      ],
+      "collocation": "muss bezahlt werden → ist zu bezahlen",
+      "meaning": "Eine Verpflichtung wird mit 'sein + zu + Infinitiv' ausgedrückt.",
+      "example": "Die Rechnung ist heute zu bezahlen.",
+      "tip": "muss ... werden ≈ ist ... zu + Infinitiv."
+    },
+    {
+      "id": "passiv-59",
+      "prefix": "Der Text kann gut verstanden werden. → Alternative:",
+      "gapPlaceholder": "Transformation",
+      "suffix": "Der Text ist",
+      "correctAnswer": "gut verständlich",
+      "acceptableAnswers": [
+        "gut verständlich"
+      ],
+      "options": [
+        "gut verständlich",
+        "gut verstanden worden",
+        "gut zu verstehen werden",
+        "gut verständig"
+      ],
+      "collocation": "kann verstanden werden → verständlich",
+      "meaning": "Eine passive Aussage wird mit einem Adjektiv auf '-lich' ausgedrückt.",
+      "example": "Der Text ist gut verständlich.",
+      "tip": "verständlich beschreibt hier, dass etwas gut verstanden werden kann."
+    },
+    {
+      "id": "passiv-60",
+      "prefix": "Aktiv: Der Arzt gibt dem Patienten das Medikament. → Passiv:",
+      "gapPlaceholder": "Transformation",
+      "suffix": "Das Medikament wird",
+      "correctAnswer": "dem Patienten gegeben",
+      "acceptableAnswers": [
+        "dem Patienten gegeben"
+      ],
+      "options": [
+        "dem Patienten gegeben",
+        "der Patient gegeben",
+        "den Patienten gegeben",
+        "vom Patienten gegeben"
+      ],
+      "collocation": "Dativ bleibt Dativ",
+      "meaning": "Das Akkusativobjekt wird zum Subjekt; das Dativobjekt bleibt im Dativ.",
+      "example": "Das Medikament wird dem Patienten gegeben.",
+      "tip": "Dativobjekte bleiben im Passiv im Dativ."
+    }
+  ]
+}

@@ -18,6 +18,7 @@ public/data/
     ├── redewendungen.json       <-- Redewendungen (12 Sätze)
     ├── adjektive.json           <-- Adjektive mit Präpositionen (69 Sätze)
     ├── konjunktionen.json       <-- Konnektoren (32 Sätze)
+    ├── passivformen.json        <-- Passivformen (60 Sätze)
     └── modalverben.json         <-- Modalverben in verschiedenen Zeiten (30 Sätze)
 ```
 
